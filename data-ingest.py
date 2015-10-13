@@ -1,5 +1,15 @@
 import argparse
 import ConfigParser
+import TwitterDataIngest
+
+
+class DataIngest:
+  
+
+
+    twitter_config = dict(config.items('Facebook')) #('Twitter', 'consumer_key')
+
+    print twitter_config
 
 def main():
   parser = argparse.ArgumentParser(
@@ -12,11 +22,7 @@ def main():
 
   config = ConfigParser.ConfigParser()
   config.read(args.config)
-
-  twitter_config = config.sections() #('Twitter', 'consumer_key')
-
-  print twitter_config
-
+  
 if __name__ == "__main__":
   main()
 
