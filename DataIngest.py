@@ -1,6 +1,7 @@
 import argparse
 import ConfigParser
-import TwitterDataIngest
+
+import TwitterDataIngestSource
 
 
 def main():
@@ -22,11 +23,18 @@ class DataIngest:
   """Flexible source and destination Data Ingest for Social Media"""
   def __init__(self, config):
     self.config = config
+    self.sources = [ ]
+    self.sinks = [ ]
 
   def start(self):
     if 'Twitter' in self.config.sections():
       twitter_config = dict(self.config.items('Twitter'))
-      print twitter_config
+      twitter_source = TwitterDataIngestSource.TwitterDataIngestSource(
+        twitter_config
+      )
+
+      self.sources.append( twitter_source )
+      
     else:
       print "Skipping Twitter since config has no [Twitter] section"
 
@@ -35,6 +43,10 @@ class DataIngest:
       print facebook_config
     else:
       print "Skipping Facebook since config has no [Facebook] section" 
+
+    # todo: multi-source blending generators
+    for item in self.sources[0]:
+      print item
 
 if __name__ == "__main__":
   main()
