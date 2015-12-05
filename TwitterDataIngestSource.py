@@ -28,7 +28,7 @@ class TwitterDataIngestSource:
     if self.public_tweet_index < len(self.public_tweets):
       tweet = self.public_tweets[ self.public_tweet_index ] 
       self.public_tweet_index = self.public_tweet_index + 1
-      return tweet.text
+      return { 'tweet' : tweet._json }
     else:
       raise StopIteration()
 

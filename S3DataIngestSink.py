@@ -1,6 +1,7 @@
 import boto
 import datetime
 import uuid
+import json
 
 class S3DataIngestSink:
   """Output data to S3"""
@@ -45,7 +46,7 @@ class S3DataIngestSink:
     filename = str(self.file_index).zfill(7)
     key_name = self.folder + '/' + filename
     key = self.bucket.new_key(key_name)
-    key.set_contents_from_string('\n'.join(self.batch))
+    key.set_contents_from_string(json.dumps(self.batch))
 
     self.file_index = self.file_index + 1
 
