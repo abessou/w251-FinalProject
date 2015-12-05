@@ -45,7 +45,7 @@ class DataIngest:
     else:
       print "Skipping Facebook since config has no [Facebook] section" 
 
-    if 'S3' in self.config.section():
+    if 'S3' in self.config.sections():
       s3_config = dict(self.config.items('S3'))
       s3_sink = S3DataIngestSink.S3DataIngestSink(s3_config)
 
