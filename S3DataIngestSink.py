@@ -17,7 +17,7 @@ class S3DataIngestSink:
     
     self.bucket = conn.get_bucket(aws_bucket, validate = True)
 
-    now = datetime.datetime.now().isoformat()
+    now = datetime.datetime.utcnow().isoformat()
 
     unique = str(uuid.uuid4())
 
