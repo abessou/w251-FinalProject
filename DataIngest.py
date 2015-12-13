@@ -30,7 +30,7 @@ class DataIngest:
 
   def start(self):
     if 'Twitter' in self.config.sections():
-      print 'Creating Twiter source (found [Twitter] section)'
+      print 'Creating Twitter source (found [Twitter] section)'
 
       twitter_config = dict(self.config.items('Twitter'))
       twitter_source = TwitterDataIngestSource.TwitterDataIngestSource(
