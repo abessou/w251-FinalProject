@@ -1,6 +1,7 @@
 import sys
 from itertools import ifilter
 from requests_oauthlib import OAuth1Session
+import json
 
 class TwitterDataIngestSource:
   """Ingest data from Twitter"""
@@ -33,4 +34,4 @@ class TwitterDataIngestSource:
     return self
 
   def next(self):
-    return self.source_iterator.next()
+    return { 'tweet' : json.loads(self.source_iterator.next()) }
