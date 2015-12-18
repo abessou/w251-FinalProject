@@ -2,8 +2,11 @@ import argparse
 import ConfigParser
 
 import TwitterDataIngestSource
+import S3DataIngestSource
+
 import S3DataIngestSink
 import LocalDataIngestSink
+import SocketDataIngestSink
 
 
 def main():
@@ -50,6 +53,18 @@ class DataIngest:
     else:
       print "Skipping Facebook since config has no [Facebook] section" 
 
+    if 'S3Source' in self.config.sections():
+      print 'Creating S3 source (found [S3Source] section)'
+
+      s3_source_config = dict(self.config.items('S3Source'))
+
+      s3_source = S3DataIngestSource.S3DataIngestSource(s3_source_config)
+
+      self.sources.append(s3_source)
+
+    else:
+      print "Skipping S3 Source since config has no [S3Source] section" 
+
     if 'S3' in self.config.sections():
       print 'Creating Local sink (found [S3] section)'
 
@@ -69,6 +84,16 @@ class DataIngest:
       self.sinks.append(local_sink)
     else:
       print "Skipping Local since config has no [Local] section"
+
+    if 'SocketSink' in self.config.sections():
+      print 'Creating Socket sink (found [SocketSink] section)'
+
+      socket_config = dict(self.config.items('SocketSink'))
+      socket_sink = SocketDataIngestSink.SocketDataIngestSink(socket_config)
+
+      self.sinks.append(socket_sink)
+    else:
+      print "Skipping Socket since config has no [Socket] section"
 
     self.sinks[0].write(self.sources[0])
 
