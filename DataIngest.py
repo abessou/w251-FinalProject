@@ -3,10 +3,12 @@ import ConfigParser
 
 import TwitterDataIngestSource
 import S3DataIngestSource
+import LocalDataIngestSource
 
 import S3DataIngestSink
 import LocalDataIngestSink
 import SocketDataIngestSink
+import PostgresDataIngestSink
 
 
 def main():
@@ -65,6 +67,20 @@ class DataIngest:
     else:
       print "Skipping S3 Source since config has no [S3Source] section" 
 
+    if 'LocalSource' in self.config.sections():
+      print 'Creating Local source (found [LocalSource] section)'
+
+      local_source_config = dict(self.config.items('LocalSource'))
+
+      local_source = LocalDataIngestSource.LocalDataIngestSource(
+        local_source_config
+      )
+
+      self.sources.append(local_source)
+
+    else:
+      print "Skipping Local Source since config has no [LocalSource] section" 
+
     if 'S3' in self.config.sections():
       print 'Creating Local sink (found [S3] section)'
 
@@ -94,6 +110,16 @@ class DataIngest:
       self.sinks.append(socket_sink)
     else:
       print "Skipping Socket since config has no [Socket] section"
+
+    if 'PostgresSink' in self.config.sections():
+      print 'Creating Postgres sink (found [PostgresSink] section)'
+
+      postgres_config = dict(self.config.items('PostgresSink'))
+      postgres_sink = PostgresDataIngestSink.PostgresDataIngestSink(postgres_config)
+
+      self.sinks.append(postgres_sink)
+    else:
+      print "Skipping Postgres since config has no [PostgresSink] section"
 
     self.sinks[0].write(self.sources[0])
 
