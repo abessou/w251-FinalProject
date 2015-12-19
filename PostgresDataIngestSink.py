@@ -18,18 +18,23 @@ class PostgresDataIngestSink:
     self.config = config
 
     self.connection_string = self.config['connection_string']
+    self.table_name = self.config['table_name']
     self.engine = create_engine(self.connection_string)
 
-    print '[ProgresSink] Writing to connection string ' + self.connection_string
+    print(
+      '[ProgresSink] Writing to connection string ' + 
+      self.connection_string + ' table: ' + self.table_name
+    )
 
     self.records_written = 0
+    self.batch_size = 50
 
 
   def write(self, source):
     for item in source:
       tweet = [ item ]
 
-      print 'Tweet: ' + str(tweet)
+      #print 'Tweet: ' + str(tweet)
 
       createds = [time.strftime('%Y-%m-%d %H:%M:%S',
         time.strptime(str(tweet[i]['tweet']['created_at']),
@@ -48,11 +53,17 @@ class PostgresDataIngestSink:
         columns=['created_at','userid','retweets', 'text','friendcount', 'followers', 'urls']
       )
 
-      print 'Read: ' + str(df)
+      #print 'Read: ' + str(df)
 
-      df.to_sql('data_test', self.engine, if_exists = 'append')
+      df.to_sql(self.table_name, self.engine, if_exists = 'append')
 
       self.records_written = self.records_written + 1
+
+      sys.stdout.write('.') # write a record indicator to stdout
+      sys.stdout.flush()
+
+      if self.records_written % self.batch_size == 0:
+        print('|')
 
       #raise ValueError('time to stop')
 
