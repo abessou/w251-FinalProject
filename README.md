@@ -1,3 +1,4 @@
+This readme describes the overall architecture and design choices (***Analytics Platform***) and outlines about the code structure.
 # Analytics Platform
 The analytics platform for this project consist of three major components:
 - Data Ingest Pipeline that can consume, store, and replay social network streams
@@ -13,7 +14,9 @@ The natural data format of our application is, therefore, streams. To develop an
 
 Production analytics happens in near-real-time, and algorithms development is enabled by the capability to store streaming data in the Data Lake, and the replay streams for development.
 
-The technology choices that enable this were:
+![Kappa Architecture Diagram](Kappa-Architecture.png)
+
+The technology choices that enable this are:
 - Ingest - a lightweight configuration-driven Python framework (scale-out)
 - Data Lake - S3 bucket with partitioned Hive table-like organization
 - Analytics - lightweight Python framework (scale-out capable)
@@ -24,7 +27,7 @@ The technology choices that enable this were:
 The Data Ingest Pipeline is responsible for streaming data from its primary sources (Twitter, Facebook, YouTube) or a replay source (S3, Local), and dispatching a stream to one or more streaming data sinks. The pipeline consists of several key components:
 - The core Data Ingest Framework, which consumes a configuration file to instantiate at least one source and at least one sink, and wires them together by stream-chaining
 - The Streamable Object Primitive - for which we chose a single social media post (tweet, post, or video, for Twitter, Facebook, and YouTube, respectively), represented as a self-describing JSON-equivalent Python object
-  -    For example a tweet is: { “tweet”: { “created_at” : “...”, “text” : “Hello, World”, … } }
+  -    For example a tweet is: `{ “tweet”: { “created_at” : “...”, “text” : “Hello, World”, … } }`
   -    This enables the data to be context-free (since entity types are self-documenting and always contain timestamps) and the framework to be non-opinionated
 - The Stream of posts, which is represented as a Python iterable of streamable objects
   -    Enables clear semantics for consuming the stream (for item in source:)
@@ -41,7 +44,7 @@ The Data Ingest Pipeline is responsible for streaming data from its primary sour
   -    Local - captures a stream to the Local filesystem for repeat analysis
 
 The overall Data Ingest Pipeline component architecture is captured by the diagram below. 
-
+![Data Ingest Pipeline](Ingest-Full.png)
 
 As requirements evolve, this framework becomes a natural candidate for migration to Streamparse, as all the sinks and sources are already de-coupled, and the coordinating component maps cleanly to a topology.
 
@@ -75,9 +78,43 @@ This structure (especially the unique identifier) enables an arbitrary number of
 Local data for replay is stored in an equivalent structure in the file system, enabling sampling for development by downloading select files using standard tools (for example, s3cmd).
 
 Each file in the Data Lake contains a single micro-batch of posts, organized as a JSON array for easy manipulation with standard tools. For example, a micro-batch from Twitter might looks as follows (white-space added for clarity).
+```{text}
 [
   { “tweet”: { “created_at” : “2015-12-18T00:00:01”, “text” : “See you later, alligator!”, … } },
   { “tweet”: { “created_at” : “2015-12-18T00:00:02”, “text” : “In a while, crocodile!”, … } },
   …
 ]
+```
 
+# Code Structure
+
+The core entry point is `DataIngest.py`. Data Ingest expects a configuration file as an argument that defines and configures the sink and source for the instance (this construct keeps the code separate from the data, especially sensitive credentials). The syntax to run it is:
+
+```sh
+python DataIngest.py --config /path/to/config.file.cfg
+```
+
+Where the configuration file is at `/path/to/config.file.cfg` on the local filesystem.
+
+The Data Ingest script relies on a number of data source implementations represented as Python classes:
+- `TwitterDataIngestSource.py` - Source for ingesting data from the Twitter 1.1 streaming API
+- `FacebookDataIngestSource.py` - Source for ingesting data from the Facebook 2.5 REST API
+- `YouTubeDataIngestSource.py` - Source for ingesting data from the Youtube v3 REST API
+- `S3DataIngestSource.py` - Source for ingesting data from S3 (typically, in a replay of a ingest from one or more of the above)
+- `LocalDataIngestSource.py` - Source for ingesting data from the local filesystem (typically, in a replay of a ingest from one or more of the above)
+
+Sinks are duck-typed with the expectation that they expose a stream of data as a Python iterable. In other words:
+```{python}
+for item in source:
+  do_something_with(item)
+```
+The Data Ingest script relies on a number of data sink implementations as Python classes:
+- `S3DataIngestSink.py` - Save the data to S3
+- `LocalDataIngestSink.py` - Save the data to the Local filesystem
+- `PostgresDataIngetsSink.py` - Extract key features and write them to the Postgres-comptable DW for OLAP processing
+- `SocketDataIngest.py` - Send data to a socket (for ingest by Apache Spark)
+
+The code also includes two examples of configuration files (without credentials):
+- `.w205-data-ingest.cfg` - Ingest data from Twitter to S3
+- `.w205-local-ingest.cfg` - Ingest data from Twitter into the local filesystem
+- `.w205-postgres-sample.cfg` - Ingest a data sample stored locally into Postgres
