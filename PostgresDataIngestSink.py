@@ -33,31 +33,33 @@ class PostgresDataIngestSink:
   def write(self, source):
     for item in source:
       try:
-        tweet = [ item ]
+        if 'tweet' in item:
+          tweet = [ item ]
 
-        #print 'Tweet: ' + str(tweet)
+          #print 'Tweet: ' + str(tweet)
 
-        createds = [time.strftime('%Y-%m-%d %H:%M:%S',
-          time.strptime(str(tweet[i]['tweet']['created_at']),
-              '%a %b %d %H:%M:%S +0000 %Y'))                  for i in range(len(tweet))]
-        userid =   [tweet[i]['tweet']['id']                         for i in range(len(tweet))]
-        texts =    [tweet[i]['tweet']['text']                       for i in range(len(tweet))]
-        retweets = [tweet[i]['tweet']['retweet_count']              for i in range(len(tweet))]
-        follows =  [tweet[i]['tweet']['user']['followers_count']    for i in range(len(tweet))]
-        friends_count = [tweet[i]['tweet']['user']['friends_count'] for i in range(len(tweet))]
-        urls =     [tweet[i]['tweet']['user']['url'] for i in range(len(tweet))]
+          createds = [time.strftime('%Y-%m-%d %H:%M:%S',
+            time.strptime(str(tweet[i]['tweet']['created_at']),
+                '%a %b %d %H:%M:%S +0000 %Y'))                  for i in range(len(tweet))]
+          userid =   [tweet[i]['tweet']['id']                         for i in range(len(tweet))]
+          texts =    [tweet[i]['tweet']['text']                       for i in range(len(tweet))]
+          retweets = [tweet[i]['tweet']['retweet_count']              for i in range(len(tweet))]
+          follows =  [tweet[i]['tweet']['user']['followers_count']    for i in range(len(tweet))]
+          friends_count = [tweet[i]['tweet']['user']['friends_count'] for i in range(len(tweet))]
+          urls =     [tweet[i]['tweet']['user']['url'] for i in range(len(tweet))]
 
-        df = pd.DataFrame(
-          {'created_at':createds, 'userid':userid, 'retweets':retweets,
-            'text':texts, 'friendcount':friends_count,
-                     'followers': follows, 'urls': urls},
-          columns=['created_at','userid','retweets', 'text','friendcount', 'followers', 'urls']
-        )
+          df = pd.DataFrame(
+            {'created_at':createds, 'userid':userid, 'retweets':retweets,
+              'text':texts, 'friendcount':friends_count,
+                       'followers': follows, 'urls': urls},
+            columns=['created_at','userid','retweets', 'text','friendcount', 'followers', 'urls']
+          )
 
-        #print 'Read: ' + str(df)
+          #print 'Read: ' + str(df)
 
-        df.to_sql(self.table_name, self.engine, if_exists = 'append')
-
+          df.to_sql(self.table_name, self.engine, if_exists = 'append')
+        elif 'post' in item:
+          pass
 
         sys.stdout.write('.') # write a record indicator to stdout
       except:
