@@ -1,4 +1,19 @@
-This readme describes the overall architecture and design choices (***Analytics Platform***) and outlines about the code structure.
+This readme describes the business context (***Use Cases***), overall architecture and design choices (***Analytics Platform***) and outlines about the code (***Code Structure***).
+
+# Use Cases
+
+## Value proposition
+Shoot2Top is building a platform to show live performances of videos posted on social networks,  report ratings on how video content performed once it was published and predict how effective different video virality strategies may play out. Our platform essentially serves three modules that are part of a suite of products that serve different specific needs but all share similar data architecture and resources.
+
+## Product description
+Shoot2Top continuously ingest videos published from major social networks like Twitter, Youtube and Facebook to analyze them real time to show media publishers how their videos are performing live. It also generates reports after-the-fact that highlights how each video and each media publisher performed. It also plans to use data collected to create analytical and machine learning tools to help predict optimal virality strategies.
+
+Our suite of products include:
+- Identifying when to post, which hashtags, and keywords to use for maximum virality
+- Identifying key micro-trends in content that can enhance visibility
+- Identifying opportunities to cross-promote your existing content based on current micro-trends
+
+
 # Analytics Platform
 The analytics platform for this project consist of three major components:
 - Data Ingest Pipeline that can consume, store, and replay social network streams
