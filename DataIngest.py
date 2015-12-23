@@ -2,6 +2,7 @@ import argparse
 import ConfigParser
 
 import TwitterDataIngestSource
+import FacebookDataIngestSource
 import S3DataIngestSource
 import LocalDataIngestSource
 
@@ -51,7 +52,12 @@ class DataIngest:
       print 'Creating Facebook source (found [Facebook] section)'
 
       facebook_config = dict(self.config.items('Facebook'))
-      print facebook_config
+      
+      facebook_source = FacebookDataIngestSource.FacebookDataIngestSource(
+        facebook_config
+      )
+
+      self.sources.append( facebook_source )
     else:
       print "Skipping Facebook since config has no [Facebook] section" 
 
