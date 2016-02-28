@@ -1,15 +1,15 @@
 import argparse
 import ConfigParser
 
-import TwitterDataIngestSource
-import FacebookDataIngestSource
-import S3DataIngestSource
-import LocalDataIngestSource
+from sources import TwitterDataIngestSource
+from sources import FacebookDataIngestSource
+from sources import S3DataIngestSource
+from sources import LocalDataIngestSource
 
-import S3DataIngestSink
-import LocalDataIngestSink
-import SocketDataIngestSink
-import PostgresDataIngestSink
+from sinks import S3DataIngestSink
+from sinks import LocalDataIngestSink
+from sinks import SocketDataIngestSink
+from sinks import PostgresDataIngestSink
 
 
 def main():
