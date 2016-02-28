@@ -2,31 +2,29 @@ import boto
 import datetime
 import uuid
 import json
+
+import os
+import errno
 import sys
 
-class S3DataIngestSink:
-  """Output data to S3"""
+class SocketDataIngestSink:
+  """Output data to Local socket"""
 
   def __init__(self, config):
     self.config = config
-    aws_access_key_id = self.config['aws_access_key_id']
-    aws_secret_access_key = self.config['aws_secret_access_key']
-    aws_bucket = self.config['aws_bucket']
 
-    conn = boto.connect_s3(aws_access_key_id, aws_secret_access_key)
-    
-    self.bucket = conn.get_bucket(aws_bucket, validate = True)
+    port = self.port = self.config['port']
 
-    now = datetime.datetime.utcnow().isoformat()
 
-    unique = str(uuid.uuid4())
-
-    self.folder = now + '-' + unique
-
-    print '[S3] Writing to bucket ' + aws_bucket + ' folder ' + self.folder
+    print '[SocketSink] Writing to port ' + self.port
 
 
   def write(self, source):
+    for item in source:
+      print 'Read: ' + str(item)
+    
+
+  def write2(self, source):
 
     self.record_index = 0
     self.file_index = 0
@@ -52,9 +50,10 @@ class S3DataIngestSink:
   def flush(self):
 
     filename = str(self.file_index).zfill(7)
-    key_name = self.folder + '/' + filename
-    key = self.bucket.new_key(key_name)
-    key.set_contents_from_string(json.dumps(self.batch))
+
+    file_path = self.folder + '/' + filename
+    with open(file_path, 'w') as output_file:
+      output_file.write(json.dumps(self.batch))
 
     self.file_index = self.file_index + 1
 
