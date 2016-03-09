@@ -35,6 +35,15 @@ class LocalDataIngestSink:
     self.record_index = 0
     self.file_index = 0
 
+    # Check for option to indent json output in config file
+    # default: no indent 
+    if 'indent' in self.config:
+      self.indent = int(self.config['indent'])
+    else:
+      self.indent = None
+   
+    # Check for batch_size in config file
+    # default: 50 per batch
     if 'batch_size' in self.config:
       self.batch_size = int(self.config['batch_size'])
     else:
@@ -59,7 +68,7 @@ class LocalDataIngestSink:
 
     file_path = self.folder + '/' + filename
     with open(file_path, 'w') as output_file:
-      output_file.write(json.dumps(self.batch))
+      output_file.write(json.dumps(self.batch, indent=self.indent))
 
     self.file_index = self.file_index + 1
 
