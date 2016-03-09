@@ -25,7 +25,16 @@ def main():
   config.read(args.config)
 
   ingest = DataIngest(config)
-  ingest.start()
+  
+  # Initialize source and sink
+  ingest.init_source()
+  ingest.init_sink()
+
+  # If one source and one sink is configured, start ingest
+  if ingest.sources and ingest.sinks:
+    ingest.start_collection()
+  else:
+    print "Check config settings and retry"
 
 class DataIngest:
   """Flexible source and destination Data Ingest for Social Media"""
@@ -34,7 +43,7 @@ class DataIngest:
     self.sources = [ ]
     self.sinks = [ ]
 
-  def start(self):
+  def init_source(self):
     if 'Twitter' in self.config.sections():
       print 'Creating Twitter source (found [Twitter] section)'
 
@@ -45,10 +54,10 @@ class DataIngest:
 
       self.sources.append( twitter_source )
       
-    else:
-      print "Skipping Twitter since config has no [Twitter] section"
+    #else:
+    #  print "Skipping Twitter since config has no [Twitter] section"
 
-    if 'Facebook' in self.config.sections():
+    elif 'Facebook' in self.config.sections():
       print 'Creating Facebook source (found [Facebook] section)'
 
       facebook_config = dict(self.config.items('Facebook'))
@@ -58,10 +67,10 @@ class DataIngest:
       )
 
       self.sources.append( facebook_source )
-    else:
-      print "Skipping Facebook since config has no [Facebook] section" 
+    #else:
+    #  print "Skipping Facebook since config has no [Facebook] section" 
 
-    if 'S3Source' in self.config.sections():
+    elif 'S3Source' in self.config.sections():
       print 'Creating S3 source (found [S3Source] section)'
 
       s3_source_config = dict(self.config.items('S3Source'))
@@ -70,10 +79,10 @@ class DataIngest:
 
       self.sources.append(s3_source)
 
-    else:
-      print "Skipping S3 Source since config has no [S3Source] section" 
+    #else:
+    #  print "Skipping S3 Source since config has no [S3Source] section" 
 
-    if 'LocalSource' in self.config.sections():
+    elif 'LocalSource' in self.config.sections():
       print 'Creating Local source (found [LocalSource] section)'
 
       local_source_config = dict(self.config.items('LocalSource'))
@@ -84,8 +93,14 @@ class DataIngest:
 
       self.sources.append(local_source)
 
+    #else:
+    #  print "Skipping Local Source since config has no [LocalSource] section" 
+
     else:
-      print "Skipping Local Source since config has no [LocalSource] section" 
+      print "No Source found in config file... Stopping DataIngest"
+      print "Add a source by including config for one source: Twitter, Facebook, S3Source, or LocalSource"
+
+  def init_sink(self):
 
     if 'S3' in self.config.sections():
       print 'Creating Local sink (found [S3] section)'
@@ -94,39 +109,45 @@ class DataIngest:
       s3_sink = S3DataIngestSink.S3DataIngestSink(s3_config)
 
       self.sinks.append(s3_sink)
-    else:
-      print "Skipping S3 since config has no [S3] section"
+    #else:
+    #  print "Skipping S3 since config has no [S3] section"
 
-    if 'Local' in self.config.sections():
+    elif 'Local' in self.config.sections():
       print 'Creating Local sink (found [Local] section)'
 
       local_config = dict(self.config.items('Local'))
       local_sink = LocalDataIngestSink.LocalDataIngestSink(local_config)
 
       self.sinks.append(local_sink)
-    else:
-      print "Skipping Local since config has no [Local] section"
+    #else:
+    #  print "Skipping Local since config has no [Local] section"
 
-    if 'SocketSink' in self.config.sections():
+    elif 'SocketSink' in self.config.sections():
       print 'Creating Socket sink (found [SocketSink] section)'
 
       socket_config = dict(self.config.items('SocketSink'))
       socket_sink = SocketDataIngestSink.SocketDataIngestSink(socket_config)
 
       self.sinks.append(socket_sink)
-    else:
-      print "Skipping Socket since config has no [Socket] section"
+    #else:
+    #  print "Skipping Socket since config has no [Socket] section"
 
-    if 'PostgresSink' in self.config.sections():
+    elif 'PostgresSink' in self.config.sections():
       print 'Creating Postgres sink (found [PostgresSink] section)'
 
       postgres_config = dict(self.config.items('PostgresSink'))
       postgres_sink = PostgresDataIngestSink.PostgresDataIngestSink(postgres_config)
 
       self.sinks.append(postgres_sink)
-    else:
-      print "Skipping Postgres since config has no [PostgresSink] section"
+    #else:
+    #  print "Skipping Postgres since config has no [PostgresSink] section"
 
+    else:
+      print "No Sink found in config file... Stopping DataIngest"
+      print "Add a sink by including in config a section for: Local, SocketSink, or PostgresSink"
+
+
+  def start_collection(self):
     self.sinks[0].write(self.sources[0])
 
 if __name__ == "__main__":
