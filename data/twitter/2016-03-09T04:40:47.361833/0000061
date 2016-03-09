@@ -1,0 +1,394 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @CauseWereComedy: this video will never not be funny lol https://t.co/sn4CdxV8KG", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425898748719104, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498452256", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 215152933, 
+            "indices": [
+              3, 
+              19
+            ], 
+            "id_str": "215152933", 
+            "screen_name": "CauseWereComedy", 
+            "name": "Funny Tweets"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [], 
+        "media": [
+          {
+            "source_user_id": 2544787910, 
+            "source_status_id_str": "706568497220886528", 
+            "expanded_url": "http://twitter.com/AliyaKeo/status/706568497220886528/video/1", 
+            "display_url": "pic.twitter.com/sn4CdxV8KG", 
+            "url": "https://t.co/sn4CdxV8KG", 
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706568439565975552/pu/img/rPwb8HaTWbw6Bj4f.jpg", 
+            "source_user_id_str": "2544787910", 
+            "source_status_id": 706568497220886528, 
+            "id_str": "706568439565975552", 
+            "sizes": {
+              "small": {
+                "h": 340, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 640, 
+                "resize": "fit", 
+                "w": 640
+              }, 
+              "medium": {
+                "h": 600, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              60, 
+              83
+            ], 
+            "type": "photo", 
+            "id": 706568439565975552, 
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706568439565975552/pu/img/rPwb8HaTWbw6Bj4f.jpg"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425898748719104", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "this video will never not be funny lol https://t.co/sn4CdxV8KG", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 707043463368417280, 
+        "favorite_count": 9077, 
+        "source": "<a href=\"http://www.hootsuite.com\" rel=\"nofollow\">Hootsuite</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [], 
+          "media": [
+            {
+              "source_user_id": 2544787910, 
+              "source_status_id_str": "706568497220886528", 
+              "expanded_url": "http://twitter.com/AliyaKeo/status/706568497220886528/video/1", 
+              "display_url": "pic.twitter.com/sn4CdxV8KG", 
+              "url": "https://t.co/sn4CdxV8KG", 
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706568439565975552/pu/img/rPwb8HaTWbw6Bj4f.jpg", 
+              "source_user_id_str": "2544787910", 
+              "source_status_id": 706568497220886528, 
+              "id_str": "706568439565975552", 
+              "sizes": {
+                "small": {
+                  "h": 340, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 640, 
+                  "resize": "fit", 
+                  "w": 640
+                }, 
+                "medium": {
+                  "h": 600, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                39, 
+                62
+              ], 
+              "type": "photo", 
+              "id": 706568439565975552, 
+              "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706568439565975552/pu/img/rPwb8HaTWbw6Bj4f.jpg"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "707043463368417280", 
+        "retweet_count": 6892, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 215152933, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/698365749887275009/I4JJi_zj_normal.jpg", 
+          "profile_sidebar_fill_color": "DDEEF6", 
+          "profile_text_color": "333333", 
+          "followers_count": 437369, 
+          "profile_sidebar_border_color": "FFFFFF", 
+          "id_str": "215152933", 
+          "profile_background_color": "ABB8C2", 
+          "listed_count": 177, 
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/626758833327706112/Hq9VYkUW.jpg", 
+          "utc_offset": 28800, 
+          "statuses_count": 17137, 
+          "description": "The best tweets. Funny pics, sexual gifs, vines, v day cards and more! Submit your own. By @ImThatGentleman TheTwitterEmpire@outlook.com", 
+          "friends_count": 28, 
+          "location": "V-Day: Where The D Meets The V", 
+          "profile_link_color": "DD2E44", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/698365749887275009/I4JJi_zj_normal.jpg", 
+          "following": null, 
+          "geo_enabled": true, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/215152933/1451632051", 
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/626758833327706112/Hq9VYkUW.jpg", 
+          "name": "Funny Tweets", 
+          "lang": "en", 
+          "profile_background_tile": true, 
+          "favourites_count": 1326, 
+          "screen_name": "CauseWereComedy", 
+          "notifications": null, 
+          "url": null, 
+          "created_at": "Sat Nov 13 03:49:36 +0000 2010", 
+          "contributors_enabled": false, 
+          "time_zone": "Taipei", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Tue Mar 08 03:21:12 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null, 
+        "extended_entities": {
+          "media": [
+            {
+              "source_user_id": 2544787910, 
+              "source_status_id_str": "706568497220886528", 
+              "expanded_url": "http://twitter.com/AliyaKeo/status/706568497220886528/video/1", 
+              "display_url": "pic.twitter.com/sn4CdxV8KG", 
+              "url": "https://t.co/sn4CdxV8KG", 
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706568439565975552/pu/img/rPwb8HaTWbw6Bj4f.jpg", 
+              "source_user_id_str": "2544787910", 
+              "source_status_id": 706568497220886528, 
+              "video_info": {
+                "aspect_ratio": [
+                  1, 
+                  1
+                ], 
+                "duration_millis": 15133, 
+                "variants": [
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/vid/480x480/UWKlMM3nb1M5H5it.webm", 
+                    "bitrate": 832000, 
+                    "content_type": "video/webm"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/pl/tApw3IhCS7tM_FKj.m3u8", 
+                    "content_type": "application/x-mpegURL"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/vid/480x480/UWKlMM3nb1M5H5it.mp4", 
+                    "bitrate": 832000, 
+                    "content_type": "video/mp4"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/vid/240x240/KCXnHxidKCA64YbI.mp4", 
+                    "bitrate": 320000, 
+                    "content_type": "video/mp4"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/pl/tApw3IhCS7tM_FKj.mpd", 
+                    "content_type": "application/dash+xml"
+                  }
+                ]
+              }, 
+              "id_str": "706568439565975552", 
+              "sizes": {
+                "small": {
+                  "h": 340, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 640, 
+                  "resize": "fit", 
+                  "w": 640
+                }, 
+                "medium": {
+                  "h": 600, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                39, 
+                62
+              ], 
+              "type": "video", 
+              "id": 706568439565975552, 
+              "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706568439565975552/pu/img/rPwb8HaTWbw6Bj4f.jpg"
+            }
+          ]
+        }
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 2502348724, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/655859957217103872/ox-Nt6zd_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 216, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "2502348724", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 2, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": null, 
+        "statuses_count": 3981, 
+        "description": "I am a princess! My father is the King of Kings \u2020", 
+        "friends_count": 396, 
+        "location": "Arkansas, USA", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/655859957217103872/ox-Nt6zd_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2502348724/1442290867", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "Kyli Jones \u2655", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 5298, 
+        "screen_name": "Kyligrace99", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Tue Apr 22 18:22:30 +0000 2014", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:52 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null, 
+      "extended_entities": {
+        "media": [
+          {
+            "source_user_id": 2544787910, 
+            "source_status_id_str": "706568497220886528", 
+            "expanded_url": "http://twitter.com/AliyaKeo/status/706568497220886528/video/1", 
+            "display_url": "pic.twitter.com/sn4CdxV8KG", 
+            "url": "https://t.co/sn4CdxV8KG", 
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706568439565975552/pu/img/rPwb8HaTWbw6Bj4f.jpg", 
+            "source_user_id_str": "2544787910", 
+            "source_status_id": 706568497220886528, 
+            "video_info": {
+              "aspect_ratio": [
+                1, 
+                1
+              ], 
+              "duration_millis": 15133, 
+              "variants": [
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/vid/480x480/UWKlMM3nb1M5H5it.webm", 
+                  "bitrate": 832000, 
+                  "content_type": "video/webm"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/pl/tApw3IhCS7tM_FKj.m3u8", 
+                  "content_type": "application/x-mpegURL"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/vid/480x480/UWKlMM3nb1M5H5it.mp4", 
+                  "bitrate": 832000, 
+                  "content_type": "video/mp4"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/vid/240x240/KCXnHxidKCA64YbI.mp4", 
+                  "bitrate": 320000, 
+                  "content_type": "video/mp4"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706568439565975552/pu/pl/tApw3IhCS7tM_FKj.mpd", 
+                  "content_type": "application/dash+xml"
+                }
+              ]
+            }, 
+            "id_str": "706568439565975552", 
+            "sizes": {
+              "small": {
+                "h": 340, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 640, 
+                "resize": "fit", 
+                "w": 640
+              }, 
+              "medium": {
+                "h": 600, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              60, 
+              83
+            ], 
+            "type": "video", 
+            "id": 706568439565975552, 
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706568439565975552/pu/img/rPwb8HaTWbw6Bj4f.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

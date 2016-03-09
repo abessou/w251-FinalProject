@@ -1,0 +1,192 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "#ArianaGrande #KCA \ud83d\udc99\ud83d\udc99\nPor favor voten por Ariana!!! en:\ud83d\udc49\ud83d\udc49https://t.co/TQfywVCcCm.\n\ud83d\udc46\ud83d\udc46\ud83d\udc46\ud83d\udc46 https://t.co/CpJb5RoR8r", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425901110288384, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498452819", 
+      "entities": {
+        "user_mentions": [], 
+        "symbols": [], 
+        "hashtags": [
+          {
+            "indices": [
+              0, 
+              13
+            ], 
+            "text": "ArianaGrande"
+          }, 
+          {
+            "indices": [
+              14, 
+              18
+            ], 
+            "text": "KCA"
+          }
+        ], 
+        "urls": [
+          {
+            "url": "https://t.co/TQfywVCcCm", 
+            "indices": [
+              57, 
+              80
+            ], 
+            "expanded_url": "http://kca.mundonick.com/votar#cat=Favourite-Female-Singer", 
+            "display_url": "kca.mundonick.com/votar#cat=Favo\u2026"
+          }
+        ], 
+        "media": [
+          {
+            "expanded_url": "http://twitter.com/mayraIsabellaDM/status/707425901110288384/photo/1", 
+            "display_url": "pic.twitter.com/CpJb5RoR8r", 
+            "url": "https://t.co/CpJb5RoR8r", 
+            "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/CdFHZ4NWAAExp9j.jpg", 
+            "id_str": "707425126384533505", 
+            "sizes": {
+              "large": {
+                "h": 418, 
+                "resize": "fit", 
+                "w": 500
+              }, 
+              "small": {
+                "h": 284, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "medium": {
+                "h": 418, 
+                "resize": "fit", 
+                "w": 500
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              87, 
+              110
+            ], 
+            "type": "photo", 
+            "id": 707425126384533505, 
+            "media_url": "http://pbs.twimg.com/tweet_video_thumb/CdFHZ4NWAAExp9j.jpg"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425901110288384", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": false, 
+        "default_profile_image": false, 
+        "id": 4229845821, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/704420395143852032/OykcHqmy_normal.jpg", 
+        "profile_sidebar_fill_color": "000000", 
+        "profile_text_color": "000000", 
+        "followers_count": 157, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "4229845821", 
+        "profile_background_color": "000000", 
+        "listed_count": 1, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": -28800, 
+        "statuses_count": 469, 
+        "description": "@ArianaGrande @TheKaranBrar", 
+        "friends_count": 247, 
+        "location": "Colombia", 
+        "profile_link_color": "981CEB", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/704420395143852032/OykcHqmy_normal.jpg", 
+        "following": null, 
+        "geo_enabled": false, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/4229845821/1457497822", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "\u265bMayra-Isabella\u265b", 
+        "lang": "es", 
+        "profile_background_tile": false, 
+        "favourites_count": 227, 
+        "screen_name": "mayraIsabellaDM", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Thu Nov 19 22:52:38 +0000 2015", 
+        "contributors_enabled": false, 
+        "time_zone": "Pacific Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "es", 
+      "created_at": "Wed Mar 09 04:40:52 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null, 
+      "extended_entities": {
+        "media": [
+          {
+            "expanded_url": "http://twitter.com/mayraIsabellaDM/status/707425901110288384/photo/1", 
+            "display_url": "pic.twitter.com/CpJb5RoR8r", 
+            "url": "https://t.co/CpJb5RoR8r", 
+            "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/CdFHZ4NWAAExp9j.jpg", 
+            "video_info": {
+              "aspect_ratio": [
+                250, 
+                209
+              ], 
+              "variants": [
+                {
+                  "url": "https://pbs.twimg.com/tweet_video/CdFHZ4NWAAExp9j.mp4", 
+                  "bitrate": 0, 
+                  "content_type": "video/mp4"
+                }
+              ]
+            }, 
+            "id_str": "707425126384533505", 
+            "sizes": {
+              "large": {
+                "h": 418, 
+                "resize": "fit", 
+                "w": 500
+              }, 
+              "small": {
+                "h": 284, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "medium": {
+                "h": 418, 
+                "resize": "fit", 
+                "w": 500
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              87, 
+              110
+            ], 
+            "type": "animated_gif", 
+            "id": 707425126384533505, 
+            "media_url": "http://pbs.twimg.com/tweet_video_thumb/CdFHZ4NWAAExp9j.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

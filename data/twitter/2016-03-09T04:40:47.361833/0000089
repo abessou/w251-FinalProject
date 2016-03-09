@@ -1,0 +1,418 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @tayaranrusi: when u ask for a dog but get an emu https://t.co/jSO759MIxi", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425903874154496, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498453478", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 2778441654, 
+            "indices": [
+              3, 
+              15
+            ], 
+            "id_str": "2778441654", 
+            "screen_name": "tayaranrusi", 
+            "name": "sara."
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [], 
+        "media": [
+          {
+            "source_user_id": 2778441654, 
+            "source_status_id_str": "706228057485545472", 
+            "expanded_url": "http://twitter.com/tayaranrusi/status/706228057485545472/video/1", 
+            "display_url": "pic.twitter.com/jSO759MIxi", 
+            "url": "https://t.co/jSO759MIxi", 
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg", 
+            "source_user_id_str": "2778441654", 
+            "source_status_id": 706228057485545472, 
+            "id_str": "706227770402201600", 
+            "sizes": {
+              "small": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 1080, 
+                "resize": "fit", 
+                "w": 608
+              }, 
+              "medium": {
+                "h": 1066, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              53, 
+              76
+            ], 
+            "type": "photo", 
+            "id": 706227770402201600, 
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425903874154496", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "when u ask for a dog but get an emu https://t.co/jSO759MIxi", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": 705783801851543552, 
+        "id": 706228057485545472, 
+        "favorite_count": 35367, 
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [], 
+          "media": [
+            {
+              "expanded_url": "http://twitter.com/tayaranrusi/status/706228057485545472/video/1", 
+              "display_url": "pic.twitter.com/jSO759MIxi", 
+              "url": "https://t.co/jSO759MIxi", 
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg", 
+              "id_str": "706227770402201600", 
+              "sizes": {
+                "small": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 1080, 
+                  "resize": "fit", 
+                  "w": 608
+                }, 
+                "medium": {
+                  "h": 1066, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                36, 
+                59
+              ], 
+              "type": "photo", 
+              "id": 706227770402201600, 
+              "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": "tayaranrusi", 
+        "id_str": "706228057485545472", 
+        "retweet_count": 28785, 
+        "in_reply_to_user_id": 2778441654, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": false, 
+          "default_profile_image": false, 
+          "id": 2778441654, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/706516999673745408/nCjj9B4p_normal.jpg", 
+          "profile_sidebar_fill_color": "000000", 
+          "profile_text_color": "000000", 
+          "followers_count": 2689, 
+          "profile_sidebar_border_color": "000000", 
+          "id_str": "2778441654", 
+          "profile_background_color": "000000", 
+          "listed_count": 13, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+          "utc_offset": 7200, 
+          "statuses_count": 41, 
+          "description": "syrian-lebanese. comedy, parody n stuff. not actually a russian airplane.", 
+          "friends_count": 56, 
+          "location": "Lebanon", 
+          "profile_link_color": "96DAF6", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/706516999673745408/nCjj9B4p_normal.jpg", 
+          "following": null, 
+          "geo_enabled": true, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/2778441654/1456514798", 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+          "name": "sara.", 
+          "lang": "en", 
+          "profile_background_tile": false, 
+          "favourites_count": 3808, 
+          "screen_name": "tayaranrusi", 
+          "notifications": null, 
+          "url": null, 
+          "created_at": "Fri Aug 29 13:28:17 +0000 2014", 
+          "contributors_enabled": false, 
+          "time_zone": "Athens", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": "2778441654", 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Sat Mar 05 21:21:04 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": "705783801851543552", 
+        "place": {
+          "full_name": "Lebanon", 
+          "url": "https://api.twitter.com/1.1/geo/id/583bd538eb3129d1.json", 
+          "country": "\u0644\u0628\u0646\u0627\u0646", 
+          "place_type": "country", 
+          "bounding_box": {
+            "type": "Polygon", 
+            "coordinates": [
+              [
+                [
+                  35.075771, 
+                  33.054742
+                ], 
+                [
+                  35.075771, 
+                  34.691989
+                ], 
+                [
+                  36.623258, 
+                  34.691989
+                ], 
+                [
+                  36.623258, 
+                  33.054742
+                ]
+              ]
+            ]
+          }, 
+          "country_code": "LB", 
+          "attributes": {}, 
+          "id": "583bd538eb3129d1", 
+          "name": "Lebanon"
+        }, 
+        "extended_entities": {
+          "media": [
+            {
+              "expanded_url": "http://twitter.com/tayaranrusi/status/706228057485545472/video/1", 
+              "display_url": "pic.twitter.com/jSO759MIxi", 
+              "url": "https://t.co/jSO759MIxi", 
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg", 
+              "video_info": {
+                "aspect_ratio": [
+                  76, 
+                  135
+                ], 
+                "duration_millis": 30000, 
+                "variants": [
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/360x640/qdjsSqrqbO3TmF5y.mp4", 
+                    "bitrate": 832000, 
+                    "content_type": "video/mp4"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/360x640/qdjsSqrqbO3TmF5y.webm", 
+                    "bitrate": 832000, 
+                    "content_type": "video/webm"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/pl/i0aFqZdZhYDhTG_7.mpd", 
+                    "content_type": "application/dash+xml"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/pl/i0aFqZdZhYDhTG_7.m3u8", 
+                    "content_type": "application/x-mpegURL"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/180x320/2rWQCps6XDu9kDz2.mp4", 
+                    "bitrate": 320000, 
+                    "content_type": "video/mp4"
+                  }
+                ]
+              }, 
+              "id_str": "706227770402201600", 
+              "sizes": {
+                "small": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 1080, 
+                  "resize": "fit", 
+                  "w": 608
+                }, 
+                "medium": {
+                  "h": 1066, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                36, 
+                59
+              ], 
+              "type": "video", 
+              "id": 706227770402201600, 
+              "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg"
+            }
+          ]
+        }
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 3431472433, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/704189835754377217/t_3B5HJ7_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 132, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "3431472433", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 1, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": null, 
+        "statuses_count": 1886, 
+        "description": "Soft hearts electric souls", 
+        "friends_count": 271, 
+        "location": "Houston, TX ", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/704189835754377217/t_3B5HJ7_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/3431472433/1456726898", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "Mariana Gonzalez", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 5128, 
+        "screen_name": "MaryDownpour", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Thu Sep 03 00:47:36 +0000 2015", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:53 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null, 
+      "extended_entities": {
+        "media": [
+          {
+            "source_user_id": 2778441654, 
+            "source_status_id_str": "706228057485545472", 
+            "expanded_url": "http://twitter.com/tayaranrusi/status/706228057485545472/video/1", 
+            "display_url": "pic.twitter.com/jSO759MIxi", 
+            "url": "https://t.co/jSO759MIxi", 
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg", 
+            "source_user_id_str": "2778441654", 
+            "source_status_id": 706228057485545472, 
+            "video_info": {
+              "aspect_ratio": [
+                76, 
+                135
+              ], 
+              "duration_millis": 30000, 
+              "variants": [
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/360x640/qdjsSqrqbO3TmF5y.mp4", 
+                  "bitrate": 832000, 
+                  "content_type": "video/mp4"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/360x640/qdjsSqrqbO3TmF5y.webm", 
+                  "bitrate": 832000, 
+                  "content_type": "video/webm"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/pl/i0aFqZdZhYDhTG_7.mpd", 
+                  "content_type": "application/dash+xml"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/pl/i0aFqZdZhYDhTG_7.m3u8", 
+                  "content_type": "application/x-mpegURL"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/180x320/2rWQCps6XDu9kDz2.mp4", 
+                  "bitrate": 320000, 
+                  "content_type": "video/mp4"
+                }
+              ]
+            }, 
+            "id_str": "706227770402201600", 
+            "sizes": {
+              "small": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 1080, 
+                "resize": "fit", 
+                "w": 608
+              }, 
+              "medium": {
+                "h": 1066, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              53, 
+              76
+            ], 
+            "type": "video", 
+            "id": 706227770402201600, 
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

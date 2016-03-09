@@ -1,0 +1,97 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Gostei de um v\u00eddeo @YouTube https://t.co/okLbLhqpPd HOURS of Best Gaming Music Mix 2016 | Dubstep, EDM, Trap", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425894693007360, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://www.google.com/\" rel=\"nofollow\">Google</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451289", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 10228272, 
+            "indices": [
+              19, 
+              27
+            ], 
+            "id_str": "10228272", 
+            "screen_name": "YouTube", 
+            "name": "YouTube"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [
+          {
+            "url": "https://t.co/okLbLhqpPd", 
+            "indices": [
+              28, 
+              51
+            ], 
+            "expanded_url": "http://youtu.be/vClTlase2cs?a3", 
+            "display_url": "youtu.be/vClTlase2cs?a3"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425894693007360", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 211204813, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/695441924442841088/zBurIq5-_normal.jpg", 
+        "profile_sidebar_fill_color": "CFE5FF", 
+        "profile_text_color": "220091", 
+        "followers_count": 161, 
+        "profile_sidebar_border_color": "FFFFFF", 
+        "id_str": "211204813", 
+        "profile_background_color": "000203", 
+        "listed_count": 1, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/695422833061556226/vtg3Qlav.jpg", 
+        "utc_offset": -10800, 
+        "statuses_count": 3995, 
+        "description": "Universit\u00e1rio quase sempre, Legal quase nunca e muito Sedent\u00e1rio. Escritor de vez em quando.", 
+        "friends_count": 205, 
+        "location": "Brazil", 
+        "profile_link_color": "FFDE88", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/695441924442841088/zBurIq5-_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/211204813/1454637052", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/695422833061556226/vtg3Qlav.jpg", 
+        "name": "Sdds criatividade", 
+        "lang": "pt", 
+        "profile_background_tile": true, 
+        "favourites_count": 162, 
+        "screen_name": "jonathanpantus", 
+        "notifications": null, 
+        "url": "http://historiassemmais.blogspot.com.br/", 
+        "created_at": "Tue Nov 02 16:28:49 +0000 2010", 
+        "contributors_enabled": false, 
+        "time_zone": "Brasilia", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "pt", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

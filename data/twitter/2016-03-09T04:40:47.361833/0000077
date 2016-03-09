@@ -1,0 +1,96 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "@CuteOverloads @haleyranee11 this is totally you as a dog asking me to do something for you\ud83d\ude02", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": 707395230509703168, 
+      "id": 707425901965942785, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498453023", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 70009161, 
+            "indices": [
+              0, 
+              14
+            ], 
+            "id_str": "70009161", 
+            "screen_name": "CuteOverloads", 
+            "name": "Cute Overloads"
+          }, 
+          {
+            "id": 2685406599, 
+            "indices": [
+              15, 
+              28
+            ], 
+            "id_str": "2685406599", 
+            "screen_name": "haleyranee11", 
+            "name": "Haley Karr"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": []
+      }, 
+      "in_reply_to_screen_name": "CuteOverloads", 
+      "id_str": "707425901965942785", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": 70009161, 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 750435356, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/703113617810415616/pxDxbz-q_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 123, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "750435356", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 0, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": null, 
+        "statuses_count": 1197, 
+        "description": null, 
+        "friends_count": 201, 
+        "location": null, 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/703113617810415616/pxDxbz-q_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/750435356/1422932215", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "Cole Arkenau", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 1110, 
+        "screen_name": "Cole_arkenau", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Sat Aug 11 01:53:18 +0000 2012", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": "70009161", 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:53 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": "707395230509703168", 
+      "place": null
+    }
+  }
+]

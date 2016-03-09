@@ -1,0 +1,178 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @Hetare_Takumu: https://t.co/IRK54q8lxP\n\n\u3053\u3063\u3061\u3067\u76f4\u63a5\u898b\u305f\u307b\u3046\u304c\u9ad8\u753b\u8cea\u3067\u3059", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425895657517057, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451519", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 2880660390, 
+            "indices": [
+              3, 
+              17
+            ], 
+            "id_str": "2880660390", 
+            "screen_name": "Hetare_Takumu", 
+            "name": "\u3078\u305f\u308c"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [
+          {
+            "url": "https://t.co/IRK54q8lxP", 
+            "indices": [
+              19, 
+              42
+            ], 
+            "expanded_url": "http://himawari8-dl.nict.go.jp/himawari8/movie/480/20160309_pifd.mp4?uid=1457491014397", 
+            "display_url": "himawari8-dl.nict.go.jp/himawari8/movi\u2026"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425895657517057", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "https://t.co/IRK54q8lxP\n\n\u3053\u3063\u3061\u3067\u76f4\u63a5\u898b\u305f\u307b\u3046\u304c\u9ad8\u753b\u8cea\u3067\u3059", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": 707395214202118144, 
+        "id": 707395405898616832, 
+        "favorite_count": 2, 
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [
+            {
+              "url": "https://t.co/IRK54q8lxP", 
+              "indices": [
+                0, 
+                23
+              ], 
+              "expanded_url": "http://himawari8-dl.nict.go.jp/himawari8/movie/480/20160309_pifd.mp4?uid=1457491014397", 
+              "display_url": "himawari8-dl.nict.go.jp/himawari8/movi\u2026"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": "Hetare_Takumu", 
+        "id_str": "707395405898616832", 
+        "retweet_count": 4, 
+        "in_reply_to_user_id": 2880660390, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 2880660390, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/559682265727246337/ZiwD2F7Y_normal.jpeg", 
+          "profile_sidebar_fill_color": "DDEEF6", 
+          "profile_text_color": "333333", 
+          "followers_count": 2030, 
+          "profile_sidebar_border_color": "C0DEED", 
+          "id_str": "2880660390", 
+          "profile_background_color": "C0DEED", 
+          "listed_count": 60, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+          "utc_offset": 32400, 
+          "statuses_count": 38732, 
+          "description": "\u666e\u901a\u306e\u4eba\u3067\u306f\u8010\u3048\u3089\u308c\u306a\u3044\u3088\u3046\u306a\u6fc0\u3057\u3044\u30b9\u30c8\u30ec\u30b9\u306b\u5bfe\u3057\u3066\u5f37\u3044\u8010\u6027\u3092\u6301\u3063\u3066\u3044\u308b", 
+          "friends_count": 1137, 
+          "location": null, 
+          "profile_link_color": "0084B4", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/559682265727246337/ZiwD2F7Y_normal.jpeg", 
+          "following": null, 
+          "geo_enabled": true, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/2880660390/1424447416", 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+          "name": "\u3078\u305f\u308c", 
+          "lang": "ja", 
+          "profile_background_tile": false, 
+          "favourites_count": 26071, 
+          "screen_name": "Hetare_Takumu", 
+          "notifications": null, 
+          "url": null, 
+          "created_at": "Tue Oct 28 11:47:39 +0000 2014", 
+          "contributors_enabled": false, 
+          "time_zone": "Tokyo", 
+          "protected": false, 
+          "default_profile": true, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": "2880660390", 
+        "possibly_sensitive": false, 
+        "lang": "ja", 
+        "created_at": "Wed Mar 09 02:39:42 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": "707395214202118144", 
+        "place": null
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": false, 
+        "default_profile_image": false, 
+        "id": 1349533339, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/698017625377353731/RXBZIoeF_normal.jpg", 
+        "profile_sidebar_fill_color": "000000", 
+        "profile_text_color": "000000", 
+        "followers_count": 299, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "1349533339", 
+        "profile_background_color": "000000", 
+        "listed_count": 12, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": 32400, 
+        "statuses_count": 16944, 
+        "description": "\u751f\u304d\u7269\u3068\u30e2\u30f3\u5a18\u3068\u30c8\u30e9\u30f3\u30b9\u30d5\u30a9\u30fc\u30de\u30fc\uff08\u5b9f\u5199\u30fb\u521d\u4ee3\u30fb2010\uff09\u3068\u30cb\u30f3\u30b8\u30e3\u30b9\u30ec\u30a4\u30e4\u30fc\u3092\u611b\u597d\u3057\u307e\u3059\u30db\u3002\u30b3\u30fc\u30f3\u30b9\u30cd\u30fc\u30af\u3068\u30bb\u30a4\u30d6\u30b7\u30b7\u30d0\u30ca\u30d8\u30d3\u3068\u30c7\u30d6\u30cf\u30e0\u30b9\u30bf\u30fc\u3092\u98fc\u80b2\u3057\u3066\u3044\u307e\u3059\u30db\u3002", 
+        "friends_count": 537, 
+        "location": null, 
+        "profile_link_color": "914C35", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/698017625377353731/RXBZIoeF_normal.jpg", 
+        "following": null, 
+        "geo_enabled": false, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1349533339/1420971635", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "PEL205\u30ea\u30e9", 
+        "lang": "ja", 
+        "profile_background_tile": false, 
+        "favourites_count": 3641, 
+        "screen_name": "PEL205", 
+        "notifications": null, 
+        "url": "http://www.pixiv.net/member.php?id=666986", 
+        "created_at": "Sat Apr 13 15:33:04 +0000 2013", 
+        "contributors_enabled": false, 
+        "time_zone": "Tokyo", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "ja", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

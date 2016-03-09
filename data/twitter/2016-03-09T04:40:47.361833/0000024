@@ -1,0 +1,232 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @EWTimStack: Real talk: Tonight's @ACSFX is a tour de force from @MsSarahPaulson &amp; director @MrRPMurphy. And there's a Seal music cue. #\u2026", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425894483173376, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451239", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 309214641, 
+            "indices": [
+              3, 
+              14
+            ], 
+            "id_str": "309214641", 
+            "screen_name": "EWTimStack", 
+            "name": "Tim Stack"
+          }, 
+          {
+            "id": 2966965225, 
+            "indices": [
+              37, 
+              43
+            ], 
+            "id_str": "2966965225", 
+            "screen_name": "ACSFX", 
+            "name": "AmericanCrimeStoryFX"
+          }, 
+          {
+            "id": 602993818, 
+            "indices": [
+              68, 
+              83
+            ], 
+            "id_str": "602993818", 
+            "screen_name": "MsSarahPaulson", 
+            "name": "Sarah Paulson"
+          }, 
+          {
+            "id": 475212144, 
+            "indices": [
+              99, 
+              110
+            ], 
+            "id_str": "475212144", 
+            "screen_name": "MrRPMurphy", 
+            "name": "Ryan Murphy"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [
+          {
+            "indices": [
+              143, 
+              144
+            ], 
+            "text": "PeopleVOJSimpson"
+          }
+        ], 
+        "urls": []
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425894483173376", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "Real talk: Tonight's @ACSFX is a tour de force from @MsSarahPaulson &amp; director @MrRPMurphy. And there's a Seal music cue. #PeopleVOJSimpson", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 707280684713431040, 
+        "favorite_count": 32, 
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [
+            {
+              "id": 2966965225, 
+              "indices": [
+                21, 
+                27
+              ], 
+              "id_str": "2966965225", 
+              "screen_name": "ACSFX", 
+              "name": "AmericanCrimeStoryFX"
+            }, 
+            {
+              "id": 602993818, 
+              "indices": [
+                52, 
+                67
+              ], 
+              "id_str": "602993818", 
+              "screen_name": "MsSarahPaulson", 
+              "name": "Sarah Paulson"
+            }, 
+            {
+              "id": 475212144, 
+              "indices": [
+                83, 
+                94
+              ], 
+              "id_str": "475212144", 
+              "screen_name": "MrRPMurphy", 
+              "name": "Ryan Murphy"
+            }
+          ], 
+          "symbols": [], 
+          "hashtags": [
+            {
+              "indices": [
+                126, 
+                143
+              ], 
+              "text": "PeopleVOJSimpson"
+            }
+          ], 
+          "urls": []
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "707280684713431040", 
+        "retweet_count": 15, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 309214641, 
+          "verified": true, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1377811677/Picture_1_normal.png", 
+          "profile_sidebar_fill_color": "7AC3EE", 
+          "profile_text_color": "3D1957", 
+          "followers_count": 13096, 
+          "profile_sidebar_border_color": "65B0DA", 
+          "id_str": "309214641", 
+          "profile_background_color": "642D8B", 
+          "listed_count": 197, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme10/bg.gif", 
+          "utc_offset": -18000, 
+          "statuses_count": 8968, 
+          "description": "EW writer who followed the Glee kids around like they were the Grateful Dead.", 
+          "friends_count": 1504, 
+          "location": "New York", 
+          "profile_link_color": "FF0000", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1377811677/Picture_1_normal.png", 
+          "following": null, 
+          "geo_enabled": true, 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme10/bg.gif", 
+          "name": "Tim Stack", 
+          "lang": "en", 
+          "profile_background_tile": true, 
+          "favourites_count": 153, 
+          "screen_name": "EWTimStack", 
+          "notifications": null, 
+          "url": "http://ew.com", 
+          "created_at": "Wed Jun 01 18:37:25 +0000 2011", 
+          "contributors_enabled": false, 
+          "time_zone": "Quito", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "lang": "en", 
+        "created_at": "Tue Mar 08 19:03:50 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 2778532444, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/702283928913240064/wGdi1fw2_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 1529, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "2778532444", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 79, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": null, 
+        "statuses_count": 80285, 
+        "description": "SPOILERS~TV &Twitter Addict~Hannigram Trash\n#Hannibal #ScreamQueens #Bates #AHS #ACS #OGs #Greys #Scandal #OITNB #OrphanBlack #TWD #TVD #Wentworth #Shameless", 
+        "friends_count": 2234, 
+        "location": "New Jersey, USA", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/702283928913240064/wGdi1fw2_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2778532444/1456272510", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "#BlessedByTheTVGods", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 69094, 
+        "screen_name": "TVObsesssed", 
+        "notifications": null, 
+        "url": "http://www.tvobsesssed.tumblr.com", 
+        "created_at": "Sun Sep 21 03:08:49 +0000 2014", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

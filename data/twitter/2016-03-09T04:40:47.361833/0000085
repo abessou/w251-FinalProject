@@ -1,0 +1,339 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @Fatt_Stacks: Future made y'all pop pills while he been drinkin asparagus water &amp; eating gluten free chicken strips the whole time https\u2026", 
+      "is_quote_status": true, 
+      "in_reply_to_status_id": null, 
+      "id": 707425903056281600, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498453283", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 278585559, 
+            "indices": [
+              3, 
+              15
+            ], 
+            "id_str": "278585559", 
+            "screen_name": "Fatt_Stacks", 
+            "name": "Kegel Queen"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [
+          {
+            "url": "https://t.co/bX6BwOhvKt", 
+            "indices": [
+              143, 
+              144
+            ], 
+            "expanded_url": "https://twitter.com/watchLOUD/status/688179890714099713", 
+            "display_url": "twitter.com/watchLOUD/stat\u2026"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425903056281600", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "Future made y'all pop pills while he been drinkin asparagus water &amp; eating gluten free chicken strips the whole time https://t.co/bX6BwOhvKt", 
+        "is_quote_status": true, 
+        "in_reply_to_status_id": null, 
+        "id": 688196043364642816, 
+        "favorite_count": 33466, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [
+            {
+              "url": "https://t.co/bX6BwOhvKt", 
+              "indices": [
+                121, 
+                144
+              ], 
+              "expanded_url": "https://twitter.com/watchLOUD/status/688179890714099713", 
+              "display_url": "twitter.com/watchLOUD/stat\u2026"
+            }
+          ]
+        }, 
+        "quoted_status_id": 688179890714099713, 
+        "retweeted": false, 
+        "coordinates": null, 
+        "quoted_status": {
+          "contributors": null, 
+          "truncated": false, 
+          "text": "Future admits he's not a drug addict and just portrays a certain image in his music https://t.co/DToOhSWDlx https://t.co/hltHLZXF42", 
+          "is_quote_status": false, 
+          "in_reply_to_status_id": null, 
+          "id": 688179890714099713, 
+          "favorite_count": 0, 
+          "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>", 
+          "retweeted": false, 
+          "coordinates": null, 
+          "entities": {
+            "user_mentions": [], 
+            "symbols": [], 
+            "hashtags": [], 
+            "urls": [
+              {
+                "url": "https://t.co/DToOhSWDlx", 
+                "indices": [
+                  84, 
+                  107
+                ], 
+                "expanded_url": "http://bit.ly/NotAnAddict", 
+                "display_url": "bit.ly/NotAnAddict"
+              }
+            ], 
+            "media": [
+              {
+                "expanded_url": "http://twitter.com/watchLOUD/status/688179890714099713/photo/1", 
+                "display_url": "pic.twitter.com/hltHLZXF42", 
+                "url": "https://t.co/hltHLZXF42", 
+                "media_url_https": "https://pbs.twimg.com/media/CYyoXl5UkAAXQyO.png", 
+                "id_str": "688109966343835648", 
+                "sizes": {
+                  "small": {
+                    "h": 204, 
+                    "resize": "fit", 
+                    "w": 340
+                  }, 
+                  "large": {
+                    "h": 360, 
+                    "resize": "fit", 
+                    "w": 600
+                  }, 
+                  "medium": {
+                    "h": 360, 
+                    "resize": "fit", 
+                    "w": 600
+                  }, 
+                  "thumb": {
+                    "h": 150, 
+                    "resize": "crop", 
+                    "w": 150
+                  }
+                }, 
+                "indices": [
+                  108, 
+                  131
+                ], 
+                "type": "photo", 
+                "id": 688109966343835648, 
+                "media_url": "http://pbs.twimg.com/media/CYyoXl5UkAAXQyO.png"
+              }
+            ]
+          }, 
+          "in_reply_to_screen_name": null, 
+          "id_str": "688179890714099713", 
+          "retweet_count": 0, 
+          "in_reply_to_user_id": null, 
+          "favorited": false, 
+          "user": {
+            "follow_request_sent": null, 
+            "profile_use_background_image": true, 
+            "default_profile_image": false, 
+            "id": 518916352, 
+            "verified": false, 
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/523675642504970240/PseRypAZ_normal.jpeg", 
+            "profile_sidebar_fill_color": "EFEFEF", 
+            "profile_text_color": "333333", 
+            "followers_count": 11468, 
+            "profile_sidebar_border_color": "EEEEEE", 
+            "id_str": "518916352", 
+            "profile_background_color": "131516", 
+            "listed_count": 143, 
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif", 
+            "utc_offset": -25200, 
+            "statuses_count": 28549, 
+            "description": "Smart Writing. Breaking News. The Best Music.", 
+            "friends_count": 3404, 
+            "location": "212 to Your City", 
+            "profile_link_color": "009999", 
+            "profile_image_url": "http://pbs.twimg.com/profile_images/523675642504970240/PseRypAZ_normal.jpeg", 
+            "following": null, 
+            "geo_enabled": false, 
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/518916352/1439056507", 
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif", 
+            "name": "watchLOUD", 
+            "lang": "en", 
+            "profile_background_tile": true, 
+            "favourites_count": 14763, 
+            "screen_name": "watchLOUD", 
+            "notifications": null, 
+            "url": "http://watchLOUD.com", 
+            "created_at": "Thu Mar 08 21:54:55 +0000 2012", 
+            "contributors_enabled": false, 
+            "time_zone": "Arizona", 
+            "protected": false, 
+            "default_profile": false, 
+            "is_translator": false
+          }, 
+          "geo": null, 
+          "in_reply_to_user_id_str": null, 
+          "possibly_sensitive": false, 
+          "lang": "en", 
+          "created_at": "Sat Jan 16 02:04:06 +0000 2016", 
+          "filter_level": "low", 
+          "in_reply_to_status_id_str": null, 
+          "place": null, 
+          "extended_entities": {
+            "media": [
+              {
+                "expanded_url": "http://twitter.com/watchLOUD/status/688179890714099713/photo/1", 
+                "display_url": "pic.twitter.com/hltHLZXF42", 
+                "url": "https://t.co/hltHLZXF42", 
+                "media_url_https": "https://pbs.twimg.com/media/CYyoXl5UkAAXQyO.png", 
+                "id_str": "688109966343835648", 
+                "sizes": {
+                  "small": {
+                    "h": 204, 
+                    "resize": "fit", 
+                    "w": 340
+                  }, 
+                  "large": {
+                    "h": 360, 
+                    "resize": "fit", 
+                    "w": 600
+                  }, 
+                  "medium": {
+                    "h": 360, 
+                    "resize": "fit", 
+                    "w": 600
+                  }, 
+                  "thumb": {
+                    "h": 150, 
+                    "resize": "crop", 
+                    "w": 150
+                  }
+                }, 
+                "indices": [
+                  108, 
+                  131
+                ], 
+                "type": "photo", 
+                "id": 688109966343835648, 
+                "media_url": "http://pbs.twimg.com/media/CYyoXl5UkAAXQyO.png"
+              }
+            ]
+          }
+        }, 
+        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+        "in_reply_to_screen_name": null, 
+        "id_str": "688196043364642816", 
+        "retweet_count": 42799, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 278585559, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/705449418271678464/3VcMlVYI_normal.jpg", 
+          "profile_sidebar_fill_color": "F6FFD1", 
+          "profile_text_color": "333333", 
+          "followers_count": 10987, 
+          "profile_sidebar_border_color": "FFF8AD", 
+          "id_str": "278585559", 
+          "profile_background_color": "FFF04D", 
+          "listed_count": 207, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme19/bg.gif", 
+          "utc_offset": -25200, 
+          "statuses_count": 278899, 
+          "description": "Self-absorbed and unprofessional.", 
+          "friends_count": 648, 
+          "location": "Queens \u2708\u2708\u2708 Brooklyn", 
+          "profile_link_color": "0099CC", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/705449418271678464/3VcMlVYI_normal.jpg", 
+          "following": null, 
+          "geo_enabled": true, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/278585559/1452988933", 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme19/bg.gif", 
+          "name": "Kegel Queen", 
+          "lang": "en", 
+          "profile_background_tile": false, 
+          "favourites_count": 613, 
+          "screen_name": "Fatt_Stacks", 
+          "notifications": null, 
+          "url": "http://instagram.com/extremecuddling", 
+          "created_at": "Thu Apr 07 15:23:05 +0000 2011", 
+          "contributors_enabled": false, 
+          "time_zone": "Arizona", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Sat Jan 16 03:08:17 +0000 2016", 
+        "quoted_status_id_str": "688179890714099713", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 796917362, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/683521432203071489/GTfes42i_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 525, 
+        "profile_sidebar_border_color": "FFFFFF", 
+        "id_str": "796917362", 
+        "profile_background_color": "EDECE9", 
+        "listed_count": 9, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/378800000083648302/f93652aefdffc3b45641c193e610c147.jpeg", 
+        "utc_offset": -18000, 
+        "statuses_count": 35090, 
+        "description": null, 
+        "friends_count": 115, 
+        "location": null, 
+        "profile_link_color": "088253", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/683521432203071489/GTfes42i_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/796917362/1420945660", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/378800000083648302/f93652aefdffc3b45641c193e610c147.jpeg", 
+        "name": "mxtiIda", 
+        "lang": "en", 
+        "profile_background_tile": true, 
+        "favourites_count": 65706, 
+        "screen_name": "mxtiIda", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Sat Sep 01 21:33:10 +0000 2012", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:53 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @26bave: My MYX Music Awards 2016 Favorite Artist is Sarah Geronimo. Vote now! https://t.co/MH0DhtPli4", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425896580272128, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451739", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 254202572, 
+            "indices": [
+              3, 
+              10
+            ], 
+            "id_str": "254202572", 
+            "screen_name": "26bave", 
+            "name": "Be Tough"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [
+          {
+            "url": "https://t.co/MH0DhtPli4", 
+            "indices": [
+              82, 
+              105
+            ], 
+            "expanded_url": "http://ln.is/myxph.com/ixtI2", 
+            "display_url": "ln.is/myxph.com/ixtI2"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425896580272128", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "My MYX Music Awards 2016 Favorite Artist is Sarah Geronimo. Vote now! https://t.co/MH0DhtPli4", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 707423195327012864, 
+        "favorite_count": 0, 
+        "source": "<a href=\"http://linkis.com\" rel=\"nofollow\">Linkis.com</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [
+            {
+              "url": "https://t.co/MH0DhtPli4", 
+              "indices": [
+                70, 
+                93
+              ], 
+              "expanded_url": "http://ln.is/myxph.com/ixtI2", 
+              "display_url": "ln.is/myxph.com/ixtI2"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "707423195327012864", 
+        "retweet_count": 2, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 254202572, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/656160901251264512/znmoAMvq_normal.jpg", 
+          "profile_sidebar_fill_color": "DDEEF6", 
+          "profile_text_color": "333333", 
+          "followers_count": 5390, 
+          "profile_sidebar_border_color": "C0DEED", 
+          "id_str": "254202572", 
+          "profile_background_color": "C0DEED", 
+          "listed_count": 40, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+          "utc_offset": null, 
+          "statuses_count": 110107, 
+          "description": "I'm only responsible for what I tweet, Not for what you understand. (I do not own photos,videos/audio that are posted here, for entertainment purposes only)", 
+          "friends_count": 702, 
+          "location": null, 
+          "profile_link_color": "0084B4", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/656160901251264512/znmoAMvq_normal.jpg", 
+          "following": null, 
+          "geo_enabled": false, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/254202572/1456551305", 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+          "name": "Be Tough", 
+          "lang": "en", 
+          "profile_background_tile": false, 
+          "favourites_count": 6225, 
+          "screen_name": "26bave", 
+          "notifications": null, 
+          "url": null, 
+          "created_at": "Fri Feb 18 20:36:26 +0000 2011", 
+          "contributors_enabled": false, 
+          "time_zone": null, 
+          "protected": false, 
+          "default_profile": true, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Wed Mar 09 04:30:07 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 328532759, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/706714264250089473/-lC3ErSm_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 212, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "328532759", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 7, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": -25200, 
+        "statuses_count": 17781, 
+        "description": "kung san ka masaya dun ako maligaya", 
+        "friends_count": 61, 
+        "location": "\u2665NPA\u2665", 
+        "profile_link_color": "9266CC", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/706714264250089473/-lC3ErSm_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/328532759/1453643556", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "Let'sVoteForKath", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 5355, 
+        "screen_name": "gigi4short", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Sun Jul 03 15:16:25 +0000 2011", 
+        "contributors_enabled": false, 
+        "time_zone": "Arizona", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

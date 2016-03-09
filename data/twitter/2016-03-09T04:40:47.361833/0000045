@@ -1,0 +1,409 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @DeJayAMI: New Music Recommended By @DeJayAMI @dejayami2000  https://t.co/ypybevgd5D", 
+      "is_quote_status": true, 
+      "in_reply_to_status_id": null, 
+      "id": 707425896936968193, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451824", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 219755446, 
+            "indices": [
+              3, 
+              12
+            ], 
+            "id_str": "219755446", 
+            "screen_name": "DeJayAMI", 
+            "name": "D-MoN"
+          }, 
+          {
+            "id": 219755446, 
+            "indices": [
+              39, 
+              48
+            ], 
+            "id_str": "219755446", 
+            "screen_name": "DeJayAMI", 
+            "name": "D-MoN"
+          }, 
+          {
+            "id": 4374766032, 
+            "indices": [
+              49, 
+              62
+            ], 
+            "id_str": "4374766032", 
+            "screen_name": "dejayami2000", 
+            "name": "Duncan DMoN Monaghan"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [
+          {
+            "url": "https://t.co/ypybevgd5D", 
+            "indices": [
+              64, 
+              87
+            ], 
+            "expanded_url": "https://twitter.com/DefJamRecords/status/702959545958735872", 
+            "display_url": "twitter.com/DefJamRecords/\u2026"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425896936968193", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "New Music Recommended By @DeJayAMI @dejayami2000  https://t.co/ypybevgd5D", 
+        "is_quote_status": true, 
+        "in_reply_to_status_id": null, 
+        "id": 703092471056609280, 
+        "favorite_count": 2, 
+        "entities": {
+          "user_mentions": [
+            {
+              "id": 219755446, 
+              "indices": [
+                25, 
+                34
+              ], 
+              "id_str": "219755446", 
+              "screen_name": "DeJayAMI", 
+              "name": "D-MoN"
+            }, 
+            {
+              "id": 4374766032, 
+              "indices": [
+                35, 
+                48
+              ], 
+              "id_str": "4374766032", 
+              "screen_name": "dejayami2000", 
+              "name": "Duncan DMoN Monaghan"
+            }
+          ], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [
+            {
+              "url": "https://t.co/ypybevgd5D", 
+              "indices": [
+                50, 
+                73
+              ], 
+              "expanded_url": "https://twitter.com/DefJamRecords/status/702959545958735872", 
+              "display_url": "twitter.com/DefJamRecords/\u2026"
+            }
+          ]
+        }, 
+        "quoted_status_id": 702959545958735872, 
+        "retweeted": false, 
+        "coordinates": null, 
+        "quoted_status": {
+          "contributors": null, 
+          "truncated": false, 
+          "text": "Blinded by love and all of the above...#OddFuture by @jahkoy streaming now on @SpotifyUSA: https://t.co/fZZsCrkUsx https://t.co/CI3QPVCOaN", 
+          "is_quote_status": false, 
+          "in_reply_to_status_id": null, 
+          "id": 702959545958735872, 
+          "favorite_count": 0, 
+          "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+          "retweeted": false, 
+          "coordinates": null, 
+          "entities": {
+            "user_mentions": [
+              {
+                "id": 516394300, 
+                "indices": [
+                  53, 
+                  60
+                ], 
+                "id_str": "516394300", 
+                "screen_name": "jahkoy", 
+                "name": "JAHK\u014cY"
+              }, 
+              {
+                "id": 213687893, 
+                "indices": [
+                  78, 
+                  89
+                ], 
+                "id_str": "213687893", 
+                "screen_name": "SpotifyUSA", 
+                "name": "Spotify USA"
+              }
+            ], 
+            "symbols": [], 
+            "hashtags": [
+              {
+                "indices": [
+                  39, 
+                  49
+                ], 
+                "text": "OddFuture"
+              }
+            ], 
+            "urls": [
+              {
+                "url": "https://t.co/fZZsCrkUsx", 
+                "indices": [
+                  91, 
+                  114
+                ], 
+                "expanded_url": "http://smarturl.it/sJahkoyOddFuture", 
+                "display_url": "smarturl.it/sJahkoyOddFutu\u2026"
+              }
+            ], 
+            "media": [
+              {
+                "expanded_url": "http://twitter.com/DefJamRecords/status/702959545958735872/photo/1", 
+                "display_url": "pic.twitter.com/CI3QPVCOaN", 
+                "url": "https://t.co/CI3QPVCOaN", 
+                "media_url_https": "https://pbs.twimg.com/media/CcFp-xCWwAAgV_I.jpg", 
+                "id_str": "702959543882530816", 
+                "sizes": {
+                  "small": {
+                    "h": 680, 
+                    "resize": "fit", 
+                    "w": 680
+                  }, 
+                  "large": {
+                    "h": 2048, 
+                    "resize": "fit", 
+                    "w": 2048
+                  }, 
+                  "medium": {
+                    "h": 1200, 
+                    "resize": "fit", 
+                    "w": 1200
+                  }, 
+                  "thumb": {
+                    "h": 150, 
+                    "resize": "crop", 
+                    "w": 150
+                  }
+                }, 
+                "indices": [
+                  115, 
+                  138
+                ], 
+                "type": "photo", 
+                "id": 702959543882530816, 
+                "media_url": "http://pbs.twimg.com/media/CcFp-xCWwAAgV_I.jpg"
+              }
+            ]
+          }, 
+          "in_reply_to_screen_name": null, 
+          "id_str": "702959545958735872", 
+          "retweet_count": 0, 
+          "in_reply_to_user_id": null, 
+          "favorited": false, 
+          "user": {
+            "follow_request_sent": null, 
+            "profile_use_background_image": true, 
+            "default_profile_image": false, 
+            "id": 22085184, 
+            "verified": true, 
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/661190188396343296/VnMqmGTY_normal.png", 
+            "profile_sidebar_fill_color": "F3F3F3", 
+            "profile_text_color": "333333", 
+            "followers_count": 822985, 
+            "profile_sidebar_border_color": "000000", 
+            "id_str": "22085184", 
+            "profile_background_color": "990000", 
+            "listed_count": 6660, 
+            "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/550443024799395840/djxFDUMa.png", 
+            "utc_offset": -18000, 
+            "statuses_count": 62406, 
+            "description": "Def Jam Recordings. Respecting DJs Since 1984.", 
+            "friends_count": 190572, 
+            "location": "New York", 
+            "profile_link_color": "990000", 
+            "profile_image_url": "http://pbs.twimg.com/profile_images/661190188396343296/VnMqmGTY_normal.png", 
+            "following": null, 
+            "geo_enabled": true, 
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/22085184/1447471782", 
+            "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/550443024799395840/djxFDUMa.png", 
+            "name": "Def Jam Recordings", 
+            "lang": "en", 
+            "profile_background_tile": true, 
+            "favourites_count": 3240, 
+            "screen_name": "DefJamRecords", 
+            "notifications": null, 
+            "url": "http://www.defjam.com", 
+            "created_at": "Fri Feb 27 00:26:15 +0000 2009", 
+            "contributors_enabled": false, 
+            "time_zone": "Eastern Time (US & Canada)", 
+            "protected": false, 
+            "default_profile": false, 
+            "is_translator": false
+          }, 
+          "geo": null, 
+          "in_reply_to_user_id_str": null, 
+          "possibly_sensitive": false, 
+          "lang": "en", 
+          "created_at": "Thu Feb 25 20:53:10 +0000 2016", 
+          "filter_level": "low", 
+          "in_reply_to_status_id_str": null, 
+          "place": null, 
+          "extended_entities": {
+            "media": [
+              {
+                "expanded_url": "http://twitter.com/DefJamRecords/status/702959545958735872/photo/1", 
+                "display_url": "pic.twitter.com/CI3QPVCOaN", 
+                "url": "https://t.co/CI3QPVCOaN", 
+                "media_url_https": "https://pbs.twimg.com/media/CcFp-xCWwAAgV_I.jpg", 
+                "id_str": "702959543882530816", 
+                "sizes": {
+                  "small": {
+                    "h": 680, 
+                    "resize": "fit", 
+                    "w": 680
+                  }, 
+                  "large": {
+                    "h": 2048, 
+                    "resize": "fit", 
+                    "w": 2048
+                  }, 
+                  "medium": {
+                    "h": 1200, 
+                    "resize": "fit", 
+                    "w": 1200
+                  }, 
+                  "thumb": {
+                    "h": 150, 
+                    "resize": "crop", 
+                    "w": 150
+                  }
+                }, 
+                "indices": [
+                  115, 
+                  138
+                ], 
+                "type": "photo", 
+                "id": 702959543882530816, 
+                "media_url": "http://pbs.twimg.com/media/CcFp-xCWwAAgV_I.jpg"
+              }
+            ]
+          }
+        }, 
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+        "in_reply_to_screen_name": null, 
+        "id_str": "703092471056609280", 
+        "retweet_count": 1, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 219755446, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1256927060/urtuytu_normal.jpg", 
+          "profile_sidebar_fill_color": "DADBD2", 
+          "profile_text_color": "0D0908", 
+          "followers_count": 779, 
+          "profile_sidebar_border_color": "0D0D0C", 
+          "id_str": "219755446", 
+          "profile_background_color": "E5E6E3", 
+          "listed_count": 6, 
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/210740337/335-53771685_5.jpg", 
+          "utc_offset": 36000, 
+          "statuses_count": 5601, 
+          "description": "YoungSon Music Maker adds  Everything  In the world of  Hip Hop , Artz To GLitz & Glamour.....Anything from Burberry 2 Polo Boss LAMB 2 Baby Milo.", 
+          "friends_count": 2254, 
+          "location": "  Australia", 
+          "profile_link_color": "293C6E", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1256927060/urtuytu_normal.jpg", 
+          "following": null, 
+          "geo_enabled": true, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/219755446/1402124204", 
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/210740337/335-53771685_5.jpg", 
+          "name": "D-MoN", 
+          "lang": "en", 
+          "profile_background_tile": true, 
+          "favourites_count": 940, 
+          "screen_name": "DeJayAMI", 
+          "notifications": null, 
+          "url": "https://www.amazon.com/gp/product/B01B22YHVW?ie=UTF8&redirect=true", 
+          "created_at": "Thu Nov 25 19:47:35 +0000 2010", 
+          "contributors_enabled": false, 
+          "time_zone": "Brisbane", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Fri Feb 26 05:41:22 +0000 2016", 
+        "quoted_status_id_str": "702959545958735872", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": false, 
+        "default_profile_image": false, 
+        "id": 4374766032, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/670203513918480384/Z3TzmIKS_normal.jpg", 
+        "profile_sidebar_fill_color": "000000", 
+        "profile_text_color": "000000", 
+        "followers_count": 706, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "4374766032", 
+        "profile_background_color": "000000", 
+        "listed_count": 6, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": null, 
+        "statuses_count": 1412, 
+        "description": "Duncan DMoN Monaghan Aka DeJayAMI.....New FLoW Hip Hop  R & B Dance ....Label Artist.. CEO DeJayAMI Productions...", 
+        "friends_count": 1951, 
+        "location": "Australia", 
+        "profile_link_color": "1B95E0", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/670203513918480384/Z3TzmIKS_normal.jpg", 
+        "following": null, 
+        "geo_enabled": false, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/4374766032/1448623706", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "Duncan DMoN Monaghan", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 1931, 
+        "screen_name": "dejayami2000", 
+        "notifications": null, 
+        "url": "https://itunes.apple.com/us/album/id1078037", 
+        "created_at": "Fri Nov 27 06:43:04 +0000 2015", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

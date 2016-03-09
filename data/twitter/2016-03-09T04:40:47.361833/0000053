@@ -1,0 +1,322 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @chanelpuke: why did I find this so funny https://t.co/HgCgQWxd0F", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425898115403776, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498452105", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 64005334, 
+            "indices": [
+              3, 
+              14
+            ], 
+            "id_str": "64005334", 
+            "screen_name": "chanelpuke", 
+            "name": "what"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [], 
+        "media": [
+          {
+            "source_user_id": 64005334, 
+            "source_status_id_str": "707390004243341313", 
+            "expanded_url": "http://twitter.com/chanelpuke/status/707390004243341313/photo/1", 
+            "display_url": "pic.twitter.com/HgCgQWxd0F", 
+            "url": "https://t.co/HgCgQWxd0F", 
+            "media_url_https": "https://pbs.twimg.com/media/CdEndfUXEAEm2mE.jpg", 
+            "source_user_id_str": "64005334", 
+            "source_status_id": 707390004243341313, 
+            "id_str": "707390004050464769", 
+            "sizes": {
+              "small": {
+                "h": 380, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 540
+              }, 
+              "medium": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 540
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              45, 
+              68
+            ], 
+            "type": "photo", 
+            "id": 707390004050464769, 
+            "media_url": "http://pbs.twimg.com/media/CdEndfUXEAEm2mE.jpg"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425898115403776", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "why did I find this so funny https://t.co/HgCgQWxd0F", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 707390004243341313, 
+        "favorite_count": 1978, 
+        "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [], 
+          "media": [
+            {
+              "expanded_url": "http://twitter.com/chanelpuke/status/707390004243341313/photo/1", 
+              "display_url": "pic.twitter.com/HgCgQWxd0F", 
+              "url": "https://t.co/HgCgQWxd0F", 
+              "media_url_https": "https://pbs.twimg.com/media/CdEndfUXEAEm2mE.jpg", 
+              "id_str": "707390004050464769", 
+              "sizes": {
+                "small": {
+                  "h": 380, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 540
+                }, 
+                "medium": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 540
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                29, 
+                52
+              ], 
+              "type": "photo", 
+              "id": 707390004050464769, 
+              "media_url": "http://pbs.twimg.com/media/CdEndfUXEAEm2mE.jpg"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "707390004243341313", 
+        "retweet_count": 623, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 64005334, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000856019032/a8f26b7197d1cc03f8aed01812b48c56_normal.png", 
+          "profile_sidebar_fill_color": "FFFFFF", 
+          "profile_text_color": "000000", 
+          "followers_count": 638875, 
+          "profile_sidebar_border_color": "FFFFFF", 
+          "id_str": "64005334", 
+          "profile_background_color": "FFFFFF", 
+          "listed_count": 864, 
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/606049876/y5s1l8u41dx0s60k4tgi.jpeg", 
+          "utc_offset": -18000, 
+          "statuses_count": 28348, 
+          "description": "wow this is definitely not a nashville party", 
+          "friends_count": 22, 
+          "location": null, 
+          "profile_link_color": "000000", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/378800000856019032/a8f26b7197d1cc03f8aed01812b48c56_normal.png", 
+          "following": null, 
+          "geo_enabled": false, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/64005334/1445897622", 
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/606049876/y5s1l8u41dx0s60k4tgi.jpeg", 
+          "name": "what", 
+          "lang": "en", 
+          "profile_background_tile": false, 
+          "favourites_count": 1195, 
+          "screen_name": "chanelpuke", 
+          "notifications": null, 
+          "url": null, 
+          "created_at": "Sat Aug 08 17:32:40 +0000 2009", 
+          "contributors_enabled": false, 
+          "time_zone": "Eastern Time (US & Canada)", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Wed Mar 09 02:18:14 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null, 
+        "extended_entities": {
+          "media": [
+            {
+              "expanded_url": "http://twitter.com/chanelpuke/status/707390004243341313/photo/1", 
+              "display_url": "pic.twitter.com/HgCgQWxd0F", 
+              "url": "https://t.co/HgCgQWxd0F", 
+              "media_url_https": "https://pbs.twimg.com/media/CdEndfUXEAEm2mE.jpg", 
+              "id_str": "707390004050464769", 
+              "sizes": {
+                "small": {
+                  "h": 380, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 540
+                }, 
+                "medium": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 540
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                29, 
+                52
+              ], 
+              "type": "photo", 
+              "id": 707390004050464769, 
+              "media_url": "http://pbs.twimg.com/media/CdEndfUXEAEm2mE.jpg"
+            }
+          ]
+        }
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 2929073642, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/706266966252605444/yn6L_qAA_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 289, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "2929073642", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 0, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": null, 
+        "statuses_count": 1817, 
+        "description": "excelsior | cuhs dt & soccer", 
+        "friends_count": 209, 
+        "location": "earth ", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/706266966252605444/yn6L_qAA_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2929073642/1457222161", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "nicky", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 1857, 
+        "screen_name": "nicole10curiel", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Sun Dec 14 00:39:13 +0000 2014", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:52 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null, 
+      "extended_entities": {
+        "media": [
+          {
+            "source_user_id": 64005334, 
+            "source_status_id_str": "707390004243341313", 
+            "expanded_url": "http://twitter.com/chanelpuke/status/707390004243341313/photo/1", 
+            "display_url": "pic.twitter.com/HgCgQWxd0F", 
+            "url": "https://t.co/HgCgQWxd0F", 
+            "media_url_https": "https://pbs.twimg.com/media/CdEndfUXEAEm2mE.jpg", 
+            "source_user_id_str": "64005334", 
+            "source_status_id": 707390004243341313, 
+            "id_str": "707390004050464769", 
+            "sizes": {
+              "small": {
+                "h": 380, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 540
+              }, 
+              "medium": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 540
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              45, 
+              68
+            ], 
+            "type": "photo", 
+            "id": 707390004050464769, 
+            "media_url": "http://pbs.twimg.com/media/CdEndfUXEAEm2mE.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

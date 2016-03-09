@@ -1,0 +1,404 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @WSHHFANS: This shit funny as shit \ud83d\ude02\ud83d\ude02\ud83d\udc80\ud83d\udc80https://t.co/zfvXH5qsdF", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425900816510976, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498452749", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 1370986902, 
+            "indices": [
+              3, 
+              12
+            ], 
+            "id_str": "1370986902", 
+            "screen_name": "WSHHFANS", 
+            "name": "WSHH FANS"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [], 
+        "media": [
+          {
+            "source_user_id": 1721025078, 
+            "source_status_id_str": "707086412554870785", 
+            "expanded_url": "http://twitter.com/PRIDEofPACK/status/707086412554870785/video/1", 
+            "display_url": "pic.twitter.com/zfvXH5qsdF", 
+            "url": "https://t.co/zfvXH5qsdF", 
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/707086040822063104/pu/img/mDMj8Q4sA7QOYQYc.jpg", 
+            "source_user_id_str": "1721025078", 
+            "source_status_id": 707086412554870785, 
+            "id_str": "707086040822063104", 
+            "sizes": {
+              "small": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 1280, 
+                "resize": "fit", 
+                "w": 720
+              }, 
+              "medium": {
+                "h": 1067, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              42, 
+              65
+            ], 
+            "type": "photo", 
+            "id": 707086040822063104, 
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/707086040822063104/pu/img/mDMj8Q4sA7QOYQYc.jpg"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425900816510976", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "This shit funny as shit \ud83d\ude02\ud83d\ude02\ud83d\udc80\ud83d\udc80https://t.co/zfvXH5qsdF", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 707415817068089344, 
+        "favorite_count": 1975, 
+        "source": "<a href=\"http://bufferapp.com\" rel=\"nofollow\">Buffer</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [], 
+          "media": [
+            {
+              "source_user_id": 1721025078, 
+              "source_status_id_str": "707086412554870785", 
+              "expanded_url": "http://twitter.com/PRIDEofPACK/status/707086412554870785/video/1", 
+              "display_url": "pic.twitter.com/zfvXH5qsdF", 
+              "url": "https://t.co/zfvXH5qsdF", 
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/707086040822063104/pu/img/mDMj8Q4sA7QOYQYc.jpg", 
+              "source_user_id_str": "1721025078", 
+              "source_status_id": 707086412554870785, 
+              "id_str": "707086040822063104", 
+              "sizes": {
+                "small": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 1280, 
+                  "resize": "fit", 
+                  "w": 720
+                }, 
+                "medium": {
+                  "h": 1067, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                28, 
+                51
+              ], 
+              "type": "photo", 
+              "id": 707086040822063104, 
+              "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/707086040822063104/pu/img/mDMj8Q4sA7QOYQYc.jpg"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "707415817068089344", 
+        "retweet_count": 1490, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": false, 
+          "default_profile_image": false, 
+          "id": 1370986902, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/682288331523256320/8JGn6-9c_normal.jpg", 
+          "profile_sidebar_fill_color": "000000", 
+          "profile_text_color": "000000", 
+          "followers_count": 926676, 
+          "profile_sidebar_border_color": "000000", 
+          "id_str": "1370986902", 
+          "profile_background_color": "000000", 
+          "listed_count": 602, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif", 
+          "utc_offset": -25200, 
+          "statuses_count": 28363, 
+          "description": "NOT Affiliated With @WORLDSTAR or Vine. We Do Not Own The Media That Is Posted, Parody . 18+ Content Instagram & Snapchat: WSHHFANS", 
+          "friends_count": 136090, 
+          "location": "wshhfansbusiness@gmail.com", 
+          "profile_link_color": "BB0000", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/682288331523256320/8JGn6-9c_normal.jpg", 
+          "following": null, 
+          "geo_enabled": false, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1370986902/1444071563", 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif", 
+          "name": "WSHH FANS", 
+          "lang": "en", 
+          "profile_background_tile": false, 
+          "favourites_count": 0, 
+          "screen_name": "WSHHFANS", 
+          "notifications": null, 
+          "url": "http://www.snapchat.com/add/wshhfans", 
+          "created_at": "Mon Apr 22 01:48:18 +0000 2013", 
+          "contributors_enabled": false, 
+          "time_zone": "Arizona", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": true, 
+        "lang": "en", 
+        "created_at": "Wed Mar 09 04:00:48 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null, 
+        "extended_entities": {
+          "media": [
+            {
+              "source_user_id": 1721025078, 
+              "source_status_id_str": "707086412554870785", 
+              "expanded_url": "http://twitter.com/PRIDEofPACK/status/707086412554870785/video/1", 
+              "display_url": "pic.twitter.com/zfvXH5qsdF", 
+              "url": "https://t.co/zfvXH5qsdF", 
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/707086040822063104/pu/img/mDMj8Q4sA7QOYQYc.jpg", 
+              "source_user_id_str": "1721025078", 
+              "source_status_id": 707086412554870785, 
+              "video_info": {
+                "aspect_ratio": [
+                  9, 
+                  16
+                ], 
+                "duration_millis": 30000, 
+                "variants": [
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/vid/720x1280/GQ1YN2SdnidLGfEA.mp4", 
+                    "bitrate": 2176000, 
+                    "content_type": "video/mp4"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/vid/360x640/t_L1t3vVmvP7xwaR.webm", 
+                    "bitrate": 832000, 
+                    "content_type": "video/webm"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/vid/360x640/t_L1t3vVmvP7xwaR.mp4", 
+                    "bitrate": 832000, 
+                    "content_type": "video/mp4"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/pl/1aYkKl42AhBSZKGD.mpd", 
+                    "content_type": "application/dash+xml"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/vid/180x320/FVBBAk3J688tbdL4.mp4", 
+                    "bitrate": 320000, 
+                    "content_type": "video/mp4"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/pl/1aYkKl42AhBSZKGD.m3u8", 
+                    "content_type": "application/x-mpegURL"
+                  }
+                ]
+              }, 
+              "id_str": "707086040822063104", 
+              "sizes": {
+                "small": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 1280, 
+                  "resize": "fit", 
+                  "w": 720
+                }, 
+                "medium": {
+                  "h": 1067, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                28, 
+                51
+              ], 
+              "type": "video", 
+              "id": 707086040822063104, 
+              "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/707086040822063104/pu/img/mDMj8Q4sA7QOYQYc.jpg"
+            }
+          ]
+        }
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 1858873172, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/548094481489469440/RksBCOsi_normal.jpeg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 370, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "1858873172", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 0, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": -28800, 
+        "statuses_count": 4592, 
+        "description": "Create.Inspire.Disrupt", 
+        "friends_count": 271, 
+        "location": "Another Dimension", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/548094481489469440/RksBCOsi_normal.jpeg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1858873172/1450942564", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "Edwin", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 3604, 
+        "screen_name": "SuupremeKai", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Thu Sep 12 23:33:34 +0000 2013", 
+        "contributors_enabled": false, 
+        "time_zone": "Pacific Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:52 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null, 
+      "extended_entities": {
+        "media": [
+          {
+            "source_user_id": 1721025078, 
+            "source_status_id_str": "707086412554870785", 
+            "expanded_url": "http://twitter.com/PRIDEofPACK/status/707086412554870785/video/1", 
+            "display_url": "pic.twitter.com/zfvXH5qsdF", 
+            "url": "https://t.co/zfvXH5qsdF", 
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/707086040822063104/pu/img/mDMj8Q4sA7QOYQYc.jpg", 
+            "source_user_id_str": "1721025078", 
+            "source_status_id": 707086412554870785, 
+            "video_info": {
+              "aspect_ratio": [
+                9, 
+                16
+              ], 
+              "duration_millis": 30000, 
+              "variants": [
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/vid/720x1280/GQ1YN2SdnidLGfEA.mp4", 
+                  "bitrate": 2176000, 
+                  "content_type": "video/mp4"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/vid/360x640/t_L1t3vVmvP7xwaR.webm", 
+                  "bitrate": 832000, 
+                  "content_type": "video/webm"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/vid/360x640/t_L1t3vVmvP7xwaR.mp4", 
+                  "bitrate": 832000, 
+                  "content_type": "video/mp4"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/pl/1aYkKl42AhBSZKGD.mpd", 
+                  "content_type": "application/dash+xml"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/vid/180x320/FVBBAk3J688tbdL4.mp4", 
+                  "bitrate": 320000, 
+                  "content_type": "video/mp4"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/707086040822063104/pu/pl/1aYkKl42AhBSZKGD.m3u8", 
+                  "content_type": "application/x-mpegURL"
+                }
+              ]
+            }, 
+            "id_str": "707086040822063104", 
+            "sizes": {
+              "small": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 1280, 
+                "resize": "fit", 
+                "w": 720
+              }, 
+              "medium": {
+                "h": 1067, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              42, 
+              65
+            ], 
+            "type": "video", 
+            "id": 707086040822063104, 
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/707086040822063104/pu/img/mDMj8Q4sA7QOYQYc.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

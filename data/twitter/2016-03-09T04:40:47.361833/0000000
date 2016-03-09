@@ -1,0 +1,262 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @DrJimmyStar: So Excited Coming to theaters April 8th @HighStrungMovie https://t.co/F4p5kOC7W3 #superhotcast directed by @michaeldamian1\u2026", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425891115081728, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498450436", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 26570863, 
+            "indices": [
+              3, 
+              15
+            ], 
+            "id_str": "26570863", 
+            "screen_name": "DrJimmyStar", 
+            "name": "Jimmy Star"
+          }, 
+          {
+            "id": 2226993158, 
+            "indices": [
+              57, 
+              73
+            ], 
+            "id_str": "2226993158", 
+            "screen_name": "HighStrungMovie", 
+            "name": "High Strung Movie"
+          }, 
+          {
+            "id": 20186666, 
+            "indices": [
+              124, 
+              139
+            ], 
+            "id_str": "20186666", 
+            "screen_name": "michaeldamian1", 
+            "name": "Michael Damian"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [
+          {
+            "indices": [
+              98, 
+              111
+            ], 
+            "text": "superhotcast"
+          }, 
+          {
+            "indices": [
+              139, 
+              140
+            ], 
+            "text": "dance"
+          }, 
+          {
+            "indices": [
+              139, 
+              140
+            ], 
+            "text": "music"
+          }
+        ], 
+        "urls": [
+          {
+            "url": "https://t.co/F4p5kOC7W3", 
+            "indices": [
+              74, 
+              97
+            ], 
+            "expanded_url": "http://youtu.be/v3Xi1yEDN7U", 
+            "display_url": "youtu.be/v3Xi1yEDN7U"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425891115081728", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "So Excited Coming to theaters April 8th @HighStrungMovie https://t.co/F4p5kOC7W3 #superhotcast directed by @michaeldamian1 #dance #music", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 706961495771521027, 
+        "favorite_count": 294, 
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [
+            {
+              "id": 2226993158, 
+              "indices": [
+                40, 
+                56
+              ], 
+              "id_str": "2226993158", 
+              "screen_name": "HighStrungMovie", 
+              "name": "High Strung Movie"
+            }, 
+            {
+              "id": 20186666, 
+              "indices": [
+                107, 
+                122
+              ], 
+              "id_str": "20186666", 
+              "screen_name": "michaeldamian1", 
+              "name": "Michael Damian"
+            }
+          ], 
+          "symbols": [], 
+          "hashtags": [
+            {
+              "indices": [
+                81, 
+                94
+              ], 
+              "text": "superhotcast"
+            }, 
+            {
+              "indices": [
+                123, 
+                129
+              ], 
+              "text": "dance"
+            }, 
+            {
+              "indices": [
+                130, 
+                136
+              ], 
+              "text": "music"
+            }
+          ], 
+          "urls": [
+            {
+              "url": "https://t.co/F4p5kOC7W3", 
+              "indices": [
+                57, 
+                80
+              ], 
+              "expanded_url": "http://youtu.be/v3Xi1yEDN7U", 
+              "display_url": "youtu.be/v3Xi1yEDN7U"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "706961495771521027", 
+        "retweet_count": 759, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 26570863, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/570409554409697281/O_TrcvJK_normal.jpeg", 
+          "profile_sidebar_fill_color": "DDFFCC", 
+          "profile_text_color": "333333", 
+          "followers_count": 1262418, 
+          "profile_sidebar_border_color": "BDDCAD", 
+          "id_str": "26570863", 
+          "profile_background_color": "9AE4E8", 
+          "listed_count": 671, 
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/609395966500827136/wS0Za6YC.jpg", 
+          "utc_offset": -18000, 
+          "statuses_count": 160922, 
+          "description": "Host of #1 Webshow In World @JimmyStarShow Director of Operations of the Urban/Pop Division of @SpectraMusicInc, Director of Operations @BeaconAudioBook", 
+          "friends_count": 18633, 
+          "location": "Philadelphia, PA", 
+          "profile_link_color": "0084B4", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/570409554409697281/O_TrcvJK_normal.jpeg", 
+          "following": null, 
+          "geo_enabled": true, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/26570863/1454256532", 
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/609395966500827136/wS0Za6YC.jpg", 
+          "name": "Jimmy Star", 
+          "lang": "en", 
+          "profile_background_tile": true, 
+          "favourites_count": 51320, 
+          "screen_name": "DrJimmyStar", 
+          "notifications": null, 
+          "url": "http://www.JimmyStarShow.com", 
+          "created_at": "Wed Mar 25 19:33:45 +0000 2009", 
+          "contributors_enabled": false, 
+          "time_zone": "Quito", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Mon Mar 07 21:55:29 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 4904415761, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/698474669893120001/RvID2AkC_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 21, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "4904415761", 
+        "profile_background_color": "F5F8FA", 
+        "listed_count": 9, 
+        "profile_background_image_url_https": "", 
+        "utc_offset": null, 
+        "statuses_count": 2564, 
+        "description": null, 
+        "friends_count": 570, 
+        "location": null, 
+        "profile_link_color": "2B7BB9", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/698474669893120001/RvID2AkC_normal.jpg", 
+        "following": null, 
+        "geo_enabled": false, 
+        "profile_background_image_url": "", 
+        "name": "Molly Ellington", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 1215, 
+        "screen_name": "ellington_molly", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Sat Feb 13 11:19:03 +0000 2016", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:50 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

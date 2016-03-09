@@ -1,0 +1,86 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Folk Barber Style https://t.co/FfWl1xYkB3", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425901244321792, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://publicize.wp.com/\" rel=\"nofollow\">WordPress.com</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498452851", 
+      "entities": {
+        "user_mentions": [], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [
+          {
+            "url": "https://t.co/FfWl1xYkB3", 
+            "indices": [
+              18, 
+              41
+            ], 
+            "expanded_url": "http://free-music-free.890m.com/folk-barber-style/", 
+            "display_url": "free-music-free.890m.com/folk-barber-st\u2026"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425901244321792", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 4134129455, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/662971507333820416/1-7E0Hxd_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 768, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "4134129455", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 97, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": null, 
+        "statuses_count": 71766, 
+        "description": null, 
+        "friends_count": 0, 
+        "location": null, 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/662971507333820416/1-7E0Hxd_normal.jpg", 
+        "following": null, 
+        "geo_enabled": false, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/4134129455/1446900439", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "TheMunSession", 
+        "lang": "es", 
+        "profile_background_tile": false, 
+        "favourites_count": 3, 
+        "screen_name": "_TheMunSession_", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Sat Nov 07 12:31:39 +0000 2015", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "no", 
+      "created_at": "Wed Mar 09 04:40:52 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]
