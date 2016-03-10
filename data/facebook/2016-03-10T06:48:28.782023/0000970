@@ -1,0 +1,130 @@
+[
+  {
+    "post": {
+      "data": {
+        "id": "10153473849525923", 
+        "permalink_url": "/CPFBoard/videos/10153473849525923/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTAxNTQwMTg3MDIwNjQ2ODYZD", 
+              "before": "MTAxNTQwNzM2NTUzMTIyNjgZD"
+            }
+          }, 
+          "data": [
+            {
+              "id": "10154073655312268", 
+              "name": "Fir Fendi"
+            }, 
+            {
+              "id": "923092197807370", 
+              "name": "W Cheng Lim"
+            }, 
+            {
+              "id": "10153863471325170", 
+              "name": "Ivy Sng"
+            }, 
+            {
+              "id": "1215469115147314", 
+              "name": "Sandy Te"
+            }, 
+            {
+              "id": "809463655826795", 
+              "name": "Cathy Cheong"
+            }, 
+            {
+              "id": "551736554992772", 
+              "name": "Tan Cheeseng"
+            }, 
+            {
+              "id": "10207493701413698", 
+              "name": "Quek Elsie"
+            }, 
+            {
+              "id": "10157125547415355", 
+              "name": "Wong Koon Yin"
+            }, 
+            {
+              "id": "10154155070788072", 
+              "name": "Saifur Rahman"
+            }, 
+            {
+              "id": "614816865338272", 
+              "name": "Ricky Lim"
+            }, 
+            {
+              "id": "861219960654070", 
+              "name": "Nur Syahidah"
+            }, 
+            {
+              "id": "440270716183308", 
+              "name": "Jade Ong"
+            }, 
+            {
+              "id": "1002924423076029", 
+              "name": "Jerry Yks"
+            }, 
+            {
+              "id": "10154018702064686", 
+              "name": "Gabrielle Andrina Tan"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "MwZDZD", 
+              "before": "NQZDZD"
+            }
+          }, 
+          "data": [
+            {
+              "created_time": "2015-09-07T09:19:43+0000", 
+              "message": "I had a had a fall and injured my wrist where the pain lasted more then 6 month. I had to go MRI which cost around $800 but i have to pay in CASH... My dad had a fall where he needs to do MRI for his spine that could cost more then $800 and need to pay in CASH. Both of us are outpatients, both of us have money in our Medisave. But we can't use it because we are outpatients. MRI are expensive to many of us. What if someone who has a serious medical condition that needs to go MRI but because he is an outpatient and cant afford to pay cash? Must he be in near death situation to be hospitalised so he can use his Medisave for an MRI? Wouldn't that be to late if someone could have gone to MRI before the condition become worsen?", 
+              "from": {
+                "name": "Rye Han", 
+                "id": "10205723064531114"
+              }, 
+              "id": "10153473849525923_10153488772525923"
+            }, 
+            {
+              "created_time": "2015-09-08T00:05:30+0000", 
+              "message": "This report is misleading. I too have knee cap problem and I cannot get subsidy nor use Medisave unless hospitalised. \nAsk them to speak the truth , ONLY.", 
+              "from": {
+                "name": "Mohan Sinnapillay", 
+                "id": "787174004750221"
+              }, 
+              "id": "10153473849525923_10153490225995923"
+            }, 
+            {
+              "created_time": "2015-09-07T06:43:32+0000", 
+              "message": "Are you sure we can use our medisave for ALL medical expenses in hospitals? There are many hidden clauses on what can be used, and what cannot!!!!", 
+              "from": {
+                "name": "Danjel Lim", 
+                "id": "1654637871465205"
+              }, 
+              "id": "10153473849525923_10153488672215923"
+            }
+          ]
+        }, 
+        "sharedposts": {
+          "paging": {
+            "cursors": {
+              "after": "MTA0NjczNDU1MjAxODA2Ng==", 
+              "before": "MTA0NjczNDU1MjAxODA2Ng=="
+            }
+          }, 
+          "data": [
+            {
+              "created_time": "2015-09-15T09:25:27+0000", 
+              "message": "Did you know your Medisave Account can be used for the medical bills of your spouse, children, parents and grandparents too? Kelvin shares how his CPF savings have helped to support his own and his family\u2019s healthcare expenses.\n\nFor more tips, visit www.CPF-BigRChat.sg", 
+              "story": "PantryTalk shared CPF Board's video.", 
+              "id": "194769910547872_1046734552018066"
+            }
+          ]
+        }
+      }, 
+      "page": "CPF Board"
+    }
+  }
+]

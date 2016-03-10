@@ -1,0 +1,323 @@
+[
+  {
+    "post": {
+      "data": {
+        "id": "10153275752911787", 
+        "permalink_url": "/surfsessionmag/videos/10153275752911787/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTY2ODA5OTA0MDExOTI3MwZDZD", 
+              "before": "MTAwMzY2MzY1NjM3NTU5NgZDZD"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10153275752911787/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTY2ODA5OTA0MDExOTI3MwZDZD"
+          }, 
+          "data": [
+            {
+              "id": "1003663656375596", 
+              "name": "Carla Salambehere"
+            }, 
+            {
+              "id": "10208858745124810", 
+              "name": "P'tit Lu Dtcq"
+            }, 
+            {
+              "id": "240299682973422", 
+              "name": "Javier Jacinto Solorzano Solorzano"
+            }, 
+            {
+              "id": "10154040487214885", 
+              "name": "Antoine Huiban"
+            }, 
+            {
+              "id": "10207417951679155", 
+              "name": "Ant\u00f3nio Coutinho"
+            }, 
+            {
+              "id": "1683616071886859", 
+              "name": "M\u00e8dina Walid"
+            }, 
+            {
+              "id": "1607800082808735", 
+              "name": "Lola Bontemps"
+            }, 
+            {
+              "id": "957369664332779", 
+              "name": "Fran\u00e7ois Klotz"
+            }, 
+            {
+              "id": "820150334773814", 
+              "name": "Didier Adrien"
+            }, 
+            {
+              "id": "1124317827591838", 
+              "name": "Alejandro Rodriguez Lopez"
+            }, 
+            {
+              "id": "224268784586965", 
+              "name": "Mehmet Engin"
+            }, 
+            {
+              "id": "971046966266434", 
+              "name": "Jairo Di Palma"
+            }, 
+            {
+              "id": "1653688741563283", 
+              "name": "Jerome Metgy"
+            }, 
+            {
+              "id": "10207211842789350", 
+              "name": "Pecci Pecci"
+            }, 
+            {
+              "id": "1731765283776495", 
+              "name": "\u8cb4\u4fe1\u4f50\u85e4"
+            }, 
+            {
+              "id": "1041016762637121", 
+              "name": "Tetsuaki Snagawa"
+            }, 
+            {
+              "id": "10205932596415315", 
+              "name": "Simone Ivan"
+            }, 
+            {
+              "id": "685656101573886", 
+              "name": "Neil Werner"
+            }, 
+            {
+              "id": "1088935481126656", 
+              "name": "Carlos Faria"
+            }, 
+            {
+              "id": "10153918801479654", 
+              "name": "Carlos Filipe de Sousa"
+            }, 
+            {
+              "id": "10205573988178827", 
+              "name": "Yannick Quentel"
+            }, 
+            {
+              "id": "1033381420041470", 
+              "name": "Andrea P\u00e9rez"
+            }, 
+            {
+              "id": "225503007803050", 
+              "name": "Oumaima Khalifi"
+            }, 
+            {
+              "id": "225852087763772", 
+              "name": "Mano-Heitini Barff"
+            }, 
+            {
+              "id": "1668099040119273", 
+              "name": "\u8056\u5e02\u53ef\u77e5"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "MQZDZD", 
+              "before": "MTcZD"
+            }
+          }, 
+          "data": [
+            {
+              "created_time": "2016-01-02T14:48:23+0000", 
+              "message": "Th\u00e9o Mourier, comment prendre un tube en switch...", 
+              "from": {
+                "name": "Victor Mourier", 
+                "id": "1573321036319350"
+              }, 
+              "id": "10153275752911787_10153275834731787"
+            }, 
+            {
+              "created_time": "2016-01-02T19:12:02+0000", 
+              "message": "Guillaume elle \u00e9tait comme \u00e7a cette semaine ?", 
+              "from": {
+                "name": "Ed Ouard", 
+                "id": "10207888760513427"
+              }, 
+              "id": "10153275752911787_10153276278201787"
+            }, 
+            {
+              "created_time": "2016-01-02T14:26:24+0000", 
+              "message": "San Drine pour David et Mathieu !", 
+              "from": {
+                "name": "Edouard Le Doc Tatal", 
+                "id": "10154022288652287"
+              }, 
+              "id": "10153275752911787_10153275799506787"
+            }, 
+            {
+              "created_time": "2016-01-02T19:33:40+0000", 
+              "message": "C qui c un touriste ?", 
+              "from": {
+                "name": "Sanso Luca", 
+                "id": "10153342558110894"
+              }, 
+              "id": "10153275752911787_10153276315181787"
+            }, 
+            {
+              "created_time": "2016-01-02T23:02:12+0000", 
+              "message": "Peut etre parce que c'est pas les 3 minutes mais jsuis loin d'\u00eatre convaincus....lol", 
+              "from": {
+                "name": "KoMang Gilberto", 
+                "id": "1136539759712665"
+              }, 
+              "id": "10153275752911787_10153276694616787"
+            }, 
+            {
+              "created_time": "2016-01-02T14:26:28+0000", 
+              "message": "David Thierry : Excuse moi, je m'adresse \u00e0 toutes et tous de mes relations.. Pour pouvoir avoir mes droits et malheureusement quitter ce pays que j'aime.. Toutes aides de toutes nature me sera d'un grand secours, Et personnellement... je sais qu'il y a pire que cela de la part de la classe dirigeante, moi, j'ai re\u00e7us des menaces de mort et de repr\u00e9sailles sur ma famille si je me d\u00e9fendait sur le territoire Fran\u00e7ais, en 1996, au commissariat de \"police\" de Montrouge, \u00e0 15h de l'apr\u00e8s midi, au mois de Juin 1996.. je me suis tu jusqu'a maintenant, je suis petit fils d'immigrant Polonais, ancien champion de boxe, ami de Marcel Cerdan, ma m\u00e8re et Fran\u00e7aise, ma Grand-M\u00e8re aussi, mon Grand P\u00e8re a \u00e9t\u00e9 naturalis\u00e9 Fran\u00e7ais, apr\u00e8s qu'il ai risqu\u00e9 sa vie pendant quatre ans et demi ligne Maginot dans les Vosges, comme Maquisard, nom de code\" BOUBOU\" , il \u00e9tait FFi... aussi je ne connait que trop bien ce dont sont capable ces fachistes Fran\u00e7ais; En effet, nous \u00e9tions une association de spectacle, \u00ab  Le manteau d'Arlequin \u00bb dont trois \u00e9l\u00e8ve/artiste de l'\u00e9cole Nationale du Cirque d'Annie Fratellini, \u00e0 Paris... qui en 1987, avons tous subit, s\u00e9par\u00e9ment des tentatives de meurtre d\u00e9guis\u00e9 en accident de la route ou m\u00e9nag\u00e9, le 25/12/1987, \u00e0 14h45, un engins explosif artisanal fait sauter notre maison, au, 101 rue Gabriel P\u00e9ri \u00e0 Montrouge 92120, Haut de Seine, trois personnes d\u00e9c\u00e8de dans l'explosion criminelle de notre maison , H\u00e9l\u00e8ne P\u00e9rillat 36ans, m\u00e8re de Emmanuelle et Antoine, respectivement, 12 et 6 ans, tout trois mort dans l'explosion ; Nous donnions des cours des Arts du cirque, pour le minist\u00e8re de la Culture de l'\u00e9poque.. En 1996, j'avais 160 enfants dans mon atelier de Cirque, au centre culturel Brel/Brassens, en la ville de, Evry-Courcouronne, et bien, ayant r\u00e9ussi en deux ans et demi de travail avec les arts du Cirque, \u00e0 faire baiss\u00e9 la d\u00e9linquance de 25 \u00e0 30%, selon un sondage de l'INA, et un film vid\u00e9o r\u00e9alis\u00e9 par elle ; J'ai vu mon atelier \u00eatre ferm\u00e9 quinze jours apr\u00e8s, par le nouveau pouvoir politique et ministere de l'interrieur de 1996, et, c'est cette ann\u00e9e l\u00e0, que convoqu\u00e9 au commissariat de \"police \u00bb de Montrouge, j'ai re\u00e7us ces menaces de policier facsiste et corrompu, qui m'ont dit qu'ils s'en prendraient m\u00eame \u00e0 la retraite de ma pauvre Grand-M\u00e8re, si je me d\u00e9fendais sur le territoire Fran\u00e7ais ; Depuis 28 ann\u00e9es, ou j'ai \u00e9t\u00e9 percut\u00e9 de plein fouet par un v\u00e9hicule 100% en tors au code la route, je ne suis toujours pas indemnis\u00e9 par l'assurance\" matmut, qui condamner en troisi\u00e8me instance de justice, refuse de me d\u00e9dommager, et pr\u00e9sente des faux en \u00e9criture, alors que je suis depuis lors, handicap\u00e9 \u00e0 la hauteur de 80%, selon le m\u00e9decin chef de la cotorep, aussi malgr\u00e9 tout les recours possible et inimaginable aupr\u00e8s de la justice, rien ni fait, au contraire les exactions administratives, bancaire (banque postale) EDF, CCAS, internement forc\u00e9 et abusif en psychiatrie... etc... disparition de mes preuve de payement..etc.. exactions polici\u00e8res qui recommence de plus belle, depuis avril 2012, la police municipale de la ville de S\u00e8te 34 ..H\u00e9rault, a m\u00eame d\u00e9truit les images de la destruction de mon v\u00e9hicule sous leurs cam\u00e9ra, ainsi je n'ai pas pu \u00eatre rembours\u00e9 par mon assurance, (AMV. moto verte, complice) de plus depuis le 10/08/2010.. le procureur de la r\u00e9publique de Montpellier a condamn\u00e9 avec une ordonnance p\u00e9nal, la soci\u00e9t\u00e9 d'assurance \u00ab  matmut \u00bb \u00e0 me d\u00e9domager, celle ci refuse malgr\u00e9 la condamnation et l'ordonance p\u00e9nal de justice qui la condamne, par ailleurs, l'ordonnance p\u00e9nal \u00e0 derni\u00e8rement disparue du Gref du TGI, tribunal de grande instance de Montpellier, j'en suis au 9i\u00e8m avocat qui se d\u00e9siste sans m'expliquer pourquoi, il ni a que maitre Gandini jean Jacques, avocat aux droits de l'homme, qui m'ai expliqu\u00e9 qu'il s'agissait d'une affaire d'\u00e9tat, et que les avocats Fran\u00e7ais, n'avait pas ass\u00e9 de poids juridique pour me d\u00e9fendre, rendez vous compte de ce que l'on me raconte dans les Palais de Justice.. Non seulement je suis victime, mais en plus on cherche \u00e0 me faire passer pour un imposteur.. c'est bien pour cela que ma d\u00e9cision de quiter la France apr\u00e8s gain de cause sera effective suite au r\u00e8glement de cette affaires, de plus mon entreprise de voilier-Cirque.. ^ B\u00e2t\u00f4^C\u00eerqu\u00ea ^..., sera domicili\u00e9 aux iles Cook ( principaut\u00e9 Anglaise) dans l'Oc\u00e9an Pacifique, domage pour la France, qui vera l\u00e0, une entrteprise de plus, d'int\u00earet et d'utilit\u00e9 public dispara\u00eetre de son t\u00e9rritoire, comme cela est l'int\u00earet des gens fran\u00e7ais et partis politique maintenant bien connu pour leurs participation aux crimes des deux derni\u00e8res guerre-mondial !  enfin une derni\u00e8re chose, ma grand m\u00e8re et maintenant d\u00e9c\u00e9d\u00e9, aussi avis a tous ceux qui mon fait des menaces sur sa vie et la mienne.. QUE TOUT SE SAIT UN JOUR ET SE PAYE.. merci de votre \u00e9coute.. Mr David Thierry..., anciennement \u00ab Pi\u00e9rro \u00bb le Fil-de-F\u00e9riste..., du Cirque d'Annie Fratellini et Pierre Etaix... VIVE LA FRANCE LIBRE...,", 
+              "from": {
+                "name": "David Thierry", 
+                "id": "1103541936363174"
+              }, 
+              "id": "10153275752911787_10153275799561787"
+            }, 
+            {
+              "created_time": "2016-01-03T01:20:14+0000", 
+              "message": "Victorien Defrasne mundaka le paradis ;)", 
+              "from": {
+                "name": "Philippe Montet", 
+                "id": "568272513331466"
+              }, 
+              "id": "10153275752911787_10153276874441787"
+            }, 
+            {
+              "created_time": "2016-01-02T18:46:28+0000", 
+              "message": "R\u00e9mi quand on aura du sale level ;)", 
+              "from": {
+                "name": "Joachim Galent", 
+                "id": "745676168901670"
+              }, 
+              "id": "10153275752911787_10153276229336787"
+            }, 
+            {
+              "created_time": "2016-01-03T10:58:20+0000", 
+              "message": "Top, top \n#www.surfvan.pt", 
+              "from": {
+                "name": "Alexandre Mineiro", 
+                "id": "10201350997733481"
+              }, 
+              "id": "10153275752911787_10153277362546787"
+            }, 
+            {
+              "created_time": "2016-01-02T22:10:53+0000", 
+              "message": "Divinal mesmo.", 
+              "from": {
+                "name": "Paulo Barros", 
+                "id": "203307806693194"
+              }, 
+              "id": "10153275752911787_10153276617386787"
+            }, 
+            {
+              "created_time": "2016-01-02T14:18:08+0000", 
+              "message": "Valentin c'\u00e9tait pas comme \u00e7a nous ahah", 
+              "from": {
+                "name": "Edouard Paul S", 
+                "id": "10154571820974908"
+              }, 
+              "id": "10153275752911787_10153275786906787"
+            }, 
+            {
+              "created_time": "2016-01-03T10:39:38+0000", 
+              "message": "Arthur Fol tqt elle marche pas", 
+              "from": {
+                "name": "Jeremie Raynal", 
+                "id": "573219129497975"
+              }, 
+              "id": "10153275752911787_10153277348286787"
+            }, 
+            {
+              "created_time": "2016-01-02T14:05:39+0000", 
+              "message": "Am\u00e9lia", 
+              "from": {
+                "name": "Lucille Mariet", 
+                "id": "577838762380272"
+              }, 
+              "id": "10153275752911787_10153275767066787"
+            }, 
+            {
+              "created_time": "2016-01-02T17:21:34+0000", 
+              "message": "Louis Jean", 
+              "from": {
+                "name": "Paul Authier", 
+                "id": "650865548387600"
+              }, 
+              "id": "10153275752911787_10153276067501787"
+            }, 
+            {
+              "created_time": "2016-01-02T19:09:59+0000", 
+              "message": "Han Noty", 
+              "from": {
+                "name": "Stephan Gobert", 
+                "id": "10156620425285331"
+              }, 
+              "id": "10153275752911787_10153276276316787"
+            }, 
+            {
+              "created_time": "2016-01-02T15:00:22+0000", 
+              "message": "Pierre Abiven", 
+              "from": {
+                "name": "Alexis Demay", 
+                "id": "984730038230144"
+              }, 
+              "id": "10153275752911787_10153275855496787"
+            }, 
+            {
+              "created_time": "2016-01-03T07:26:12+0000", 
+              "message": "Tinou Landes", 
+              "from": {
+                "name": "Victor Vallauri", 
+                "id": "10208651551674661"
+              }, 
+              "id": "10153275752911787_10153277209781787"
+            }
+          ]
+        }, 
+        "sharedposts": {
+          "paging": {
+            "cursors": {
+              "after": "NTI0NTM3MjM0Mzk0MTMw", 
+              "before": "NDM5MzQ3MDA2MjcxNjU0"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10153275752911787/sharedposts?access_token=519668928211037|ZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=NTI0NTM3MjM0Mzk0MTMw"
+          }, 
+          "data": [
+            {
+              "created_time": "2016-01-04T09:56:49+0000", 
+              "story": "Moor Surf Denda shared Surf Session Magazine's video.", 
+              "id": "398877683651920_439347006271654"
+            }, 
+            {
+              "created_time": "2016-01-03T09:46:15+0000", 
+              "message": "Green Soul Wave Epic Oceanic Wildlife Surfers Saving Precious Earth", 
+              "story": "Wave Surfing shared Surf Session Magazine's video \u2014 watching Whale Wars at Sea Shepherd Global.", 
+              "id": "628058000606081_933212030090675"
+            }, 
+            {
+              "created_time": "2016-01-02T21:04:43+0000", 
+              "story": "Frontera Norte. shared Surf Session Magazine's video.", 
+              "id": "1481414995509576_1537686676549074"
+            }, 
+            {
+              "created_time": "2016-01-02T20:40:04+0000", 
+              "story": "Wild Child Off The Sun shared Surf Session Magazine's video.", 
+              "id": "283466978485158_537888303043023"
+            }, 
+            {
+              "created_time": "2016-01-02T19:11:49+0000", 
+              "message": "Green Soul Wave Epic Oceanic Wildlife Surfers Saving Precious Earth", 
+              "story": "Aloha shared Surf Session Magazine's video \u2014 watching Captain Paul Watson at Zero Plastic In Our Oceans.", 
+              "id": "264375697076953_524537234394130"
+            }
+          ]
+        }
+      }, 
+      "page": "Surf Session Magazine"
+    }
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "post": {
+      "data": {
+        "permalink_url": "/skiraeditore/videos/10152099304541958/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTAxNTMyOTA3NjU5MzYzMzMZD", 
+              "before": "MTAyMDc2OTQyNzE4Njc3MjEZD"
+            }
+          }, 
+          "data": [
+            {
+              "id": "10207694271867721", 
+              "name": "Simona Deidda"
+            }, 
+            {
+              "id": "10153974441433221", 
+              "name": "Bruno Stucchi"
+            }, 
+            {
+              "id": "10208721368860606", 
+              "name": "Fabio Abate"
+            }, 
+            {
+              "id": "10153940564970040", 
+              "name": "Mara Zerga"
+            }, 
+            {
+              "id": "10208959806900345", 
+              "name": "Laura Maggioni"
+            }, 
+            {
+              "id": "10153848432270155", 
+              "name": "Filippo Vitta Zelman"
+            }, 
+            {
+              "id": "10153290765936333", 
+              "name": "Lorena David"
+            }
+          ]
+        }, 
+        "id": "10152099304541958"
+      }, 
+      "page": "Skira editore"
+    }
+  }
+]

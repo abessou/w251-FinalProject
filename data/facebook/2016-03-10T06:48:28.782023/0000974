@@ -1,0 +1,337 @@
+[
+  {
+    "post": {
+      "data": {
+        "id": "10153436648295923", 
+        "permalink_url": "/CPFBoard/videos/10153436648295923/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTAxNTQwMDkyMDc0NTgyMDAZD", 
+              "before": "MTAxNTMzODk4MTQ2MTI1MTMZD"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10153436648295923/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTAxNTQwMDkyMDc0NTgyMDAZD"
+          }, 
+          "data": [
+            {
+              "id": "10153389814612513", 
+              "name": "Adeline Siow"
+            }, 
+            {
+              "id": "10156599990250023", 
+              "name": "Kenneth Foo Yong Hao"
+            }, 
+            {
+              "id": "1697307093845906", 
+              "name": "\u674e\u4e2d\u4e07"
+            }, 
+            {
+              "id": "1071522216238396", 
+              "name": "Sam Lee"
+            }, 
+            {
+              "id": "10154025802602915", 
+              "name": "Thomas Ong"
+            }, 
+            {
+              "id": "604368163062051", 
+              "name": "Foo Doreen"
+            }, 
+            {
+              "id": "1119139348131289", 
+              "name": "Vanessa Ng"
+            }, 
+            {
+              "id": "10153554311749472", 
+              "name": "David Poh"
+            }, 
+            {
+              "id": "10153973472664231", 
+              "name": "Anna Kazumi Sze"
+            }, 
+            {
+              "id": "1535485310077502", 
+              "name": "Mallesh Malli"
+            }, 
+            {
+              "id": "1718293065124231", 
+              "name": "Siron Haron"
+            }, 
+            {
+              "id": "984405938279607", 
+              "name": "\u5353\u6c38\u5065"
+            }, 
+            {
+              "id": "10205665641822100", 
+              "name": "Benson Tan"
+            }, 
+            {
+              "id": "10154694436690884", 
+              "name": "Elaine Gan"
+            }, 
+            {
+              "id": "10153539028936795", 
+              "name": "Stanley Toh"
+            }, 
+            {
+              "id": "944362725659063", 
+              "name": "Alan Tann"
+            }, 
+            {
+              "id": "10153518691122685", 
+              "name": "Zunika Hazwani Ika"
+            }, 
+            {
+              "id": "535161556687464", 
+              "name": "Leah Panes"
+            }, 
+            {
+              "id": "10201554854309289", 
+              "name": "Tony Ng"
+            }, 
+            {
+              "id": "479330965607551", 
+              "name": "Clifford Chan"
+            }, 
+            {
+              "id": "827675774026931", 
+              "name": "Sandeep Gill"
+            }, 
+            {
+              "id": "10201416937702028", 
+              "name": "Bill Tan Peng Koon"
+            }, 
+            {
+              "id": "239849789694053", 
+              "name": "Paijem Paijo"
+            }, 
+            {
+              "id": "1697298380544003", 
+              "name": "Raja Raja"
+            }, 
+            {
+              "id": "10154009207458200", 
+              "name": "Cheong Siew Lan"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "MQZDZD", 
+              "before": "MjIZD"
+            }
+          }, 
+          "data": [
+            {
+              "created_time": "2015-08-17T08:43:44+0000", 
+              "message": "Its our money, let us decide.", 
+              "from": {
+                "name": "Arifin Bin Kassan", 
+                "id": "1123032067727442"
+              }, 
+              "id": "10153436648295923_10153442657140923"
+            }, 
+            {
+              "created_time": "2015-08-17T11:41:10+0000", 
+              "message": "Dear all, I have been an financial adviser from 1997 til 2003. Trust me there is no other investment to beat cpf special account interest of 4%. Invest your ordinary account in housing to make profit. All financial advisers only keen on commission earn...", 
+              "from": {
+                "name": "Kent Lee", 
+                "id": "10154009800929394"
+              }, 
+              "id": "10153436648295923_10153442817295923"
+            }, 
+            {
+              "created_time": "2015-08-17T07:27:10+0000", 
+              "message": "He wants to keep his cpf saving that's his problem not everybody agree on his opinion after reaching 55 years old.. For me l want mine..", 
+              "from": {
+                "name": "Rashid Abdul Rahman", 
+                "id": "947827955265766"
+              }, 
+              "id": "10153436648295923_10153442600570923"
+            }, 
+            {
+              "created_time": "2015-08-17T06:48:02+0000", 
+              "message": "Just give my money back to me k. I need it now more than old age. I wun be able to last so long. What is the point in giving me a bit here and there when i am old? I wanna build my ambitions and these need money. No money no talk in this world. Pls la. Gimme back k.", 
+              "from": {
+                "name": "Shanas Jude See", 
+                "id": "527037034132674"
+              }, 
+              "id": "10153436648295923_10153442568195923"
+            }, 
+            {
+              "created_time": "2015-08-17T09:13:17+0000", 
+              "message": "Our money, we have our own say, n do we think best for ourselves. No one is in better position than us, STOP your story, I dont even want to listen!!", 
+              "from": {
+                "name": "Andy Seah", 
+                "id": "10209399784218656"
+              }, 
+              "id": "10153436648295923_10153442685750923"
+            }, 
+            {
+              "created_time": "2015-08-17T05:45:02+0000", 
+              "message": "Propaganda again", 
+              "from": {
+                "name": "Aloysius Lim Tai Lam", 
+                "id": "10205955891512940"
+              }, 
+              "id": "10153436648295923_10153442507610923"
+            }, 
+            {
+              "created_time": "2015-08-17T09:46:53+0000", 
+              "message": "We just need our $ when we reach 55. About when we reach our retirement we can discuss later. Let we feel our hard saving first at 55. Understand cpf board's personal.", 
+              "from": {
+                "name": "Mohamad Kemat", 
+                "id": "1102558273109834"
+              }, 
+              "id": "10153436648295923_10153442715390923"
+            }, 
+            {
+              "created_time": "2015-08-17T06:09:45+0000", 
+              "message": "Enough  of these jarring jargon sia !", 
+              "from": {
+                "name": "Weera Chak", 
+                "id": "1129399770444856"
+              }, 
+              "id": "10153436648295923_10153442526550923"
+            }, 
+            {
+              "created_time": "2015-08-17T09:25:26+0000", 
+              "message": "Bull shitt again .... Just give our $$$$ bck \ud83d\ude21\ud83d\ude21", 
+              "from": {
+                "name": "Sofea Al Ham", 
+                "id": "548422638658963"
+              }, 
+              "id": "10153436648295923_10153442696235923"
+            }, 
+            {
+              "created_time": "2015-08-17T12:53:47+0000", 
+              "message": "Why PR and singaporean CPF interest is a same.\nPR can withdraw their money  any time they like.", 
+              "from": {
+                "name": "Ivan Lim", 
+                "id": "763991873731234"
+              }, 
+              "id": "10153436648295923_10153442911630923"
+            }, 
+            {
+              "created_time": "2015-08-17T11:57:44+0000", 
+              "message": "Hahaha. Stupid propaganda video", 
+              "from": {
+                "name": "Sahren Kamis", 
+                "id": "10154021461461151"
+              }, 
+              "id": "10153436648295923_10153442835365923"
+            }, 
+            {
+              "created_time": "2015-08-17T12:00:59+0000", 
+              "message": "I think the special ac let it be. As for O ac, after paying for housing, if got left over might be worthwile to consider dividend paying co like transport or telecomms. Normally better than 2.5% pa", 
+              "from": {
+                "name": "Abdul Gaffor", 
+                "id": "1329480973744224"
+              }, 
+              "id": "10153436648295923_10153442838345923"
+            }, 
+            {
+              "created_time": "2015-08-17T10:27:17+0000", 
+              "message": "\u660e\u62a2\uff0c\u6709\u6267\u7167\u7684\u5f3a\u76d7\uff01", 
+              "from": {
+                "name": "Ken Lim", 
+                "id": "1256993210984371"
+              }, 
+              "id": "10153436648295923_10153442745315923"
+            }, 
+            {
+              "created_time": "2015-08-17T10:43:17+0000", 
+              "message": "Selling \"koyok\" again...... if you really need the money to meet your primary needs....nobody in the right sense of mind will leave the money there.....you slog hard all your life and you let.... someone decide how you should spend your money....only a nerd will think that way", 
+              "from": {
+                "name": "Raymond Lim", 
+                "id": "748440261953078"
+              }, 
+              "id": "10153436648295923_10153442759415923"
+            }, 
+            {
+              "created_time": "2015-08-17T07:26:26+0000", 
+              "message": "Errgh..ohh..excuse me..", 
+              "from": {
+                "name": "Suriah Shine", 
+                "id": "975339639180633"
+              }, 
+              "id": "10153436648295923_10153442599150923"
+            }, 
+            {
+              "created_time": "2015-08-17T12:00:24+0000", 
+              "message": "I have more than enough in my ordinary to settle my house loan.. but they said I couldt do that.. crap..", 
+              "from": {
+                "name": "Artini Rahmad", 
+                "id": "10154054189639706"
+              }, 
+              "id": "10153436648295923_10153442837820923"
+            }, 
+            {
+              "created_time": "2015-08-17T09:06:41+0000", 
+              "message": "This is my money back to me !", 
+              "from": {
+                "name": "WC Quan", 
+                "id": "1718312451779090"
+              }, 
+              "id": "10153436648295923_10153442678620923"
+            }, 
+            {
+              "created_time": "2015-08-17T07:12:00+0000", 
+              "message": "I don gt it.. can some1 explain to me, when he said keep the cpf money inside n we will gt interest from it.. ok.. much interest do we gt n why must I keep my money in the cpf.. can cpf explain to me.. thkx", 
+              "from": {
+                "name": "John Romeo", 
+                "id": "962120373877261"
+              }, 
+              "id": "10153436648295923_10153442586670923"
+            }, 
+            {
+              "created_time": "2015-08-17T11:26:32+0000", 
+              "message": "Well said.", 
+              "from": {
+                "name": "Jus Wirring", 
+                "id": "10154043699231942"
+              }, 
+              "id": "10153436648295923_10153442801070923"
+            }, 
+            {
+              "created_time": "2015-08-17T13:46:35+0000", 
+              "message": "Leave it in CPF, then at 55, they make you buy CPF Life annuity and suck your hard earn money dry. At 55, assuming you have the minimum $161,000. The first $30,000 at interest of 6%, the next $30,000 at 5% interest and the balance of $101,000 at 4% interest. Just to a simple mathematics calculation as one Minister say it. You should enjoy having enough money to last you till 92-96 years old. But if you buy CPF Life and you die at 85, you have nothing for your children. The balance will be banker (CPF) takes all. So why should I be forced to buy CPF Life. Even the Saudi King die at 91 years old, how can CPF assured me that I could live much longer than the Saudi King. I am not a billionaire which can afford the best medical teams in the world. Average Singapore life, maybe 82-85, so CPF Life is a sure win for CPF but not for ordinary people like me. I may not be a scholar to come out with such scheme but I have logical mind to be able to calculate based on simple calculation. The truth is in the calculation. So CPF, show to us the proper calculation based on the fact that I have stated. If I am wrong, you could have my CPF. If I am right, let me be the banker for CPF Life, I would be a millionaire maybe a billionaire without doing much but by placing the amount in CPF and earning the interest. We are not scholars but we are not dumb too. Prove to me that I am wrong and I will sincerely apologize but I stand by my word. I am 100% correct. It's KARMA, sucking ordinary people money. Or you already run out of ideas to make money???", 
+              "from": {
+                "name": "Tan Chye Soon", 
+                "id": "10208143417640290"
+              }, 
+              "id": "10153436648295923_10153442980655923"
+            }, 
+            {
+              "created_time": "2015-08-16T03:39:03+0000", 
+              "message": "Samuel Lee\ud83d\ude4c", 
+              "from": {
+                "name": "Chen Peixian", 
+                "id": "10153418042786787"
+              }, 
+              "id": "10153436648295923_10153439977190923"
+            }
+          ]
+        }, 
+        "sharedposts": {
+          "paging": {
+            "cursors": {
+              "after": "MTAzNjU2MjM2OTcwMTk1MQ==", 
+              "before": "MTAzNjU2MjM2OTcwMTk1MQ=="
+            }
+          }, 
+          "data": [
+            {
+              "created_time": "2015-08-26T09:49:03+0000", 
+              "message": "Hear Samuel\u2019s take on how to make the most out of your CPF savings. \nVisit www.CPF-BigRChat.sg for more tips.", 
+              "story": "PantryTalk shared CPF Board's video.", 
+              "id": "194769910547872_1036562369701951"
+            }
+          ]
+        }
+      }, 
+      "page": "CPF Board"
+    }
+  }
+]

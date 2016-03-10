@@ -1,0 +1,337 @@
+[
+  {
+    "post": {
+      "data": {
+        "id": "383078241890568", 
+        "permalink_url": "/SKIPOFFICIAL/videos/383078241890568/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "NTkzMDYwODk0MTgxMjky", 
+              "before": "NTczMTAzNjk2MTc4NDkz"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/383078241890568/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=NTkzMDYwODk0MTgxMjky"
+          }, 
+          "data": [
+            {
+              "id": "573103696178493", 
+              "name": "Charles Nicephore Wozninski"
+            }, 
+            {
+              "id": "443246219207032", 
+              "name": "Jennafer Advelina Dewitt"
+            }, 
+            {
+              "id": "756538414481312", 
+              "name": "Jorge Chavez"
+            }, 
+            {
+              "id": "191779137858196", 
+              "name": "Jimmy Harcourt"
+            }, 
+            {
+              "id": "10153891498329647", 
+              "name": "Camilo Velasquez Villa"
+            }, 
+            {
+              "id": "931001150328570", 
+              "name": "Julian Rosado"
+            }, 
+            {
+              "id": "1666149780320537", 
+              "name": "Niyoka Leonard"
+            }, 
+            {
+              "id": "977995262289936", 
+              "name": "Ivannia Jesda"
+            }, 
+            {
+              "id": "1039680912745084", 
+              "name": "Hk Cutktkie"
+            }, 
+            {
+              "id": "10156597546990722", 
+              "name": "Deelee Dube"
+            }, 
+            {
+              "id": "1113217718719491", 
+              "name": "Ricardo Longo"
+            }, 
+            {
+              "id": "10209351200644051", 
+              "name": "Stefania Bartolomeo"
+            }, 
+            {
+              "id": "10208900542381030", 
+              "name": "Marc Corominas Casas"
+            }, 
+            {
+              "id": "967216519981769", 
+              "name": "Giada Drew Restelli"
+            }, 
+            {
+              "id": "1031993880193555", 
+              "name": "Sol Sosa"
+            }, 
+            {
+              "id": "1162223730461920", 
+              "name": "Natasha Wilson"
+            }, 
+            {
+              "id": "10207618194520398", 
+              "name": "Bastian Andres Marquez"
+            }, 
+            {
+              "id": "244518002554459", 
+              "name": "LilPete's Trucking"
+            }, 
+            {
+              "id": "968458796523480", 
+              "name": "Wesley Samuel Finlay"
+            }, 
+            {
+              "id": "1569595240024065", 
+              "name": "Bea Entity"
+            }, 
+            {
+              "id": "818728704939578", 
+              "name": "Margaux Deligne"
+            }, 
+            {
+              "id": "10208609619653508", 
+              "name": "Nadia Pricia"
+            }, 
+            {
+              "id": "10153932092681054", 
+              "name": "Cristina Balan"
+            }, 
+            {
+              "id": "10208100760733009", 
+              "name": "Gerardo Aponte"
+            }, 
+            {
+              "id": "593060894181292", 
+              "name": "Rocio Nicol Luciano"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "MQZDZD", 
+              "before": "MjEZD"
+            }
+          }, 
+          "data": [
+            {
+              "created_time": "2015-06-02T19:51:23+0000", 
+              "message": "WoW YoUR VoiCe Skip SounDS JuST LiKE BoB BLEsSeD <3", 
+              "from": {
+                "name": "Ises Orijahnal Souljah", 
+                "id": "1712715815613676"
+              }, 
+              "id": "383078241890568_383083895223336"
+            }, 
+            {
+              "created_time": "2015-06-03T13:55:14+0000", 
+              "message": "Hel yah en Espa\u00f1ol ,si,si,.!", 
+              "from": {
+                "name": "JujuRastaa Capoeira Canga\u00e7o Cdo", 
+                "id": "1881185298774969"
+              }, 
+              "id": "383078241890568_383239008541158"
+            }, 
+            {
+              "created_time": "2015-06-04T20:09:31+0000", 
+              "message": "Amo de mais a vossa familia. M envia uma mms.", 
+              "from": {
+                "name": "Lourdes Laureano Laureano", 
+                "id": "760696647363161"
+              }, 
+              "id": "383078241890568_383635085168217"
+            }, 
+            {
+              "created_time": "2015-06-02T23:13:51+0000", 
+              "message": "Espa\u00f1ol muy bueno", 
+              "from": {
+                "name": "Manuel Bola\u00f1os Bazan", 
+                "id": "10153957301321798"
+              }, 
+              "id": "383078241890568_383114165220309"
+            }, 
+            {
+              "created_time": "2015-06-10T01:42:11+0000", 
+              "message": "Www.palcomp3.com/baggadread", 
+              "from": {
+                "name": "Gilson BaggaDread", 
+                "id": "1144329395607366"
+              }, 
+              "id": "383078241890568_385411774990548"
+            }, 
+            {
+              "created_time": "2015-06-03T12:57:16+0000", 
+              "message": "You should do a cover of Hammer ??? Please that's one of my favorite songs. \ud83d\ude0a Jah Bless", 
+              "from": {
+                "name": "Luatasi Tu'ua", 
+                "id": "10207882771603436"
+              }, 
+              "id": "383078241890568_383228821875510"
+            }, 
+            {
+              "created_time": "2015-06-02T23:42:17+0000", 
+              "message": "Bless from M\u00e9xico ! Paz y Amor siempre.", 
+              "from": {
+                "name": "Viem Daniel", 
+                "id": "10209092437808883"
+              }, 
+              "id": "383078241890568_383118555219870"
+            }, 
+            {
+              "created_time": "2015-06-04T21:54:54+0000", 
+              "message": "Muy lindo tu espa\u00f1ol \ud83d\udc4c\ud83c\udffd\ud83d\ude0d", 
+              "from": {
+                "name": "Ana Vega", 
+                "id": "851756604969808"
+              }, 
+              "id": "383078241890568_383654011832991"
+            }, 
+            {
+              "created_time": "2015-06-02T20:19:10+0000", 
+              "message": "He knows spanish ?", 
+              "from": {
+                "name": "Ni\u00f1o Manzueta", 
+                "id": "1056226807772483"
+              }, 
+              "id": "383078241890568_383087655222960"
+            }, 
+            {
+              "created_time": "2015-06-04T18:00:03+0000", 
+              "message": "Geeeeenial en espa\u00f1ol!!!", 
+              "from": {
+                "name": "Diana Carolina Posada", 
+                "id": "10153999937138000"
+              }, 
+              "id": "383078241890568_383606778504381"
+            }, 
+            {
+              "created_time": "2015-06-02T21:17:48+0000", 
+              "message": "se feliz, algunas veces no es facil. bravooo en espa\u00f1ol, pronuncias bien.", 
+              "from": {
+                "name": "Azu Velia", 
+                "id": "1724070427810091"
+              }, 
+              "id": "383078241890568_383096638555395"
+            }, 
+            {
+              "created_time": "2015-07-11T00:12:58+0000", 
+              "message": "bless from Chile, U are a good  Marley seed.", 
+              "from": {
+                "name": "Jean Cuello", 
+                "id": "1010539599019284"
+              }, 
+              "id": "383078241890568_395818517283207"
+            }, 
+            {
+              "created_time": "2015-08-12T00:36:51+0000", 
+              "message": "Espa\u00f1ol sii sii", 
+              "from": {
+                "name": "Rocio Nicol Luciano", 
+                "id": "593060894181292"
+              }, 
+              "id": "383078241890568_407144956150563"
+            }, 
+            {
+              "created_time": "2015-06-02T19:23:13+0000", 
+              "message": "bredrinnn link up nah lewwie wrk on a colab! \nhttps://www.youtube.com/watch?v=xyHbHWF36M4", 
+              "from": {
+                "name": "Real Ragamuffin", 
+                "id": "551179658392798"
+              }, 
+              "id": "383078241890568_383080035223722"
+            }, 
+            {
+              "created_time": "2015-06-02T19:17:41+0000", 
+              "message": "Ehhh.. get on rasta", 
+              "from": {
+                "name": "Sach Emm", 
+                "id": "10153864458487221"
+              }, 
+              "id": "383078241890568_383079228557136"
+            }, 
+            {
+              "created_time": "2015-06-02T19:28:58+0000", 
+              "message": "\ud83d\udc4c", 
+              "from": {
+                "name": "Hamida Otmane", 
+                "id": "1114732958572124"
+              }, 
+              "id": "383078241890568_383080761890316"
+            }, 
+            {
+              "created_time": "2015-06-02T21:13:22+0000", 
+              "message": "\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d", 
+              "from": {
+                "name": "Cristina Balan", 
+                "id": "10153932092681054"
+              }, 
+              "id": "383078241890568_383093918555667"
+            }, 
+            {
+              "created_time": "2015-06-02T20:40:11+0000", 
+              "message": "\ud83d\udc48\ud83c\udf85\ud83d\udc49 [[302137593317967]]  dd_Skip \n\ud83d\udc48\ud83c\udf85\ud83d\udc49Oo\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\n\ud83c\udf40\ud83c\udf39  \ud83d\udc1b  \ud83c\udf0a  \ud83c\udf42  \ud83d\udc0d  \ud83d\udc90  \ud83c\udf42  \ud83c\udf3b  \u26c4  \ud83c\udf3a  \ud83c\udf41  \n video apaan twuh  dd_Skip  ?? Jadi penasaran pingin lihat hehehe \n\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026oO \ud83d\udc48\ud83c\udf85\ud83d\udc49 \nBoT Free By www.ara85. com", 
+              "from": {
+                "name": "Lucky Andriansah", 
+                "id": "1731155710462432"
+              }, 
+              "id": "383078241890568_383090075222718"
+            }, 
+            {
+              "created_time": "2015-06-03T17:41:00+0000", 
+              "message": "Zo\u00e9 Soullier", 
+              "from": {
+                "name": "Mary Entz", 
+                "id": "1692966797639178"
+              }, 
+              "id": "383078241890568_383288505202875"
+            }, 
+            {
+              "created_time": "2015-06-02T21:13:12+0000", 
+              "message": "Amanda D\u00edaz", 
+              "from": {
+                "name": "Cristina Balan", 
+                "id": "10153932092681054"
+              }, 
+              "id": "383078241890568_383093881889004"
+            }, 
+            {
+              "created_time": "2015-06-02T19:25:12+0000", 
+              "message": "Yovana Vilchis", 
+              "from": {
+                "name": "Joel Overfelt", 
+                "id": "10208815929339810"
+              }, 
+              "id": "383078241890568_383080248557034"
+            }
+          ]
+        }, 
+        "sharedposts": {
+          "paging": {
+            "cursors": {
+              "after": "MTAyMTI2MTE4MTI0MTM1OQ==", 
+              "before": "MTAyMTI2MTE4MTI0MTM1OQ=="
+            }, 
+            "next": "https://graph.facebook.com/v2.5/383078241890568/sharedposts?access_token=519668928211037|ZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTAyMTI2MTE4MTI0MTM1OQ%3D%3D"
+          }, 
+          "data": [
+            {
+              "created_time": "2015-06-03T04:03:08+0000", 
+              "story": "Dbf Kent Aten shared SkipMarley's video.", 
+              "id": "656441584389989_1021261181241359"
+            }
+          ]
+        }
+      }, 
+      "page": "SkipMarley"
+    }
+  }
+]

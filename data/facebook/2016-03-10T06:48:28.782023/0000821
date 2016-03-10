@@ -1,0 +1,49 @@
+[
+  {
+    "post": {
+      "data": {
+        "permalink_url": "/boardstar.cz/videos/892701880778618/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "OTgxOTg5NTA1MjE4NjQ1", 
+              "before": "ODI1MjgxNDM0MjY4MjI4"
+            }
+          }, 
+          "data": [
+            {
+              "id": "825281434268228", 
+              "name": "Magda Sta\u0148kov\u00e1"
+            }, 
+            {
+              "id": "1542771602681831", 
+              "name": "Daniel Szczotka"
+            }, 
+            {
+              "id": "580322755459450", 
+              "name": "Trin Alt"
+            }, 
+            {
+              "id": "174804139235066", 
+              "name": "BoardStar.cz"
+            }, 
+            {
+              "id": "1088838594499594", 
+              "name": "Kate\u0159ina Veru\u0148kov\u00e1"
+            }, 
+            {
+              "id": "1349111438447807", 
+              "name": "Peto Hlinka"
+            }, 
+            {
+              "id": "981989505218645", 
+              "name": "Honza Mac\u00edk"
+            }
+          ]
+        }, 
+        "id": "892701880778618"
+      }, 
+      "page": "BoardStar.cz"
+    }
+  }
+]

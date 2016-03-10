@@ -1,0 +1,33 @@
+[
+  {
+    "post": {
+      "data": {
+        "permalink_url": "/skiraeditore/videos/1951377794774/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTAxNTMyOTY5NTMyNDE5OTMZD", 
+              "before": "MTAxNTQwNDMzMjM0MzA5NzIZD"
+            }
+          }, 
+          "data": [
+            {
+              "id": "10154043323430972", 
+              "name": "Manuela Stagno"
+            }, 
+            {
+              "id": "10208721368860606", 
+              "name": "Fabio Abate"
+            }, 
+            {
+              "id": "10153296953241993", 
+              "name": "Alessandro Perini"
+            }
+          ]
+        }, 
+        "id": "1951377794774"
+      }, 
+      "page": "Skira editore"
+    }
+  }
+]

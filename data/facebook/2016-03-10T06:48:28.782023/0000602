@@ -1,0 +1,358 @@
+[
+  {
+    "post": {
+      "data": {
+        "permalink_url": "/PijamaSurf/videos/10153101357451042/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTY4Mjc4MzIyNTMxMTQ0MQZDZD", 
+              "before": "MTE5NTk1MzUyNzA4MzMxOQZDZD"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10153101357451042/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTY4Mjc4MzIyNTMxMTQ0MQZDZD"
+          }, 
+          "data": [
+            {
+              "id": "1195953527083319", 
+              "name": "Alejandro Espinosa"
+            }, 
+            {
+              "id": "10208742980922963", 
+              "name": "Luis Bernal"
+            }, 
+            {
+              "id": "10207761513869805", 
+              "name": "Adrian Vargas Blanc"
+            }, 
+            {
+              "id": "10153623927947968", 
+              "name": "Gabriel Jerez"
+            }, 
+            {
+              "id": "224239891261362", 
+              "name": "Regina Avi\u00f1a"
+            }, 
+            {
+              "id": "10208578003751912", 
+              "name": "Alvaro Alvarado"
+            }, 
+            {
+              "id": "10209260401884873", 
+              "name": "Elena Rodriguez"
+            }, 
+            {
+              "id": "10156468106430391", 
+              "name": "Antonio AlOk"
+            }, 
+            {
+              "id": "550987535075949", 
+              "name": "Leonardo N\u00fa\u00f1ez"
+            }, 
+            {
+              "id": "10207746238367005", 
+              "name": "Marla L\u00f3pez Pla"
+            }, 
+            {
+              "id": "10207252887738347", 
+              "name": "Mari\u00e1n Angulo"
+            }, 
+            {
+              "id": "10154137598631062", 
+              "name": "Maite J\u00e1uregui"
+            }, 
+            {
+              "id": "898374443617338", 
+              "name": "Sofia Navarro"
+            }, 
+            {
+              "id": "1242945819068678", 
+              "name": "Madeline Martinez"
+            }, 
+            {
+              "id": "1168368283173343", 
+              "name": "Alan Najera"
+            }, 
+            {
+              "id": "10208768054624203", 
+              "name": "Diego Lopez Bruzual"
+            }, 
+            {
+              "id": "987299104677555", 
+              "name": "Israel Barbosa"
+            }, 
+            {
+              "id": "10207350780839925", 
+              "name": "Kike Duran"
+            }, 
+            {
+              "id": "1027378020652873", 
+              "name": "Polanco Jose"
+            }, 
+            {
+              "id": "1018495988218084", 
+              "name": "Franc Franco"
+            }, 
+            {
+              "id": "1113919092006134", 
+              "name": "San Uriel Salamanca"
+            }, 
+            {
+              "id": "10153488419984021", 
+              "name": "Guillermo Caro Murillo"
+            }, 
+            {
+              "id": "1688638998080768", 
+              "name": "TGabriel P\u00e9rez"
+            }, 
+            {
+              "id": "10153439092587688", 
+              "name": "Mois\u00e9s Romero"
+            }, 
+            {
+              "id": "1682783225311441", 
+              "name": "Diego Luna Lomas"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "MTE1", 
+              "before": "MTQw"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10153101357451042/comments?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTE1"
+          }, 
+          "data": [
+            {
+              "created_time": "2015-01-14T21:27:53+0000", 
+              "message": "Creo que no entendieron el discurso (me refiero a Pijama Surf)", 
+              "from": {
+                "name": "Juan Carlos \u00c1lvarez", 
+                "id": "1071182509592244"
+              }, 
+              "id": "10153101357451042_10153103342131042"
+            }, 
+            {
+              "created_time": "2015-01-14T17:12:43+0000", 
+              "message": "Destrozar? la alaba con sinceridad, le gusta.", 
+              "from": {
+                "name": "Luis Alvarado", 
+                "id": "10208466049550082"
+              }, 
+              "id": "10153101357451042_10153102917386042"
+            }, 
+            {
+              "created_time": "2015-01-14T18:49:35+0000", 
+              "message": "Con amor de Bill\nhttps://www.youtube.com/watch?v=bi86n9fV7Fc", 
+              "from": {
+                "name": "Javier Trigo", 
+                "id": "10208667732039659"
+              }, 
+              "id": "10153101357451042_10153103076976042"
+            }, 
+            {
+              "created_time": "2015-10-27T23:16:59+0000", 
+              "message": "Hay mentiras verdaderas o verdaderas mentiras ,esa es la publicidad .De raz\u00f3n el premio ,no acab\u00f3 con la publicidad ,dijo lo que es y punto .Bien!", 
+              "from": {
+                "name": "Alberto Jose Ponton Tamara", 
+                "id": "10153954912839420"
+              }, 
+              "id": "10153101357451042_10153817304321042"
+            }, 
+            {
+              "created_time": "2015-01-14T18:29:05+0000", 
+              "message": "a lo unico que humillo fue a los materialistas..", 
+              "from": {
+                "name": "Karen Rivera Ibarra", 
+                "id": "10156468106405391"
+              }, 
+              "id": "10153101357451042_10153103046591042"
+            }, 
+            {
+              "created_time": "2015-10-22T16:21:32+0000", 
+              "message": "Me sorprendi\u00f3 que no lo bajaran del escenario, los que le dieron el \"Grandioso Trofeo\" \nFu\u00e9 valiente, ir\u00f3nico y mord\u00e1z.", 
+              "from": {
+                "name": "Alejandro Perez Solis", 
+                "id": "969938816431147"
+              }, 
+              "id": "10153101357451042_10153807547751042"
+            }, 
+            {
+              "created_time": "2015-10-23T13:24:43+0000", 
+              "message": "Bueno el discurso, es la realidad...sin embargo es responsabilidad d cada uno gastar bien el dinero....pero d que hay tonteras para comprar, las hay y muchasss", 
+              "from": {
+                "name": "Wilma Fuica Babogredac", 
+                "id": "10209016884358687"
+              }, 
+              "id": "10153101357451042_10153809016936042"
+            }, 
+            {
+              "created_time": "2015-01-14T16:57:08+0000", 
+              "message": "Sacil Daena Morales mira donde anda ahora este cuate!, mis respetos para su discurso!", 
+              "from": {
+                "name": "Ponchete Arias de Abreu", 
+                "id": "10207510878863171"
+              }, 
+              "id": "10153101357451042_10153102895321042"
+            }, 
+            {
+              "created_time": "2015-01-18T22:25:51+0000", 
+              "message": "No es publicidad es mercadotecnia aplicada a la sociolog\u00eda humana condici\u00f3n vanal del ser humano llenando vac\u00edos e instantes de felicidad que solo te enagena mas y mas sociedades de soledad y de placeres desechables pero funciona y de eso la gente vive jajajaja y quien no miente ? Quien hace cosas sin tener un beneficio que es bueno sin esperar Nada a cambio POR LO MENOS LA SATISFACCI\u00d3N PROPIO DE AYUDAR ya es ego", 
+              "from": {
+                "name": "Gabriel Gonzalez", 
+                "id": "934300319993325"
+              }, 
+              "id": "10153101357451042_10153111633231042"
+            }, 
+            {
+              "created_time": "2015-01-14T20:04:12+0000", 
+              "message": "Stan me acord\u00e9 de la platica de los iphones y los camaradas con cinto piteado y una \"troca\" que les prest\u00f3 pap\u00e1.", 
+              "from": {
+                "name": "Berna Segovia", 
+                "id": "10153266520601364"
+              }, 
+              "id": "10153101357451042_10153103192361042"
+            }, 
+            {
+              "created_time": "2015-01-15T18:09:14+0000", 
+              "message": "si no entendiste que lo del libro era una broma, esta nota no era para ti", 
+              "from": {
+                "name": "Alfonso Saldarriaga", 
+                "id": "10209173858682760"
+              }, 
+              "id": "10153101357451042_10153104957291042"
+            }, 
+            {
+              "created_time": "2015-01-15T02:53:58+0000", 
+              "message": "\"Me gusta la publicidad porque me encanta mentir\"", 
+              "from": {
+                "name": "Fernando Garc\u00eda Cu\u00e9ncar", 
+                "id": "10154385867262923"
+              }, 
+              "id": "10153101357451042_10153103807566042"
+            }, 
+            {
+              "created_time": "2015-01-15T00:11:37+0000", 
+              "message": "\u00bfDestruir a la industria de la publicidad? Jajajajajajajaja \ud83d\ude02", 
+              "from": {
+                "name": "Sof\u00eda Garc\u00eda Tovar", 
+                "id": "10208652371851942"
+              }, 
+              "id": "10153101357451042_10153103591296042"
+            }, 
+            {
+              "created_time": "2015-01-14T17:47:38+0000", 
+              "message": "Angie Garban pilla la sabidur\u00eda seinfeldiana", 
+              "from": {
+                "name": "Jaime Garvett", 
+                "id": "922044817864495"
+              }, 
+              "id": "10153101357451042_10153102975096042"
+            }, 
+            {
+              "created_time": "2015-01-14T17:24:18+0000", 
+              "message": "Must watch Daniel Wheeler !!! Est\u00e1 buen\u00edsimo", 
+              "from": {
+                "name": "Am\u00e9rica Arias", 
+                "id": "10153976952912744"
+              }, 
+              "id": "10153101357451042_10153102934171042"
+            }, 
+            {
+              "created_time": "2015-01-14T17:18:38+0000", 
+              "message": "Jajajaja la verdad ., es la verdad.... Nosotros compramos m\u00e1s la marca que el producto y no dud\u00f3 que as\u00ed sea la publicidad mercadotecnia ...", 
+              "from": {
+                "name": "Guell On", 
+                "id": "1582221245401337"
+              }, 
+              "id": "10153101357451042_10153102925721042"
+            }, 
+            {
+              "created_time": "2015-01-14T16:09:27+0000", 
+              "message": "Jerry Seinfeld <3", 
+              "from": {
+                "name": "Nika Padilla", 
+                "id": "10207797096218106"
+              }, 
+              "id": "10153101357451042_10153102823911042"
+            }, 
+            {
+              "created_time": "2015-04-13T20:30:02+0000", 
+              "message": "Jajajjaaja", 
+              "from": {
+                "name": "Mago Esteban Alef", 
+                "id": "1175610899116347"
+              }, 
+              "id": "10153101357451042_10153317419341042"
+            }, 
+            {
+              "created_time": "2015-03-27T15:37:54+0000", 
+              "message": "Buenisimo...lastima que muchos nunca van a entender el mensaje.", 
+              "from": {
+                "name": "Javier Henao Arias", 
+                "id": "10153772998443277"
+              }, 
+              "id": "10153101357451042_10153275785516042"
+            }, 
+            {
+              "created_time": "2015-01-17T00:13:52+0000", 
+              "message": "A este tipo se le olvid\u00f3 que sus millones salieron de las ventas de espacios publicitarios en sus programas... Me imagino que ah\u00ed no le parec\u00eda que la publicidad \"apestara\"", 
+              "from": {
+                "name": "Ricardo Villagran Vicent", 
+                "id": "10156550969275573"
+              }, 
+              "id": "10153101357451042_10153107633136042"
+            }, 
+            {
+              "created_time": "2015-01-15T18:22:20+0000", 
+              "message": "Como ves Jano !", 
+              "from": {
+                "name": "Xav\u00d8 Aguilar", 
+                "id": "10209349479597414"
+              }, 
+              "id": "10153101357451042_10153104978941042"
+            }, 
+            {
+              "created_time": "2015-01-15T17:34:51+0000", 
+              "message": "Anil\u00fa este es!", 
+              "from": {
+                "name": "Luis Jo", 
+                "id": "1015926958450554"
+              }, 
+              "id": "10153101357451042_10153104900706042"
+            }, 
+            {
+              "created_time": "2015-01-15T16:29:43+0000", 
+              "message": "Jeje, es muy bueno y real como parte de todo un sistema materialista en el que vivimos, todos. El concepto de \"materialismo sentimental\" es muy interesante y real. En el mundo calaz que el \u00fanico que zafa de esto quizas sea Mujica, pero despues estamos todos adentro! Gracias x compartirlo Fernando  !! Abrazo!", 
+              "from": {
+                "name": "Mauricio Minchilli", 
+                "id": "10208507688627094"
+              }, 
+              "id": "10153101357451042_10153104795651042"
+            }, 
+            {
+              "created_time": "2015-01-15T15:44:33+0000", 
+              "message": "Mauricio Minchilli, pens\u00e9 en vos! :)", 
+              "from": {
+                "name": "Sergio Fernando Serratto", 
+                "id": "10153864365125259"
+              }, 
+              "id": "10153101357451042_10153104695926042"
+            }, 
+            {
+              "created_time": "2015-01-15T13:10:14+0000", 
+              "message": "Y todos se tragaron el cuento?......ilusos......ahora vayan y compren su libro idiotas.", 
+              "from": {
+                "name": "Estrella Roja", 
+                "id": "10205866796165068"
+              }, 
+              "id": "10153101357451042_10153104478331042"
+            }
+          ]
+        }, 
+        "id": "10153101357451042"
+      }, 
+      "page": "Pijama Surf"
+    }
+  }
+]

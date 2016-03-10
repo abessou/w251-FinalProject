@@ -1,0 +1,358 @@
+[
+  {
+    "post": {
+      "data": {
+        "permalink_url": "/Sk1nners/videos/802503959876736/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTMyMjg2Nzk1NDM5NDIxOAZDZD", 
+              "before": "NTI2OTg1NTcwODE2NjU0"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/802503959876736/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTMyMjg2Nzk1NDM5NDIxOAZDZD"
+          }, 
+          "data": [
+            {
+              "id": "526985570816654", 
+              "name": "Adrielli Carvalho"
+            }, 
+            {
+              "id": "962438157179449", 
+              "name": "Joao Pedro Oliveira"
+            }, 
+            {
+              "id": "1026357520779344", 
+              "name": "Camila Gomes"
+            }, 
+            {
+              "id": "474066472794943", 
+              "name": "Pikena Martins"
+            }, 
+            {
+              "id": "585235108292744", 
+              "name": "Yohanna Bispo"
+            }, 
+            {
+              "id": "1663724553849868", 
+              "name": "Roberta Barcelos"
+            }, 
+            {
+              "id": "1074346445955549", 
+              "name": "Sarah Raquel"
+            }, 
+            {
+              "id": "569411166569278", 
+              "name": "Paloma Vicente"
+            }, 
+            {
+              "id": "1569009693413324", 
+              "name": "Keylla Silva"
+            }, 
+            {
+              "id": "498839010241229", 
+              "name": "Arthur Porto"
+            }, 
+            {
+              "id": "593775697445313", 
+              "name": "Laura Tolotti"
+            }, 
+            {
+              "id": "880852835345285", 
+              "name": "Tabata Stefany"
+            }, 
+            {
+              "id": "1089408941110581", 
+              "name": "Victor Marques"
+            }, 
+            {
+              "id": "571530466355391", 
+              "name": "Evelyn Silva"
+            }, 
+            {
+              "id": "978283145601257", 
+              "name": "Alice Ramirez"
+            }, 
+            {
+              "id": "1084555581615825", 
+              "name": "Thain\u00e1 Michaella Karsten"
+            }, 
+            {
+              "id": "1028834840516459", 
+              "name": "Vivian Danielle"
+            }, 
+            {
+              "id": "1025128020895933", 
+              "name": "Mylena Silva"
+            }, 
+            {
+              "id": "741733322626473", 
+              "name": "Bianca Borges"
+            }, 
+            {
+              "id": "594660530690163", 
+              "name": "Luciane Apprato"
+            }, 
+            {
+              "id": "922277821218990", 
+              "name": "Alanis Lopes"
+            }, 
+            {
+              "id": "1068482383173442", 
+              "name": "Camila Galvao"
+            }, 
+            {
+              "id": "966128043473050", 
+              "name": "Nicole Bittencourt"
+            }, 
+            {
+              "id": "972596936129392", 
+              "name": "Felipe Militao"
+            }, 
+            {
+              "id": "1322867954394218", 
+              "name": "Lucas Santos"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "NDcw", 
+              "before": "NDk0"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/802503959876736/comments?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=NDcw"
+          }, 
+          "data": [
+            {
+              "created_time": "2016-01-10T17:02:22+0000", 
+              "message": "Eu fiquei tipo:\n> Muleque sai dai ele vai te matar\n> N\u00e3o n\u00e3o \n> Fudeu \n> Eita carai, o Cook ta virando sayjin \n> Agora vai agora vai \n> Toma toma aeeeooo caralho se fode ai", 
+              "from": {
+                "name": "Jozu\u00e9 Rodrigues", 
+                "id": "1533815813615949"
+              }, 
+              "id": "802503959876736_802507789876353"
+            }, 
+            {
+              "created_time": "2016-01-10T17:17:29+0000", 
+              "message": "Ai vc percebe que o Cook ama mais o Freddie do que a Effy nessa cena, pq ele n\u00e3o d\u00e1 a minima pra ela", 
+              "from": {
+                "name": "Thamara Paniza", 
+                "id": "976333582445371"
+              }, 
+              "id": "802503959876736_802523983208067"
+            }, 
+            {
+              "created_time": "2016-01-10T17:00:47+0000", 
+              "message": "A cena foi incr\u00edvel, mas o final em si, foi terr\u00edvel, at\u00e9 parece que vai ter continua\u00e7\u00e3o", 
+              "from": {
+                "name": "Mateus Ferreira", 
+                "id": "822852027844494"
+              }, 
+              "id": "802503959876736_802507183209747"
+            }, 
+            {
+              "created_time": "2016-01-10T22:48:09+0000", 
+              "message": "Sinceramente, pra mim sempre foi o melhor personagem. Ele sempre deixou claro que a amizade dele e do Freddie estava acima de qualquer envolvimento com uma mulher. No epis\u00f3dio extra do Cook na pris\u00e3o mostra isso, ele fala claramente pro Freddie. E na 7\u00aa temporada d\u00e1 pra ter no\u00e7\u00e3o de que ele realmente matou o psic\u00f3logo da Effy.", 
+              "from": {
+                "name": "J\u00falia J\u00fadice", 
+                "id": "1040823599308177"
+              }, 
+              "id": "802503959876736_802657739861358"
+            }, 
+            {
+              "created_time": "2016-01-10T19:04:40+0000", 
+              "message": "O Cook tem o meu respeito desde que ele colocou ketchup na cara para chamar a aten\u00e7\u00e3o da Effy \ud83d\ude02\u2764\u2764", 
+              "from": {
+                "name": "Francine Monteiro", 
+                "id": "912173298900724"
+              }, 
+              "id": "802503959876736_802572686536530"
+            }, 
+            {
+              "created_time": "2016-01-10T18:05:01+0000", 
+              "message": "Pior jeito de acabar a temporada. Faltou mostrar a rea\u00e7\u00e3o dos outros sobre a morte de Freddie, deveria ter sido ao menos parecido com o final da primeira gera\u00e7\u00e3o, mostrando o rumo de cada um. Pareceu cena de \"continua no pr\u00f3ximo epis\u00f3dio\"", 
+              "from": {
+                "name": "Ivanildo Matos", 
+                "id": "1007634019323721"
+              }, 
+              "id": "802503959876736_802547523205713"
+            }, 
+            {
+              "created_time": "2016-01-29T13:18:46+0000", 
+              "message": "O momento mais triste onde vc percebe que o Freddie realmente morreu e o Cook como sempre gato maravilhoso \u2764\ufe0f Douglas Oliveira", 
+              "from": {
+                "name": "Agnes Souza", 
+                "id": "1024361784303394"
+              }, 
+              "id": "802503959876736_811731265620672"
+            }, 
+            {
+              "created_time": "2016-01-26T20:21:40+0000", 
+              "message": "O cook sempre colocou o Freddie em primeiro lugar. O Freddie que trocou ele pela effy .-. Parou de conversar com e ele e PA.", 
+              "from": {
+                "name": "Dani Cost\u00e1bile", 
+                "id": "955909917778666"
+              }, 
+              "id": "802503959876736_810358865757912"
+            }, 
+            {
+              "created_time": "2016-01-11T02:16:48+0000", 
+              "message": "Desnecess\u00e1rio a morte do Freddie,at\u00e9 hj choro rio de l\u00e1grimas por causa disso....e tamb\u00e9m foi chato ele n\u00e3o contar pra ningu\u00e9m oq aconteceu. Ao menos ele merecia um enterro digno,pelamor =(", 
+              "from": {
+                "name": "Ana Beatriz", 
+                "id": "912283482221840"
+              }, 
+              "id": "802503959876736_802722596521539"
+            }, 
+            {
+              "created_time": "2016-03-03T21:13:02+0000", 
+              "message": "\"O momento em que o Cook ganhou nosso respeito.\" cook teve meu respeito desde o dia 1", 
+              "from": {
+                "name": "Anna Montenegro", 
+                "id": "1142448425788008"
+              }, 
+              "id": "802503959876736_829316027195529"
+            }, 
+            {
+              "created_time": "2016-01-15T03:05:55+0000", 
+              "message": "Arrependida at\u00e9 a alma de ter visto o v\u00eddeo e os coment\u00e1rios \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d pqp,  n\u00e3o to acreditando que o Freddie morre !", 
+              "from": {
+                "name": "Tayana Costa", 
+                "id": "1116651311688143"
+              }, 
+              "id": "802503959876736_804636019663530"
+            }, 
+            {
+              "created_time": "2016-01-10T17:10:42+0000", 
+              "message": "Elise Sophia  e na 7 temporada a gente quase morre de d\u00f3 querendo pegar ele p cuidar", 
+              "from": {
+                "name": "Karla Cazuza", 
+                "id": "745398802228235"
+              }, 
+              "id": "802503959876736_802514009875731"
+            }, 
+            {
+              "created_time": "2016-01-24T05:20:46+0000", 
+              "message": "Seria legal mostrar algumas cenas sobre a m\u00e3e e ele. O porqu\u00ea dele ser assim explosivo e n\u00e3o ligar pra nada. Cena \u00e9pica: Ele e o irm\u00e3o quebrando o carro da m\u00e3e.", 
+              "from": {
+                "name": "Wanderly Albuquerque", 
+                "id": "578193605671634"
+              }, 
+              "id": "802503959876736_809075015886297"
+            }, 
+            {
+              "created_time": "2016-01-10T21:14:54+0000", 
+              "message": "Dps dessa Temp. N tive vontade de ver a 5 , ....o Cook volta na s\u00e9rie ap\u00f3s isso ??", 
+              "from": {
+                "name": "Thiago Senabio Keller", 
+                "id": "584514638373621"
+              }, 
+              "id": "802503959876736_802627943197671"
+            }, 
+            {
+              "created_time": "2016-02-12T12:26:39+0000", 
+              "message": "Desde o come\u00e7o da gera\u00e7\u00e3o  ele ja Tinha meu Respeito ele era o meu favorito...", 
+              "from": {
+                "name": "Walleska Falc\u00e3o", 
+                "id": "828794673932904"
+              }, 
+              "id": "802503959876736_818835094910289"
+            }, 
+            {
+              "created_time": "2016-03-04T15:01:41+0000", 
+              "message": "Hector nesse momento fiquei com o cu na n\u00e3o, relembrar \u00e9 viver", 
+              "from": {
+                "name": "B\u00e1rbara Cunha", 
+                "id": "880690012048297"
+              }, 
+              "id": "802503959876736_829630993830699"
+            }, 
+            {
+              "created_time": "2016-01-11T06:48:53+0000", 
+              "message": "Verdade! \nE foi na 7\u00b0 temporada que ele virou meu personagem preferido da s\u00e9rie toda.", 
+              "from": {
+                "name": "Alan Zim", 
+                "id": "675997745921549"
+              }, 
+              "id": "802503959876736_802821103178355"
+            }, 
+            {
+              "created_time": "2016-01-10T18:59:56+0000", 
+              "message": "O cara mais babaca da s\u00e9rie e ao mesmo tempo o melhor personagem :)", 
+              "from": {
+                "name": "Fernando Michel", 
+                "id": "1097352976984351"
+              }, 
+              "id": "802503959876736_802570956536703"
+            }, 
+            {
+              "created_time": "2016-02-27T16:10:51+0000", 
+              "message": "Eduardo Junior eu sou o cook e a vida \u00e9 o psiquiatra, sendo que quem apanha at\u00e9 morrer sou eu.", 
+              "from": {
+                "name": "Lara Vidian", 
+                "id": "925402380900967"
+              }, 
+              "id": "802503959876736_826720414121757"
+            }, 
+            {
+              "created_time": "2016-01-27T17:18:27+0000", 
+              "message": "Thaina Gallegario onde todo meu \u00f3dio por ele foi convertido em uma l\u00e1grima", 
+              "from": {
+                "name": "Ana Beatriz Borsetti", 
+                "id": "958863137565873"
+              }, 
+              "id": "802503959876736_810820802378385"
+            }, 
+            {
+              "created_time": "2016-01-12T18:57:51+0000", 
+              "message": "terminei esse ep nao tem 2 minutos... eu com sangue no zoi aqui e o cook falando em vez de meter a porrada nesse cara :V", 
+              "from": {
+                "name": "Salomao Emanoel", 
+                "id": "929904590450896"
+              }, 
+              "id": "802503959876736_803555836438215"
+            }, 
+            {
+              "created_time": "2016-03-03T21:10:42+0000", 
+              "message": "A melhor parteeeee o meu final de temporada amoo cook ,ate de fala dessa parte me arrepio \ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d\ud83d\ude0d", 
+              "from": {
+                "name": "Stefani Ventura", 
+                "id": "563229610519346"
+              }, 
+              "id": "802503959876736_829314867195645"
+            }, 
+            {
+              "created_time": "2016-03-04T22:02:45+0000", 
+              "message": "Eu n\u00e3o sei nem do que se trata, nem o v\u00eddeo eu vi! S\u00f3 li ' eu sou o cook' HAHAHAHAHA Pedro Cooke", 
+              "from": {
+                "name": "J\u00falia de la Cruz", 
+                "id": "1012269218820732"
+              }, 
+              "id": "802503959876736_829787547148377"
+            }, 
+            {
+              "created_time": "2016-01-10T18:23:08+0000", 
+              "message": "\u00c9 assim q acabou a 2 gera\u00e7\u00e3o Mariana por isso q eu amo o Cook :')", 
+              "from": {
+                "name": "Isabela Vacaro", 
+                "id": "978716545554154"
+              }, 
+              "id": "802503959876736_802558769871255"
+            }, 
+            {
+              "created_time": "2016-03-03T22:14:36+0000", 
+              "message": "Patricia Givort Cruz TUDO o que a gente fala eu vejo alguma referencia. O mundo espia a gente.", 
+              "from": {
+                "name": "Vict\u00f3ria Rachid", 
+                "id": "1071383976215807"
+              }, 
+              "id": "802503959876736_829350240525441"
+            }
+          ]
+        }, 
+        "id": "802503959876736"
+      }, 
+      "page": "Skinners"
+    }
+  }
+]

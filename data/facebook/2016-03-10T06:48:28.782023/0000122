@@ -1,0 +1,45 @@
+[
+  {
+    "post": {
+      "data": {
+        "permalink_url": "/skiraeditore/videos/10150857730396958/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTAxNTM4NDg0MzIyNzAxNTUZD", 
+              "before": "NjkyNDkxNDg3NTU3MTI1"
+            }
+          }, 
+          "data": [
+            {
+              "id": "692491487557125", 
+              "name": "Ganga Khaire"
+            }, 
+            {
+              "id": "10153975351632329", 
+              "name": "Gary Willis"
+            }, 
+            {
+              "id": "209847709100471", 
+              "name": "Atelier d'Arte di Luigi Span\u00f2"
+            }, 
+            {
+              "id": "10208721368860606", 
+              "name": "Fabio Abate"
+            }, 
+            {
+              "id": "10153296953241993", 
+              "name": "Alessandro Perini"
+            }, 
+            {
+              "id": "10153848432270155", 
+              "name": "Filippo Vitta Zelman"
+            }
+          ]
+        }, 
+        "id": "10150857730396958"
+      }, 
+      "page": "Skira editore"
+    }
+  }
+]

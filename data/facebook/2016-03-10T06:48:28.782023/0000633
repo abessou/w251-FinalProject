@@ -1,0 +1,358 @@
+[
+  {
+    "post": {
+      "data": {
+        "permalink_url": "/surfablog/videos/10153085569985911/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTAyMDYxOTQ5NTAyOTgwNDgZD", 
+              "before": "OTc3MzUxOTg5MDE5OTU1"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10153085569985911/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTAyMDYxOTQ5NTAyOTgwNDgZD"
+          }, 
+          "data": [
+            {
+              "id": "977351989019955", 
+              "name": "Luca Francesco Navarro"
+            }, 
+            {
+              "id": "242496096085937", 
+              "name": "Adam Khiari"
+            }, 
+            {
+              "id": "221574921527513", 
+              "name": "Alessandro Donzelli"
+            }, 
+            {
+              "id": "628973527250594", 
+              "name": "Amanda Sheeran"
+            }, 
+            {
+              "id": "1042767669079897", 
+              "name": "Gianluca Cappelli"
+            }, 
+            {
+              "id": "794655000638362", 
+              "name": "Saimon Gjeci"
+            }, 
+            {
+              "id": "10205725403831289", 
+              "name": "Miki Buonaventura"
+            }, 
+            {
+              "id": "1141171529228821", 
+              "name": "Tito Mercatelli"
+            }, 
+            {
+              "id": "10208631757854090", 
+              "name": "Giuseppe Tagliacozzo"
+            }, 
+            {
+              "id": "1146216998724244", 
+              "name": "Giovanni Mannuzza"
+            }, 
+            {
+              "id": "10206173945769508", 
+              "name": "Giorgio Bisceglie"
+            }, 
+            {
+              "id": "10205874653013055", 
+              "name": "Lizeth Serna"
+            }, 
+            {
+              "id": "985634958183492", 
+              "name": "Samuele Portovenero"
+            }, 
+            {
+              "id": "811871552290277", 
+              "name": "Daniele Punzo"
+            }, 
+            {
+              "id": "788685914570166", 
+              "name": "Fabrizio Fiorillo"
+            }, 
+            {
+              "id": "435993283237833", 
+              "name": "Asia Rizzini"
+            }, 
+            {
+              "id": "1188136434530042", 
+              "name": "Eleonora Bracci"
+            }, 
+            {
+              "id": "1134165476624097", 
+              "name": "Delilah Melluso"
+            }, 
+            {
+              "id": "1778748509011543", 
+              "name": "Sofia Torri"
+            }, 
+            {
+              "id": "10205621190149564", 
+              "name": "Angelo Faele"
+            }, 
+            {
+              "id": "1171919612832521", 
+              "name": "Antonio Petrarca"
+            }, 
+            {
+              "id": "10204482512143014", 
+              "name": "Marina Benedetto"
+            }, 
+            {
+              "id": "533294806841343", 
+              "name": "Gabriel Fanu"
+            }, 
+            {
+              "id": "1084791431572908", 
+              "name": "Andrea Di Girolamo"
+            }, 
+            {
+              "id": "10206194950298048", 
+              "name": "Catello Sicignano"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "MjcZD", 
+              "before": "NTIZD"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10153085569985911/comments?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MjcZD"
+          }, 
+          "data": [
+            {
+              "created_time": "2015-09-17T19:27:13+0000", 
+              "message": "Ciao Mariangela, il mio non era un modo per alimentare le dicerie su Michael, piuttosto ho fatto un video per omaggiarlo visto che in Curiosity parlo solo dei miei idoli. Mi sono basato su una serie di siti autorevoli, quindi per quanto mi potessero risultare strane alcune notizie, le ho inserite fidandomi delle fonti che ho consultato. Purtroppo nel caso di personaggi cos\u00ec importanti, pu\u00f2 capitare che anche su siti ufficiali ci siano delle notizie non vere. Mi \u00e8 successa la stessa cosa in passato con Cristiano Ronaldo, consultando il sito di EuroSport. Non volevo mancare di rispetto ai fan di MJ, anche perch\u00e9 sono un suo fan io stesso. Mi fa piacere che ci siano dei commenti educati e costruttivi come il tuo, che dimostrano quanta attenzione ci sia su questo format.", 
+              "from": {
+                "name": "Surfa", 
+                "id": "43807925910"
+              }, 
+              "id": "10153085569985911_10153091345195911"
+            }, 
+            {
+              "created_time": "2015-09-15T13:52:49+0000", 
+              "message": "A giorni prepariamo nuove puntate! Raga scrivete suggerimenti qui sotto:)", 
+              "from": {
+                "name": "Surfa", 
+                "id": "43807925910"
+              }, 
+              "id": "10153085569985911_10153087215305911"
+            }, 
+            {
+              "created_time": "2015-09-15T10:41:24+0000", 
+              "message": "Quante cazzate, non si \u00e9 sbiancato, non ha mai dormito nella camera iperbati a e non era totalmente calvo, solo nel punto dove si era bruciato. E non ha mai dichiarato il numero di operazioni avute al naso e mento ma solo che le ha fatte al naso e mento, le ha fatte perch\u00e9 si \u00e9 rotto il setto nasale durante una performance e il naso \u00e9 stato rifatto male causandoli delle future operazioni dove il naso veniva anche rimpicciolito e nel mento ha fatto solo la fossetta.", 
+              "from": {
+                "name": "Alessio Floris", 
+                "id": "10209138268962776"
+              }, 
+              "id": "10153085569985911_10153086961840911"
+            }, 
+            {
+              "created_time": "2015-09-14T23:18:11+0000", 
+              "message": "Bellissima puntata!! Che ne pensi di un curiosity su LONDRA?? :)", 
+              "from": {
+                "name": "Vincenzo Busalacchi", 
+                "id": "10207350476513993"
+              }, 
+              "id": "10153085569985911_10153086213715911"
+            }, 
+            {
+              "created_time": "2015-09-14T22:40:49+0000", 
+              "message": "Grazie, questa puntata mi ha chiarito un po di cose. Non sapevo avesse la vitiligine. Sapevo dell'incidente dei capelli ma non pensavo gli avesse causato la calvizia, ora mi spiego i capelli cos\u00ec lisci cos\u00ec d'un tratto. Sicuramente il curiositi che mi \u00e8 stato pi\u00f9 utile. Grazie Surfa \ud83d\udc4a\ud83d\udc4a", 
+              "from": {
+                "name": "Pape Elhadji Mokhtar Thiaw", 
+                "id": "1117190404982335"
+              }, 
+              "id": "10153085569985911_10153086138765911"
+            }, 
+            {
+              "created_time": "2015-09-15T11:17:49+0000", 
+              "message": "Se questa \u00e8 tutta la fatica che hai fatto per selezionare le notizie figuriamoci che lavoro eccelso avresti fatto se fossi stato a Studio Aperto. \nIn effetti caro Surfa hai detto un sacco di cose che nessuno sapeva perch\u00e8 sono una marea di stronzate, a cui purtroppo la gente CREDE perch\u00e8 non ha un minimo di cervello.\n\nTi rendi conto che se fosse possibile rallentare l'invecchiamento dormendo in una camera iperbarica vivremo in un film di fantascienza? Quella foto fu uno scoop all'epoca perch\u00e8 Michael si era semplicemente steso dentro per fare il cretino (leggi la biografia), proprio come fanno le persone al giorno d'oggi con le selfie su un palazzo di 80 piani e quant'altro (e non vengono giudicati pazzi da nessuno); \nPunto secondo, conosci la modella Winnie Harlow? Credi che una celebrit\u00e0 di colore affetta dalla vitiligine nel finire degli anni '80 avrebbe avuto qualche possibilit\u00e0 remotissima di poter girare per strada e fare concerti con la pelle bicolore? La vitiligine \u00e8 una malattia, ma la gente ignorante come te crede che ci voglia uno sbiancamento per rendere uniforme un colore sul proprio viso. Qualche tutorial di makeup lo hai visto mai?\n\nMi dispiace Surfa ma dovresti rivedere un po' di informazioni. Cos\u00ec non fai altro che alimentare l'ignoranza e di quella ce n'\u00e8 gi\u00e0 abbastanza. \nSe non sei uno stupido prendi in considerazione questo commento perfavore, in fondo non ci vuole molta fatica a fare un video di 2 minuti dicendo cose che non siano cazzate.", 
+              "from": {
+                "name": "Mariangela Sforza", 
+                "id": "1006713139395975"
+              }, 
+              "id": "10153085569985911_10153086994915911"
+            }, 
+            {
+              "created_time": "2015-09-15T11:11:30+0000", 
+              "message": "camera iperbarca ahh... ha dichiarato in un' intervista che non dormiva li.. ma dopo l'intervento alla testa per i danni causati dall incidente della pepsi lui vide quell aggeggio e niente. era curioso e vide come era stare li. poi la don\u00f2 al Michael Jackson burning center.\nper quanto riguarda le operazioni non le ha dichiarate,nell intervista con oprah disse che potevano contarsi sulle dita di una mano,e no non ha preferito lo sbiancamento, era il danno causato dalla vitiligine.", 
+              "from": {
+                "name": "Fimio Fimiani", 
+                "id": "1024962844233473"
+              }, 
+              "id": "10153085569985911_10153086990035911"
+            }, 
+            {
+              "created_time": "2015-09-15T10:58:55+0000", 
+              "message": "Peccato che non era solito dormire in un camera iperbarica anche perch\u00e9 la provo senza usarla e la don\u00f2 subito dopo. Prima di dire certe cose informati!", 
+              "from": {
+                "name": "Vietnam Trot", 
+                "id": "1123809284350006"
+              }, 
+              "id": "10153085569985911_10153086977310911"
+            }, 
+            {
+              "created_time": "2015-09-15T16:16:23+0000", 
+              "message": "mado ma cosa stai dicendooo, anzich\u00e8 ripetere le cose che dicono tutti quei media del cazzo che tra altro non sono vere potevi soffermarti sulle VERE cose buone che ha fatto un artista come Michael Jackson e che non quasi mai state dette in tv o sui giornali..e se lo chiami di nuovo Jacko segnalo il video, lui ha sempre odiato che la gente lo chiamasse cos\u00ec..\n\nquante cazzate", 
+              "from": {
+                "name": "Miriana della Martora", 
+                "id": "969108656518502"
+              }, 
+              "id": "10153085569985911_10153087408910911"
+            }, 
+            {
+              "created_time": "2015-09-15T12:19:41+0000", 
+              "message": "Cio\u00e8 adesso per colpa tua altri ignoranti come te (su quest'argomento almeno)  penseranno che sia tutto vero e invece sono tutte balle le tue!", 
+              "from": {
+                "name": "Camilla Mavilia", 
+                "id": "821949511250005"
+              }, 
+              "id": "10153085569985911_10153087073010911"
+            }, 
+            {
+              "created_time": "2015-09-14T19:09:32+0000", 
+              "message": "Fai un curiosity su Zanetti", 
+              "from": {
+                "name": "Alessandro Olmo", 
+                "id": "1149038691774312"
+              }, 
+              "id": "10153085569985911_10153085802620911"
+            }, 
+            {
+              "created_time": "2015-09-15T14:11:15+0000", 
+              "message": "Oddio cosa cazzo hai detto?\n1. Non era calvo\n2. Non ha MAI dormito in una camera iperbica per non invecchiare, \u00e8 vero che l'ha comprata per un ospedale\n3. Non \u00e8 che lui ha favorito lo sbiancamento! Solo che grazie al trucco e alle luci era meno visibile..se guardi i backstage dei video, o foto sue foto, non fatte da lui e scattate accidentalmente si vedono chiaramente le macchie anche in et\u00e0 pi\u00f9 avanzata.\n3. Thriller ha venduto 100 milioni di copie ed \u00e8 certificato disco di diamante.\n\nCi sono miliardi di cose che avresti potuto dire, tipo che ha donato pi\u00f9 di 300 milioni di dollari in beneficienza e tanto altro..", 
+              "from": {
+                "name": "Maria Bucciaglia", 
+                "id": "1049415001790049"
+              }, 
+              "id": "10153085569985911_10153087237195911"
+            }, 
+            {
+              "created_time": "2015-09-15T17:24:27+0000", 
+              "message": "non sono una fan di Michael Jackson...quindi non metto voce in capitolo! ma forse voi non avete capito una cosa essenziale.....le 10 curiosit\u00e0 le ha LETTE non INVENTATE, poi ovviamente..ognuno \u00e8 libero di dire la sua....ma senza offendere il lavoro ne tanto meno la persona! inoltre vi ricordo che non si pu\u00f2 sapere tutto di tutti..quindi per accontentare le numerose richieste si vanno a cercare le pi\u00f9 interessanti curiosit\u00e0..se poi anche le fonti pi\u00f9 attendibili sparano cazzate non \u00e8 di certo colpa sua.", 
+              "from": {
+                "name": "Sharon Morrison", 
+                "id": "10207513895898524"
+              }, 
+              "id": "10153085569985911_10153087501485911"
+            }, 
+            {
+              "created_time": "2015-09-15T11:00:32+0000", 
+              "message": "CHE CAZZO DICI?! \nComunque non li ha rivenduti infatti esiste un catalogo ATV-SONY il quale \u00e8 anche di Michael e Comprende molti artisti.", 
+              "from": {
+                "name": "Vietnam Trot", 
+                "id": "1123809284350006"
+              }, 
+              "id": "10153085569985911_10153086978440911"
+            }, 
+            {
+              "created_time": "2015-09-16T15:18:17+0000", 
+              "message": "Propongo un curiosity su Notorious B.I.G., visto che tempo fa hai fatto quello su 2Pac\ud83d\udc4d", 
+              "from": {
+                "name": "Gianmarco Vita", 
+                "id": "1123162814381257"
+              }, 
+              "id": "10153085569985911_10153089266610911"
+            }, 
+            {
+              "created_time": "2015-09-15T11:12:08+0000", 
+              "message": "La camera iperbarica e' una stronzata.... Se volete sapere la verita' ecco qui. https://m.facebook.com/profile.php?id=181176415272705 visitate questa pagina.", 
+              "from": {
+                "name": "Eleonora Santoro", 
+                "id": "498227467044850"
+              }, 
+              "id": "10153085569985911_10153086990630911"
+            }, 
+            {
+              "created_time": "2015-09-16T00:37:06+0000", 
+              "message": "Oltre le cazzate sparate nei commenti,roba assurda ma il rispetto?Io continuo a dirlo eh,lui ogni cazzo di settimana sta li a portarvi 10 curiosit\u00e0 e voi criticate pure?Mah comunque bellissima puntata Surfa,aspetto con ansia anche un nuovo pezzo,daje che spacchi!", 
+              "from": {
+                "name": "Ahmed Abo El Haithm", 
+                "id": "837253756403145"
+              }, 
+              "id": "10153085569985911_10153088247655911"
+            }, 
+            {
+              "created_time": "2015-09-20T17:02:28+0000", 
+              "message": "Informarti di pi\u00f9 non ti costava, pieno di notizie spazzatura promosse da tabloid per denaro. #Complimenti, fossi in te eliminerei il video e ne farei un altro come si deve, ma si vede che ti interessano solo le visualizzazioni e i mi piace e non la vera informazione, tant'\u00e8 che l'hai pure messo come highlight.", 
+              "from": {
+                "name": "Silviu Costin", 
+                "id": "979757615427769"
+              }, 
+              "id": "10153085569985911_10153096430495911"
+            }, 
+            {
+              "created_time": "2015-09-15T08:22:21+0000", 
+              "message": "Vogliamo un curiosity sull'ex pugile Roy jones quello siiii che aveva stile fidati \ud83d\ude09", 
+              "from": {
+                "name": "Momo Amine Essalhi", 
+                "id": "10206066230763325"
+              }, 
+              "id": "10153085569985911_10153086832235911"
+            }, 
+            {
+              "created_time": "2015-09-15T12:38:27+0000", 
+              "message": "Un video su Mario G\u00f6tze \ud83d\ude4f\u2764", 
+              "from": {
+                "name": "Pasquale Antonio D'oro", 
+                "id": "1070147883043493"
+              }, 
+              "id": "10153085569985911_10153087102150911"
+            }, 
+            {
+              "created_time": "2015-09-14T18:17:57+0000", 
+              "message": "Go Michael Jackson !!!!!!", 
+              "from": {
+                "name": "Daniela Donzello", 
+                "id": "10206107151734115"
+              }, 
+              "id": "10153085569985911_10153085731565911"
+            }, 
+            {
+              "created_time": "2015-09-14T19:06:14+0000", 
+              "message": "Bella, surfaaa fai na puntata su future!", 
+              "from": {
+                "name": "Lu\u00ecs Viola", 
+                "id": "1751102178457368"
+              }, 
+              "id": "10153085569985911_10153085798985911"
+            }, 
+            {
+              "created_time": "2015-09-15T11:24:31+0000", 
+              "message": "..\nTi denuncerei anche solo per le scemenze che hai sparato.", 
+              "from": {
+                "name": "Desir\u00e9 Schl\u00f6gel", 
+                "id": "226513971029888"
+              }, 
+              "id": "10153085569985911_10153087004290911"
+            }, 
+            {
+              "created_time": "2015-09-15T13:48:31+0000", 
+              "message": "Io direi che devi farlo su Super Mario Bros visto che come bene sai due giorni fa si \u00e8 festeggiato il trentennale della sua nascita!", 
+              "from": {
+                "name": "Abel D'Onofrio", 
+                "id": "1743537329212983"
+              }, 
+              "id": "10153085569985911_10153087209230911"
+            }, 
+            {
+              "created_time": "2015-09-15T11:01:42+0000", 
+              "message": "Falla su vasco rossi", 
+              "from": {
+                "name": "Maycol Elia", 
+                "id": "1229593770387550"
+              }, 
+              "id": "10153085569985911_10153086979295911"
+            }
+          ]
+        }, 
+        "id": "10153085569985911"
+      }, 
+      "page": "Surfa"
+    }
+  }
+]
