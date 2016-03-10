@@ -1,0 +1,394 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @reIatabIe: when u ask for a dog but u get an emu https://t.co/JUSj5gza28", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425901164806145, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498452832", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 437030761, 
+            "indices": [
+              3, 
+              13
+            ], 
+            "id_str": "437030761", 
+            "screen_name": "reIatabIe", 
+            "name": "Girl Code"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [], 
+        "media": [
+          {
+            "source_user_id": 2778441654, 
+            "source_status_id_str": "706228057485545472", 
+            "expanded_url": "http://twitter.com/tayaranrusi/status/706228057485545472/video/1", 
+            "display_url": "pic.twitter.com/JUSj5gza28", 
+            "url": "https://t.co/JUSj5gza28", 
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg", 
+            "source_user_id_str": "2778441654", 
+            "source_status_id": 706228057485545472, 
+            "id_str": "706227770402201600", 
+            "sizes": {
+              "small": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 1080, 
+                "resize": "fit", 
+                "w": 608
+              }, 
+              "medium": {
+                "h": 1066, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              53, 
+              76
+            ], 
+            "type": "photo", 
+            "id": 706227770402201600, 
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425901164806145", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "when u ask for a dog but u get an emu https://t.co/JUSj5gza28", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 707080773338202112, 
+        "favorite_count": 10645, 
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [], 
+          "media": [
+            {
+              "source_user_id": 2778441654, 
+              "source_status_id_str": "706228057485545472", 
+              "expanded_url": "http://twitter.com/tayaranrusi/status/706228057485545472/video/1", 
+              "display_url": "pic.twitter.com/JUSj5gza28", 
+              "url": "https://t.co/JUSj5gza28", 
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg", 
+              "source_user_id_str": "2778441654", 
+              "source_status_id": 706228057485545472, 
+              "id_str": "706227770402201600", 
+              "sizes": {
+                "small": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 1080, 
+                  "resize": "fit", 
+                  "w": 608
+                }, 
+                "medium": {
+                  "h": 1066, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                38, 
+                61
+              ], 
+              "type": "photo", 
+              "id": 706227770402201600, 
+              "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "707080773338202112", 
+        "retweet_count": 6569, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": false, 
+          "default_profile_image": false, 
+          "id": 437030761, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/682344257865281536/FM03wjm3_normal.jpg", 
+          "profile_sidebar_fill_color": "0A0A0A", 
+          "profile_text_color": "9C162C", 
+          "followers_count": 1446142, 
+          "profile_sidebar_border_color": "FFFFFF", 
+          "id_str": "437030761", 
+          "profile_background_color": "FFFFFF", 
+          "listed_count": 1220, 
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/344918034408982886/adc0ee7cefa3b924eb95ad1eee0b6ca0.png", 
+          "utc_offset": -28800, 
+          "statuses_count": 30348, 
+          "description": "Defining the Girl Code in 140 characters or less! Not affiliated with MTV's Girl Code *we do not own any content posted* Inquires; Mei@SunlitDaisy.com", 
+          "friends_count": 28, 
+          "location": "Shop Now \u27b3", 
+          "profile_link_color": "178F17", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/682344257865281536/FM03wjm3_normal.jpg", 
+          "following": null, 
+          "geo_enabled": false, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/437030761/1435435653", 
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/344918034408982886/adc0ee7cefa3b924eb95ad1eee0b6ca0.png", 
+          "name": "Girl Code", 
+          "lang": "en", 
+          "profile_background_tile": false, 
+          "favourites_count": 743, 
+          "screen_name": "reIatabIe", 
+          "notifications": null, 
+          "url": "http://SunlitDaisy.com", 
+          "created_at": "Wed Dec 14 21:45:48 +0000 2011", 
+          "contributors_enabled": false, 
+          "time_zone": "Pacific Time (US & Canada)", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": true, 
+        "lang": "en", 
+        "created_at": "Tue Mar 08 05:49:27 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null, 
+        "extended_entities": {
+          "media": [
+            {
+              "source_user_id": 2778441654, 
+              "source_status_id_str": "706228057485545472", 
+              "expanded_url": "http://twitter.com/tayaranrusi/status/706228057485545472/video/1", 
+              "display_url": "pic.twitter.com/JUSj5gza28", 
+              "url": "https://t.co/JUSj5gza28", 
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg", 
+              "source_user_id_str": "2778441654", 
+              "source_status_id": 706228057485545472, 
+              "video_info": {
+                "aspect_ratio": [
+                  76, 
+                  135
+                ], 
+                "duration_millis": 30000, 
+                "variants": [
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/360x640/qdjsSqrqbO3TmF5y.mp4", 
+                    "bitrate": 832000, 
+                    "content_type": "video/mp4"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/360x640/qdjsSqrqbO3TmF5y.webm", 
+                    "bitrate": 832000, 
+                    "content_type": "video/webm"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/pl/i0aFqZdZhYDhTG_7.mpd", 
+                    "content_type": "application/dash+xml"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/pl/i0aFqZdZhYDhTG_7.m3u8", 
+                    "content_type": "application/x-mpegURL"
+                  }, 
+                  {
+                    "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/180x320/2rWQCps6XDu9kDz2.mp4", 
+                    "bitrate": 320000, 
+                    "content_type": "video/mp4"
+                  }
+                ]
+              }, 
+              "id_str": "706227770402201600", 
+              "sizes": {
+                "small": {
+                  "h": 604, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 1080, 
+                  "resize": "fit", 
+                  "w": 608
+                }, 
+                "medium": {
+                  "h": 1066, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                38, 
+                61
+              ], 
+              "type": "video", 
+              "id": 706227770402201600, 
+              "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg"
+            }
+          ]
+        }
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 2525748529, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/697299133548335104/oHPzS9qU_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 460, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "2525748529", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 1, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": null, 
+        "statuses_count": 3275, 
+        "description": "intolerant to gluten and basic bitches", 
+        "friends_count": 248, 
+        "location": "my throne", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/697299133548335104/oHPzS9qU_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2525748529/1452920736", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "Mykenzie Carmody", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 7975, 
+        "screen_name": "myk_carmody", 
+        "notifications": null, 
+        "url": "http://youtu.be/szp9x1ZlZn4", 
+        "created_at": "Mon May 26 19:49:54 +0000 2014", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:52 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null, 
+      "extended_entities": {
+        "media": [
+          {
+            "source_user_id": 2778441654, 
+            "source_status_id_str": "706228057485545472", 
+            "expanded_url": "http://twitter.com/tayaranrusi/status/706228057485545472/video/1", 
+            "display_url": "pic.twitter.com/JUSj5gza28", 
+            "url": "https://t.co/JUSj5gza28", 
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg", 
+            "source_user_id_str": "2778441654", 
+            "source_status_id": 706228057485545472, 
+            "video_info": {
+              "aspect_ratio": [
+                76, 
+                135
+              ], 
+              "duration_millis": 30000, 
+              "variants": [
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/360x640/qdjsSqrqbO3TmF5y.mp4", 
+                  "bitrate": 832000, 
+                  "content_type": "video/mp4"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/360x640/qdjsSqrqbO3TmF5y.webm", 
+                  "bitrate": 832000, 
+                  "content_type": "video/webm"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/pl/i0aFqZdZhYDhTG_7.mpd", 
+                  "content_type": "application/dash+xml"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/pl/i0aFqZdZhYDhTG_7.m3u8", 
+                  "content_type": "application/x-mpegURL"
+                }, 
+                {
+                  "url": "https://video.twimg.com/ext_tw_video/706227770402201600/pu/vid/180x320/2rWQCps6XDu9kDz2.mp4", 
+                  "bitrate": 320000, 
+                  "content_type": "video/mp4"
+                }
+              ]
+            }, 
+            "id_str": "706227770402201600", 
+            "sizes": {
+              "small": {
+                "h": 604, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 1080, 
+                "resize": "fit", 
+                "w": 608
+              }, 
+              "medium": {
+                "h": 1066, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              53, 
+              76
+            ], 
+            "type": "video", 
+            "id": 706227770402201600, 
+            "media_url": "http://pbs.twimg.com/ext_tw_video_thumb/706227770402201600/pu/img/e5IHUEzMJAYnVYx1.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

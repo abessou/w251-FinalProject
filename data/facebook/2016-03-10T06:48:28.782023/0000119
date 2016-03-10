@@ -1,0 +1,112 @@
+[
+  {
+    "post": {
+      "data": {
+        "permalink_url": "/skiraeditore/videos/10152903260116958/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTAxNTM5Njk2NDQzNDk0NDEZD", 
+              "before": "MTAxNTM3OTY4MzkzMDEwNzIZD"
+            }
+          }, 
+          "data": [
+            {
+              "id": "10153796839301072", 
+              "name": "Ludovica Vigevano"
+            }, 
+            {
+              "id": "1672049606396377", 
+              "name": "Francesco Coppola"
+            }, 
+            {
+              "id": "456969554501057", 
+              "name": "Vincenzo Esposito"
+            }, 
+            {
+              "id": "1423753801268850", 
+              "name": "Mostra Leonardo Milano"
+            }, 
+            {
+              "id": "521916744654107", 
+              "name": "Simone Fant"
+            }, 
+            {
+              "id": "10206088078861598", 
+              "name": "Jessica N. Cataldi"
+            }, 
+            {
+              "id": "10208746499445554", 
+              "name": "Lisa Zanelli"
+            }, 
+            {
+              "id": "10153848432270155", 
+              "name": "Filippo Vitta Zelman"
+            }, 
+            {
+              "id": "10153969644349441", 
+              "name": "Federico Casiraghi"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "WTI5dGJXVnVkRjlqZAFhKemIzSTZANVEF4TlRJNU1qRTFNekV4T0RFNU5UZAzZANVFF6TWpZAek1UUXlPQT09", 
+              "before": "WTI5dGJXVnVkRjlqZAFhKemIzSTZANVEF4TlRJNU16UTVPREUyTkRFNU5UZAzZANVFF6TWpnd05qSXpNUT09"
+            }
+          }, 
+          "data": [
+            {
+              "created_time": "2015-05-28T09:43:51+0000", 
+              "message": "Buongiorno a Voi, carissimi. La battuta era tra me e l'amica Silvia, che conosco da lungo tempo. Con lei mi sono confrontato spesso sul binomio mostre-marketing ed \u00e8 quindi in grado di capire tutto ci\u00f2 che sottintende l'espressione - apparentemente brutale ma in verit\u00e0 ironica - \"in pattumiera\". Infatti, carissimi, sono spiacente di comunicarVi che non ho scaricato la app, quindi non saprei davvero dirVI cosa non mi \u00e8 piaciuto affinch\u00e8 possiate migliorarla. Non si tratta, dunque, di una questione specifica. Sono proprio io ad essere refrattario e contrario in genere a quanto non abbia a che fare coi vecchi, tradizionali cataloghi. Sono un purista. Tutto qui. Ci\u00f2 detto, continuer\u00f2 a comprare le vostre pubblicazioni, sebbene pensiate che io non sia una persona fine. State sereni. Saluti.", 
+              "from": {
+                "name": "Daniele Nogarin", 
+                "id": "10206049423742187"
+              }, 
+              "id": "10152903260116958_10152934981641958"
+            }, 
+            {
+              "created_time": "2015-05-28T09:06:25+0000", 
+              "message": "Buongiorno Daniele Nogarin, che finezza. Sarebbe cos\u00ec gentile da indicarci cosa non le \u00e8 piaciuto della App? Avendo ricevuto molti commenti positivi a riguardo, ci spiace sentire qualcuno che la pensa diversamente e saremmo curiosi, al fine di eventuali miglioramenti, di conoscere il motivo del suo commento.Grazie.", 
+              "from": {
+                "name": "Skira editore", 
+                "id": "32343876957"
+              }, 
+              "id": "10152903260116958_10152934961811958"
+            }, 
+            {
+              "created_time": "2015-05-26T09:22:44+0000", 
+              "message": "Io la scarico. In pattumiera.", 
+              "from": {
+                "name": "Daniele Nogarin", 
+                "id": "10206049423742187"
+              }, 
+              "id": "10152903260116958_10152921538046958"
+            }, 
+            {
+              "created_time": "2015-05-26T09:22:09+0000", 
+              "message": "Verybello!", 
+              "from": {
+                "name": "Silvia Anapoli", 
+                "id": "978767332177094"
+              }, 
+              "id": "10152903260116958_10152921537531958"
+            }, 
+            {
+              "created_time": "2015-05-26T09:10:27+0000", 
+              "message": "Silvia, la vuoi l'app. immersiva?", 
+              "from": {
+                "name": "Daniele Nogarin", 
+                "id": "10206049423742187"
+              }, 
+              "id": "10152903260116958_10152921531181958"
+            }
+          ]
+        }, 
+        "id": "10152903260116958"
+      }, 
+      "page": "Skira editore"
+    }
+  }
+]

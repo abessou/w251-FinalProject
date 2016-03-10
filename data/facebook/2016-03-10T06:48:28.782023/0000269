@@ -1,0 +1,358 @@
+[
+  {
+    "post": {
+      "data": {
+        "permalink_url": "/GinasSkinnytaste/videos/1064848170203834/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTA4NTk1MzEwNDgxOTI2NAZDZD", 
+              "before": "MTAxNTQwMDQ3MzUxMDY5MjYZD"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/1064848170203834/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTA4NTk1MzEwNDgxOTI2NAZDZD"
+          }, 
+          "data": [
+            {
+              "id": "10154004735106926", 
+              "name": "Nikki Lanier"
+            }, 
+            {
+              "id": "10208974010776168", 
+              "name": "Teisha Vipcustomcreations Smith"
+            }, 
+            {
+              "id": "10207342951069888", 
+              "name": "Edie Bonilla"
+            }, 
+            {
+              "id": "924227561025458", 
+              "name": "Carole Lynn Hawk"
+            }, 
+            {
+              "id": "10206160632514578", 
+              "name": "Robert McCracken"
+            }, 
+            {
+              "id": "1174915062542545", 
+              "name": "Sanjana Prabhu"
+            }, 
+            {
+              "id": "1318787041468696", 
+              "name": "Missy Knapp"
+            }, 
+            {
+              "id": "1512342069071414", 
+              "name": "Shirley Allen"
+            }, 
+            {
+              "id": "10205818597088586", 
+              "name": "Tom Cresap"
+            }, 
+            {
+              "id": "939536336167256", 
+              "name": "Tracey Anderson"
+            }, 
+            {
+              "id": "10205531319233632", 
+              "name": "Megan Killian-White"
+            }, 
+            {
+              "id": "1154523397892329", 
+              "name": "Lee Gibson"
+            }, 
+            {
+              "id": "763353093766404", 
+              "name": "Liana Menchaca"
+            }, 
+            {
+              "id": "1732989833586655", 
+              "name": "Jason Meador"
+            }, 
+            {
+              "id": "10204384919022536", 
+              "name": "Teresa Sima"
+            }, 
+            {
+              "id": "10208580835623642", 
+              "name": "Rhonda Olson"
+            }, 
+            {
+              "id": "10207021414752339", 
+              "name": "Alex Hurt"
+            }, 
+            {
+              "id": "1735176863392707", 
+              "name": "Nicole Pierce"
+            }, 
+            {
+              "id": "10208914242077393", 
+              "name": "Lori Farner Dykes"
+            }, 
+            {
+              "id": "10206700864732516", 
+              "name": "Bess Duston"
+            }, 
+            {
+              "id": "202110093489119", 
+              "name": "Anita Gonsales"
+            }, 
+            {
+              "id": "10204936024755265", 
+              "name": "Connie Mcintyre-Moore"
+            }, 
+            {
+              "id": "10208131381378978", 
+              "name": "Stella Verbael"
+            }, 
+            {
+              "id": "10204260287906379", 
+              "name": "Normalinda Vasquez"
+            }, 
+            {
+              "id": "1085953104819264", 
+              "name": "Emily Roye"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "MTAzNDcZD", 
+              "before": "MTAzNzEZD"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/1064848170203834/comments?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTAzNDcZD"
+          }, 
+          "data": [
+            {
+              "created_time": "2016-01-22T16:22:41+0000", 
+              "message": "Valerie, this sounds yummy! You could add avocado and serve over lettuce or maybe quinoa ( I'm supposed to up my protein intake to 75 grams per day)", 
+              "from": {
+                "name": "Allison Baker", 
+                "id": "841168439880"
+              }, 
+              "id": "1064848170203834_1064867856868532"
+            }, 
+            {
+              "created_time": "2016-01-22T16:22:15+0000", 
+              "message": "Do you drain the beans prior to adding them to the crock pot?", 
+              "from": {
+                "name": "Nina Ager", 
+                "id": "10107311850559800"
+              }, 
+              "id": "1064848170203834_1064867726868545"
+            }, 
+            {
+              "created_time": "2016-01-22T16:04:07+0000", 
+              "message": "I just got your cookbook! Love it! Now if only you had an app for all of your recipes!", 
+              "from": {
+                "name": "Jenna Olson", 
+                "id": "10155286031607228"
+              }, 
+              "id": "1064848170203834_1064859383536046"
+            }, 
+            {
+              "created_time": "2016-01-22T16:55:15+0000", 
+              "message": "Look delicious! I was wondering if this can be done in the instant pot? If so how many minutes would you put it?", 
+              "from": {
+                "name": "Joe N Janet Cascella", 
+                "id": "1091539984210460"
+              }, 
+              "id": "1064848170203834_1064880530200598"
+            }, 
+            {
+              "created_time": "2016-02-10T00:55:07+0000", 
+              "message": "I've got all the stuff to make it and it's in my crock pot ready to go in the morning.....I'll let you know \ud83d\ude03\ud83d\ude03\ud83d\ude03\ud83d\ude03\ud83d\ude03", 
+              "from": {
+                "name": "Lani Bell", 
+                "id": "784468145019247"
+              }, 
+              "id": "1064848170203834_1074585345896783"
+            }, 
+            {
+              "created_time": "2016-01-22T16:23:27+0000", 
+              "message": "We just finished up a big batch. We LOVE it. Perfect for busy weeks when everyone can just heat up a bowl when they are hungry. :o) Mrs N.", 
+              "from": {
+                "name": "Rick Noirot", 
+                "id": "1086357551431932"
+              }, 
+              "id": "1064848170203834_1064868203535164"
+            }, 
+            {
+              "created_time": "2016-01-22T16:02:03+0000", 
+              "message": "WOW just WOW. Such a simple dish and low calorie. Love my slow cooker, thanks for sharing.x", 
+              "from": {
+                "name": "Candice Hakin", 
+                "id": "1145685968817011"
+              }, 
+              "id": "1064848170203834_1064858453536139"
+            }, 
+            {
+              "created_time": "2016-01-22T15:56:37+0000", 
+              "message": "My go to chili recipe, even made it for company and they wanted the recipe. So good!", 
+              "from": {
+                "name": "Susan Braydon Sallarulo", 
+                "id": "10206036316775047"
+              }, 
+              "id": "1064848170203834_1064856416869676"
+            }, 
+            {
+              "created_time": "2016-01-22T15:53:20+0000", 
+              "message": "Made it the other day and then did your stuffed pepper recipe the next day.", 
+              "from": {
+                "name": "Judy Speer Morgan", 
+                "id": "10208772401538085"
+              }, 
+              "id": "1064848170203834_1064855360203115"
+            }, 
+            {
+              "created_time": "2016-02-01T02:56:12+0000", 
+              "message": "I love it!!! I will freeze the rest and I'm\nMaking corn bread tomorrow! So good!! Ty", 
+              "from": {
+                "name": "Jean Alvira", 
+                "id": "10208922585404838"
+              }, 
+              "id": "1064848170203834_931047050348414"
+            }, 
+            {
+              "created_time": "2016-01-22T16:29:11+0000", 
+              "message": "We made this 2 nights ago, one of our favs!!! The leftovers are so delicious too!", 
+              "from": {
+                "name": "Marissa DiGregorio", 
+                "id": "10100974720524293"
+              }, 
+              "id": "1064848170203834_1064870276868290"
+            }, 
+            {
+              "created_time": "2016-01-22T15:47:02+0000", 
+              "message": "This is my favorite chili EVER! I serve it on top of roasted butternut squash! :)", 
+              "from": {
+                "name": "Megan Bender", 
+                "id": "10100445118935036"
+              }, 
+              "id": "1064848170203834_1064852450203406"
+            }, 
+            {
+              "created_time": "2016-03-02T01:58:37+0000", 
+              "message": "This looks sooo yummy!!!", 
+              "from": {
+                "name": "Vino Biscotti", 
+                "id": "188191791556236"
+              }, 
+              "id": "1064848170203834_1683566415266372"
+            }, 
+            {
+              "created_time": "2016-01-22T15:49:15+0000", 
+              "message": "One of my favorites! It makes a lot for a 2 people, but freezes really well!!", 
+              "from": {
+                "name": "Dee Chapogas Fait", 
+                "id": "10205751252316551"
+              }, 
+              "id": "1064848170203834_1064853456869972"
+            }, 
+            {
+              "created_time": "2016-01-22T15:47:20+0000", 
+              "message": "i also made it twice and so good.  and some of my weight watcher friends made it. and loved it to.   give it a try you will like it.", 
+              "from": {
+                "name": "Jo-ann Lisi Brady", 
+                "id": "811508312287751"
+              }, 
+              "id": "1064848170203834_1064852560203395"
+            }, 
+            {
+              "created_time": "2016-01-23T02:38:40+0000", 
+              "message": "Do you need to cook the chicken before adding it? Or can you add raw chicken to everything and cook in the slow cooker", 
+              "from": {
+                "name": "Bryan Costello", 
+                "id": "1041837925876811"
+              }, 
+              "id": "1064848170203834_926034904182962"
+            }, 
+            {
+              "created_time": "2016-01-23T02:45:07+0000", 
+              "message": "Can u use taco seasoning packet? Instead of all the spices mixed?", 
+              "from": {
+                "name": "Tammie Tucker Stanley", 
+                "id": "10153063625624159"
+              }, 
+              "id": "1064848170203834_926036284182824"
+            }, 
+            {
+              "created_time": "2016-01-22T21:05:53+0000", 
+              "message": "Could you replace the chicken with ground chuck ?", 
+              "from": {
+                "name": "Debbie Brasher", 
+                "id": "1112047318834313"
+              }, 
+              "id": "1064848170203834_1065004030188248"
+            }, 
+            {
+              "created_time": "2016-01-22T16:03:59+0000", 
+              "message": "Making Cauliflower Leek Soup and Caramelized Apple Onion Soup in preparation for our 30 inches of snow!", 
+              "from": {
+                "name": "Megan Rochele", 
+                "id": "10104397850653888"
+              }, 
+              "id": "1064848170203834_1064859306869387"
+            }, 
+            {
+              "created_time": "2016-01-22T16:29:09+0000", 
+              "message": "I love all the recipes you put up", 
+              "from": {
+                "name": "Logan Vierra", 
+                "id": "10153429598652592"
+              }, 
+              "id": "1064848170203834_1064870260201625"
+            }, 
+            {
+              "created_time": "2016-01-22T17:46:28+0000", 
+              "message": "Does that calorie count include the rice and cheese?", 
+              "from": {
+                "name": "Vicki Basham", 
+                "id": "1576368872653759"
+              }, 
+              "id": "1064848170203834_1064915423530442"
+            }, 
+            {
+              "created_time": "2016-01-22T16:33:48+0000", 
+              "message": "After following your recipes for years, I'm so happy to see you jumping on the videos for Facebook. Your recipes helped me lose 40lbs!", 
+              "from": {
+                "name": "Stephanie Moya", 
+                "id": "1129296747101901"
+              }, 
+              "id": "1064848170203834_1064871736868144"
+            }, 
+            {
+              "created_time": "2016-01-22T16:46:55+0000", 
+              "message": "I live in AZ and I will make this this week end regardless the temperature.  76 for a high tomorrow in Tucson.  Sorry back east people.", 
+              "from": {
+                "name": "Joyce McCoy Richardson", 
+                "id": "10205695479731050"
+              }, 
+              "id": "1064848170203834_1064877130200938"
+            }, 
+            {
+              "created_time": "2016-01-22T15:54:05+0000", 
+              "message": "Just made this for the first time 2 days ago (despite using your recipes for years) and having leftovers today for lunch! It was great.", 
+              "from": {
+                "name": "Kimberly Cuozzo", 
+                "id": "10102897230618415"
+              }, 
+              "id": "1064848170203834_1064855570203094"
+            }, 
+            {
+              "created_time": "2016-01-22T16:20:53+0000", 
+              "message": "This was delicious! Even my husband, who eschews all things \"diet\" liked it! He thinks all chili, meatballs and burgers, etc HAVE to be made with beef lol", 
+              "from": {
+                "name": "Deedee Fragale Altstatt", 
+                "id": "1093477324027433"
+              }, 
+              "id": "1064848170203834_1064867220201929"
+            }
+          ]
+        }, 
+        "id": "1064848170203834"
+      }, 
+      "page": "Skinnytaste"
+    }
+  }
+]

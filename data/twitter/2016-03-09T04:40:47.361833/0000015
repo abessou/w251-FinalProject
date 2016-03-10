@@ -1,0 +1,188 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @AliMaadelat: So everyone loves the \"shrugging cat\" that I created. \n\nFeel free to copy + paste it everywhere.\n\n\u00af\\_\u208d\u2e0d\u2e0c\u0323\u02b7\u0323\u032b\u2e0d\u0323\u2e0c\u208e_/\u00af \n\nI am\u2026", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425893644312576, 
+      "favorite_count": 0, 
+      "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451039", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 19266754, 
+            "indices": [
+              3, 
+              15
+            ], 
+            "id_str": "19266754", 
+            "screen_name": "AliMaadelat", 
+            "name": "Ali the $avage"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": []
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425893644312576", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "So everyone loves the \"shrugging cat\" that I created. \n\nFeel free to copy + paste it everywhere.\n\n\u00af\\_\u208d\u2e0d\u2e0c\u0323\u02b7\u0323\u032b\u2e0d\u0323\u2e0c\u208e_/\u00af \n\nI am a creative genius", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 697318175633862657, 
+        "favorite_count": 2693, 
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": []
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "697318175633862657", 
+        "retweet_count": 893, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 19266754, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/696114833641439232/7sQHxv5h_normal.jpg", 
+          "profile_sidebar_fill_color": "DDEEF6", 
+          "profile_text_color": "333333", 
+          "followers_count": 131651, 
+          "profile_sidebar_border_color": "C0DEED", 
+          "id_str": "19266754", 
+          "profile_background_color": "C0DEED", 
+          "listed_count": 384, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+          "utc_offset": -28800, 
+          "statuses_count": 4513, 
+          "description": "The Infamous, 24 Year Old, Forbes-Listed, Marketer of the Year | Don't Worry: I'm Not ACTUALLY Obnoxious, It's an Online Persona | \u00af\\_\u208d\u2e0d\u2e0c\u0323\u02b7\u0323\u032b\u2e0d\u0323\u2e0c\u208e_/\u00af", 
+          "friends_count": 167, 
+          "location": "Beverly Hills, California, USA", 
+          "profile_link_color": "0084B4", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/696114833641439232/7sQHxv5h_normal.jpg", 
+          "following": null, 
+          "geo_enabled": true, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/19266754/1455522843", 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+          "name": "Ali the $avage", 
+          "lang": "en", 
+          "profile_background_tile": false, 
+          "favourites_count": 177234, 
+          "screen_name": "AliMaadelat", 
+          "notifications": null, 
+          "url": "http://www.SnapChat.com/add/AliMaadelat", 
+          "created_at": "Wed Jan 21 00:21:09 +0000 2009", 
+          "contributors_enabled": false, 
+          "time_zone": "Pacific Time (US & Canada)", 
+          "protected": false, 
+          "default_profile": true, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "lang": "en", 
+        "created_at": "Wed Feb 10 07:16:23 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": {
+          "full_name": "Beverly Hills, CA", 
+          "url": "https://api.twitter.com/1.1/geo/id/1dc4bd069fb70941.json", 
+          "country": "United States", 
+          "place_type": "neighborhood", 
+          "bounding_box": {
+            "type": "Polygon", 
+            "coordinates": [
+              [
+                [
+                  -118.427344, 
+                  34.05358
+                ], 
+                [
+                  -118.427344, 
+                  34.112434
+                ], 
+                [
+                  -118.371934, 
+                  34.112434
+                ], 
+                [
+                  -118.371934, 
+                  34.05358
+                ]
+              ]
+            ]
+          }, 
+          "country_code": "US", 
+          "attributes": {}, 
+          "id": "1dc4bd069fb70941", 
+          "name": "Beverly Hills"
+        }
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 1242592926, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/704126702985740288/xEA9QD4g_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 55804, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "1242592926", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 46, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": -21600, 
+        "statuses_count": 129, 
+        "description": "DM us poll submissions | DM for cheap promos | Selling Rts |", 
+        "friends_count": 0, 
+        "location": "Notifications (on)", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/704126702985740288/xEA9QD4g_normal.jpg", 
+        "following": null, 
+        "geo_enabled": false, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1242592926/1455319082", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "6 Day Polls", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 1, 
+        "screen_name": "6DayPolls", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Tue Mar 05 01:41:14 +0000 2013", 
+        "contributors_enabled": false, 
+        "time_zone": "Central Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

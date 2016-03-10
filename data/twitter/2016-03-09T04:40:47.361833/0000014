@@ -1,0 +1,86 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "@meeker253 funny though he was saying we were ignorant about politics while being ignorant of millennials.", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": 707425511232778240, 
+      "id": 707425893552037888, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451017", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 2787225962, 
+            "indices": [
+              0, 
+              10
+            ], 
+            "id_str": "2787225962", 
+            "screen_name": "meeker253", 
+            "name": "Randy Meeker"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": []
+      }, 
+      "in_reply_to_screen_name": "meeker253", 
+      "id_str": "707425893552037888", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": 2787225962, 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 2299125499, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/618929896065101824/zuMPdco9_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 75, 
+        "profile_sidebar_border_color": "FFFFFF", 
+        "id_str": "2299125499", 
+        "profile_background_color": "000000", 
+        "listed_count": 3, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/574645944282521600/dhuJOyea.jpeg", 
+        "utc_offset": null, 
+        "statuses_count": 6576, 
+        "description": "//253//Washington//PNW//Cascadia//Progressive//Humanist//Feminist//Non-Believer//Beer Geek//Food Nerd//Espresso Fiend//Sounders Supporter//", 
+        "friends_count": 179, 
+        "location": "Puyallup, WA", 
+        "profile_link_color": "0099FF", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/618929896065101824/zuMPdco9_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/2299125499/1447381041", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/574645944282521600/dhuJOyea.jpeg", 
+        "name": "Devin Lorentzen", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 5466, 
+        "screen_name": "dWL253", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Sun Jan 19 06:20:46 +0000 2014", 
+        "contributors_enabled": false, 
+        "time_zone": null, 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": "2787225962", 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": "707425511232778240", 
+      "place": null
+    }
+  }
+]

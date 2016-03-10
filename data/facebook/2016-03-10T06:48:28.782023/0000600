@@ -1,0 +1,225 @@
+[
+  {
+    "post": {
+      "data": {
+        "id": "10153107565471042", 
+        "permalink_url": "/PijamaSurf/videos/10153107565471042/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTAxNTM0NDE0ODQzNzc1ODQZD", 
+              "before": "NTE1MDc4Nzk4Njc0NjQx"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10153107565471042/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTAxNTM0NDE0ODQzNzc1ODQZD"
+          }, 
+          "data": [
+            {
+              "id": "515078798674641", 
+              "name": "GiGi Marie"
+            }, 
+            {
+              "id": "1072527546102325", 
+              "name": "Pauline Gutierrez"
+            }, 
+            {
+              "id": "567437710078541", 
+              "name": "Filiberto Jaaziel"
+            }, 
+            {
+              "id": "1297910030225590", 
+              "name": "Legorreta Daniel"
+            }, 
+            {
+              "id": "1041209759270211", 
+              "name": "Cris Roth"
+            }, 
+            {
+              "id": "1034301423274905", 
+              "name": "Allen Rodher"
+            }, 
+            {
+              "id": "10208526272264634", 
+              "name": "Champi\u00f1ote Pablo Strife"
+            }, 
+            {
+              "id": "957154867686933", 
+              "name": "Silvia Genki"
+            }, 
+            {
+              "id": "953203078108267", 
+              "name": "Anyha Punto"
+            }, 
+            {
+              "id": "10153964309964347", 
+              "name": "Carla Manterola"
+            }, 
+            {
+              "id": "10207775727327610", 
+              "name": "Rudy Huaccharaque"
+            }, 
+            {
+              "id": "10153915064245502", 
+              "name": "Rebeca Pedraja"
+            }, 
+            {
+              "id": "10207892018993750", 
+              "name": "Anibal Vasquez Ramirez"
+            }, 
+            {
+              "id": "1546779068954850", 
+              "name": "Pablo Arroyo"
+            }, 
+            {
+              "id": "10208941511834198", 
+              "name": "Francisco Escalante"
+            }, 
+            {
+              "id": "10208557010900572", 
+              "name": "Elsa Rodr\u00edguez Covarrubias"
+            }, 
+            {
+              "id": "10153849442877224", 
+              "name": "Xavi Correa"
+            }, 
+            {
+              "id": "1023688431023729", 
+              "name": "Jenn Asc Casillas"
+            }, 
+            {
+              "id": "10153928762382988", 
+              "name": "Tony S\u00e1nchez"
+            }, 
+            {
+              "id": "10208189709076943", 
+              "name": "Angeles Zamarripa Morales"
+            }, 
+            {
+              "id": "10208736773714640", 
+              "name": "Ali Cabello"
+            }, 
+            {
+              "id": "10208872653718341", 
+              "name": "Javier Correa"
+            }, 
+            {
+              "id": "10208821100189213", 
+              "name": "Paloma S\u00e1nchez Mendoza"
+            }, 
+            {
+              "id": "10207714906585122", 
+              "name": "David P\u00e9rez Barbero"
+            }, 
+            {
+              "id": "10153441484377584", 
+              "name": "Ernesto Rubio"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "MQZDZD", 
+              "before": "OAZDZD"
+            }
+          }, 
+          "data": [
+            {
+              "created_time": "2015-01-19T12:21:41+0000", 
+              "message": "https://scontent-b-mia.xx.fbcdn.net/hphotos-xfa1/v/l/t1.0-9/430317_406696669357495_1903231678_n.jpg?oh=1ad2af3a18265465b669a5c5a5591405&oe=556CC0E1", 
+              "from": {
+                "name": "Sebasti\u00e1n G\u00e1lvez", 
+                "id": "1319871428040010"
+              }, 
+              "id": "10153107565471042_10153112726086042"
+            }, 
+            {
+              "created_time": "2015-01-19T12:21:28+0000", 
+              "message": "https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/431552_406692166024612_683582960_n.jpg?oh=fb9bfc281f87211f2a906ab1ed21827e&oe=556C3EE8&__gda__=1432144441_cf6f1b3b8e74f996cead49f0d3b071d3", 
+              "from": {
+                "name": "Sebasti\u00e1n G\u00e1lvez", 
+                "id": "1319871428040010"
+              }, 
+              "id": "10153107565471042_10153112725841042"
+            }, 
+            {
+              "created_time": "2015-01-19T12:21:13+0000", 
+              "message": "https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xfa1/v/t1.0-9/417003_406688256025003_548891454_n.jpg?oh=a1a85653327e61babafc26dbb1f49472&oe=5562077F&__gda__=1428835521_5329ff66755765dfb0377b6492cd3a25", 
+              "from": {
+                "name": "Sebasti\u00e1n G\u00e1lvez", 
+                "id": "1319871428040010"
+              }, 
+              "id": "10153107565471042_10153112725626042"
+            }, 
+            {
+              "created_time": "2015-01-19T12:20:57+0000", 
+              "message": "https://fbcdn-sphotos-d-a.akamaihd.net/hphotos-ak-xfa1/t31.0-8/p600x600/468245_406687239358438_24257459_o.jpg", 
+              "from": {
+                "name": "Sebasti\u00e1n G\u00e1lvez", 
+                "id": "1319871428040010"
+              }, 
+              "id": "10153107565471042_10153112725346042"
+            }, 
+            {
+              "created_time": "2015-01-19T12:20:39+0000", 
+              "message": "Jelouuuuuuuuuuuuuuuuuuuuuuuuuuuuu, Fr\u00e4ulein Christiane Caroline Brommer (alias Coraline _ Neil Gaiman, 2002 _ ); \u00bfpa qu\u00e9 soy bueno adem\u00e1s de componer odas espaciales influenciadas por Kubrick y vuestra hermosa figura?\n\nDafuq! \u00a1Hitchcock!\n\nCaramba-carambitu-carambirur\u00ed, caramba-carambitu-carambirur\u00e1: cari\u00f1o de verano no me gusta a m\u00ed, cari\u00f1o de verano ay ni fu ni fa (\u00bfas\u00ed era la canci\u00f3n de Rafaella Carr\u00e0? En fin); es curioso c\u00f3mo podemos estar sincronizados; en Nochebuena recib\u00ed de regalo un hermoso libro: una espl\u00e9ndida monograf\u00eda sobre la llamada literatura negra (esto es, relatos policiales o de misterios criminales), donde tambi\u00e9n se hac\u00eda hincapi\u00e9 en las pel\u00edculas que contribuyeron a enaltecer dicho g\u00e9nero. Redescubr\u00ed (o record\u00e9, mejor dicho), que exquisitos autores como Cornell Woolrich, Patricia Highsmith y Robert Bloch sirvieron de base para sendas obras maestras de Don Alfredo (La Ventana Indiscreta, Extra\u00f1os en un Tren y Psicosis, respectivamente)...aunque _ y aqu\u00ed se inici\u00f3 mi cavilaci\u00f3n hacia otros rumbos _ Robert Bloch siempre estuvo m\u00e1s vinculado con el fantaterror y la ciencia ficci\u00f3n; de hecho, su novela Psicosis _  y la misma adaptaci\u00f3n cinematogr\u00e1fica de Hitchcock _ son consideradas en no pocos c\u00edrculos como genuinos exponentes del g\u00e9nero terror\u00edfico en tanto sirvieron de punta de lanza para la invasi\u00f3n de los serial killers o del terror entendido ya no como la intromisi\u00f3n de lo sobrenatural en lo cotidiano, sino como el ense\u00f1oramiento de la psicopatolog\u00eda en nuestra vida diaria. Ahora, esta dig\u00e1mosle \"vertiente terror\u00edfica\" en Hitch, me hizo evocar tambi\u00e9n a la gran Daphne du Maurier, cuyos libros Rebeca y La Posada de Jamaica inspiraron otras joyas del cineasta ingl\u00e9s.\n\nPero no es sobre esas historias en las que quiero detenerme. Sino en otra: una descripci\u00f3n plagada de vaticinios aciagos, pormenorizados recuerdos afines a las sensaciones que dejan en nosotros los climas que determinaron nuestra conversi\u00f3n de ni\u00f1os a adultos; climas, vientos, atardeceres, ocasos y ma\u00f1anas, en donde el destino, caprichoso e irracional como \u00e9l solo, puede enviarnos a sus heraldos:\n\n\"El 3 de diciembre, el viento cambi\u00f3 de la noche a la ma\u00f1ana, y lleg\u00f3 el invierno. Hasta entonces, el oto\u00f1o hab\u00eda sido suave y apacible. Las hojas, de un rojo dorado, se hab\u00edan mantenido en los \u00e1rboles y los setos vivos estaban verdes todav\u00eda. La tierra era f\u00e9rtil en los lugares donde el arado la hab\u00eda removido. Nat Hocken, debido a una incapacidad contra\u00edda durante la guerra, disfrutaba una pensi\u00f3n y no trabajaba todos los d\u00edas en la granja. Trabajaba tres d\u00edas a la semana y le encomendaban las tareas m\u00e1s sencillas: poner vallas, embardar, reparar las edificaciones de la granja...\n\nAunque casado, y con hijos, ten\u00eda tendencia a la soledad; prefer\u00eda trabajar solo. Le agradaba que le encargasen construir un dique o reparar un portillo en el extremo m\u00e1s lejano de la pen\u00ednsula, donde el mar rodeaba por ambos lados a la tierra de labranza. Entonces, al mediod\u00eda, hac\u00eda una pausa para comer el pastel de carne que su mujer hab\u00eda cocido para \u00e9l, y sent\u00e1ndose en el borde de la escollera, contemplabaa los p\u00e1jaros. El oto\u00f1o era \u00e9poca para esto, mejor que la primavera. En primavera, los p\u00e1jaros volaban tierra adentro resueltos, decididos; sab\u00edan cu\u00e1l era su destino; el ritmo y el ritual de su vida no admit\u00edan dilaciones. En oto\u00f1o, los que no hab\u00edan emigrado allende el mar, sino que se hab\u00edan quedado a pasar el invierno, se ve\u00edan animados por los mismos impulsos, pero, como la emigraci\u00f3n les estaba negada, segu\u00edan su propia norma de conducta. Llegaban en grandes bandadas a la pen\u00ednsula, inquietos; ora describiendo c\u00edrculos en el firmamento, ora pos\u00e1ndose, para alimentarse, en la tierra reci\u00e9n removida, pero incluso cuando se alimentaban, era como si lo hiciesen sin hambre, sin deseo. El desasosiego les empujaba de nuevo a los cielos.\n\nBlancos y negros, gaviotas y chovas, mezcladas en extra\u00f1a camarader\u00eda, buscando alguna especie de liberaci\u00f3n, nunca satisfechas, nunca inm\u00f3viles. Bandadas de estorninos, susurrantes como piezas de seda, volaban hacia los frescos pastos, impulsados por id\u00e9ntica necesidad de movimiento, y los p\u00e1jaros m\u00e1s peque\u00f1os, los pinzones y las alondras, se dispersaban sobre los \u00e1rboles y los setos. Nat los miraba, y observaba tambi\u00e9n a las aves marinas. Abajo, en la ensenada, esperaban la marea. Ten\u00edan m\u00e1s paciencia. Pescadoras de ostras, zancudas y zarapitos aguardaban al borde del agua; cuando el lento mar lam\u00eda la orilla y se retiraba luego dejando al descubierto la franja de algas y los guijarros, las aves marinas emprend\u00edan veloz carrera y corr\u00edan sobre las playas. Entonces, les invad\u00eda tambi\u00e9n a ellas aquel mismo impulso de volar. Chillando, gimiendo, gritando, pasaban rozando el pl\u00e1cido mar y se alejaban de la costa. Se apresuraban, aceleraban, se precipitaban, hu\u00edan; pero \u00bfadonde, y con qu\u00e9 finalidad? La inquieta urgencia del melanc\u00f3lico oto\u00f1o hab\u00eda arrojado un hechizo sobre ellas y deb\u00edan congregarse, girar y chillar; ten\u00edan que saturarse de movimiento antes de que llegase el invierno.\n\nQuiz\u00e1 _ pensaba Nat, masticando su pastel de carne en el borde de la escollera _ los p\u00e1jaros reciben en oto\u00f1o un mensaje, algo as\u00ed como un aviso. Va a llegar el invierno. Muchos de ellos perecen.Y los p\u00e1jaros se comportan de forma semejante a las personas que, temiendo que les llegue la muerte antes de tiempo, se vuelcan en el trabajo, o se entregan a la insensatez...\"\n\nLos P\u00e1jaros.\n\nTerror. Hay quienes tambi\u00e9n ven en esa historia una desconcertante epopeya de ciencia ficci\u00f3n. El preludio del apocalipsis.\n\nEn fin...\n\nS\u00f3lo agregar\u00e9 una cosa m\u00e1s (y lo gracioso es que hab\u00eda jurado no mencionarlo en este posteo, por lo trillado que podr\u00eda parecer).\n\nQu\u00e9 hermosa era Daphne du Maurier...https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-xaf1/v/t1.0-9/420644_406685439358618_462783387_n.jpg?oh=a682dcd3761d1ab3fe74adc3b2eb4fc6&oe=552314B8&__gda__=1432392809_b1035915f1afa5d49f39f250fad7d712", 
+              "from": {
+                "name": "Sebasti\u00e1n G\u00e1lvez", 
+                "id": "1319871428040010"
+              }, 
+              "id": "10153107565471042_10153112724941042"
+            }, 
+            {
+              "created_time": "2015-01-18T18:57:45+0000", 
+              "message": "Ni tanto suspenso, suele ser muy parsimonioso", 
+              "from": {
+                "name": "Genaro Valdovinos", 
+                "id": "10156647496775607"
+              }, 
+              "id": "10153107565471042_10153111205061042"
+            }, 
+            {
+              "created_time": "2015-01-18T20:55:12+0000", 
+              "message": "Keevin", 
+              "from": {
+                "name": "Jairo Nitrogen", 
+                "id": "843532389108038"
+              }, 
+              "id": "10153107565471042_10153111429411042"
+            }, 
+            {
+              "created_time": "2015-01-18T18:55:52+0000", 
+              "message": "Sebasti\u00e1n", 
+              "from": {
+                "name": "Carolina Carolina", 
+                "id": "10207384162376561"
+              }, 
+              "id": "10153107565471042_10153111201781042"
+            }
+          ]
+        }, 
+        "sharedposts": {
+          "paging": {
+            "cursors": {
+              "after": "MTUyNjQwMDUwMDk1NDc4Mg==", 
+              "before": "OTkyNzUzNDE0MDg3MTYw"
+            }
+          }, 
+          "data": [
+            {
+              "created_time": "2015-01-19T02:05:52+0000", 
+              "story": "Soci\u00f3logos  Cr\u00edticos  al Sistema shared Pijama Surf's video.", 
+              "id": "339096122786229_992753414087160"
+            }, 
+            {
+              "created_time": "2015-01-18T18:17:16+0000", 
+              "message": "El maestro del cine de suspenso Alfred Hitchcock.\n\nV\u00eda Pijama Surf", 
+              "story": "Sinapsis Universitaria shared Pijama Surf's video.", 
+              "id": "1435063380088495_1526400500954782"
+            }
+          ]
+        }
+      }, 
+      "page": "Pijama Surf"
+    }
+  }
+]

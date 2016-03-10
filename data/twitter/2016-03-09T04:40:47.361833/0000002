@@ -1,0 +1,96 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "@ClaireChassy remember when @BradenKay27 almost killed us because she thought it was funny to slam on her breaks... good times", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425891295449089, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498450479", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 926883006, 
+            "indices": [
+              0, 
+              13
+            ], 
+            "id_str": "926883006", 
+            "screen_name": "ClaireChassy", 
+            "name": "Claire Chastain"
+          }, 
+          {
+            "id": 380027120, 
+            "indices": [
+              28, 
+              40
+            ], 
+            "id_str": "380027120", 
+            "screen_name": "BradenKay27", 
+            "name": "bray"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": []
+      }, 
+      "in_reply_to_screen_name": "ClaireChassy", 
+      "id_str": "707425891295449089", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": 926883006, 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 878571626, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/706709865553534976/wF9VuAgm_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 1228, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "878571626", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 1, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "utc_offset": -21600, 
+        "statuses_count": 35578, 
+        "description": "RR&A", 
+        "friends_count": 634, 
+        "location": null, 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/706709865553534976/wF9VuAgm_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/878571626/1457466015", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "name": "jay", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 26008, 
+        "screen_name": "jaycie_webb", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Sat Oct 13 19:56:41 +0000 2012", 
+        "contributors_enabled": false, 
+        "time_zone": "Central Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": "926883006", 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:50 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

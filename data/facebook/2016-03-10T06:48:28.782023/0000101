@@ -1,0 +1,403 @@
+[
+  {
+    "post": {
+      "data": {
+        "id": "942335592478625", 
+        "permalink_url": "/skindredofficial/videos/942335592478625/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MTAxNTMyNzg2Mzc4NDY5MjQZD", 
+              "before": "MTU2MzUxNDc1NzI5NTE0NQZDZD"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/942335592478625/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTAxNTMyNzg2Mzc4NDY5MjQZD"
+          }, 
+          "data": [
+            {
+              "id": "1563514757295145", 
+              "name": "Enik\u0151 Sz\u0171cs"
+            }, 
+            {
+              "id": "10205994493246200", 
+              "name": "Vincent Cabrera"
+            }, 
+            {
+              "id": "10156570967140133", 
+              "name": "Ritchie Mckeough"
+            }, 
+            {
+              "id": "928677393912491", 
+              "name": "Andrey Petnunas"
+            }, 
+            {
+              "id": "10153738404755141", 
+              "name": "Darren Mista D Dumas"
+            }, 
+            {
+              "id": "10153464900148225", 
+              "name": "Ben Stuart"
+            }, 
+            {
+              "id": "10154086248483578", 
+              "name": "Ben Pritchett"
+            }, 
+            {
+              "id": "10153634681393026", 
+              "name": "Gordon Morison"
+            }, 
+            {
+              "id": "1262022870479527", 
+              "name": "Charleigh Anne Duffield"
+            }, 
+            {
+              "id": "10209194265153047", 
+              "name": "Danielle Garofalo"
+            }, 
+            {
+              "id": "987585834624111", 
+              "name": "Ellie Griffin"
+            }, 
+            {
+              "id": "10153291388356556", 
+              "name": "Jennifer Webster"
+            }, 
+            {
+              "id": "997752006986438", 
+              "name": "Tetsuya Sanche Ishii"
+            }, 
+            {
+              "id": "10208866119273452", 
+              "name": "Phil Andre"
+            }, 
+            {
+              "id": "10153970877356499", 
+              "name": "Jo Russell"
+            }, 
+            {
+              "id": "10153986431819894", 
+              "name": "Carl Cresson"
+            }, 
+            {
+              "id": "10153872918252040", 
+              "name": "Dial Tone"
+            }, 
+            {
+              "id": "963478640366333", 
+              "name": "Alexandra Kiss"
+            }, 
+            {
+              "id": "755533284583200", 
+              "name": "Nigel Smith"
+            }, 
+            {
+              "id": "927756010679028", 
+              "name": "Angel Merry"
+            }, 
+            {
+              "id": "10153797250200081", 
+              "name": "Andy Vokes"
+            }, 
+            {
+              "id": "10153904624401605", 
+              "name": "Ashley Salmon"
+            }, 
+            {
+              "id": "1029798200423296", 
+              "name": "David Paterson"
+            }, 
+            {
+              "id": "1044167862321504", 
+              "name": "Anna Vegvari"
+            }, 
+            {
+              "id": "10153278637846924", 
+              "name": "Car\u00f6line Fish"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "NTMZD", 
+              "before": "NzcZD"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/942335592478625/comments?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=NTMZD"
+          }, 
+          "data": [
+            {
+              "created_time": "2015-08-11T13:11:01+0000", 
+              "message": "Now, while in for buying the deluxe, i do not have a dvd player so is there a digital download alternative to still be able to watch it? (not even a console)", 
+              "from": {
+                "name": "Robert Brewer", 
+                "id": "10153891011106221"
+              }, 
+              "id": "942335592478625_942337795811738"
+            }, 
+            {
+              "created_time": "2015-08-11T13:13:25+0000", 
+              "message": "Benji got abit of a welsh twang going on av ew butt. ;D", 
+              "from": {
+                "name": "Dale Dread", 
+                "id": "10154671128278712"
+              }, 
+              "id": "942335592478625_942338332478351"
+            }, 
+            {
+              "created_time": "2015-08-12T04:17:16+0000", 
+              "message": "I already pre-order the Red vinyl. Does that count?", 
+              "from": {
+                "name": "Mike Zarr", 
+                "id": "10208447745814256"
+              }, 
+              "id": "942335592478625_942611269117724"
+            }, 
+            {
+              "created_time": "2015-08-11T19:14:22+0000", 
+              "message": "I'd like to see a single pls before i buy?", 
+              "from": {
+                "name": "Alex Jarratt", 
+                "id": "1162689127075554"
+              }, 
+              "id": "942335592478625_942453045800213"
+            }, 
+            {
+              "created_time": "2015-08-11T14:16:11+0000", 
+              "message": "crap, not available here from where i live -.-", 
+              "from": {
+                "name": "Hp Knoll", 
+                "id": "1153052281386528"
+              }, 
+              "id": "942335592478625_942356192476565"
+            }, 
+            {
+              "created_time": "2015-08-11T13:34:09+0000", 
+              "message": "\"ONLY AVAILABLE WHEN PRE- ORDERING THE DELUXE VERSION OF THE NEW ALBUM FROM PLEDGE\"\n\nGive it a month, it'll be stremed all over youtube ;)", 
+              "from": {
+                "name": "Nick Meekham", 
+                "id": "10156719842155595"
+              }, 
+              "id": "942335592478625_942345252477659"
+            }, 
+            {
+              "created_time": "2015-08-11T14:23:04+0000", 
+              "message": "From catalonia much love ,I bought Volume - Signed Deluxe CD/DVD Digipak+ AccessPass, all my support, you rock!", 
+              "from": {
+                "name": "Ivan Mina Martin", 
+                "id": "10206044195525755"
+              }, 
+              "id": "942335592478625_942358895809628"
+            }, 
+            {
+              "created_time": "2015-08-11T20:30:49+0000", 
+              "message": "I fucking love this band can't wait to see this doco  can't wait to buy the album can't wait for them to come back to Australia", 
+              "from": {
+                "name": "Robbie Hargreaves", 
+                "id": "1071780272874794"
+              }, 
+              "id": "942335592478625_942477792464405"
+            }, 
+            {
+              "created_time": "2015-08-11T21:46:42+0000", 
+              "message": "Pre-Ordered! Shirt, DVD and CD! Come back to Canada guys!", 
+              "from": {
+                "name": "Mike Polanski", 
+                "id": "1699137733665237"
+              }, 
+              "id": "942335592478625_942501565795361"
+            }, 
+            {
+              "created_time": "2015-08-11T13:16:22+0000", 
+              "message": "That fckin new riff...can't wait to get this...amazing band...", 
+              "from": {
+                "name": "Gyula Holler", 
+                "id": "1144130745619538"
+              }, 
+              "id": "942335592478625_942339582478226"
+            }, 
+            {
+              "created_time": "2015-08-11T14:17:25+0000", 
+              "message": "Fuck yes must get this looks wicked #SKINDRED #RUDEBOYS4LIFE #VOLUME I cannot fucking wait for the album and the tour", 
+              "from": {
+                "name": "Matthew Potter", 
+                "id": "1131856563513849"
+              }, 
+              "id": "942335592478625_942356529143198"
+            }, 
+            {
+              "created_time": "2015-08-11T23:10:06+0000", 
+              "message": "Saw them in Dallas and loved every minute of the show. Amazing band.", 
+              "from": {
+                "name": "Pete Massey", 
+                "id": "10207776893232587"
+              }, 
+              "id": "942335592478625_942532935792224"
+            }, 
+            {
+              "created_time": "2015-08-12T20:42:58+0000", 
+              "message": "Ordered the red Vinyl chaps, not sure if its signed like, but I got your signatures on the last album. As for the documentary, seems like some guy called Nick will stream it on You Tube, so i'll wait for that to uploaded, unless Siri can give me a copy? hahaha (joking)", 
+              "from": {
+                "name": "Jay Hawkins", 
+                "id": "10153221399711486"
+              }, 
+              "id": "942335592478625_942993129079538"
+            }, 
+            {
+              "created_time": "2015-08-11T13:16:11+0000", 
+              "message": "Sweet, not only am I seeing them in October in Cardiff butt, but got this to look forward to. Headline a major festival I can see in the near future if you know what I mean 'cough cough download cough cough' Jon Boner", 
+              "from": {
+                "name": "Adam 'Adzzy' McCusker", 
+                "id": "10153381614167483"
+              }, 
+              "id": "942335592478625_942339519144899"
+            }, 
+            {
+              "created_time": "2015-08-11T13:17:54+0000", 
+              "message": "I can't wait for this album definitely gonna preorder!", 
+              "from": {
+                "name": "Pearce Hendy", 
+                "id": "1063971756957722"
+              }, 
+              "id": "942335592478625_942339999144851"
+            }, 
+            {
+              "created_time": "2015-08-11T21:00:39+0000", 
+              "message": "I am really looking forward to watch that DVD, so i just pre-ordered. See you on Saturday at Serengeti Festival. Bye", 
+              "from": {
+                "name": "Stephan Kaiser", 
+                "id": "1237783882903081"
+              }, 
+              "id": "942335592478625_942486459130205"
+            }, 
+            {
+              "created_time": "2015-08-11T16:12:40+0000", 
+              "message": "First time I've ever pre-ordered a cd", 
+              "from": {
+                "name": "Rhys Owens", 
+                "id": "10207790232185640"
+              }, 
+              "id": "942335592478625_942398702472314"
+            }, 
+            {
+              "created_time": "2015-08-11T17:30:49+0000", 
+              "message": "Will definitely have to get the album on release day, until I get a job which actually gives me hours (coming up to 5 months since I last heard from my current \"employer\" -_-) or my student loan (whichever comes first) I can't donate to the pledge so will have to miss the documentary.", 
+              "from": {
+                "name": "Philip Whitehead", 
+                "id": "1516547861982032"
+              }, 
+              "id": "942335592478625_942426902469494"
+            }, 
+            {
+              "created_time": "2015-08-11T14:43:29+0000", 
+              "message": "WE OWE U ALOT BENJI & THE SKINDRED BAND 4 PUTTIN ON!!! MUCH SUCCESS & RESPECT!!!", 
+              "from": {
+                "name": "Djcrash Dirtywormz", 
+                "id": "237132929962437"
+              }, 
+              "id": "942335592478625_942368155808702"
+            }, 
+            {
+              "created_time": "2015-08-11T13:22:15+0000", 
+              "message": "Gutted that I won't be able to see you on your next tour but I think this will settle my skindred cravings \ud83d\ude02", 
+              "from": {
+                "name": "Katie Ladyy Wall", 
+                "id": "10156607463365072"
+              }, 
+              "id": "942335592478625_942341605811357"
+            }, 
+            {
+              "created_time": "2015-08-11T15:40:34+0000", 
+              "message": "You guys rule!", 
+              "from": {
+                "name": "Ed Udhus", 
+                "id": "10208806975080539"
+              }, 
+              "id": "942335592478625_942387469140104"
+            }, 
+            {
+              "created_time": "2015-08-11T13:22:10+0000", 
+              "message": "Goood for all!", 
+              "from": {
+                "name": "TheMayor P\u00e1ginaOficial \u00c1lvarez", 
+                "id": "753136588153946"
+              }, 
+              "id": "942335592478625_942341585811359"
+            }, 
+            {
+              "created_time": "2015-08-11T13:35:28+0000", 
+              "message": "DONE LIKE DINNER HOMIE.", 
+              "from": {
+                "name": "Bex Deponeo Hmua", 
+                "id": "969586906444286"
+              }, 
+              "id": "942335592478625_942345775810940"
+            }, 
+            {
+              "created_time": "2015-08-11T14:54:11+0000", 
+              "message": "Come back to South Florida... It's been so long. We miss you!", 
+              "from": {
+                "name": "Julian Salazar", 
+                "id": "1206235712737194"
+              }, 
+              "id": "942335592478625_942372409141610"
+            }, 
+            {
+              "created_time": "2015-08-11T20:03:17+0000", 
+              "message": "Looking forward so much to catching this tour. Now to log on to Pledge, I fancy a slice of this action.", 
+              "from": {
+                "name": "Ed Sanderson", 
+                "id": "10153949245218186"
+              }, 
+              "id": "942335592478625_942468832465301"
+            }
+          ]
+        }, 
+        "sharedposts": {
+          "paging": {
+            "cursors": {
+              "after": "MTAxNTMxNTk1NzE0Nzg5MTg=", 
+              "before": "MTE0OTY4NjYyODM5MzU2Nw=="
+            }, 
+            "next": "https://graph.facebook.com/v2.5/942335592478625/sharedposts?access_token=519668928211037|ZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTAxNTMxNTk1NzE0Nzg5MTg%3D"
+          }, 
+          "data": [
+            {
+              "created_time": "2015-09-14T11:37:46+0000", 
+              "message": "\u25b6 Trailer - Skindred (official) - Rude Boys For Life \u25c4\n\n\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\u25ac\nhttps://www.facebook.com/skindredofficial/videos/942335592478625/?autoplay_reason=test_non_ad_for_ads_only_autoplay", 
+              "story": "Cartel Concerts shared a video to the event: SKINDRED @Paris - Glazart (15.11.2015).", 
+              "id": "775571215805112_1149686628393567"
+            }, 
+            {
+              "created_time": "2015-08-14T14:47:07+0000", 
+              "story": "fiesterosoutlook.com shared Skindred  (official)'s video.", 
+              "id": "525538090865604_856254531127290"
+            }, 
+            {
+              "created_time": "2015-08-13T12:23:05+0000", 
+              "story": "Pill Pulse shared Skindred  (official)'s video.", 
+              "id": "112002545505595_916593935046448"
+            }, 
+            {
+              "created_time": "2015-08-12T20:13:20+0000", 
+              "message": "F\u00fcr alle die es speziell m\u00f6gen, geht es hier zur Pre-Order des neuen Silberlings von SKINDRED! Die Briten zeigen sich dabei in einem kleinen behind the scenes Video. Also auf auf ihr Kinder!", 
+              "story": "Mighty Whity Shorty shared Skindred  (official)'s video.", 
+              "id": "287952424604448_928554647210886"
+            }, 
+            {
+              "created_time": "2015-08-12T07:44:29+0000", 
+              "message": "Skindred to release documentary, only available to fans that preorder new deluxe cd on Pledge Music.\n\nSuch a top live band.", 
+              "story": "MetalMouth.Net shared Skindred  (official)'s video.", 
+              "id": "224296081019095_823592997756064"
+            }, 
+            {
+              "created_time": "2015-08-12T07:31:17+0000", 
+              "message": "Our brothers in the Awesome Skindred  (official) are releasing a special documentary 'Rude Boys For Life' only available when you Pre-order their killer deluxe version of their new album through PledgeMusic. Check out the Documentary preview below and catch them representing ((RSJ)) at around 2m26s in #GUFFSAYSRELAX Yeah Boi!", 
+              "story": "RSJ shared Skindred  (official)'s video.", 
+              "id": "8745108917_10153159571478918"
+            }
+          ]
+        }
+      }, 
+      "page": "Skindred  (official)"
+    }
+  }
+]

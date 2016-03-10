@@ -1,0 +1,181 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "El nuevo #CAT ya est\u00e1 en M\u00e9xico, \u00a1prep\u00e1rate! #Celebraci\u00f3nCAT https://t.co/8Dcygnlflg", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425899629649924, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://giphy.com\" rel=\"nofollow\">Giphy Share</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498452466", 
+      "entities": {
+        "user_mentions": [], 
+        "symbols": [], 
+        "hashtags": [
+          {
+            "indices": [
+              9, 
+              13
+            ], 
+            "text": "CAT"
+          }, 
+          {
+            "indices": [
+              45, 
+              60
+            ], 
+            "text": "Celebraci\u00f3nCAT"
+          }
+        ], 
+        "urls": [], 
+        "media": [
+          {
+            "expanded_url": "http://twitter.com/Cat_MX/status/707425899629649924/photo/1", 
+            "display_url": "pic.twitter.com/8Dcygnlflg", 
+            "url": "https://t.co/8Dcygnlflg", 
+            "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/CdFIG24XEAA_am6.jpg", 
+            "id_str": "707425899122200576", 
+            "sizes": {
+              "small": {
+                "h": 140, 
+                "resize": "fit", 
+                "w": 250
+              }, 
+              "large": {
+                "h": 140, 
+                "resize": "fit", 
+                "w": 250
+              }, 
+              "medium": {
+                "h": 140, 
+                "resize": "fit", 
+                "w": 250
+              }, 
+              "thumb": {
+                "h": 140, 
+                "resize": "crop", 
+                "w": 140
+              }
+            }, 
+            "indices": [
+              61, 
+              84
+            ], 
+            "type": "photo", 
+            "id": 707425899122200576, 
+            "media_url": "http://pbs.twimg.com/tweet_video_thumb/CdFIG24XEAA_am6.jpg"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425899629649924", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 4585187293, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/687021392571715584/ndHQDyCk_normal.png", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 3, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "4585187293", 
+        "profile_background_color": "F5F8FA", 
+        "listed_count": 0, 
+        "profile_background_image_url_https": "", 
+        "utc_offset": -28800, 
+        "statuses_count": 1, 
+        "description": null, 
+        "friends_count": 1, 
+        "location": null, 
+        "profile_link_color": "2B7BB9", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/687021392571715584/ndHQDyCk_normal.png", 
+        "following": null, 
+        "geo_enabled": false, 
+        "profile_background_image_url": "", 
+        "name": "Cat Footwear M\u00e9xico", 
+        "lang": "es", 
+        "profile_background_tile": false, 
+        "favourites_count": 0, 
+        "screen_name": "Cat_MX", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Thu Dec 17 14:27:02 +0000 2015", 
+        "contributors_enabled": false, 
+        "time_zone": "Pacific Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "es", 
+      "created_at": "Wed Mar 09 04:40:52 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null, 
+      "extended_entities": {
+        "media": [
+          {
+            "expanded_url": "http://twitter.com/Cat_MX/status/707425899629649924/photo/1", 
+            "display_url": "pic.twitter.com/8Dcygnlflg", 
+            "url": "https://t.co/8Dcygnlflg", 
+            "media_url_https": "https://pbs.twimg.com/tweet_video_thumb/CdFIG24XEAA_am6.jpg", 
+            "video_info": {
+              "aspect_ratio": [
+                25, 
+                14
+              ], 
+              "variants": [
+                {
+                  "url": "https://pbs.twimg.com/tweet_video/CdFIG24XEAA_am6.mp4", 
+                  "bitrate": 0, 
+                  "content_type": "video/mp4"
+                }
+              ]
+            }, 
+            "id_str": "707425899122200576", 
+            "sizes": {
+              "small": {
+                "h": 140, 
+                "resize": "fit", 
+                "w": 250
+              }, 
+              "large": {
+                "h": 140, 
+                "resize": "fit", 
+                "w": 250
+              }, 
+              "medium": {
+                "h": 140, 
+                "resize": "fit", 
+                "w": 250
+              }, 
+              "thumb": {
+                "h": 140, 
+                "resize": "crop", 
+                "w": 140
+              }
+            }, 
+            "indices": [
+              61, 
+              84
+            ], 
+            "type": "animated_gif", 
+            "id": 707425899122200576, 
+            "media_url": "http://pbs.twimg.com/tweet_video_thumb/CdFIG24XEAA_am6.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

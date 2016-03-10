@@ -1,0 +1,209 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @elsneb18: JUST LISTENED TO @G4SHI NEW SONG AND IM SO STOKED FOR HIS NEW UPCOMING MUSIC OMG \ud83d\ude0d", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425894311268352, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451198", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 3125610401, 
+            "indices": [
+              3, 
+              12
+            ], 
+            "id_str": "3125610401", 
+            "screen_name": "elsneb18", 
+            "name": "eli"
+          }, 
+          {
+            "id": 145516395, 
+            "indices": [
+              31, 
+              37
+            ], 
+            "id_str": "145516395", 
+            "screen_name": "G4SHI", 
+            "name": "G4SHI"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": []
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425894311268352", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "JUST LISTENED TO @G4SHI NEW SONG AND IM SO STOKED FOR HIS NEW UPCOMING MUSIC OMG \ud83d\ude0d", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 707425746487287809, 
+        "favorite_count": 1, 
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [
+            {
+              "id": 145516395, 
+              "indices": [
+                17, 
+                23
+              ], 
+              "id_str": "145516395", 
+              "screen_name": "G4SHI", 
+              "name": "G4SHI"
+            }
+          ], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": []
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "707425746487287809", 
+        "retweet_count": 1, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 3125610401, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/705125012114640896/U1D9J7zA_normal.jpg", 
+          "profile_sidebar_fill_color": "DDEEF6", 
+          "profile_text_color": "333333", 
+          "followers_count": 669, 
+          "profile_sidebar_border_color": "C0DEED", 
+          "id_str": "3125610401", 
+          "profile_background_color": "C0DEED", 
+          "listed_count": 1, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+          "utc_offset": null, 
+          "statuses_count": 6431, 
+          "description": "albanian \u262a | neuroscience & psychology - premed\u2624", 
+          "friends_count": 473, 
+          "location": "Rockford, IL", 
+          "profile_link_color": "0084B4", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/705125012114640896/U1D9J7zA_normal.jpg", 
+          "following": null, 
+          "geo_enabled": true, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/3125610401/1455114193", 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+          "name": "eli", 
+          "lang": "en", 
+          "profile_background_tile": false, 
+          "favourites_count": 7061, 
+          "screen_name": "elsneb18", 
+          "notifications": null, 
+          "url": null, 
+          "created_at": "Sun Mar 29 04:22:00 +0000 2015", 
+          "contributors_enabled": false, 
+          "time_zone": null, 
+          "protected": false, 
+          "default_profile": true, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "lang": "en", 
+        "created_at": "Wed Mar 09 04:40:15 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": {
+          "full_name": "Loves Park, IL", 
+          "url": "https://api.twitter.com/1.1/geo/id/9bfddbd45776b2bc.json", 
+          "country": "United States", 
+          "place_type": "city", 
+          "bounding_box": {
+            "type": "Polygon", 
+            "coordinates": [
+              [
+                [
+                  -89.069204, 
+                  42.293874
+                ], 
+                [
+                  -89.069204, 
+                  42.365885
+                ], 
+                [
+                  -88.964153, 
+                  42.365885
+                ], 
+                [
+                  -88.964153, 
+                  42.293874
+                ]
+              ]
+            ]
+          }, 
+          "country_code": "US", 
+          "attributes": {}, 
+          "id": "9bfddbd45776b2bc", 
+          "name": "Loves Park"
+        }
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 154645331, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/697301391518404608/LghCl-q3_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 274, 
+        "profile_sidebar_border_color": "FFFFFF", 
+        "id_str": "154645331", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 2, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/756571334/cb4c835414e76204b7f09bacc8a11231.jpeg", 
+        "utc_offset": -18000, 
+        "statuses_count": 8261, 
+        "description": "Shqipe we made it", 
+        "friends_count": 168, 
+        "location": "Tampa, FL", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/697301391518404608/LghCl-q3_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/154645331/1455054940", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/756571334/cb4c835414e76204b7f09bacc8a11231.jpeg", 
+        "name": "7", 
+        "lang": "en", 
+        "profile_background_tile": true, 
+        "favourites_count": 12683, 
+        "screen_name": "ArlindSmrcaku", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Fri Jun 11 20:38:47 +0000 2010", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

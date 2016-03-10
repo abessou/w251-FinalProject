@@ -1,0 +1,322 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @SubKultureEnt: Korea Times Music Festival just announced their 1st idol boy group FTISLAND! Are you guys planning on going? ^^ https://\u2026", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425903928717313, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498453491", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 3028161349, 
+            "indices": [
+              3, 
+              17
+            ], 
+            "id_str": "3028161349", 
+            "screen_name": "SubKultureEnt", 
+            "name": "SubKulture Ent"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [], 
+        "media": [
+          {
+            "source_user_id": 3028161349, 
+            "source_status_id_str": "705574140602748933", 
+            "expanded_url": "http://twitter.com/SubKultureEnt/status/705574140602748933/photo/1", 
+            "display_url": "pic.twitter.com/AtxLsUXe2T", 
+            "url": "https://t.co/AtxLsUXe2T", 
+            "media_url_https": "https://pbs.twimg.com/media/Ccqz8OfUMAAok2u.jpg", 
+            "source_user_id_str": "3028161349", 
+            "source_status_id": 705574140602748933, 
+            "id_str": "705574138899869696", 
+            "sizes": {
+              "small": {
+                "h": 218, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 657, 
+                "resize": "fit", 
+                "w": 1024
+              }, 
+              "medium": {
+                "h": 385, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              139, 
+              140
+            ], 
+            "type": "photo", 
+            "id": 705574138899869696, 
+            "media_url": "http://pbs.twimg.com/media/Ccqz8OfUMAAok2u.jpg"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425903928717313", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "Korea Times Music Festival just announced their 1st idol boy group FTISLAND! Are you guys planning on going? ^^ https://t.co/AtxLsUXe2T", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 705574140602748933, 
+        "favorite_count": 211, 
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [], 
+          "media": [
+            {
+              "expanded_url": "http://twitter.com/SubKultureEnt/status/705574140602748933/photo/1", 
+              "display_url": "pic.twitter.com/AtxLsUXe2T", 
+              "url": "https://t.co/AtxLsUXe2T", 
+              "media_url_https": "https://pbs.twimg.com/media/Ccqz8OfUMAAok2u.jpg", 
+              "id_str": "705574138899869696", 
+              "sizes": {
+                "small": {
+                  "h": 218, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 657, 
+                  "resize": "fit", 
+                  "w": 1024
+                }, 
+                "medium": {
+                  "h": 385, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                112, 
+                135
+              ], 
+              "type": "photo", 
+              "id": 705574138899869696, 
+              "media_url": "http://pbs.twimg.com/media/Ccqz8OfUMAAok2u.jpg"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "705574140602748933", 
+        "retweet_count": 147, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": false, 
+          "default_profile_image": false, 
+          "id": 3028161349, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/619261293346697216/zJLjkGfe_normal.png", 
+          "profile_sidebar_fill_color": "000000", 
+          "profile_text_color": "000000", 
+          "followers_count": 15166, 
+          "profile_sidebar_border_color": "000000", 
+          "id_str": "3028161349", 
+          "profile_background_color": "000000", 
+          "listed_count": 41, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif", 
+          "utc_offset": null, 
+          "statuses_count": 3623, 
+          "description": "SubKulture Entertainment is a live production company with a focus on K-Pop events.", 
+          "friends_count": 183, 
+          "location": "FB/IG: @subkultureent", 
+          "profile_link_color": "1CADE4", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/619261293346697216/zJLjkGfe_normal.png", 
+          "following": null, 
+          "geo_enabled": false, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/3028161349/1447983107", 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif", 
+          "name": "SubKulture Ent", 
+          "lang": "en", 
+          "profile_background_tile": true, 
+          "favourites_count": 8084, 
+          "screen_name": "SubKultureEnt", 
+          "notifications": null, 
+          "url": "http://www.subkultureent.com", 
+          "created_at": "Thu Feb 19 01:31:42 +0000 2015", 
+          "contributors_enabled": false, 
+          "time_zone": null, 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Fri Mar 04 02:02:38 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null, 
+        "extended_entities": {
+          "media": [
+            {
+              "expanded_url": "http://twitter.com/SubKultureEnt/status/705574140602748933/photo/1", 
+              "display_url": "pic.twitter.com/AtxLsUXe2T", 
+              "url": "https://t.co/AtxLsUXe2T", 
+              "media_url_https": "https://pbs.twimg.com/media/Ccqz8OfUMAAok2u.jpg", 
+              "id_str": "705574138899869696", 
+              "sizes": {
+                "small": {
+                  "h": 218, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "large": {
+                  "h": 657, 
+                  "resize": "fit", 
+                  "w": 1024
+                }, 
+                "medium": {
+                  "h": 385, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                112, 
+                135
+              ], 
+              "type": "photo", 
+              "id": 705574138899869696, 
+              "media_url": "http://pbs.twimg.com/media/Ccqz8OfUMAAok2u.jpg"
+            }
+          ]
+        }
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 46206696, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/684956856515702784/wzkYWWco_normal.jpg", 
+        "profile_sidebar_fill_color": "000000", 
+        "profile_text_color": "000000", 
+        "followers_count": 269, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "46206696", 
+        "profile_background_color": "6C767F", 
+        "listed_count": 6, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/691402020176171009/Wm4q8CZT.jpg", 
+        "utc_offset": -18000, 
+        "statuses_count": 11993, 
+        "description": "22. Multi-fandom. B.A.P, B1A4, GOT7, BTS, MYNAME, Monsta X & other groups \u2661 Tv lover OUAT, SPN, etc.Hate cannot drive out hate;only love can do that -MLK Jr.", 
+        "friends_count": 328, 
+        "location": "Canada", 
+        "profile_link_color": "F0938E", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/684956856515702784/wzkYWWco_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/46206696/1452222057", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/691402020176171009/Wm4q8CZT.jpg", 
+        "name": "Filsan (\ud544\uc0b0)", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 6666, 
+        "screen_name": "filly1414", 
+        "notifications": null, 
+        "url": "https://www.facebook.com/pages/NoMercy-Monsta-X-Worldwide/802837033122508", 
+        "created_at": "Wed Jun 10 19:50:26 +0000 2009", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:53 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null, 
+      "extended_entities": {
+        "media": [
+          {
+            "source_user_id": 3028161349, 
+            "source_status_id_str": "705574140602748933", 
+            "expanded_url": "http://twitter.com/SubKultureEnt/status/705574140602748933/photo/1", 
+            "display_url": "pic.twitter.com/AtxLsUXe2T", 
+            "url": "https://t.co/AtxLsUXe2T", 
+            "media_url_https": "https://pbs.twimg.com/media/Ccqz8OfUMAAok2u.jpg", 
+            "source_user_id_str": "3028161349", 
+            "source_status_id": 705574140602748933, 
+            "id_str": "705574138899869696", 
+            "sizes": {
+              "small": {
+                "h": 218, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "large": {
+                "h": 657, 
+                "resize": "fit", 
+                "w": 1024
+              }, 
+              "medium": {
+                "h": 385, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              139, 
+              140
+            ], 
+            "type": "photo", 
+            "id": 705574138899869696, 
+            "media_url": "http://pbs.twimg.com/media/Ccqz8OfUMAAok2u.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

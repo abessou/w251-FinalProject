@@ -1,0 +1,208 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @MONEYMANSH0W: Listen to Big Rings X MoneyManShow X TheGoInGod X Lucky P by Music Money and Memories #np on #SoundCloud\nhttps://t.co/Hqx\u2026", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425894869176320, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451331", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 33822708, 
+            "indices": [
+              3, 
+              16
+            ], 
+            "id_str": "33822708", 
+            "screen_name": "MONEYMANSH0W", 
+            "name": "Moneymansh0w"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [
+          {
+            "indices": [
+              104, 
+              107
+            ], 
+            "text": "np"
+          }, 
+          {
+            "indices": [
+              111, 
+              122
+            ], 
+            "text": "SoundCloud"
+          }
+        ], 
+        "urls": [
+          {
+            "url": "https://t.co/HqxIVwsqrD", 
+            "indices": [
+              123, 
+              140
+            ], 
+            "expanded_url": "https://soundcloud.com/musicmoneyandmemories/future-big-rings-x-moneymanshow-x-thegoingod-x-lucky-p", 
+            "display_url": "soundcloud.com/musicmoneyandm\u2026"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425894869176320", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "Listen to Big Rings X MoneyManShow X TheGoInGod X Lucky P by Music Money and Memories #np on #SoundCloud\nhttps://t.co/HqxIVwsqrD", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 707425166356324353, 
+        "favorite_count": 0, 
+        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [
+            {
+              "indices": [
+                86, 
+                89
+              ], 
+              "text": "np"
+            }, 
+            {
+              "indices": [
+                93, 
+                104
+              ], 
+              "text": "SoundCloud"
+            }
+          ], 
+          "urls": [
+            {
+              "url": "https://t.co/HqxIVwsqrD", 
+              "indices": [
+                105, 
+                128
+              ], 
+              "expanded_url": "https://soundcloud.com/musicmoneyandmemories/future-big-rings-x-moneymanshow-x-thegoingod-x-lucky-p", 
+              "display_url": "soundcloud.com/musicmoneyandm\u2026"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "707425166356324353", 
+        "retweet_count": 1, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 33822708, 
+          "verified": false, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/701765552000389123/j8RmIRLU_normal.jpg", 
+          "profile_sidebar_fill_color": "EFEFEF", 
+          "profile_text_color": "333333", 
+          "followers_count": 650, 
+          "profile_sidebar_border_color": "EEEEEE", 
+          "id_str": "33822708", 
+          "profile_background_color": "131516", 
+          "listed_count": 12, 
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif", 
+          "utc_offset": -28800, 
+          "statuses_count": 13160, 
+          "description": "@Moneymanshow \nClick Link\u2b07Press\u25b6 ( Freestyles ) \u24c2usic\u24c2oney\u24c2emories", 
+          "friends_count": 500, 
+          "location": "www.musicmoneyandmemories.com", 
+          "profile_link_color": "009999", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/701765552000389123/j8RmIRLU_normal.jpg", 
+          "following": null, 
+          "geo_enabled": false, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/33822708/1456990056", 
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif", 
+          "name": "Moneymansh0w", 
+          "lang": "en", 
+          "profile_background_tile": true, 
+          "favourites_count": 673, 
+          "screen_name": "MONEYMANSH0W", 
+          "notifications": null, 
+          "url": "https://m.soundcloud.com/musicmoneymemories2015", 
+          "created_at": "Tue Apr 21 05:21:58 +0000 2009", 
+          "contributors_enabled": false, 
+          "time_zone": "Pacific Time (US & Canada)", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Wed Mar 09 04:37:57 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 319915207, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/703850919134298112/gdHxHKbl_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 1581, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "319915207", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 21, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/588478021/4wefv6jchonahqhst1v8.jpeg", 
+        "utc_offset": -14400, 
+        "statuses_count": 89741, 
+        "description": "\u24c2usic\u24c2oney\u24c2emories", 
+        "friends_count": 1263, 
+        "location": "INMYOWNLANE UPNEXT", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/703850919134298112/gdHxHKbl_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/319915207/1456990037", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/588478021/4wefv6jchonahqhst1v8.jpeg", 
+        "name": "Moneymanshow", 
+        "lang": "en", 
+        "profile_background_tile": true, 
+        "favourites_count": 757, 
+        "screen_name": "moneyman70", 
+        "notifications": null, 
+        "url": "https://m.soundcloud.com/musicmoneymemories2015", 
+        "created_at": "Sun Jun 19 00:05:35 +0000 2011", 
+        "contributors_enabled": false, 
+        "time_zone": "Atlantic Time (Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null
+    }
+  }
+]

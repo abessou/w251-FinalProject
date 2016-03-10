@@ -1,0 +1,379 @@
+[
+  {
+    "post": {
+      "data": {
+        "id": "10154549386754377", 
+        "permalink_url": "/surfingmag/videos/10154549386754377/", 
+        "likes": {
+          "paging": {
+            "cursors": {
+              "after": "MjE5MjIyMTE1MDk3MzIz", 
+              "before": "MTU2NDQ2NDMzNzIxNDA5MQZDZD"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10154549386754377/likes?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MjE5MjIyMTE1MDk3MzIz"
+          }, 
+          "data": [
+            {
+              "id": "1564464337214091", 
+              "name": "Andre Machado"
+            }, 
+            {
+              "id": "555088844672260", 
+              "name": "Wayne Frisby"
+            }, 
+            {
+              "id": "959845224091370", 
+              "name": "Sara Andrea"
+            }, 
+            {
+              "id": "1030692996968734", 
+              "name": "S\u00e9rgio Ricardo"
+            }, 
+            {
+              "id": "1098571533528938", 
+              "name": "Brian Hoppers"
+            }, 
+            {
+              "id": "10204602725702729", 
+              "name": "Bob Hayes"
+            }, 
+            {
+              "id": "985870908134146", 
+              "name": "Nicolas Vedovatto"
+            }, 
+            {
+              "id": "845241015602420", 
+              "name": "T\u00edago Marinho"
+            }, 
+            {
+              "id": "1277682872248495", 
+              "name": "Whiry Kakui"
+            }, 
+            {
+              "id": "890534167726006", 
+              "name": "Lelio Paulo"
+            }, 
+            {
+              "id": "360197560770675", 
+              "name": "Shigeru Shinoi"
+            }, 
+            {
+              "id": "828264227296391", 
+              "name": "Ryota Shigenobu"
+            }, 
+            {
+              "id": "838193756327520", 
+              "name": "Yuya Taguchi"
+            }, 
+            {
+              "id": "929521603822212", 
+              "name": "Hideyuki Boochan Nishimiya"
+            }, 
+            {
+              "id": "519097934937181", 
+              "name": "Kotaro Abe"
+            }, 
+            {
+              "id": "1088341384520170", 
+              "name": "Lu\u00eds Santa Marta"
+            }, 
+            {
+              "id": "10153427050031623", 
+              "name": "Francisco Melo"
+            }, 
+            {
+              "id": "10156515952420063", 
+              "name": "Carsten Schraps"
+            }, 
+            {
+              "id": "160268757693097", 
+              "name": "Sophie Rdm"
+            }, 
+            {
+              "id": "1718114465079134", 
+              "name": "Misael Sanches"
+            }, 
+            {
+              "id": "911499178971396", 
+              "name": "Emerson Rodrigo Miranda"
+            }, 
+            {
+              "id": "1242539445760906", 
+              "name": "Kacper Zetpunkt"
+            }, 
+            {
+              "id": "1088510904544650", 
+              "name": "Leo Falseti"
+            }, 
+            {
+              "id": "239487353056725", 
+              "name": "Bandi Maulana"
+            }, 
+            {
+              "id": "219222115097323", 
+              "name": "Vika Naysila"
+            }
+          ]
+        }, 
+        "comments": {
+          "paging": {
+            "cursors": {
+              "after": "MTg3", 
+              "before": "MjEx"
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10154549386754377/comments?access_token=519668928211037%7CZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=MTg3"
+          }, 
+          "data": [
+            {
+              "created_time": "2016-02-14T11:17:17+0000", 
+              "message": "I can't take this amazing year anymore. Not there. Can't be stoked anymore for shredding the best waves to hit the coast in a decade. Need to be back now.", 
+              "from": {
+                "name": "Zachary James Sesar", 
+                "id": "822246777877515"
+              }, 
+              "id": "10154549386754377_10154553221324377"
+            }, 
+            {
+              "created_time": "2016-02-13T00:58:42+0000", 
+              "message": "Who's the privileged Bro-Brah that got the 1,000ft from shore motorized craft exemption?? fuck safety, the bribes and crimes before the safety issue are what cause the safety issue! Ya know, because city servants, lifeguards, are supposed to be filming surfers on the clock right, if thats the case...sheesh I broke down towing camp pendleton and had to go to shore to fix for a minute, they threatened fines and all sorts of shit if we didn't start moving that second. Had to swim/drag/push the ski back to Oside harbor at dusk. Cool guys they were. Not all, just those specific two", 
+              "from": {
+                "name": "Matt Ritter", 
+                "id": "1300286676652025"
+              }, 
+              "id": "10154549386754377_10154549900889377"
+            }, 
+            {
+              "created_time": "2016-02-13T03:20:51+0000", 
+              "message": "I live in Hawaii get ready guys you got a hell of a swell on the way", 
+              "from": {
+                "name": "James Bissey", 
+                "id": "1224438484252983"
+              }, 
+              "id": "10154549386754377_10154550131979377"
+            }, 
+            {
+              "created_time": "2016-02-13T02:05:34+0000", 
+              "message": "Ainda sonho! Califa dreams... Falta muito treino, mas sem pressa e sem desist\u00eancias por aqui sigo seguindo...nada como um dia ap\u00f3s outro dia...", 
+              "from": {
+                "name": "Rodrigo Princival", 
+                "id": "1686627768292978"
+              }, 
+              "id": "10154549386754377_10154550002509377"
+            }, 
+            {
+              "created_time": "2016-02-13T22:18:38+0000", 
+              "message": "If every wave were that long surfing would totally be worth it. There's way to many people in the water to avoid. So cool thou!", 
+              "from": {
+                "name": "Stephen VanBuren", 
+                "id": "590762241081894"
+              }, 
+              "id": "10154549386754377_10154551997414377"
+            }, 
+            {
+              "created_time": "2016-02-15T01:27:09+0000", 
+              "message": "I'll take an empty decent beachbreak any day rather than deal with that crowd.  I feel bad for the locals who surfed it before all the publicity", 
+              "from": {
+                "name": "Sam Jones", 
+                "id": "10207666489814690"
+              }, 
+              "id": "10154549386754377_10154554843989377"
+            }, 
+            {
+              "created_time": "2016-02-13T00:58:54+0000", 
+              "message": "Tom\u00e1s I wanna surf this wave !", 
+              "from": {
+                "name": "Will Guiblin Caro", 
+                "id": "10206927317676161"
+              }, 
+              "id": "10154549386754377_10154549902314377"
+            }, 
+            {
+              "created_time": "2016-02-15T15:20:40+0000", 
+              "message": "Back in the day \nYou would not of made it back to the parking lot with that film\nTowing in at camp pendleton dude you a goon", 
+              "from": {
+                "name": "William M Taylor", 
+                "id": "1219855954708514"
+              }, 
+              "id": "10154549386754377_10154556157294377"
+            }, 
+            {
+              "created_time": "2016-02-13T01:04:47+0000", 
+              "message": "Seb Boyd surfs up u wanna go Surfing Champ", 
+              "from": {
+                "name": "Dwayne Boyd", 
+                "id": "882394425221169"
+              }, 
+              "id": "10154549386754377_10154549909739377"
+            }, 
+            {
+              "created_time": "2016-02-13T04:11:23+0000", 
+              "message": "Great.  We are just under way.    Hoping for a monster swell I Hawai'i.  40 foot.  Off the face.  Big. Only held 9 times.  Waimea bay", 
+              "from": {
+                "name": "Dean Sabado", 
+                "id": "589845534524249"
+              }, 
+              "id": "10154549386754377_10154550251244377"
+            }, 
+            {
+              "created_time": "2016-02-13T14:56:02+0000", 
+              "message": "Surfing the Best Sport of the World I loved <3 <3 <3 <3 <3 <3", 
+              "from": {
+                "name": "John Hendry", 
+                "id": "976191002474683"
+              }, 
+              "id": "10154549386754377_10154551046944377"
+            }, 
+            {
+              "created_time": "2016-02-14T02:17:48+0000", 
+              "message": "Dreamin' & I ain't in California !", 
+              "from": {
+                "name": "Christian Kirkwood", 
+                "id": "186225341753856"
+              }, 
+              "id": "10154549386754377_10154552415844377"
+            }, 
+            {
+              "created_time": "2016-02-13T00:55:10+0000", 
+              "message": "What the hell is a jet ski doing in the line up at the sandbar... that is a whole lot of stupid... meanwhile...  filmed it classic for Off The Wall II and surfed it a lot alone long before anyone knew....", 
+              "from": {
+                "name": "Joe Mickey", 
+                "id": "10208726634983318"
+              }, 
+              "id": "10154549386754377_10154549897029377"
+            }, 
+            {
+              "created_time": "2016-02-14T20:18:48+0000", 
+              "message": "Jake Wilson Isaac Holmes we are about due for something like this boys", 
+              "from": {
+                "name": "Jack Gillies", 
+                "id": "1269584289723644"
+              }, 
+              "id": "10154549386754377_10154554300919377"
+            }, 
+            {
+              "created_time": "2016-02-13T09:21:39+0000", 
+              "message": "Colin viens on va en California", 
+              "from": {
+                "name": "Clement Gaillard", 
+                "id": "1718945225048154"
+              }, 
+              "id": "10154549386754377_10154550589744377"
+            }, 
+            {
+              "created_time": "2016-02-13T04:21:50+0000", 
+              "message": "Frankie hope ur enjoying this!!!", 
+              "from": {
+                "name": "Lucas  Vuaflart", 
+                "id": "998882583482244"
+              }, 
+              "id": "10154549386754377_10154550268919377"
+            }, 
+            {
+              "created_time": "2016-02-13T07:51:00+0000", 
+              "message": "I had some great days at this spot 1996- 2005", 
+              "from": {
+                "name": "Steve Hazelton", 
+                "id": "10208615016356660"
+              }, 
+              "id": "10154549386754377_10154550501804377"
+            }, 
+            {
+              "created_time": "2016-02-13T10:52:17+0000", 
+              "message": "No better feeling than that!!", 
+              "from": {
+                "name": "Ray Merchant Jr.", 
+                "id": "615001091997829"
+              }, 
+              "id": "10154549386754377_10154550707834377"
+            }, 
+            {
+              "created_time": "2016-02-13T10:49:36+0000", 
+              "message": "Wish I had the time and money to hope on a plane with my family and go, looks like a blast!!!", 
+              "from": {
+                "name": "Ray Merchant Jr.", 
+                "id": "615001091997829"
+              }, 
+              "id": "10154549386754377_10154550703699377"
+            }, 
+            {
+              "created_time": "2016-02-14T22:30:56+0000", 
+              "message": "We where born in the wrong place and time.", 
+              "from": {
+                "name": "Joel LeBoeuf", 
+                "id": "177306912650638"
+              }, 
+              "id": "10154549386754377_10154554558159377"
+            }, 
+            {
+              "created_time": "2016-02-13T20:02:56+0000", 
+              "message": "That looks so so so fun...", 
+              "from": {
+                "name": "David Carvalho", 
+                "id": "10209190510618484"
+              }, 
+              "id": "10154549386754377_10154551733789377"
+            }, 
+            {
+              "created_time": "2016-02-13T10:32:55+0000", 
+              "message": "JuanCa ;) mira me record\u00f3 a ti!!!! ;)", 
+              "from": {
+                "name": "Beita Rus", 
+                "id": "10208877513238838"
+              }, 
+              "id": "10154549386754377_10154550673869377"
+            }, 
+            {
+              "created_time": "2016-02-18T19:00:24+0000", 
+              "message": "does anybody know the song name?", 
+              "from": {
+                "name": "Brandon Mersich", 
+                "id": "10207170093783126"
+              }, 
+              "id": "10154549386754377_10154564132204377"
+            }, 
+            {
+              "created_time": "2016-02-15T07:03:05+0000", 
+              "message": "Bad ass that guy kicks ass", 
+              "from": {
+                "name": "Dale Patrick Kryst", 
+                "id": "1017820568290045"
+              }, 
+              "id": "10154549386754377_10154555392954377"
+            }, 
+            {
+              "created_time": "2016-02-14T23:19:22+0000", 
+              "message": "Anyone else see that fish in the wave?", 
+              "from": {
+                "name": "Christopher Nelson Rezek", 
+                "id": "186215855090543"
+              }, 
+              "id": "10154549386754377_10154554644414377"
+            }
+          ]
+        }, 
+        "sharedposts": {
+          "paging": {
+            "cursors": {
+              "after": "ODIyMjA0NzcxMjI1MDA3", 
+              "before": "MTA0NDc5MDAwODkxMjI5Mg=="
+            }, 
+            "next": "https://graph.facebook.com/v2.5/10154549386754377/sharedposts?access_token=519668928211037|ZyT-855n5PcMrye6uXcovcEspYg&limit=25&after=ODIyMjA0NzcxMjI1MDA3"
+          }, 
+          "data": [
+            {
+              "created_time": "2016-02-24T02:27:24+0000", 
+              "story": "Carolina Surf School shared Surfing Magazine's video.", 
+              "id": "121596867898282_1044790008912292"
+            }, 
+            {
+              "created_time": "2016-02-24T02:27:15+0000", 
+              "story": "Carolina Gutierrez Guzman shared Surfing Magazine's video.", 
+              "id": "297238600388296_822204771225007"
+            }
+          ]
+        }
+      }, 
+      "page": "Surfing Magazine"
+    }
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "RT @soompi: Lee Hi Tops Music Charts With \u201cBreathe,\u201d Written by SHINee\u2019s Jonghyun https://t.co/YSgngcwhzK https://t.co/g4OQcVNs0A", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425892276961280, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498450713", 
+      "entities": {
+        "user_mentions": [
+          {
+            "id": 17659206, 
+            "indices": [
+              3, 
+              10
+            ], 
+            "id_str": "17659206", 
+            "screen_name": "soompi", 
+            "name": "Soompi"
+          }
+        ], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": [
+          {
+            "url": "https://t.co/YSgngcwhzK", 
+            "indices": [
+              82, 
+              105
+            ], 
+            "expanded_url": "http://www.soompi.com/2016/03/08/lee-hi-tops-music-charts-with-breathe-written-by-shinees-jonghyun/", 
+            "display_url": "soompi.com/2016/03/08/lee\u2026"
+          }
+        ], 
+        "media": [
+          {
+            "source_user_id": 17659206, 
+            "source_status_id_str": "707414866563215361", 
+            "expanded_url": "http://twitter.com/soompi/status/707414866563215361/photo/1", 
+            "display_url": "pic.twitter.com/g4OQcVNs0A", 
+            "url": "https://t.co/g4OQcVNs0A", 
+            "media_url_https": "https://pbs.twimg.com/media/CdE8pSQUkAEzQJO.jpg", 
+            "source_user_id_str": "17659206", 
+            "source_status_id": 707414866563215361, 
+            "id_str": "707413296446476289", 
+            "sizes": {
+              "large": {
+                "h": 396, 
+                "resize": "fit", 
+                "w": 801
+              }, 
+              "small": {
+                "h": 168, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "medium": {
+                "h": 297, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              106, 
+              129
+            ], 
+            "type": "photo", 
+            "id": 707413296446476289, 
+            "media_url": "http://pbs.twimg.com/media/CdE8pSQUkAEzQJO.jpg"
+          }
+        ]
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425892276961280", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "retweeted_status": {
+        "contributors": null, 
+        "truncated": false, 
+        "text": "Lee Hi Tops Music Charts With \u201cBreathe,\u201d Written by SHINee\u2019s Jonghyun https://t.co/YSgngcwhzK https://t.co/g4OQcVNs0A", 
+        "is_quote_status": false, 
+        "in_reply_to_status_id": null, 
+        "id": 707414866563215361, 
+        "favorite_count": 304, 
+        "source": "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>", 
+        "retweeted": false, 
+        "coordinates": null, 
+        "entities": {
+          "user_mentions": [], 
+          "symbols": [], 
+          "hashtags": [], 
+          "urls": [
+            {
+              "url": "https://t.co/YSgngcwhzK", 
+              "indices": [
+                70, 
+                93
+              ], 
+              "expanded_url": "http://www.soompi.com/2016/03/08/lee-hi-tops-music-charts-with-breathe-written-by-shinees-jonghyun/", 
+              "display_url": "soompi.com/2016/03/08/lee\u2026"
+            }
+          ], 
+          "media": [
+            {
+              "expanded_url": "http://twitter.com/soompi/status/707414866563215361/photo/1", 
+              "display_url": "pic.twitter.com/g4OQcVNs0A", 
+              "url": "https://t.co/g4OQcVNs0A", 
+              "media_url_https": "https://pbs.twimg.com/media/CdE8pSQUkAEzQJO.jpg", 
+              "id_str": "707413296446476289", 
+              "sizes": {
+                "large": {
+                  "h": 396, 
+                  "resize": "fit", 
+                  "w": 801
+                }, 
+                "small": {
+                  "h": 168, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "medium": {
+                  "h": 297, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                94, 
+                117
+              ], 
+              "type": "photo", 
+              "id": 707413296446476289, 
+              "media_url": "http://pbs.twimg.com/media/CdE8pSQUkAEzQJO.jpg"
+            }
+          ]
+        }, 
+        "in_reply_to_screen_name": null, 
+        "id_str": "707414866563215361", 
+        "retweet_count": 511, 
+        "in_reply_to_user_id": null, 
+        "favorited": false, 
+        "user": {
+          "follow_request_sent": null, 
+          "profile_use_background_image": true, 
+          "default_profile_image": false, 
+          "id": 17659206, 
+          "verified": true, 
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/699694315539333120/k6oSvSmA_normal.jpg", 
+          "profile_sidebar_fill_color": "000000", 
+          "profile_text_color": "999999", 
+          "followers_count": 784910, 
+          "profile_sidebar_border_color": "000000", 
+          "id_str": "17659206", 
+          "profile_background_color": "1E1E1E", 
+          "listed_count": 3581, 
+          "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/699864769/1cdde0a85f5c0a994ae1fb06d545a5ec.png", 
+          "utc_offset": -28800, 
+          "statuses_count": 69414, 
+          "description": "The original K-pop community. We take gifs, OTPs, and reporting on your faves' fashion choices seriously. But not rumors. Ain't nobody got time for that.", 
+          "friends_count": 3503, 
+          "location": "Worldwide", 
+          "profile_link_color": "31B6F4", 
+          "profile_image_url": "http://pbs.twimg.com/profile_images/699694315539333120/k6oSvSmA_normal.jpg", 
+          "following": null, 
+          "geo_enabled": false, 
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/17659206/1456337479", 
+          "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/699864769/1cdde0a85f5c0a994ae1fb06d545a5ec.png", 
+          "name": "Soompi", 
+          "lang": "en", 
+          "profile_background_tile": true, 
+          "favourites_count": 924, 
+          "screen_name": "soompi", 
+          "notifications": null, 
+          "url": "http://www.soompi.com", 
+          "created_at": "Wed Nov 26 20:48:27 +0000 2008", 
+          "contributors_enabled": false, 
+          "time_zone": "Pacific Time (US & Canada)", 
+          "protected": false, 
+          "default_profile": false, 
+          "is_translator": false
+        }, 
+        "geo": null, 
+        "in_reply_to_user_id_str": null, 
+        "possibly_sensitive": false, 
+        "lang": "en", 
+        "created_at": "Wed Mar 09 03:57:01 +0000 2016", 
+        "filter_level": "low", 
+        "in_reply_to_status_id_str": null, 
+        "place": null, 
+        "extended_entities": {
+          "media": [
+            {
+              "expanded_url": "http://twitter.com/soompi/status/707414866563215361/photo/1", 
+              "display_url": "pic.twitter.com/g4OQcVNs0A", 
+              "url": "https://t.co/g4OQcVNs0A", 
+              "media_url_https": "https://pbs.twimg.com/media/CdE8pSQUkAEzQJO.jpg", 
+              "id_str": "707413296446476289", 
+              "sizes": {
+                "large": {
+                  "h": 396, 
+                  "resize": "fit", 
+                  "w": 801
+                }, 
+                "small": {
+                  "h": 168, 
+                  "resize": "fit", 
+                  "w": 340
+                }, 
+                "medium": {
+                  "h": 297, 
+                  "resize": "fit", 
+                  "w": 600
+                }, 
+                "thumb": {
+                  "h": 150, 
+                  "resize": "crop", 
+                  "w": 150
+                }
+              }, 
+              "indices": [
+                94, 
+                117
+              ], 
+              "type": "photo", 
+              "id": 707413296446476289, 
+              "media_url": "http://pbs.twimg.com/media/CdE8pSQUkAEzQJO.jpg"
+            }
+          ]
+        }
+      }, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 206554141, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/690141614069661701/yFKFNKuq_normal.jpg", 
+        "profile_sidebar_fill_color": "F6F6F6", 
+        "profile_text_color": "333333", 
+        "followers_count": 517, 
+        "profile_sidebar_border_color": "EEEEEE", 
+        "id_str": "206554141", 
+        "profile_background_color": "ACDED6", 
+        "listed_count": 5, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme18/bg.gif", 
+        "utc_offset": 28800, 
+        "statuses_count": 40245, 
+        "description": "gelabah ayam", 
+        "friends_count": 292, 
+        "location": "SAC", 
+        "profile_link_color": "038543", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/690141614069661701/yFKFNKuq_normal.jpg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/206554141/1451299698", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme18/bg.gif", 
+        "name": "ijo", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 10934, 
+        "screen_name": "izzaraiha", 
+        "notifications": null, 
+        "url": "http://chelseafc.com", 
+        "created_at": "Sat Oct 23 05:58:46 +0000 2010", 
+        "contributors_enabled": false, 
+        "time_zone": "Kuala Lumpur", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:50 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": null, 
+      "extended_entities": {
+        "media": [
+          {
+            "source_user_id": 17659206, 
+            "source_status_id_str": "707414866563215361", 
+            "expanded_url": "http://twitter.com/soompi/status/707414866563215361/photo/1", 
+            "display_url": "pic.twitter.com/g4OQcVNs0A", 
+            "url": "https://t.co/g4OQcVNs0A", 
+            "media_url_https": "https://pbs.twimg.com/media/CdE8pSQUkAEzQJO.jpg", 
+            "source_user_id_str": "17659206", 
+            "source_status_id": 707414866563215361, 
+            "id_str": "707413296446476289", 
+            "sizes": {
+              "large": {
+                "h": 396, 
+                "resize": "fit", 
+                "w": 801
+              }, 
+              "small": {
+                "h": 168, 
+                "resize": "fit", 
+                "w": 340
+              }, 
+              "medium": {
+                "h": 297, 
+                "resize": "fit", 
+                "w": 600
+              }, 
+              "thumb": {
+                "h": 150, 
+                "resize": "crop", 
+                "w": 150
+              }
+            }, 
+            "indices": [
+              106, 
+              129
+            ], 
+            "type": "photo", 
+            "id": 707413296446476289, 
+            "media_url": "http://pbs.twimg.com/media/CdE8pSQUkAEzQJO.jpg"
+          }
+        ]
+      }
+    }
+  }
+]

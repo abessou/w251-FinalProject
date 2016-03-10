@@ -1,0 +1,107 @@
+[
+  {
+    "tweet": {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "People are funny af!! \ud83d\ude39\ud83d\ude39", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 707425895514935296, 
+      "favorite_count": 0, 
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>", 
+      "retweeted": false, 
+      "coordinates": null, 
+      "timestamp_ms": "1457498451485", 
+      "entities": {
+        "user_mentions": [], 
+        "symbols": [], 
+        "hashtags": [], 
+        "urls": []
+      }, 
+      "in_reply_to_screen_name": null, 
+      "id_str": "707425895514935296", 
+      "retweet_count": 0, 
+      "in_reply_to_user_id": null, 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": null, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 128371198, 
+        "verified": false, 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/378800000672316316/969333f3e393f2063b76717938995e7c_normal.jpeg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "profile_text_color": "333333", 
+        "followers_count": 1530, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "128371198", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 2, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/473343222/mc.jpg", 
+        "utc_offset": -21600, 
+        "statuses_count": 30954, 
+        "description": "-Where I am Now is exactly where I'm meant to Be!", 
+        "friends_count": 985, 
+        "location": "The Universe ", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/378800000672316316/969333f3e393f2063b76717938995e7c_normal.jpeg", 
+        "following": null, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/128371198/1389637566", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/473343222/mc.jpg", 
+        "name": "Roland Cannon", 
+        "lang": "en", 
+        "profile_background_tile": true, 
+        "favourites_count": 1298, 
+        "screen_name": "Rolandz_World", 
+        "notifications": null, 
+        "url": null, 
+        "created_at": "Wed Mar 31 23:06:41 +0000 2010", 
+        "contributors_enabled": false, 
+        "time_zone": "Central Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": null, 
+      "in_reply_to_user_id_str": null, 
+      "lang": "en", 
+      "created_at": "Wed Mar 09 04:40:51 +0000 2016", 
+      "filter_level": "low", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "University City, MO", 
+        "url": "https://api.twitter.com/1.1/geo/id/2dd9882dad5ba631.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -90.366578, 
+                38.645912
+              ], 
+              [
+                -90.366578, 
+                38.683509
+              ], 
+              [
+                -90.297186, 
+                38.683509
+              ], 
+              [
+                -90.297186, 
+                38.645912
+              ]
+            ]
+          ]
+        }, 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "2dd9882dad5ba631", 
+        "name": "University City"
+      }
+    }
+  }
+]
