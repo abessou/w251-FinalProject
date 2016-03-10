@@ -47,8 +47,7 @@ class FacebookDataIngestSource:
         video_url = 'https://graph.facebook.com/v2.5/%s/videos?&fields=permalink_url,sharedposts,likes,comments&access_token=%s'%(page[0],self.access_token)
         request = requests.get(video_url).json()
         if 'data' in request:
-            print "Updating records from page:", page[1]
-            print "Number of videos published:", len(request['data'])
+            print "Adding ", len(request['data']), " videos from ", page[1].encode('utf-8')
         
             for i in range(len(request['data'])):
                 self.post.append((page[1], request['data'][i]))
