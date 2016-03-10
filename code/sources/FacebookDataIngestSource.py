@@ -58,7 +58,6 @@ class FacebookDataIngestSource:
     if self.index < len(self.post):
         post = self.post[self.index]
         self.index = self.index + 1
-        pprint(post)
         return {'post' : {'page': post[0], 'data': post[1]}}
     else:
         raise StopIteration()
