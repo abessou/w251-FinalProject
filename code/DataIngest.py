@@ -10,6 +10,7 @@ from sinks import S3DataIngestSink
 from sinks import LocalDataIngestSink
 from sinks import SocketDataIngestSink
 from sinks import PostgresDataIngestSink
+from sinks import MongoDBDataIngestSink
 
 
 def main():
@@ -43,6 +44,8 @@ class DataIngest:
     self.sources = [ ]
     self.sinks = [ ]
 
+  # DEFINE METHODS
+  # ------------------------------------------------------------------
   def init_source(self):
     if 'Twitter' in self.config.sections():
       print 'Creating Twitter source (found [Twitter] section)'
@@ -100,6 +103,7 @@ class DataIngest:
       print "No Source found in config file... Stopping DataIngest"
       print "Add a source by including config for one source: Twitter, Facebook, S3Source, or LocalSource"
 
+  # ------------------------------------------------------------------
   def init_sink(self):
 
     if 'S3' in self.config.sections():
@@ -132,6 +136,15 @@ class DataIngest:
     #else:
     #  print "Skipping Socket since config has no [Socket] section"
 
+    elif 'MongoDB' in self.config.sections():
+      print 'Creating MongoDB sink (found [MongoDB] section)'
+
+      mongo_config = dict(self.config.items('MongoDB'))
+      mongo_sink = MongoDBDataIngestSink.MongoDBDataIngestSink(mongo_config)
+
+      self.sinks.append(mongo_sink)
+
+
     elif 'PostgresSink' in self.config.sections():
       print 'Creating Postgres sink (found [PostgresSink] section)'
 
@@ -146,7 +159,7 @@ class DataIngest:
       print "No Sink found in config file... Stopping DataIngest"
       print "Add a sink by including in config a section for: Local, SocketSink, or PostgresSink"
 
-
+  # ------------------------------------------------------------------
   def start_collection(self):
     self.sinks[0].write(self.sources[0])
 
