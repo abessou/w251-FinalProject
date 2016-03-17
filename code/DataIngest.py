@@ -5,6 +5,7 @@ from sources import TwitterDataIngestSource
 from sources import FacebookDataIngestSource
 from sources import S3DataIngestSource
 from sources import LocalDataIngestSource
+from sources import YoutubeDataIngestSource
 
 from sinks import S3DataIngestSink
 from sinks import LocalDataIngestSink
@@ -95,6 +96,17 @@ class DataIngest:
       )
 
       self.sources.append(local_source)
+
+    elif 'Youtube' in self.config.sections():
+      print 'Creating Youtube source (found [Youtube] section)'
+
+      youtube_source_config = dict(self.config.items('Youtube'))
+
+      youtube_source = YoutubeDataIngestSource.YoutubeDataIngestSource(
+        youtube_source_config
+      )
+      
+      self.sources.append(youtube_source)
 
     #else:
     #  print "Skipping Local Source since config has no [LocalSource] section" 
