@@ -18,20 +18,21 @@ def isVideo(tweet):
 
 def filterTweet(tweet):
   f_tweet = {}
+  f_tweet['rt_info'] = []
   if 'retweeted_status' in tweet:
     f_tweet['retweet'] = 1
-    #??do i need to convert this to a dictionary? i don't think so
     t_object = tweet['retweeted_status']
-    f_tweet['rt_id_str'] = tweet['id_str']
-    f_tweet['rt_created_at'] = time.strftime('%Y-%m-%d %H:%M:%S',
+    rt_info = {}
+    rt_info['rt_id_str'] = tweet['id_str']
+    rt_info['rt_created_at'] = time.strftime('%Y-%m-%d %H:%M:%S',
       time.strptime(str(tweet['created_at']),'%a %b %d %H:%M:%S +0000 %Y'))
-    f_tweet['rt_text'] = tweet['text']
+    rt_info['rt_text'] = tweet['text']
+    rt_info['orig_retweet_count'] = t_object['retweet_count']
+    rt_info['orig_favorite_count'] = t_object['favorite_count']
+    f_tweet['rt_info'].append(rt_info)
   else:
     f_tweet['retweet'] = 0
     t_object = tweet
-    f_tweet['rt_id_str'] = ""
-    f_tweet['rt_created_at'] = ""
-    f_tweet['rt_text'] = ""
     
   f_tweet['orig_id_str'] = t_object['id_str']
   f_tweet['orig_created_at'] = time.strftime('%Y-%m-%d %H:%M:%S',
