@@ -33,6 +33,7 @@ class MongoDBDataIngestSink:
         for item in source:
             self.record_index = self.record_index + 1
             item.update({'created_at': self.now})
+            item.update({'last_modified': self.now})
             self.batch.append(item)
             sys.stdout.write('.') # write a record indicator to stdout
             sys.stdout.flush()
@@ -44,7 +45,24 @@ class MongoDBDataIngestSink:
 
         
     def flush(self):
-        self.db.insert_many(self.batch)
+        # if it's a tweet
+        if 'tweet' in self.batch[0]:
+          for json_obj in self.batch:
+            if self.db.find({'tweet.orig_id_str':json_obj['tweet']['orig_id_str']}).count() == 0:
+              self.db.insert_one(json_obj)
+            else:
+              if json_obj['tweet']['rt_info'] == []:
+                print('old ' + json_obj['tweet']['orig_id_str'])                
+              self.db.update_one(
+                {'tweet.orig_id_str':json_obj['tweet']['orig_id_str']},
+                {'$set':{'tweet.orig_retweet_count':json_obj['tweet']['orig_retweet_count'],
+                 'tweet.orig_favorite_count':json_obj['tweet']['orig_favorite_count'],
+                 'last_modified':self.now},
+                 '$push':{'tweet.rt_info':json_obj['tweet']['rt_info'][0]}
+                }
+              )
+        else:
+          self.db.insert_many(self.batch)
 
         self.batch = [ ]
         self.record_index = 0
