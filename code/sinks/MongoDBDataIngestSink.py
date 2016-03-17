@@ -12,7 +12,15 @@ class MongoDBDataIngestSink:
         # Get name of the collection where the data should be stored
         name_coll = self.config['source']
         
-        client = pymongo.MongoClient()
+        # Allow for host and port overrides in the configuration of the sink
+        host = 'localhost'
+        port = '27017'
+        if 'host' in self.config:
+            host = self.config['host']
+        if 'port' in self.config:
+            port = self.config['port']
+        
+        client = pymongo.MongoClient(host, int(port))
         
         #self.db = client.VideoData[name_coll]
         self.db = client.test[name_coll]
