@@ -5,10 +5,12 @@ import requests
 import json
 from pprint import pprint
 
-class FacebookDataIngestSource:
+from DataSource import DataSource
+
+class FacebookDataIngestSource(DataSource):
     """Ingest data from Facebook"""
 
-    def __init__(self, config):
+    def __init__(self, config, data_store):
         self.config = config
         
         if 'track' in self.config:

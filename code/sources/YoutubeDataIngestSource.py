@@ -8,12 +8,13 @@ import httplib2
 import os
 import sys
 
-
 import ConfigParser
 import json
 import datetime
 
-class YoutubeDataIngestSource:
+from DataSource import DataSource
+
+class YoutubeDataIngestSource(DataSource):
     '''This class ingests video data from Youtube'''
     
     '''Class constants'''
@@ -21,7 +22,7 @@ class YoutubeDataIngestSource:
     YOUTUBE_API_VERSION = "v3"
     
     
-    def __init__(self, config):
+    def __init__(self, config, data_store):
         '''Initialize an instance of this class'''
                 
         # Hold on to the configuration object
@@ -173,7 +174,7 @@ if __name__ == '__main__':
     }
     
     parser = ConfigParser.ConfigParser(defaults=test_defaults)
-    youtube_source = YoutubeDataIngestSource(parser.defaults())
+    youtube_source = YoutubeDataIngestSource(parser.defaults(), None)
     
     for video_details in youtube_source:
         json_details = json.dumps(video_details)

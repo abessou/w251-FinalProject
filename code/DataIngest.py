@@ -12,7 +12,7 @@ from sinks import LocalDataIngestSink
 from sinks import SocketDataIngestSink
 from sinks import PostgresDataIngestSink
 from sinks import MongoDBDataIngestSink
-
+from sinks.DataStore import DataStore
 
 def main():
   parser = argparse.ArgumentParser(
@@ -28,9 +28,14 @@ def main():
 
   ingest = DataIngest(config)
   
-  # Initialize source and sink
-  ingest.init_source()
+  # Initialize sinks first, then sources
   ingest.init_sink()
+  
+  # Locate the existence of a data store from the sink to initialize the sources with
+  stores = [sink for sink in ingest.sinks if isinstance(sink, DataStore)]
+  
+  # Initialize the sources with the first store we find, if any. We don't ever expect to have multiples.
+  ingest.init_source(stores[0] if len(stores)>0 else None)
 
   # If one source and one sink is configured, start ingest
   if ingest.sources and ingest.sinks:
@@ -47,13 +52,13 @@ class DataIngest:
 
   # DEFINE METHODS
   # ------------------------------------------------------------------
-  def init_source(self):
+  def init_source(self, store):
     if 'Twitter' in self.config.sections():
       print 'Creating Twitter source (found [Twitter] section)'
 
       twitter_config = dict(self.config.items('Twitter'))
       twitter_source = TwitterDataIngestSource.TwitterDataIngestSource(
-        twitter_config
+        twitter_config, store
       )
 
       self.sources.append( twitter_source )
@@ -67,7 +72,7 @@ class DataIngest:
       facebook_config = dict(self.config.items('Facebook'))
       
       facebook_source = FacebookDataIngestSource.FacebookDataIngestSource(
-        facebook_config
+        facebook_config, store
       )
 
       self.sources.append( facebook_source )
@@ -79,7 +84,7 @@ class DataIngest:
 
       s3_source_config = dict(self.config.items('S3Source'))
 
-      s3_source = S3DataIngestSource.S3DataIngestSource(s3_source_config)
+      s3_source = S3DataIngestSource.S3DataIngestSource(s3_source_config, store)
 
       self.sources.append(s3_source)
 
@@ -92,7 +97,7 @@ class DataIngest:
       local_source_config = dict(self.config.items('LocalSource'))
 
       local_source = LocalDataIngestSource.LocalDataIngestSource(
-        local_source_config
+        local_source_config, store
       )
 
       self.sources.append(local_source)
@@ -103,7 +108,7 @@ class DataIngest:
       youtube_source_config = dict(self.config.items('Youtube'))
 
       youtube_source = YoutubeDataIngestSource.YoutubeDataIngestSource(
-        youtube_source_config
+        youtube_source_config, store
       )
       
       self.sources.append(youtube_source)
