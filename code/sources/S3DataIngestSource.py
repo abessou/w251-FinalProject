@@ -4,10 +4,12 @@ import uuid
 import json
 import sys
 
-class S3DataIngestSource:
+from DataSource import DataSource
+
+class S3DataIngestSource(DataSource):
   """Ingest data from S3"""
 
-  def __init__(self, config):
+  def __init__(self, config, data_store):
     self.config = config
 
   def __iter__(self):

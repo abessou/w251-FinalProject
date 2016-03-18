@@ -6,10 +6,12 @@ import sys
 
 import glob
 
-class LocalDataIngestSource:
+from DataSource import DataSource
+
+class LocalDataIngestSource(DataSource):
   """Ingest data from Local"""
 
-  def __init__(self, config):
+  def __init__(self, config, data_store):
     self.config = config
 
   def __iter__(self):

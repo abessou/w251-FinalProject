@@ -4,6 +4,8 @@ from requests_oauthlib import OAuth1Session
 import json
 import time
 
+from DataSource import DataSource
+
 def isVideo(tweet):
   if 'extended_entities' in tweet:
     if 'media' in tweet['extended_entities']:
@@ -69,10 +71,10 @@ def filterTweet(tweet):
       #f_tweet['orig_video_thumb'] = ""
   return f_tweet
 
-class TwitterDataIngestSource:
+class TwitterDataIngestSource(DataSource):
   """Ingest data from Twitter"""
 
-  def __init__(self, config):
+  def __init__(self, config, data_store):
     self.config = config
 
   def __iter__(self):
