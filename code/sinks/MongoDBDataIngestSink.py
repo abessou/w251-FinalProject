@@ -31,7 +31,13 @@ class MongoDBDataIngestSink(DataStore.DataStore):
     
     def write(self, source):
 
-        # Make a first pass with the items to add.
+        # Make a first pass with the items to update.
+        update_items = source.getUpdateItems()
+        if update_items is not None:
+            for item in update_items:
+                self.db.update_one(item[0], item[1], upsert = True)
+
+        # Make a second pass with the items to add.
         self.record_index = 0
 
         if 'batch_size' in self.config:
@@ -54,11 +60,6 @@ class MongoDBDataIngestSink(DataStore.DataStore):
 
         self.flush()
         
-        # Next request the items to update and the query path that identifies their ids.
-        update_items = source.getUpdateItems()
-        if update_items is not None:
-            for item in update_items:
-                self.db.update_one(item[0], item[1], upsert = True)
         
     def flush(self):
         # if it's a tweet
