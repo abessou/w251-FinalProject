@@ -1,6 +1,7 @@
 import sys
 from itertools import ifilter
 from requests_oauthlib import OAuth1Session
+from requests.exceptions import ChunkedEncodingError
 import json
 import time
 
@@ -103,11 +104,15 @@ class TwitterDataIngestSource(DataSource):
     return self
 
   def next(self):
-    # This is a dictionary
-    next_tweet = json.loads(self.source_iterator.next())
-    while not isVideo(next_tweet):
-      next_tweet = json.loads(self.source_iterator.next())
-    filtered_tweet = filterTweet(next_tweet)
-  
+    while True:
+      try:
+        next_tweet = json.loads(self.source_iterator.next())
+        if isVideo(next_tweet):
+          filtered_tweet = filterTweet(next_tweet)
+          break
+      except ChunkedEncodingError:
+        print('Chunked Encoding Error next')
+        self.__iter__()
+        continue
     return { 'tweet' : filtered_tweet }
 
