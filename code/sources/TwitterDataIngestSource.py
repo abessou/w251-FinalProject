@@ -27,7 +27,7 @@ def filterTweet(tweet):
     t_object = tweet['retweeted_status']
     rt_history = {}
     rt_history['rt_id_str'] = tweet['id_str']
-    rt_history['rt_created_at'] = time.strftime('%Y-%m-%d %H:%M:%S',
+    rt_history['rt_created_at'] = time.strftime('%Y-%m-%dT%H:%M:%S',
       time.strptime(str(tweet['created_at']),'%a %b %d %H:%M:%S +0000 %Y'))
     rt_history['rt_text'] = tweet['text']
     rt_history['orig_retweet_count'] = t_object['retweet_count']
@@ -38,7 +38,7 @@ def filterTweet(tweet):
     t_object = tweet
     
   f_tweet['orig_id_str'] = t_object['id_str']
-  f_tweet['orig_created_at'] = time.strftime('%Y-%m-%d %H:%M:%S',
+  f_tweet['orig_created_at'] = time.strftime('%Y-%m-%dT%H:%M:%S',
     time.strptime(str(t_object['created_at']),'%a %b %d %H:%M:%S +0000 %Y'))
   f_tweet['orig_text'] = t_object['text']
   f_tweet['orig_retweet_count'] = t_object['retweet_count']
