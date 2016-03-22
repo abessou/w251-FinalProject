@@ -108,7 +108,11 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         
         return self.db.distinct(keys)
     
-        
+
+    def update_one(self, update_tuple):
+        '''Takes a tupe of document identification and items to update and updates a single item'''
+        '''in the store with the update specificication'''
+        return self.db.update_one(update_tuple[0], update_tuple[1], upsert = True)
 '''
 Standalone execution processing
 '''

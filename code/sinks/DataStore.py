@@ -12,3 +12,6 @@ class DataStore:
         '''keys are a specification of keys that can be used to locate the ids from the store'''
         raise NotImplemented
     
+    def update_one(self, update_tuple):
+        '''Takes a dictionary of document items to update and updates a single item in the store with the update specificication'''
+        raise NotImplemented
