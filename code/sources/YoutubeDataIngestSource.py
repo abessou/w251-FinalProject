@@ -99,6 +99,15 @@ class AddIterable:
             # Include the video ID for the sink to be able to consume
             video_details["ID"] = video_id
             
+            # Start a statistics history array to accumlate stats updates. Only if the video details being downloaded
+            # contain a document item.
+            if len(video_details['items']) > 0:
+                video_details['items'][0]['stats_history']=[]
+                # Include the original statistics item into the array
+                video_details['items'][0]['stats_history'].append(video_details['items'][0]['statistics'].copy())
+                # Set a timestamp on the statistic history item
+                video_details['items'][0]['stats_history'][0]['timestamp'] = datetime.datetime.utcnow().isoformat()
+            
             next_ct_PageToken = ''
             try:
                 while(True):
@@ -239,22 +248,20 @@ class UpdateIterable:
         # Return the contents we need to update for the current document with paths in the data store
         updateItems = ({'items.id':video_id},
                        {
-                           '$set': {}
+                           '$set': {},
+                           '$push':{}
                        })
         if len(video_details['items']) > 0:
+            # Overwrite the statistics item with the updated stats
             updateItems[1]['$set']['items.0.statistics']=video_details['items'][0]['statistics']
+            # Add a copy of the new statistics item to the stats_history item with an updated timestamp
+            stats_history_item = video_details['items'][0]['statistics'].copy()
+            stats_history_item['timestamp'] = datetime.datetime.utcnow().isoformat()
+            updateItems[1]['$push']['items.0.stats_history'] = stats_history_item
         if 'commentThreads' in video_details:
             updateItems[1]['$set']['commentThreads'] = video_details['commentThreads']
             
                 
-        #updateItems = ({'items.id':video_id},
-        #               {
-        #                   '$set': {
-        #                       'items.0.statistics':video_details['items'][0]['statistics'],
-        #                       'commentThreads':video_details['commentThreads']
-        #                   }
-        #               })
-
         return updateItems
     
         
