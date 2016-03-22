@@ -21,18 +21,18 @@ def isVideo(tweet):
 
 def filterTweet(tweet):
   f_tweet = {}
-  f_tweet['rt_info'] = []
+  f_tweet['rt_history'] = []
   if 'retweeted_status' in tweet:
     f_tweet['retweet'] = 1
     t_object = tweet['retweeted_status']
-    rt_info = {}
-    rt_info['rt_id_str'] = tweet['id_str']
-    rt_info['rt_created_at'] = time.strftime('%Y-%m-%d %H:%M:%S',
+    rt_history = {}
+    rt_history['rt_id_str'] = tweet['id_str']
+    rt_history['rt_created_at'] = time.strftime('%Y-%m-%d %H:%M:%S',
       time.strptime(str(tweet['created_at']),'%a %b %d %H:%M:%S +0000 %Y'))
-    rt_info['rt_text'] = tweet['text']
-    rt_info['orig_retweet_count'] = t_object['retweet_count']
-    rt_info['orig_favorite_count'] = t_object['favorite_count']
-    f_tweet['rt_info'].append(rt_info)
+    rt_history['rt_text'] = tweet['text']
+    rt_history['orig_retweet_count'] = t_object['retweet_count']
+    rt_history['orig_favorite_count'] = t_object['favorite_count']
+    f_tweet['rt_history'].append(rt_history)
   else:
     f_tweet['retweet'] = 0
     t_object = tweet
@@ -45,6 +45,7 @@ def filterTweet(tweet):
   f_tweet['orig_favorite_count'] = t_object['favorite_count']
   f_tweet['orig_user_id_str'] = t_object['user']['id_str']
   f_tweet['orig_user_screen_name'] = t_object['user']['screen_name']
+  f_tweet['orig_user_name'] = t_object['user']['name']
   f_tweet['orig_user_followers_count'] = t_object['user']['followers_count']
   f_tweet['orig_user_friends_count'] = t_object['user']['friends_count']
   f_tweet['orig_user_statuses_count'] = t_object['user']['statuses_count']

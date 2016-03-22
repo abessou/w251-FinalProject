@@ -68,14 +68,14 @@ class MongoDBDataIngestSink(DataStore.DataStore):
             if self.db.find({'tweet.orig_id_str':json_obj['tweet']['orig_id_str']}).count() == 0:
               self.db.insert_one(json_obj)
             else:
-              if json_obj['tweet']['rt_info'] == []:
+              if json_obj['tweet']['rt_history'] == []:
                 print('old ' + json_obj['tweet']['orig_id_str'])                
               self.db.update_one(
                 {'tweet.orig_id_str':json_obj['tweet']['orig_id_str']},
                 {'$set':{'tweet.orig_retweet_count':json_obj['tweet']['orig_retweet_count'],
                  'tweet.orig_favorite_count':json_obj['tweet']['orig_favorite_count'],
                  'last_modified':self.now},
-                 '$push':{'tweet.rt_info':json_obj['tweet']['rt_info'][0]}
+                 '$push':{'tweet.rt_history':json_obj['tweet']['rt_history'][0]}
                 }
               )
         else:
