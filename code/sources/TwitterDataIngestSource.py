@@ -9,6 +9,8 @@ import datetime
 from DataSource import DataSource
 
 def isVideo(tweet):
+  """Returns True if a tweet had a video uploaded with it, false otherwise."""
+
   if 'extended_entities' in tweet:
     if 'media' in tweet['extended_entities']:
       for i in range(len(tweet['extended_entities']['media'])):
@@ -61,6 +63,8 @@ class TwitterDataIngestSource(DataSource):
           filtered_tweet = self.processTweet(next_tweet)
           if filtered_tweet != {}:
             break
+      # could put more error handling in here to handle HTTP errors and
+      # disconnection errors
       except ChunkedEncodingError:
         print('Chunked Encoding Error next')
         self.__iter__()
@@ -68,6 +72,10 @@ class TwitterDataIngestSource(DataSource):
     return filtered_tweet
   
   def getUpdateItems(self):
+    """ Returns a copy of the list of items that need to be updated in the 
+      database vs inserted, None otherwise.  Right now the self.update_items
+      list is not being updated so this method always returns None.
+    """
     if self.update_items == []:
       return None
     else:
@@ -76,20 +84,34 @@ class TwitterDataIngestSource(DataSource):
       return list_copy
       
   def updateTweet(self, id_str, rt_history):
-    # finish this method
-    # make sure you handle the case where rt_history is [] for some reason
+    """ Update the tweet with ID id_str with information from rt_history."""
+    
+    # Create the update according to the structure of a tweet.  Update
+    # the retweet_count and favorite_count for this retweet.  Push the 
+    # rt_history information into the rt_history array.
     update = ({'ID':id_str},
               {'$set':{'tweet.orig_retweet_count':rt_history['orig_retweet_count'],
               'tweet.orig_favorite_count':rt_history['orig_favorite_count'],
               'last_modified':datetime.datetime.utcnow().isoformat()},
               '$push':{'tweet.rt_history':rt_history}
               })
+    # Update the database with this update
     self.data_store.update_one(update)
 
   def processTweet(self, tweet):
+    """ Processes tweet and returns {} if the tweet is a retweet and already in 
+      the database.  In this case the tweet is updated directly in the database.
+      If the tweet is a new tweet then build the object f_tweet with the
+      relevant tweet information that needs to be stored.
+    """
     f_tweet = {}
+    # If the tweet is a retweet it will have a 'retweeted_status' object in it.
     if 'retweeted_status' in tweet:
+      # Set t_object to be the nested object within the retweet that contains
+      # all of the original tweet information.
       t_object = tweet['retweeted_status']
+      # initialize a rt_history dictionary and set it with all of the
+      # retweet information that is being stored.
       rt_history = {}
       rt_history['rt_id_str'] = tweet['id_str']
       rt_history['rt_created_at'] = time.strftime('%Y-%m-%dT%H:%M:%S',
@@ -97,8 +119,8 @@ class TwitterDataIngestSource(DataSource):
       rt_history['rt_text'] = tweet['text']
       rt_history['orig_retweet_count'] = t_object['retweet_count']
       rt_history['orig_favorite_count'] = t_object['favorite_count']
-      # If the tweet is in the database, then return {} and update the update
-      # items list
+      # If the tweet is in the database, then return {} and update the tweet
+      # in the database
       orig_id_str = t_object['id_str']
       updates = self.data_store.find({'ID':orig_id_str})
       if updates != []:
@@ -106,14 +128,14 @@ class TwitterDataIngestSource(DataSource):
         return f_tweet
       else:
         f_tweet['retweet'] = 1
-        f_tweet['rt_history'] = []
-        f_tweet['rt_history'].append(rt_history)
+        f_tweet['rt_history'] = [rt_history]
     else:
       f_tweet['retweet'] = 0
       f_tweet['rt_history'] = []      
       t_object = tweet
       orig_id_str = t_object['id_str']
     
+    # Store the desired tweet information in the f_tweet object.
     f_tweet['orig_id_str'] = orig_id_str
     f_tweet['orig_created_at'] = time.strftime('%Y-%m-%dT%H:%M:%S',
       time.strptime(str(t_object['created_at']),'%a %b %d %H:%M:%S +0000 %Y'))
@@ -150,7 +172,10 @@ class TwitterDataIngestSource(DataSource):
         # or something like that.
         #f_tweet['orig_video_thumb'] = ""
     
+    # add the key tweet before all tweets
     f_tweet = { 'tweet' : f_tweet }
+    # add an ID field to the f_tweet dictionary that is the unique ID string
+    # for the tweet.
     f_tweet.update({'ID': orig_id_str})
 
     return f_tweet
