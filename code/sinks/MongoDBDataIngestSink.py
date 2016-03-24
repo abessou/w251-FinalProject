@@ -13,7 +13,10 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         
         # Get name of the collection where the data should be stored
         name_coll = self.config['source']
-        
+        database = 'test'
+        if 'database' in self.config:
+            database = self.config['database']
+            
         # Allow for host and port overrides in the configuration of the sink
         host = 'localhost'
         port = '27017'
@@ -24,8 +27,7 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         
         client = pymongo.MongoClient(host, int(port))
         
-        #self.db = client.VideoData[name_coll]
-        self.db = client.test[name_coll]
+        self.db = client[database][name_coll]
 
         print '[MongoDb] Writing to ' + name_coll + ' collection'
     
@@ -46,14 +48,18 @@ class MongoDBDataIngestSink(DataStore.DataStore):
             self.batch_size = 50
 
         self.batch = [ ]
+        self.batchList = [ ]
 
         for item in source:
-            self.record_index = self.record_index + 1
-            item.update({'created_at': self.now})
-            item.update({'last_modified': self.now})
-            self.batch.append(item)
-            sys.stdout.write('.') # write a record indicator to stdout
-            sys.stdout.flush()
+            if 'facebook' in self.config['source']:
+                self.__fbUpdate(item)
+            else:
+                self.record_index = self.record_index + 1
+                item.update({'created_at': self.now})
+                item.update({'last_modified': self.now})
+                self.batch.append(item)
+                sys.stdout.write('.') # write a record indicator to stdout
+                sys.stdout.flush()
 
             if self.record_index >= self.batch_size:
                 self.flush()
@@ -65,6 +71,7 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         self.db.insert_many(self.batch)
 
         self.batch = [ ]
+        self.batchList = [ ]
         self.record_index = 0
 
         print('|') # Write a batch separator with a newline to stdout
@@ -96,6 +103,31 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         '''Takes a tupe of document identification and items to update and updates a single item'''
         '''in the store with the update specificication'''
         return self.db.update_one(update_tuple[0], update_tuple[1], upsert = True)
+        
+    def __fbUpdate(self,item):
+        if self.db.find({"_id": item['_id']},{"_id":1}).limit(1).count() == 0:
+            # Item does not exist in database. Add to batch write
+            if item['_id'] in self.batchList:
+                # Item is already part of current batch
+                pass
+            else:
+                # Add item to batch
+                self.record_index = self.record_index + 1
+                item.update({'created_at': self.now})
+                item.update({'last_modified': self.now})
+                self.batch.append(item)
+                self.batchList.append(item['_id'])
+                sys.stdout.flush()
+        else:
+            self.db.update_one(
+                {'_id':item['_id']},
+                {'$set':{'last_modified':self.now,
+                         'total_likes':item['total_likes'],
+                         'total_comments':item['total_comments'],},
+                 '$addToSet':{'comments':item['comments']},
+                 '$push':{'history': {'timestamp':self.now, 'likes':item['total_likes'], 'comments':item['total_comments']}}
+                 }
+            )
 '''
 Standalone execution processing
 '''
