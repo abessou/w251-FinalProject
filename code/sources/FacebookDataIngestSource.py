@@ -30,15 +30,23 @@ class FacebookDataIngestSource(DataSource):
             self.access_token = self.config['access_token']
         else:
             self.access_token = self.__get_access_token()
-
-
-    def __iter__(self):
+        
+        # Max number of times to loop through search terms
+        self.loops = 0
+        if 'max_loops' in self.config:
+            self.maxLoops = self.config['max_loops']
+        else:
+            self.maxLoops = 2
+        
+        
         self.pages = []
         self.currentPage = ''
         self.pageVideos = {'data': [], 'paging': {}}
         self.track_index = 0
         self.video_fields = self.__get_video_fields()
-
+        
+        
+    def __iter__(self):
         return self
 
     def next(self):
@@ -46,7 +54,11 @@ class FacebookDataIngestSource(DataSource):
         if len(self.pages) == 0:
             if self.track_index == len(self.track):
                 # All pages and track terms exhausted
-                raise StopIteration()
+                self.loops += 1
+                self.track_index = 0
+                if self.loops == self.maxLoops:
+                    # Max loops through search terms reached
+                    raise StopIteration()
 
             # ------- Get a list of pages by searching with track term -------
             # Request id for pages associated to search term    
