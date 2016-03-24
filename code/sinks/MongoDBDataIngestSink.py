@@ -13,7 +13,10 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         
         # Get name of the collection where the data should be stored
         name_coll = self.config['source']
-        
+        database = 'test'
+        if 'database' in self.config:
+            database = self.config['database']
+            
         # Allow for host and port overrides in the configuration of the sink
         host = 'localhost'
         port = '27017'
@@ -24,8 +27,7 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         
         client = pymongo.MongoClient(host, int(port))
         
-        #self.db = client.VideoData[name_coll]
-        self.db = client.test[name_coll]
+        self.db = client[database][name_coll]
 
         print '[MongoDb] Writing to ' + name_coll + ' collection'
     
