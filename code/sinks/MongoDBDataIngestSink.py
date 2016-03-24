@@ -119,7 +119,12 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         else:
             self.db.update_one(
                 {'_id':item['_id']},
-                {'$set':{'last_modified':self.now}}
+                {'$set':{'last_modified':self.now,
+                         'total_likes':item['total_likes'],
+                         'total_comments':item['total_comments'],},
+                 '$addToSet':{'comments':item['comments']},
+                 '$push':{'history': {'timestamp':self.now, 'likes':item['total_likes'], 'comments':item['total_comments']}}
+                 }
             )
 '''
 Standalone execution processing
