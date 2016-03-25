@@ -69,7 +69,9 @@ class FacebookDataIngestSource(DataSource):
             # Define url for http request to get pages id associated to search term    
             page_request_url = 'https://graph.facebook.com/search?q=%s&type=%s&limit=%d&access_token=%s'%(term,page_fields,self.page_lim,self.access_token)
             
-            while(True):
+            # Try 100 times
+            for i in range(100):
+                
                 page_response = requests.get(page_request_url)
 
                 if 'error' in page_response.json() or page_response.status_code <> 200:
@@ -77,11 +79,12 @@ class FacebookDataIngestSource(DataSource):
                     print time.ctime()
                     print "Status Code: ", page_response.status_code
                     print page_response.json()
-                    raise StopIteration()
-                    time.sleep(60)
+                    #raise StopIteration()
+                    time.sleep(120)
                 else:
-                    self.pages = page_response.json()['data']
                     break
+
+            self.pages = page_response.json()['data']
 
             # ----------------------------------------------------------------
 
@@ -91,33 +94,33 @@ class FacebookDataIngestSource(DataSource):
             try:
                 # Get the next set of videos from the same page
                 video_url = self.pageVideos['paging']['next']
-                video_response = requests.get(video_url)
 
             except:
                 # The current page has no more videos, so look for videos in the next searched page
                 self.currentPage = self.pages.pop()
                 video_url = 'https://graph.facebook.com/v2.5/%s?%s&access_token=%s'%(self.currentPage['id'],self.video_fields,self.access_token)
+            
+            # Try 100 times
+            for i in range(100):
                 
                 video_response = requests.get(video_url)
                 
-            while(True):
                 if 'error' in video_response.json() or video_response.status_code <> 200:
                     print "\n !---- ERROR IN PAGE REQUEST ----!"
                     print time.ctime()
                     print "Status Code: ", video_response.status_code
                     print video_response.json()
-                    raise StopIteration()
-                    time.sleep(60)
-    
-                elif 'videos' in video_response.json():
-                    self.pageVideos = video_response.json()['videos']
-                    break
-                elif 'data' in video_response.json():
-                    self.pageVideos = video_response.json()
-                    break
+                    #raise StopIteration()
+                    time.sleep(120)
                 else:
-                    self.pageVideos = {'data': [], 'paging': {}}
                     break
+                
+            if 'videos' in video_response.json():
+                self.pageVideos = video_response.json()['videos']
+            elif 'data' in video_response.json():
+                self.pageVideos = video_response.json()
+            else:
+                self.pageVideos = {'data': [], 'paging': {}}
 
             print "{:3,} videos, page id: {:17}, page name:".format(len(self.pageVideos['data']),
                                                                     self.currentPage['id']),self.currentPage['name'].encode('utf-8')
