@@ -21,7 +21,7 @@ class FacebookDataIngestSource(DataSource):
         # Set number of results to return per page
         # default to 5000 with no looping of pages
         if 'page_limit' in self.config:
-            self.page_lim = self.config['page_limit']
+            self.page_lim = int(self.config['page_limit'])
         else:
             self.page_lim = 2000
 
@@ -65,11 +65,11 @@ class FacebookDataIngestSource(DataSource):
 
         # ------- Get the videos posted on one page -------
         while len(self.pageVideos['data']) == 0:
-            if 'next' in self.pageVideos['paging']:
-                # Get the videos in the next page
+            try:
+                # Try to get videos from 'next' page if next page exists
                 video_url = self.pageVideos['paging']['next']
 
-            else:
+            except:
                 # Get videos for new user
                 if len(self.pages) == 0:
                     self.pages = self.__update_page_results()
@@ -178,7 +178,8 @@ class FacebookDataIngestSource(DataSource):
                 page_request_url = page_json['paging']['next']
             else:
                 break
-            
+        
+        print "Term: %s, Pages: %d"%(term, len(pages))
         return pages
         
     def __get_access_token(self):
