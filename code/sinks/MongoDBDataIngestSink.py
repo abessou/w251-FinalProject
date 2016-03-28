@@ -37,7 +37,10 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         update_items = source.getUpdateItems()
         if update_items is not None:
             for item in update_items:
-                self.db.update_one(item[0], item[1], upsert = True)
+                try:
+                    self.db.update_one(item[0], item[1], upsert = True)
+                except pymongo.errors.DocumentTooLarge as e:
+                    pass
 
         # Make a second pass with the items to add.
         self.record_index = 0
@@ -68,7 +71,8 @@ class MongoDBDataIngestSink(DataStore.DataStore):
         
         
     def flush(self):
-        self.db.insert_many(self.batch)
+        if len(self.batch) > 0:
+            self.db.insert_many(self.batch)
 
         self.batch = [ ]
         self.batchList = [ ]
