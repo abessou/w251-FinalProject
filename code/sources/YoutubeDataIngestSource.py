@@ -26,7 +26,7 @@ class AddIterable:
         # Provide an override to bypass paging of results
         partial_results = False
         if 'partial_results' in self.config:
-            partial_results = self.config['partial_results']
+            partial_results = bool(self.config['partial_results'])
         
         # Whether the instance is expected to iterate over all data or return only the 1st page of each results set.
         # This setting is is uded in testing environmments.
@@ -81,7 +81,7 @@ class AddIterable:
                 self.video_ids.append(item["id"]["videoId"])
 
             nextPageToken = search_response['nextPageToken'] if 'nextPageToken' in search_response else ''
-            if nextPageToken == '' or self.partial_results == True:
+            if nextPageToken == '':
                 break
         
     def next(self):
@@ -170,7 +170,7 @@ class UpdateIterable:
         # Provide an override to bypass paging of results
         partial_results = False
         if 'partial_results' in self.config:
-            partial_results = self.config['partial_results']
+            partial_results = bool(self.config['partial_results'])
         
         # Whether the instance is expected to iterate over all data or return only the 1st page of each results set.
         # This setting is is uded in testing environmments.
@@ -216,7 +216,7 @@ class UpdateIterable:
                 else:
                     video_details["commentThreads"].extend(comment_threads['items'])
                     
-                # Get all the comments in the thread and attach to the comment thread.
+                # Get the first 100 comment threads and attach to the comment threads item.
                 for comment_thread in comment_threads['items']: 
                     parent_id = comment_thread['id']
                     
@@ -248,20 +248,24 @@ class UpdateIterable:
         # Return the contents we need to update for the current document with paths in the data store
         updateItems = ({'items.id':video_id},
                        {
-                           '$set': {},
-                           '$push':{}
                        })
         if len(video_details['items']) > 0:
             # Overwrite the statistics item with the updated stats
+            updateItems[1]['$set'] = {}
             updateItems[1]['$set']['items.0.statistics']=video_details['items'][0]['statistics']
             # Add a copy of the new statistics item to the stats_history item with an updated timestamp
             stats_history_item = video_details['items'][0]['statistics'].copy()
             stats_history_item['timestamp'] = datetime.datetime.utcnow().isoformat()
+            updateItems[1]['$push'] = {}
             updateItems[1]['$push']['items.0.stats_history'] = stats_history_item
         if 'commentThreads' in video_details:
+            if not '$set' in updateItems[1]:
+                updateItems[1]['$set'] = {}
             updateItems[1]['$set']['commentThreads'] = video_details['commentThreads']
             
-                
+        if len(updateItems[1]) == 0:
+            return self.next()
+        
         return updateItems
     
         
