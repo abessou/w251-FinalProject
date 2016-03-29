@@ -94,7 +94,7 @@ class AddIterable:
             self.index += 1
             
             # Initialize the video_details instance with the Youtube video details
-            video_details = self.yt_service.videos().list(part='snippet,statistics', id=video_id).execute()
+            video_details = self.yt_service.videos().list(part='snippet,statistics,contentDetails', id=video_id).execute()
             
             # Include the video ID for the sink to be able to consume
             video_details["ID"] = video_id
