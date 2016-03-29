@@ -65,7 +65,7 @@ class TwitterDataIngestSource(DataSource):
       # could put more error handling in here to handle HTTP errors and
       # disconnection errors
       except ChunkedEncodingError:
-        print('Chunked Encoding Error next')
+        print('Chunked Encoding Error')
         self.__iter__()
         continue
     return filtered_tweet
