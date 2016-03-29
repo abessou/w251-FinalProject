@@ -92,6 +92,10 @@ class TwitterDataIngestSource(DataSource):
     update = ({'ID':id_str},
               {'$set':{'tweet.orig_retweet_count':rt_history['orig_retweet_count'],
               'tweet.orig_favorite_count':rt_history['orig_favorite_count'],
+              'tweet.orig_user_followers_count':rt_history['orig_user_followers_count'],
+              'tweet.orig_user_friends_count':rt_history['orig_user_friends_count'],
+              'tweet.orig_user_statuses_count':rt_history['orig_user_statuses_count'],
+              'tweet.orig_user_favourites_count':rt_history['orig_user_favourites_count'],
               'last_modified':datetime.datetime.utcnow().isoformat()},
               '$push':{'tweet.rt_history':rt_history}
               })
@@ -119,6 +123,10 @@ class TwitterDataIngestSource(DataSource):
       rt_history['rt_text'] = tweet['text']
       rt_history['orig_retweet_count'] = t_object['retweet_count']
       rt_history['orig_favorite_count'] = t_object['favorite_count']
+      rt_history['orig_user_followers_count'] = t_object['user']['followers_count']
+      rt_history['orig_user_friends_count'] = t_object['user']['friends_count']
+      rt_history['orig_user_statuses_count'] = t_object['user']['statuses_count']
+      rt_history['orig_user_favourites_count'] = t_object['user']['favourites_count']
       # If the tweet is in the database, then return {} and update the tweet
       # in the database
       orig_id_str = t_object['id_str']
@@ -136,6 +144,7 @@ class TwitterDataIngestSource(DataSource):
       orig_id_str = t_object['id_str']
     
     # Store the desired tweet information in the f_tweet object.
+    f_tweet['orig_tweet_object'] = t_object
     f_tweet['orig_id_str'] = orig_id_str
     f_tweet['orig_created_at'] = time.strftime('%Y-%m-%dT%H:%M:%S',
       time.strptime(str(t_object['created_at']),'%a %b %d %H:%M:%S +0000 %Y'))
@@ -148,6 +157,7 @@ class TwitterDataIngestSource(DataSource):
     f_tweet['orig_user_followers_count'] = t_object['user']['followers_count']
     f_tweet['orig_user_friends_count'] = t_object['user']['friends_count']
     f_tweet['orig_user_statuses_count'] = t_object['user']['statuses_count']
+    f_tweet['orig_user_favourites_count'] = t_object['user']['favourites_count']
     if 'entities' in t_object:
       if 'hashtags' in t_object['entities']:  
         # hashtags are arrays
@@ -167,10 +177,9 @@ class TwitterDataIngestSource(DataSource):
       if t_object['extended_entities']['media'][i]['type'] == 'video':
         f_tweet['orig_media_type'] = t_object['extended_entities']['media'][i]['type']
         f_tweet['orig_video_length_ms'] = t_object['extended_entities']['media'][i]['video_info']['duration_millis']
-        f_tweet['orig_video_url'] = t_object['extended_entities']['media'][i]['expanded_url']
-        # Could potentially store the thumbnail. I think you have to access it with <url>:thumb
-        # or something like that.
-        #f_tweet['orig_video_thumb'] = ""
+        f_tweet['orig_video_expanded_url'] = t_object['extended_entities']['media'][i]['expanded_url']
+        f_tweet['orig_video_display_url'] = t_object['extended_entities']['media'][i]['display_url']
+        f_tweet['orig_video_url'] = t_object['extended_entities']['media'][i]['url']
     
     # add the key tweet before all tweets
     f_tweet = { 'tweet' : f_tweet }
