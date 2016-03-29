@@ -20,7 +20,7 @@ def isVideo(tweet):
     else:
       return False
   else:
-    return False 
+    return False
 
 class TwitterDataIngestSource(DataSource):
   """Ingest data from Twitter"""
@@ -59,10 +59,9 @@ class TwitterDataIngestSource(DataSource):
     while True:
       try:
         next_tweet = json.loads(self.source_iterator.next())
-        if isVideo(next_tweet):
-          filtered_tweet = self.processTweet(next_tweet)
-          if filtered_tweet != {}:
-            break
+        filtered_tweet = self.processTweet(next_tweet)
+        if filtered_tweet != {}:
+          break
       # could put more error handling in here to handle HTTP errors and
       # disconnection errors
       except ChunkedEncodingError:
@@ -83,24 +82,37 @@ class TwitterDataIngestSource(DataSource):
       self.update_items = []
       return list_copy
       
-  def updateTweet(self, id_str, rt_history):
-    """ Update the tweet with ID id_str with information from rt_history."""
+  def updateRetweet(self, id_str, history):
+    """ Update the tweet with ID id_str with information from history."""
     
     # Create the update according to the structure of a tweet.  Update
     # the retweet_count and favorite_count for this retweet.  Push the 
-    # rt_history information into the rt_history array.
+    # history information into the rt_history array.
     update = ({'ID':id_str},
-              {'$set':{'tweet.orig_retweet_count':rt_history['orig_retweet_count'],
-              'tweet.orig_favorite_count':rt_history['orig_favorite_count'],
-              'tweet.orig_user_followers_count':rt_history['orig_user_followers_count'],
-              'tweet.orig_user_friends_count':rt_history['orig_user_friends_count'],
-              'tweet.orig_user_statuses_count':rt_history['orig_user_statuses_count'],
-              'tweet.orig_user_favourites_count':rt_history['orig_user_favourites_count'],
+              {'$set':{'tweet.orig_retweet_count':history['orig_retweet_count'],
+              'tweet.orig_favorite_count':history['orig_favorite_count'],
+              'tweet.orig_user_followers_count':history['orig_user_followers_count'],
+              'tweet.orig_user_friends_count':history['orig_user_friends_count'],
+              'tweet.orig_user_statuses_count':history['orig_user_statuses_count'],
+              'tweet.orig_user_favourites_count':history['orig_user_favourites_count'],
               'last_modified':datetime.datetime.utcnow().isoformat()},
-              '$push':{'tweet.rt_history':rt_history}
+              '$push':{'tweet.rt_history':history}
               })
     # Update the database with this update
-    self.data_store.update_one(update)
+    self.data_store.update_one(update) 
+
+  def updateReplyTweet(self, id_str, history):
+    """ Update the tweet with ID id_str with information from history."""
+    
+    # Create the update according to the structure of a tweet.
+    # Push the history information into the reply_history array.
+    update = ({'ID':id_str},
+              {'$set':{'last_modified':datetime.datetime.utcnow().isoformat()},
+              '$inc':{'tweet.reply_count':1},
+              '$push':{'tweet.reply_history':history}
+              })
+    # Update the database with this update
+    self.data_store.update_one(update) 
 
   def processTweet(self, tweet):
     """ Processes tweet and returns {} if the tweet is a retweet and already in 
@@ -108,40 +120,69 @@ class TwitterDataIngestSource(DataSource):
       If the tweet is a new tweet then build the object f_tweet with the
       relevant tweet information that needs to be stored.
     """
+    # Initialize variables    
     f_tweet = {}
+    f_tweet['retweet'] = 0
+    f_tweet['reply_count'] = 0
+    f_tweet['rt_history'] = []      
+    f_tweet['reply_history'] = []      
     # If the tweet is a retweet it will have a 'retweeted_status' object in it.
     if 'retweeted_status' in tweet:
       # Set t_object to be the nested object within the retweet that contains
       # all of the original tweet information.
       t_object = tweet['retweeted_status']
-      # initialize a rt_history dictionary and set it with all of the
-      # retweet information that is being stored.
-      rt_history = {}
-      rt_history['rt_id_str'] = tweet['id_str']
-      rt_history['rt_created_at'] = time.strftime('%Y-%m-%dT%H:%M:%S',
-        time.strptime(str(tweet['created_at']),'%a %b %d %H:%M:%S +0000 %Y'))
-      rt_history['rt_text'] = tweet['text']
-      rt_history['orig_retweet_count'] = t_object['retweet_count']
-      rt_history['orig_favorite_count'] = t_object['favorite_count']
-      rt_history['orig_user_followers_count'] = t_object['user']['followers_count']
-      rt_history['orig_user_friends_count'] = t_object['user']['friends_count']
-      rt_history['orig_user_statuses_count'] = t_object['user']['statuses_count']
-      rt_history['orig_user_favourites_count'] = t_object['user']['favourites_count']
-      # If the tweet is in the database, then return {} and update the tweet
-      # in the database
-      orig_id_str = t_object['id_str']
+      # If it's a video proceed, otherwise return {}
+      if isVideo(t_object):      
+        # initialize a history dictionary and set it with all of the
+        # retweet information that is being stored.
+        history = {}
+        history['rt_id_str'] = tweet['id_str']
+        history['rt_created_at'] = time.strftime('%Y-%m-%dT%H:%M:%S',
+          time.strptime(str(tweet['created_at']),'%a %b %d %H:%M:%S +0000 %Y'))
+        history['rt_text'] = tweet['text']
+        history['orig_retweet_count'] = t_object['retweet_count']
+        history['orig_favorite_count'] = t_object['favorite_count']
+        history['orig_user_followers_count'] = t_object['user']['followers_count']
+        history['orig_user_friends_count'] = t_object['user']['friends_count']
+        history['orig_user_statuses_count'] = t_object['user']['statuses_count']
+        history['orig_user_favourites_count'] = t_object['user']['favourites_count']
+        # If the tweet is in the database, then return {} and update the tweet
+        # in the database
+        orig_id_str = t_object['id_str']
+        updates = self.data_store.find({'ID':orig_id_str})
+        if updates != []:
+          self.updateRetweet(orig_id_str, history)
+          return {}
+        else:
+          f_tweet['retweet'] = 1
+          f_tweet['rt_history'] = [history]
+      else:
+        return {}
+    # If the tweet is a reply.  If we are storing the original tweet then
+    # update the reply information.  If we are not storing the original tweet
+    # then return {}.
+    elif 'in_reply_to_status_id_str' in tweet and tweet['in_reply_to_status_id_str'] is not None:
+      orig_id_str = tweet['in_reply_to_status_id_str']
       updates = self.data_store.find({'ID':orig_id_str})
       if updates != []:
-        self.updateTweet(orig_id_str, rt_history)
-        return f_tweet
-      else:
-        f_tweet['retweet'] = 1
-        f_tweet['rt_history'] = [rt_history]
+        print 'Reply: ' + orig_id_str
+        # initialize a history dictionary and set it with all of the
+        # reply information that is being stored.
+        history = {}
+        history['reply_id_str'] = tweet['id_str']
+        history['reply_created_at'] = time.strftime('%Y-%m-%dT%H:%M:%S',
+          time.strptime(str(tweet['created_at']),'%a %b %d %H:%M:%S +0000 %Y'))
+        history['reply_text'] = tweet['text']
+        self.updateReplyTweet(orig_id_str, history)
+      return {}
     else:
-      f_tweet['retweet'] = 0
-      f_tweet['rt_history'] = []      
-      t_object = tweet
-      orig_id_str = t_object['id_str']
+      # It's an original tweet.
+      # If it's a video, then store it, otherwise return {}
+      if isVideo(tweet):      
+        t_object = tweet
+        orig_id_str = t_object['id_str']
+      else:
+        return {}
     
     # Store the desired tweet information in the f_tweet object.
     f_tweet['orig_tweet_object'] = t_object
