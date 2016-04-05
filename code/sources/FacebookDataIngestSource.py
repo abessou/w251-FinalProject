@@ -36,7 +36,7 @@ class FacebookDataIngestSource(DataSource):
         if 'max_loops' in self.config:
             self.maxLoops = self.config['max_loops']
         else:
-            self.maxLoops = 10
+            self.maxLoops = 1000
         
         
         self.pages = []
@@ -82,6 +82,7 @@ class FacebookDataIngestSource(DataSource):
             for i in range(100):
                 
                 video_response = requests.get(video_url)
+                time.sleep(18)
                 
                 if 'error' in video_response.json() or video_response.status_code <> 200:
                     print "\n !---- ERROR IN PAGE REQUEST ----!"
@@ -89,7 +90,7 @@ class FacebookDataIngestSource(DataSource):
                     print "Status Code: ", video_response.status_code
                     print video_response.json()
                     #raise StopIteration()
-                    time.sleep(120)
+                    time.sleep(1800) #Wait 30 minutes
                 else:
                     break
                 
@@ -100,8 +101,8 @@ class FacebookDataIngestSource(DataSource):
             else:
                 self.pageVideos = {'data': [], 'paging': {}}
 
-            print "{:3,} videos, page id: {:17}, page name:".format(len(self.pageVideos['data']),
-                                                                    self.currentPage['id']),self.currentPage['name'].encode('utf-8')
+            #print "{:3,} videos, page id: {:17}, page name:".format(len(self.pageVideos['data']),
+            #                                                        self.currentPage['id']),self.currentPage['name'].encode('utf-8')
         # -------------------------------------------------
 
         # ------- Format and Return Video Information -------
@@ -167,12 +168,13 @@ class FacebookDataIngestSource(DataSource):
                     print "Status Code: ", page_response.status_code
                     print page_response.json()
                     #raise StopIteration()
-                    time.sleep(120)
+                    time.sleep(1800) # Wait 30 minutes
                 else:
                     break
             
             page_json = page_response.json()
             pages = pages + page_json['data']
+            time.sleep(5)
             
             if 'next' in page_json['paging']:
                 page_request_url = page_json['paging']['next']
