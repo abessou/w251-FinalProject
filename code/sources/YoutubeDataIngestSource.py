@@ -198,9 +198,14 @@ class UpdateIterable:
         video_id = self.video_ids[self.index]
         self.index += 1
         
-        # Initialize the video_details instance with the Youtube video details
-        video_details = self.yt_service.videos().list(part='statistics', id=video_id).execute()
-                
+        try:
+            # Initialize the video_details instance with the Youtube video details
+            video_details = self.yt_service.videos().list(part='statistics', id=video_id).execute()
+        except HttpError as e:
+            # We've seen server side failures on this attempt to obtain updated statistics about a video.
+            # Attempt to continue processing the next update if we fail.
+            return self.next()
+        
         next_ct_PageToken = ''
         try:
             while(True):

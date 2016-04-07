@@ -1,0 +1,37 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1>Top Youtube Videos</h1>
+    <div>
+        <table id="table-with-headers">
+          <tr>
+              <th>Channel Title</th>
+              <th>Title</th>
+              <th>View Count</th>
+              <th>View Identification</th>
+          </tr>
+          {% for video in youtube %}
+              <tr>
+                  <th>'{{ video['items'][0]['snippet']['channelTitle'] }}'</th>
+                  <th>'{{ video['items'][0]['snippet']['title'] }}'</th>
+                  <th>'{{ video['items'][0]['statistics']['viewCount'] }}'</th>
+                  <th><a href="{{url_for('youtube')}}/{{ video['items'][0]['id'] }}">'{{ video['items'][0]['id'] }}'</a></th>
+              </tr>
+          {% endfor %}
+        </table>
+    </div>
+    
+    <!-- Only attempt to plot the history view if provided with a plot instance -->
+    <div>
+        {% if plot_script and plot_div %}    
+        <p> View Count History</p>
+        {% autoescape false %}
+        {{ plot_script }}
+        {{ plot_div }}
+        {% endautoescape %}
+        {% endif %}
+    </div>
+
+{% endblock %}
