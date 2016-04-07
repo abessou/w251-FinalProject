@@ -45,17 +45,24 @@ def create_labeled_points_facebook(dict, reg_type):
     return LP
 
 def create_labeled_points_youtube(dict, reg_type):
-    popularity = float(dict['items'][0]['statistics']['viewCount'])+0.001
+    if dict['items'] != []:
+        popularity = float(dict['items'][0]['statistics']['viewCount'])+0.001
+    else:
+        popularity = 1.0
     if reg_type == 'logistic':    
         if popularity >= 500.0:
             popularity = 1.0
         else:
             popularity = 0.0
-    if 'contentDetails' in dict['items'][0]:
-        video_length = float(dict['items'][0]['contentDetails']['duration'])+0.001
+    #if 'contentDetails' in dict['items'][0]:
+    #    video_length = float(dict['items'][0]['contentDetails']['duration'])+0.001
+    #else:
+    #    video_length = 30.0
+    video_length = 30.0
+    if dict['items'] != []:
+        favorite_count = float(dict['items'][0]['statistics']['favoriteCount'])+0.001
     else:
-        video_length = 15.0
-    favorite_count = float(dict['items'][0]['statistics']['favoriteCount'])+0.001
+        favorite_count = 1.0
     features = [video_length, favorite_count]
     LP =  LabeledPoint(popularity, features)
     #print LP
@@ -71,16 +78,16 @@ def spark_prediction():
     sc = SparkContext(appName="SparkPrediction")
 
     # load Twitter data
-    twitter_data = load_data_from_file(sc, "file:///root/mongoData/small_twitter.json")
-    #twitter_data = load_data_from_file("file:///root/mongoData/twitter.json")
+    #twitter_data = load_data_from_file(sc, "file:///root/mongoData/small_twitter.json")
+    twitter_data = load_data_from_file(sc, "file:///root/mongoData/twitter.json")
 
     # load YouTube data
-    youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
-    #youtube_data = load_data_from_file("file:///root/mongoData/youtube.json")
+    #youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
+    youtube_data = load_data_from_file(sc, "file:///root/mongoData/youtube.json")
 
     # load Facebook data
-    facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
-    #facebook_data = load_data_from_file("file:///root/mongoData/facebook.json")
+    #facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
+    facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
 
     #create labeled points
     twitter_LP = twitter_data.map(lambda x: create_labeled_points_twitter(x, REGRESSION_TYPE))
