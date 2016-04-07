@@ -78,16 +78,16 @@ def spark_prediction():
     sc = SparkContext(appName="SparkPrediction")
 
     # load Twitter data
-    #twitter_data = load_data_from_file(sc, "file:///root/mongoData/small_twitter.json")
-    twitter_data = load_data_from_file(sc, "file:///root/mongoData/twitter.json")
+    twitter_data = load_data_from_file(sc, "file:///root/mongoData/small_twitter.json")
+    #twitter_data = load_data_from_file(sc, "file:///root/mongoData/twitter.json")
 
     # load YouTube data
-    #youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
-    youtube_data = load_data_from_file(sc, "file:///root/mongoData/youtube.json")
+    youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
+    #youtube_data = load_data_from_file(sc, "file:///root/mongoData/youtube.json")
 
     # load Facebook data
-    #facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
-    facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
+    facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
+    #facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
 
     #create labeled points
     twitter_LP = twitter_data.map(lambda x: create_labeled_points_twitter(x, REGRESSION_TYPE))
@@ -95,19 +95,30 @@ def spark_prediction():
     facebook_LP = facebook_data.map(lambda x: create_labeled_points_facebook(x, REGRESSION_TYPE))
 
     #combine all 3 datasets
-    #rdd2 = rdd.union(rdd1)
     all_LP = twitter_LP.union(facebook_LP).union(youtube_LP)
     #all_LP = twitter_LP
+    
+    #NEED TO SHUFFLE THE DATA BEFORE SPLITTING
+
+    # split data in to training (80%) and test(20%) sets
+    train_LP, test_LP = all_LP.randomSplit([0.8, 0.2], seed=0)
 
     # Build logistic regression model
-    model_log = LogisticRegressionWithSGD.train(all_LP)
+    model_log = LogisticRegressionWithSGD.train(train_LP)
 
-    # Evaluating the model on training data
-    labels_and_preds_log = all_LP.map(lambda p: (p.label, model_log.predict(p.features)))
-    total = float(all_LP.count())
-    trainErr_log = labels_and_preds_log.filter(lambda (v, p): v != p).count() / total
-    print("Training Error = " + str(trainErr_log))
+    # Evaluate the model on training data
+    preds_train_log = train_LP.map(lambda p: (p.label, model_log.predict(p.features)))
+    total_train = float(train_LP.count())
+    trainErr_log = preds_train_log.filter(lambda (v, p): v != p).count() / total_train
+    
+    # Evaluate the model on test data
+    preds_test_log = test_LP.map(lambda p: (p.label, model_log.predict(p.features)))
+    total_test = float(test_LP.count())
+    testErr_log = preds_test_log.filter(lambda (v, p): v != p).count() / total_test
+
     print('ALL LP COUNT %d' % (all_LP.count()))
+    print("Train Error = " + str(trainErr_log))
+    print("Test Error = " + str(testErr_log))
 
     # Build linear regression model
     #model_lin = LinearRegressionWithSGD.train(all_LP)
