@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  {% if plot_script %}
+    <link
+        href="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css"
+        rel="stylesheet" type="text/css"
+    >
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js"
+    ></script>
+  {% endif %}
+  <head>
+    {% if title %}
+    <title>{{ title }} - Video Billboard</title>
+    {% else %}
+    <title>Welcome to Video Billboard</title>
+    {% endif %}
+    <link href="{{ url_for('static',filename='styles/style.css') }}" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div> 
+      <a href="{{url_for('youtube') }}">Youtube</a>
+      <a href="{{url_for('facebook') }}">Facebook</a>
+      <a href="{{url_for('twitter') }}">Twitter</a>
+    </div>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+            <li>{{ message }} </li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </body>
+</html>

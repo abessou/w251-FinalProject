@@ -1,0 +1,37 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+
+{% block content %}
+  <h1>Top Twitter Videos</h1>
+    <div>
+        <table id="table-with-headers">
+          <tr>
+              <th>User Name</th>
+              <th>Original Text</th>
+              <th>Favorite Count</th>
+              <th>Original URL</th>
+          </tr>
+          {% for video in twitter %}
+              <tr>
+                  <th>'{{ video['tweet']['orig_user_name'] }}'</th>
+                  <th>'{{ video['tweet']['orig_text'] }}'</th>
+                  <th>'{{ video['tweet']['orig_favorite_count'] }}'</th>
+                  <th>><a href="{{url_for('twitter')}}/{{ video['tweet']['orig_id_str'] }}">'{{ video['tweet']['orig_id_str'] }}'</th>
+              </tr>
+          {% endfor %}
+        </table>
+    </div>
+    
+    <!-- Only attempt to plot the history view if provided with a plot instance -->
+    <div>
+        {% if plot_script and plot_div %}    
+        <p> View Count History</p>
+        {% autoescape false %}
+        {{ plot_script }}
+        {{ plot_div }}
+        {% endautoescape %}
+        {% endif %}
+    </div>
+
+{% endblock %}
