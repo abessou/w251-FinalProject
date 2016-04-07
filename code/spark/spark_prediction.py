@@ -3,127 +3,119 @@ from random import random
 from operator import add
 
 from pyspark import SparkContext
-import json
-
 from pyspark.mllib.classification import LogisticRegressionWithSGD
 from pyspark.mllib.regression import LabeledPoint, LinearRegressionWithSGD
 from numpy import array
+import json
+
+def load_data_from_file(sc, file_name):
+    input = sc.textFile(file_name)
+    data = input.map(lambda x: json.loads(x))
+    print 'DATA COUNT: %d' % (data.count())
+    #print data.first()
+    return data
 
 # Load and parse the data
-def parsePoint(line):
-    values = [float(x) for x in line.split(' ')]
-    return LabeledPoint(values[0], values[1:])
-
-# Load and parse the data
-def parsePoint_lin(line):
-    values = [float(x) for x in line.replace(',', ' ').split(' ')]
-    return LabeledPoint(values[0], values[1:])
-
-# Load and parse the data
-def parsePoint_twitter(dict):
+def create_labeled_points_twitter(dict, reg_type):
     popularity = float(dict['tweet']['orig_retweet_count'])+0.001
-    video_length = float(dict['tweet']['orig_video_length_ms'])+0.001
+    if reg_type == 'logistic':    
+        if popularity >= 500.0:
+            popularity = 1.0
+        else:
+            popularity = 0.0
+    video_length_sec = float(dict['tweet']['orig_video_length_ms'])/1000.0 + 0.001
     favorite_count = float(dict['tweet']['orig_favorite_count'])+0.001
-    features = [favorite_count]
+    features = [video_length_sec, favorite_count]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
 
-# Load and parse the data
-def parsePoint_twitter_log(dict):
-    pop = float(dict['tweet']['orig_retweet_count'])+0.001
-    if pop >= 500:
-        popularity = 1
+def create_labeled_points_facebook(dict, reg_type):
+    popularity = float(dict['total_likes'])+0.001
+    if reg_type == 'logistic':    
+        if popularity >= 500.0:
+            popularity = 1.0
+        else:
+            popularity = 0.0
+    video_length = float(dict['length'])+0.001
+    total_comments = float(dict['total_comments'])+0.001
+    features = [video_length, total_comments]
+    LP =  LabeledPoint(popularity, features)
+    #print LP
+    return LP
+
+def create_labeled_points_youtube(dict, reg_type):
+    popularity = float(dict['items'][0]['statistics']['viewCount'])+0.001
+    if reg_type == 'logistic':    
+        if popularity >= 500.0:
+            popularity = 1.0
+        else:
+            popularity = 0.0
+    if 'contentDetails' in dict['items'][0]:
+        video_length = float(dict['items'][0]['contentDetails']['duration'])+0.001
     else:
-        popularity = 0
-    video_length = float(dict['tweet']['orig_video_length_ms'])+0.001
-    favorite_count = float(dict['tweet']['orig_favorite_count'])+0.001
+        video_length = 15.0
+    favorite_count = float(dict['items'][0]['statistics']['favoriteCount'])+0.001
     features = [video_length, favorite_count]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
 
-
-if __name__ == "__main__":
+# Perform Spark prediction
+def spark_prediction():
     """
-        Spark Analysis
+        Spark Prediction
     """
-
-    #partitions = int(sys.argv[1]) if len(sys.argv) > 1 else 2
-
-    sc = SparkContext(appName="SparkAnalysis")
+    REGRESSION_TYPE = 'logistic'
+    
+    sc = SparkContext(appName="SparkPrediction")
 
     # load Twitter data
-    #sm_twitter = sc.textFile("file:///root/mongoData/small_twitter.json")
-    #print 'COUNT SMALL TWITTER: %d' % (sm_twitter.count())
-    #print sm_twitter.first()
-    twitter = sc.textFile("file:///root/mongoData/twitter.json")
-    #print 'COUNT LARGE TWITTER: %d' % (twitter.count())
-    twitter_data = twitter.map(lambda x: json.loads(x))
-    print 'TWITTER DATA COUNT: %d' % (twitter_data.count())
-    #print twitter_data.first()
-    #print twitter_data.first()['created_at']
-
-    #parsedData_twitter = twitter_data.map(parsePoint_twitter)
-
-    # Build linear regression model
-    #model_twitter = LinearRegressionWithSGD.train(parsedData_twitter)
-
-    # Evaluate the model on training data
-    #valuesAndPreds_twitter = parsedData_twitter.map(lambda p: (p.label, model_twitter.predict(p.features)))
-    #print valuesAndPreds_twitter
-    #print valuesAndPreds_twitter.count()
-    #MSE_twitter = valuesAndPreds_twitter.map(lambda (v, p): (v - p)**2).reduce(lambda x, y: x + y) / valuesAndPreds_twitter.count()
-    #print("Mean Squared Error = " + str(MSE_twitter))
-
-    parsedData_twitter_log = twitter_data.map(parsePoint_twitter_log)
-
-    # Build logistic regression model
-    model_twitter_log = LogisticRegressionWithSGD.train(parsedData_twitter_log)
-
-    # Evaluating the model on training data
-    labelsAndPreds_twitter_log = parsedData_twitter_log.map(lambda p: (p.label, model_twitter_log.predict(p.features)))
-    trainErr_twitter_log = labelsAndPreds_twitter_log.filter(lambda (v, p): v != p).count() / float(parsedData_twitter_log.count())
-    print("Training Error = " + str(trainErr_twitter_log))
-
+    twitter_data = load_data_from_file(sc, "file:///root/mongoData/small_twitter.json")
+    #twitter_data = load_data_from_file("file:///root/mongoData/twitter.json")
 
     # load YouTube data
-    #sm_youtube = sc.textFile("file:///root/mongoData/small_youtube.json")
-    #youtube = sc.textFile("file:///root/mongoData/youtube.json")
-    #youtube_data = sm_youtube.map(lambda x: json.loads(x))
-    #print youtube_data.count()
-    #print youtube_data.first()
+    youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
+    #youtube_data = load_data_from_file("file:///root/mongoData/youtube.json")
 
     # load Facebook data
-    #sm_facebook = sc.textFile("file:///root/mongoData/small_facebook.json")
-    #facebook = sc.textFile("file:///root/mongoData/facebook.json")
-    #facebook_data = sm_facebook.map(lambda x: json.loads(x))
-    #print facebook_data.count()
-    #print facebook_data.first()
+    facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
+    #facebook_data = load_data_from_file("file:///root/mongoData/facebook.json")
 
-    #data = sc.textFile("sample_svm_data.txt")
-    #parsedData = data.map(parsePoint)
+    #create labeled points
+    twitter_LP = twitter_data.map(lambda x: create_labeled_points_twitter(x, REGRESSION_TYPE))
+    youtube_LP = youtube_data.map(lambda x: create_labeled_points_youtube(x, REGRESSION_TYPE))
+    facebook_LP = facebook_data.map(lambda x: create_labeled_points_facebook(x, REGRESSION_TYPE))
 
-    # Build the model
-    #model = LogisticRegressionWithSGD.train(parsedData)
+    #combine all 3 datasets
+    #rdd2 = rdd.union(rdd1)
+    all_LP = twitter_LP.union(facebook_LP).union(youtube_LP)
+    #all_LP = twitter_LP
+
+    # Build logistic regression model
+    model_log = LogisticRegressionWithSGD.train(all_LP)
 
     # Evaluating the model on training data
-    #labelsAndPreds = parsedData.map(lambda p: (p.label, model.predict(p.features)))
-    #trainErr = labelsAndPreds.filter(lambda (v, p): v != p).count() / float(parsedData.count())
-    #print("Training Error = " + str(trainErr))
+    labels_and_preds_log = all_LP.map(lambda p: (p.label, model_log.predict(p.features)))
+    total = float(all_LP.count())
+    trainErr_log = labels_and_preds_log.filter(lambda (v, p): v != p).count() / total
+    print("Training Error = " + str(trainErr_log))
+    print('ALL LP COUNT %d' % (all_LP.count()))
 
-    # Linear Regression model
-    #data_lin = sc.textFile("lpsa.data")
-    #parsedData_lin = data_lin.map(parsePoint_lin)
-
-    # Build the model
-    #model_lin = LinearRegressionWithSGD.train(parsedData_lin)
+    # Build linear regression model
+    #model_lin = LinearRegressionWithSGD.train(all_LP)
 
     # Evaluate the model on training data
-    #valuesAndPreds_lin = parsedData_lin.map(lambda p: (p.label, model_lin.predict(p.features)))
-    #MSE_lin = valuesAndPreds_lin.map(lambda (v, p): (v - p)**2).reduce(lambda x, y: x + y) / valuesAndPreds_lin.count()
-    #print("Mean Squared Error = " + str(MSE_lin))
+    #labels_and_preds_lin = all_LP.map(lambda p: (p.label, model_lin.predict(p.features)))
+    #print labels_and_preds_lin
+    #print labels_and_preds_lin.count()
+    #total = labels_and_preds_lin.count()
+    #MSE = labels_and_preds_lin.map(lambda (v, p): (v - p)**2).reduce(lambda x, y: x + y) / total
+    #print("Mean Squared Error = " + str(MSE))
 
     sc.stop()
 
+if __name__ == "__main__":
+
+    spark_prediction()
 
