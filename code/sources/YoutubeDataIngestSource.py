@@ -102,6 +102,9 @@ class AddIterable:
             # Start a statistics history array to accumlate stats updates. Only if the video details being downloaded
             # contain a document item.
             if len(video_details['items']) > 0:
+                # Cast the viewCount to int
+                video_details['items'][0]['statistics']['viewCount'] = int(video_details['items'][0]['statistics']['viewCount'])
+                
                 video_details['items'][0]['stats_history']=[]
                 # Include the original statistics item into the array
                 video_details['items'][0]['stats_history'].append(video_details['items'][0]['statistics'].copy())
@@ -257,7 +260,10 @@ class UpdateIterable:
         if len(video_details['items']) > 0:
             # Overwrite the statistics item with the updated stats
             updateItems[1]['$set'] = {}
-            updateItems[1]['$set']['items.0.statistics']=video_details['items'][0]['statistics']
+            # Cast the viewCount to Int
+            video_details['items'][0]['statistics']['viewCount'] = int(video_details['items'][0]['statistics']['viewCount'])
+            
+            updateItems[1]['$set']['items.0.statistics'] = video_details['items'][0]['statistics']
             # Add a copy of the new statistics item to the stats_history item with an updated timestamp
             stats_history_item = video_details['items'][0]['statistics'].copy()
             stats_history_item['timestamp'] = datetime.datetime.utcnow().isoformat()
