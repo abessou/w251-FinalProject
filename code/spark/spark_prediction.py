@@ -8,6 +8,7 @@ from pyspark.mllib.regression import LabeledPoint, LinearRegressionWithSGD
 from numpy import array
 import json
 
+# Load the data from the json file into a dictionary
 def load_data_from_file(sc, file_name):
     input = sc.textFile(file_name)
     data = input.map(lambda x: json.loads(x))
@@ -15,38 +16,53 @@ def load_data_from_file(sc, file_name):
     #print data.first()
     return data
 
-# Load and parse the data
+# Load and parse the data into MLLib LabeledPoint data types
+# Pull out the attributes that are required from the data source
 def create_labeled_points_twitter(dict, reg_type):
-    popularity = float(dict['tweet']['orig_retweet_count'])+0.001
+    retweets = float(dict['tweet']['orig_retweet_count'])
+    popularity = retweets
     if reg_type == 'logistic':    
-        if popularity >= 500.0:
+        if popularity >= 400.0:
             popularity = 1.0
         else:
             popularity = 0.0
-    video_length_sec = float(dict['tweet']['orig_video_length_ms'])/1000.0 + 0.001
-    favorite_count = float(dict['tweet']['orig_favorite_count'])+0.001
-    features = [video_length_sec, favorite_count]
+    video_length_sec = float(dict['tweet']['orig_video_length_ms'])/1000.0
+    favorite_count = float(dict['tweet']['orig_favorite_count'])
+    last_index = len(dict['tweet']['rt_history']) - 1
+    time_sec = dict['tweet']['rt_history'][last_index]['rt_created_at'] - dict['tweet']['orig_created_at']
+    growth_rate = retweets / time_sec
+    features = [video_length_sec, favorite_count, growth_rate]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
 
+# Load and parse the data into MLLib LabeledPoint data types
+# Pull out the attributes that are required from the data source
 def create_labeled_points_facebook(dict, reg_type):
-    popularity = float(dict['total_likes'])+0.001
+    total_likes = float(dict['total_likes'])
+    popularity = total_likes
     if reg_type == 'logistic':    
-        if popularity >= 500.0:
+        if popularity >= 400.0:
             popularity = 1.0
         else:
             popularity = 0.0
-    video_length = float(dict['length'])+0.001
-    total_comments = float(dict['total_comments'])+0.001
-    features = [video_length, total_comments]
+    video_length_sec = float(dict['length'])
+    total_comments = float(dict['total_comments'])
+    last_index = len(dict['history']) - 1
+    # I think I should probably use dict['created_time'] here, but may
+    # need to convert it
+    time_sec = dict['history'][last_index]['timestamp'] - dict['created_at']
+    growth_rate = total_likes / time_sec
+    features = [video_length_sec, total_comments, growth_rate]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
 
+# Load and parse the data into MLLib LabeledPoint data types
+# Pull out the attributes that are required from the data source
 def create_labeled_points_youtube(dict, reg_type):
     if dict['items'] != []:
-        popularity = float(dict['items'][0]['statistics']['viewCount'])+0.001
+        popularity = float(dict['items'][0]['statistics']['viewCount'])
     else:
         popularity = 1.0
     if reg_type == 'logistic':    
@@ -55,15 +71,15 @@ def create_labeled_points_youtube(dict, reg_type):
         else:
             popularity = 0.0
     #if 'contentDetails' in dict['items'][0]:
-    #    video_length = float(dict['items'][0]['contentDetails']['duration'])+0.001
+    #    video_length_sec = float(dict['items'][0]['contentDetails']['duration'])
     #else:
-    #    video_length = 30.0
-    video_length = 30.0
+    #    video_length_sec = 30.0
+    video_length_sec = 30.0
     if dict['items'] != []:
-        favorite_count = float(dict['items'][0]['statistics']['favoriteCount'])+0.001
+        favorite_count = float(dict['items'][0]['statistics']['favoriteCount'])
     else:
         favorite_count = 1.0
-    features = [video_length, favorite_count]
+    features = [video_length_sec, favorite_count]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -73,6 +89,7 @@ def spark_prediction():
     """
         Spark Prediction
     """
+    # Set this variable to distinguish between logistic and linear regression
     REGRESSION_TYPE = 'logistic'
     
     sc = SparkContext(appName="SparkPrediction")
@@ -82,22 +99,23 @@ def spark_prediction():
     #twitter_data = load_data_from_file(sc, "file:///root/mongoData/twitter.json")
 
     # load YouTube data
-    youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
+    #youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
     #youtube_data = load_data_from_file(sc, "file:///root/mongoData/youtube.json")
 
     # load Facebook data
     facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
     #facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
 
-    #create labeled points
+    #create MLLib LabeledPoints
     twitter_LP = twitter_data.map(lambda x: create_labeled_points_twitter(x, REGRESSION_TYPE))
-    youtube_LP = youtube_data.map(lambda x: create_labeled_points_youtube(x, REGRESSION_TYPE))
+    #youtube_LP = youtube_data.map(lambda x: create_labeled_points_youtube(x, REGRESSION_TYPE))
     facebook_LP = facebook_data.map(lambda x: create_labeled_points_facebook(x, REGRESSION_TYPE))
 
-    #combine all 3 datasets
-    all_LP = twitter_LP.union(facebook_LP).union(youtube_LP)
+    #combine all 3 datasets with the RDD.union command
     #all_LP = twitter_LP
-    
+    #all_LP = twitter_LP.union(facebook_LP).union(youtube_LP)
+    all_LP = twitter_LP.union(facebook_LP)
+
     #NEED TO SHUFFLE THE DATA BEFORE SPLITTING
 
     # split data in to training (80%) and test(20%) sets
