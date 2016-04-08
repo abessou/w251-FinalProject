@@ -28,10 +28,10 @@ def create_labeled_points_twitter(dict, reg_type):
             popularity = 0.0
     video_length_sec = float(dict['tweet']['orig_video_length_ms'])/1000.0
     favorite_count = float(dict['tweet']['orig_favorite_count'])
-    last_index = len(dict['tweet']['rt_history']) - 1
-    time_sec = dict['tweet']['rt_history'][last_index]['rt_created_at'] - dict['tweet']['orig_created_at']
-    growth_rate = retweets / time_sec
-    features = [video_length_sec, favorite_count, growth_rate]
+    #last_index = len(dict['tweet']['rt_history']) - 1    
+    #time_sec = float(dict['tweet']['rt_history'][last_index]['rt_created_at']) - float(dict['tweet']['orig_created_at'])
+    #growth_rate = retweets / time_sec
+    features = [video_length_sec, favorite_count]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -48,12 +48,12 @@ def create_labeled_points_facebook(dict, reg_type):
             popularity = 0.0
     video_length_sec = float(dict['length'])
     total_comments = float(dict['total_comments'])
-    last_index = len(dict['history']) - 1
+    #last_index = len(dict['history']) - 1
     # I think I should probably use dict['created_time'] here, but may
     # need to convert it
-    time_sec = dict['history'][last_index]['timestamp'] - dict['created_at']
-    growth_rate = total_likes / time_sec
-    features = [video_length_sec, total_comments, growth_rate]
+    #time_sec = dict['history'][last_index]['timestamp'] - dict['created_at']
+    #growth_rate = total_likes / time_sec
+    features = [video_length_sec, total_comments]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
