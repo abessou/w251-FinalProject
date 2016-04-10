@@ -21,9 +21,9 @@ class FacebookDataIngestSource(DataSource):
         # Set number of results to return per page
         # default to 5000 with no looping of pages
         if 'page_limit' in self.config:
-            self.page_lim = self.config['page_limit']
+            self.page_lim = int(self.config['page_limit'])
         else:
-            self.page_lim = 5000
+            self.page_lim = 2000
 
         # Authorization token
         if 'access_token' in self.config:
@@ -36,7 +36,7 @@ class FacebookDataIngestSource(DataSource):
         if 'max_loops' in self.config:
             self.maxLoops = self.config['max_loops']
         else:
-            self.maxLoops = 2
+            self.maxLoops = 1000
         
         
         self.pages = []
@@ -57,70 +57,52 @@ class FacebookDataIngestSource(DataSource):
                 self.loops += 1
                 self.track_index = 0
                 if self.loops == self.maxLoops:
+                    print "\n !---- SUCCESS: MAX LOOPS REACHED ----!"
+                    print "stop collection..."
                     # Max loops through search terms reached
                     raise StopIteration()
-
-            # ------- Get a list of pages by searching with track term -------
-            # Request id for pages associated to search term    
-            page_fields='page&fields=id,name,username,link'
-            term = self.track[self.track_index]
-            self.track_index += 1
-
-            # Define url for http request to get pages id associated to search term    
-            page_request_url = 'https://graph.facebook.com/search?q=%s&type=%s&limit=%d&access_token=%s'%(term,page_fields,self.page_lim,self.access_token)
-            
-            while(True):
-                page_response = requests.get(page_request_url)
-
-                if 'error' in page_response.json() or page_response.status_code <> 200:
-                    print "\n !---- ERROR IN SEARCH REQUEST ----!"
-                    print time.ctime()
-                    print "Status Code: ", page_response.status_code
-                    print page_response.json()
-                    raise StopIteration()
-                    time.sleep(60)
-                else:
-                    self.pages = page_response.json()['data']
-                    break
-
-            # ----------------------------------------------------------------
 
 
         # ------- Get the videos posted on one page -------
         while len(self.pageVideos['data']) == 0:
             try:
-                # Get the next set of videos from the same page
+                # Try to get videos from 'next' page if next page exists
                 video_url = self.pageVideos['paging']['next']
-                video_response = requests.get(video_url)
 
             except:
+                # Get videos for new user
+                if len(self.pages) == 0:
+                    self.pages = self.__update_page_results()
+
                 # The current page has no more videos, so look for videos in the next searched page
                 self.currentPage = self.pages.pop()
                 video_url = 'https://graph.facebook.com/v2.5/%s?%s&access_token=%s'%(self.currentPage['id'],self.video_fields,self.access_token)
+            
+            # Try 100 times
+            for i in range(100):
                 
                 video_response = requests.get(video_url)
+                time.sleep(18)
                 
-            while(True):
                 if 'error' in video_response.json() or video_response.status_code <> 200:
                     print "\n !---- ERROR IN PAGE REQUEST ----!"
                     print time.ctime()
                     print "Status Code: ", video_response.status_code
                     print video_response.json()
-                    raise StopIteration()
-                    time.sleep(60)
-    
-                elif 'videos' in video_response.json():
-                    self.pageVideos = video_response.json()['videos']
-                    break
-                elif 'data' in video_response.json():
-                    self.pageVideos = video_response.json()
-                    break
+                    #raise StopIteration()
+                    time.sleep(1800) #Wait 30 minutes
                 else:
-                    self.pageVideos = {'data': [], 'paging': {}}
                     break
+                
+            if 'videos' in video_response.json():
+                self.pageVideos = video_response.json()['videos']
+            elif 'data' in video_response.json():
+                self.pageVideos = video_response.json()
+            else:
+                self.pageVideos = {'data': [], 'paging': {}}
 
-            print "{:3,} videos, page id: {:17}, page name:".format(len(self.pageVideos['data']),
-                                                                    self.currentPage['id']),self.currentPage['name'].encode('utf-8')
+            #print "{:3,} videos, page id: {:17}, page name:".format(len(self.pageVideos['data']),
+            #                                                        self.currentPage['id']),self.currentPage['name'].encode('utf-8')
         # -------------------------------------------------
 
         # ------- Format and Return Video Information -------
@@ -160,6 +142,47 @@ class FacebookDataIngestSource(DataSource):
         video.setdefault('history',[{'timestamp' : now, 'likes': video['total_likes'], 'comments': video['total_comments']}])
 
         return video
+        
+    def __update_page_results(self):
+        """ Get a list of pages by searching for the track terms """
+        
+        pages = []
+
+        # Request id for pages associated to search term    
+        page_fields='page&fields=id,name,username,link'
+        term = self.track[self.track_index]
+        self.track_index += 1
+        
+        # Define url for http request to get pages id associated to search term    
+        page_request_url = 'https://graph.facebook.com/search?q=%s&type=%s&limit=%d&access_token=%s'%(term,page_fields,self.page_lim,self.access_token)
+        
+        while(True):
+            # Try 100 times
+            for i in range(100):
+    
+                page_response = requests.get(page_request_url)
+    
+                if 'error' in page_response.json() or page_response.status_code <> 200:
+                    print "\n !---- ERROR IN SEARCH REQUEST ----!"
+                    print time.ctime()
+                    print "Status Code: ", page_response.status_code
+                    print page_response.json()
+                    #raise StopIteration()
+                    time.sleep(1800) # Wait 30 minutes
+                else:
+                    break
+            
+            page_json = page_response.json()
+            pages = pages + page_json['data']
+            time.sleep(5)
+            
+            if 'next' in page_json['paging']:
+                page_request_url = page_json['paging']['next']
+            else:
+                break
+        
+        print "Term: %s, Pages: %d"%(term, len(pages))
+        return pages
         
     def __get_access_token(self):
         '''Get access key for Facebook API'''
