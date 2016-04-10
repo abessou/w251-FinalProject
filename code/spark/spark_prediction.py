@@ -44,7 +44,7 @@ def create_labeled_points_twitter(dict, reg_type):
     retweets = float(dict['tweet']['orig_retweet_count'])
     popularity = retweets
     if reg_type == 'logistic':    
-        if popularity >= 400.0:
+        if popularity >= 158.0:
             popularity = 1.0
         else:
             popularity = 0.0
@@ -65,7 +65,7 @@ def create_labeled_points_facebook(dict, reg_type):
     total_likes = float(dict['total_likes'])
     popularity = total_likes
     if reg_type == 'logistic':    
-        if popularity >= 400.0:
+        if popularity >= 496.0:
             popularity = 1.0
         else:
             popularity = 0.0
@@ -90,7 +90,7 @@ def create_labeled_points_youtube(dict, reg_type):
     else:
         popularity = 1.0
     if reg_type == 'logistic':    
-        if popularity >= 500.0:
+        if popularity >= 50790.0:
             popularity = 1.0
         else:
             popularity = 0.0
