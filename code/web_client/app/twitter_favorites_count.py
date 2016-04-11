@@ -15,7 +15,7 @@ class favorites_plot:
         timeline = {}
         for item in cursor:
             for instance in item['tweet']['rt_history']:
-                timeline[instance['rt_created_at']] = int(instance['orig_favorite_count'])    
+                timeline[instance['rt_created_at']] = int(instance['orig_retweet_count'])    
                 
         self.df = pd.DataFrame(timeline.items(), columns=['created_time', 'favorites'])
         self.df['created_time'] =  pd.to_datetime(self.df['created_time'])

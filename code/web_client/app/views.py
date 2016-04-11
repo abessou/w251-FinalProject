@@ -73,7 +73,7 @@ def twitter(video_url=None):
     
     script, div = None, None
     if not video_url is None:
-        favorites_history = db_services.get_twitter_favorites_history(video_url)
+        favorites_history = db_services.get_twitter_retweet_history(video_url)
         plot = favorites_plot(favorites_history)
         script, div = plot.get_figure()
         

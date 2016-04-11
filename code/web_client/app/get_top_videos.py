@@ -40,8 +40,8 @@ class MongoDBServices:
         '''Returns the top n Twitter videos from the document store based on an internal popularity rating'''
 
         return self.db[self.twitter_collection].find({},
-            projection=['tweet.orig_favorite_count', 'tweet.orig_user_name', 'tweet.orig_text', 'tweet.orig_id_str'],
-            sort=[('tweet.orig_favorite_count',-1)],
+            projection=['tweet.orig_retweet_count', 'tweet.orig_user_name', 'tweet.orig_text', 'tweet.orig_id_str'],
+            sort=[('tweet.orig_retweet_count',-1)],
             limit=n)
     
     def get_top_facebook_videos(self, n):
@@ -64,8 +64,8 @@ class MongoDBServices:
             projection=['history.likes', 'history.timestamp'],
             sort=[('history.timestamp', -1)])
     
-    def get_twitter_favorites_history(self, id):
+    def get_twitter_retweet_history(self, id):
         '''Returns the favorites history of a given twitter video'''
         return self.db[self.twitter_collection].find({'tweet.orig_id_str':id},
-            projection=['tweet.rt_history.orig_favorite_count', 'tweet.rt_history.rt_created_at'],
+            projection=['tweet.rt_history.orig_retweet_count', 'tweet.rt_history.rt_created_at'],
             sort=[('tweet.rt_history.rt_created_at', -1)])
