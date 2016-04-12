@@ -31,6 +31,15 @@ def subtract_dates(s2, s1):
     hrs_diff = date_diff.days*24 + date_diff.seconds/3600.0 
     return hrs_diff
     
+# Parse a duration of the form 'PT1M6S' which is 1 minutes and 6 seconds
+def parse_duration(s):
+    s = s.strip('PT')
+    head, sep, tail = s.partition('M')
+    mins = float(head)
+    head, sep, tail = tail.partition('S')
+    secs = float(head)
+    return mins*60.0 + secs
+
 # Load the data from the json file into a dictionary
 def load_data_from_file(sc, file_name):
     input = sc.textFile(file_name)
@@ -123,7 +132,7 @@ def create_labeled_points_youtube(dict, reg_type):
             popularity = 1.0
         else:
             popularity = 0.0
-    video_length_sec = float(dict['items'][0]['contentDetails']['duration'])
+    video_length_sec = parse_duration(dict['items'][0]['contentDetails']['duration'])
     favorite_count = float(dict['items'][0]['statistics']['favoriteCount'])
     sentiment = dict['sentiment']
     last_index = len(dict['items'][0]['stats_history']) - 1
