@@ -24,8 +24,10 @@ def subtract_dates(s2, s1):
         elif 'Z' in s:
             head, sep, tail = s.partition('Z')
             d_dates.append(datetime.strptime(head, "%Y-%m-%dT%H:%M:%S.%f"))
-        else:
+        elif '.' in s:
             d_dates.append(datetime.strptime(s, "%Y-%m-%dT%H:%M:%S.%f"))
+        else:
+            d_dates.append(datetime.strptime(s, "%Y-%m-%dT%H:%M:%S"))
         i += 1
     date_diff =abs(d_dates[0]-d_dates[1])
     hrs_diff = date_diff.days*24 + date_diff.seconds/3600.0 
@@ -54,7 +56,10 @@ def get_sentiment(item, source):
     if source == 'twitter':
         description = item['tweet']['orig_text']
     elif source == 'facebook':
-        description = item['description']
+        if 'description' in item:
+            description = item['description']
+        else:
+            description = ''
     else:
         if dict['items'] != []:
             description = item['items'][0]['snippet']['description']
@@ -82,8 +87,12 @@ def create_labeled_points_twitter(dict, reg_type):
     favorite_count = float(dict['tweet']['orig_favorite_count'])
     sentiment = dict['sentiment']
     last_index = len(dict['tweet']['rt_history']) - 1    
-    time_hrs = subtract_dates(dict['tweet']['rt_history'][last_index]['rt_created_at'],
-                              dict['tweet']['orig_created_at'])
+    if last_index >= 0:
+        end_time = dict['tweet']['rt_history'][last_index]['rt_created_at']
+    else:
+	end_time = dict['last_modified']
+    start_time = dict['tweet']['orig_created_at']
+    time_hrs = subtract_dates(end_time, start_time)
     growth_rate = retweets / time_hrs
     features = [video_length_sec, favorite_count, growth_rate, sentiment]
     LP =  LabeledPoint(popularity, features)
@@ -199,7 +208,16 @@ def spark_prediction():
     total_test = float(test_LP.count())
     testErr_log = preds_test_log.filter(lambda (v, p): v != p).count() / total_test
 
-    print('ALL LP COUNT %d' % (all_LP.count()))
+    all_LP_count = all_LP.count()
+    twitter_LP_count = twitter_LP.count()
+    youtube_LP_count = youtube_LP.count()
+    facebook_LP_count = facebook_LP.count()
+
+    print('ALL LP COUNT %d' % (all_LP_count))
+    print('TWITTER LP COUNT %d' % (twitter_LP_count))
+    print('YOUTUBE LP COUNT %d' % (youtube_LP_count))
+    print('FACEBOOK LP COUNT %d' % (facebook_LP_count))
+
     print("Train Error = " + str(trainErr_log))
     print("Test Error = " + str(testErr_log))
 
