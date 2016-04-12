@@ -1,6 +1,7 @@
 import sys
 from random import random
 from operator import add
+from datetime import datetime
 
 from pyspark import SparkContext
 from pyspark.mllib.classification import LogisticRegressionWithSGD
@@ -10,6 +11,26 @@ import json
 
 from vaderSentiment.vaderSentiment import sentiment as vaderSentiment
 
+# Subtract 2 dates s2 - s1.  Dates are in string format.  Return difference
+# in hours.
+def subtract_dates(s2, s1):
+    s_dates = [s2, s1]
+    d_dates = []
+    i = 0
+    for s in s_dates:
+        if '+' in s:
+            head, sep, tail = s.partition('+')
+            d_dates.append(datetime.strptime(head, "%Y-%m-%dT%H:%M:%S"))
+        elif 'Z' in s:
+            head, sep, tail = s.partition('Z')
+            d_dates.append(datetime.strptime(head, "%Y-%m-%dT%H:%M:%S.%f"))
+        else:
+            d_dates.append(datetime.strptime(s, "%Y-%m-%dT%H:%M:%S.%f"))
+        i += 1
+    date_diff =abs(d_dates[0]-d_dates[1])
+    hrs_diff = date_diff.days*24 + date_diff.seconds/3600.0 
+    return hrs_diff
+    
 # Load the data from the json file into a dictionary
 def load_data_from_file(sc, file_name):
     input = sc.textFile(file_name)
@@ -51,10 +72,11 @@ def create_labeled_points_twitter(dict, reg_type):
     video_length_sec = float(dict['tweet']['orig_video_length_ms'])/1000.0
     favorite_count = float(dict['tweet']['orig_favorite_count'])
     sentiment = dict['sentiment']
-    #last_index = len(dict['tweet']['rt_history']) - 1    
-    #time_sec = float(dict['tweet']['rt_history'][last_index]['rt_created_at']) - float(dict['tweet']['orig_created_at'])
-    #growth_rate = retweets / time_sec
-    features = [video_length_sec, favorite_count, sentiment]
+    last_index = len(dict['tweet']['rt_history']) - 1    
+    time_hrs = subtract_dates(dict['tweet']['rt_history'][last_index]['rt_created_at'],
+                              dict['tweet']['orig_created_at'])
+    growth_rate = retweets / time_hrs
+    features = [video_length_sec, favorite_count, growth_rate, sentiment]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -72,39 +94,43 @@ def create_labeled_points_facebook(dict, reg_type):
     video_length_sec = float(dict['length'])
     total_comments = float(dict['total_comments'])
     sentiment = dict['sentiment']
-    #last_index = len(dict['history']) - 1
-    # I think I should probably use dict['created_time'] here, but may
-    # need to convert it
-    #time_sec = dict['history'][last_index]['timestamp'] - dict['created_at']
-    #growth_rate = total_likes / time_sec
-    features = [video_length_sec, total_comments, sentiment]
+    last_index = len(dict['history']) - 1
+    time_hrs = subtract_dates(dict['history'][last_index]['timestamp'],
+                             dict['created_time'])
+    growth_rate = total_likes / time_hrs
+    features = [video_length_sec, total_comments, growth_rate, sentiment]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
 
+# Filter out any YouTube data that does not contain the required fields
+def filter_youtube_data(dict):
+    if dict['items'] == []:
+        return False
+    elif 'contentDetails' not in dict['items'][0]:
+        return False
+    elif 'duration' not in dict['items'][0]['contentDetails']:
+        return False
+    return True
+
 # Load and parse the data into MLLib LabeledPoint data types
 # Pull out the attributes that are required from the data source
 def create_labeled_points_youtube(dict, reg_type):
-    if dict['items'] != []:
-        popularity = float(dict['items'][0]['statistics']['viewCount'])
-    else:
-        popularity = 1.0
+    view_count = float(dict['items'][0]['statistics']['viewCount'])
+    popularity = view_count
     if reg_type == 'logistic':    
         if popularity >= 50790.0:
             popularity = 1.0
         else:
             popularity = 0.0
-    #if 'contentDetails' in dict['items'][0]:
-    #    video_length_sec = float(dict['items'][0]['contentDetails']['duration'])
-    #else:
-    #    video_length_sec = 30.0
-    video_length_sec = 30.0
-    if dict['items'] != []:
-        favorite_count = float(dict['items'][0]['statistics']['favoriteCount'])
-    else:
-        favorite_count = 1.0
+    video_length_sec = float(dict['items'][0]['contentDetails']['duration'])
+    favorite_count = float(dict['items'][0]['statistics']['favoriteCount'])
     sentiment = dict['sentiment']
-    features = [video_length_sec, favorite_count, sentiment]
+    last_index = len(dict['items'][0]['stats_history']) - 1
+    time_hrs = subtract_dates(dict['items'][0]['stats_history'][last_index]['timestamp'],
+                             dict['items'][0]['snippet']['publishedAt'])
+    growth_rate = view_count / time_hrs
+    features = [video_length_sec, favorite_count, growth_rate, sentiment]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -124,26 +150,27 @@ def spark_prediction():
     #twitter_data = load_data_from_file(sc, "file:///root/mongoData/twitter.json")
 
     # load YouTube data
-    #youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
+    youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
     #youtube_data = load_data_from_file(sc, "file:///root/mongoData/youtube.json")
+    youtube_data = youtube_data.filter(filter_youtube_data)
 
     # load Facebook data
     facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
     #facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
 
     sent_twitter_data = twitter_data.map( lambda x: get_sentiment(x, 'twitter'))
-#    sent_youtube_data = youtube_data.map( lambda x: get_sentiment(x, 'youtube'))
+    sent_youtube_data = youtube_data.map( lambda x: get_sentiment(x, 'youtube'))
     sent_facebook_data = facebook_data.map( lambda x: get_sentiment(x, 'facebook'))
     
     #create MLLib LabeledPoints
     twitter_LP = sent_twitter_data.map(lambda x: create_labeled_points_twitter(x, REGRESSION_TYPE))
-    #youtube_LP = sent_youtube_data.map(lambda x: create_labeled_points_youtube(x, REGRESSION_TYPE))
+    youtube_LP = sent_youtube_data.map(lambda x: create_labeled_points_youtube(x, REGRESSION_TYPE))
     facebook_LP = sent_facebook_data.map(lambda x: create_labeled_points_facebook(x, REGRESSION_TYPE))
 
     #combine all 3 datasets with the RDD.union command
     #all_LP = twitter_LP
-    #all_LP = twitter_LP.union(facebook_LP).union(youtube_LP)
-    all_LP = twitter_LP.union(facebook_LP)
+    #all_LP = twitter_LP.union(facebook_LP)
+    all_LP = twitter_LP.union(facebook_LP).union(youtube_LP)
 
     #NEED TO SHUFFLE THE DATA BEFORE SPLITTING
 
