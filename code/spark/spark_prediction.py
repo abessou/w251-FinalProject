@@ -8,6 +8,7 @@ from pyspark.mllib.classification import LogisticRegressionWithSGD, LogisticRegr
 from pyspark.mllib.regression import LabeledPoint, LinearRegressionWithSGD
 from numpy import array
 import json
+import pymongo
 
 from vaderSentiment.vaderSentiment import sentiment as vaderSentiment
 
@@ -56,19 +57,24 @@ def load_data_from_file(sc, file_name):
     #print data.first()
     return data
 
+def set_source(dict, source):
+    dict.setdefault('source', source)
+    return dict
+
 # Load the data from db that was created after date.  Add a source
 # field indicating which source it came from
-def load_data_after_date(db, date, source):
+def load_data_after_date(sc, db, date, source):
     db_source = db[source]    
     #cursor = db.gpsdatas.find({"createdAt" : { $gte : new ISODate("2012-01-12T20:15:31Z") }});
     #cursor = db_source.find({"created_at" : { '$gte' : ISODate(date) }})
     cursor = db_source.find().limit(100)
     cursor_list = []
     for doc in cursor:
+	#print(doc)
         cursor_list.append(doc)
     input = sc.parallelize(cursor_list)
-    data = input.map(lambda x: x.setdefault('source', source.lower()))
-    #print data.first()
+    data = input.map(lambda x: set_source(x, source.lower()))
+    #print(data.first())
     return data
 
 def get_sentiment(item, source):
@@ -107,7 +113,7 @@ def create_labeled_points_twitter(dict, reg_type):
     if last_index >= 0:
         end_time = dict['tweet']['rt_history'][last_index]['rt_created_at']
     else:
-    end_time = dict['last_modified']
+        end_time = dict['last_modified']
     start_time = dict['tweet']['orig_created_at']
     time_hrs = subtract_dates(end_time, start_time)
     growth_rate = retweets / time_hrs
@@ -173,6 +179,7 @@ def create_labeled_points_youtube(dict, reg_type):
 
 def predict_and_save(dict, model, db):
     source = dict['source']
+    print('this is the source %s' % (source))
     if source == 'twitter':
         LP = create_labeled_points_twitter(dict, 'logistic')
         db_source = db['twitter']
@@ -184,6 +191,7 @@ def predict_and_save(dict, model, db):
         db_source = db['Youtube']
     
     prediction = model.predict(LP.features)
+    print('this is the pred: %d' % (prediction))
     db_source.update_one({'ID':dict['ID']},
               {'$set':{'prediction_logistic_reg':prediction}})    
     
@@ -286,9 +294,9 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
     db = pymongo.MongoClient(host, int(port))[db_name]
     
     # Load data and add a source field indicating which source it came from
-    twitter_data = load_data_after_date(db, date, 'twitter')
-    youtube_data = load_data_after_date(db, date, 'Youtube')
-    facebook_data = load_data_after_date(db, date, 'facebook')  
+    twitter_data = load_data_after_date(sc, db, 'date', 'twitter')
+    youtube_data = load_data_after_date(sc, db, 'date', 'Youtube')
+    facebook_data = load_data_after_date(sc, db, 'date', 'facebook')  
     youtube_data = youtube_data.filter(filter_youtube_data)
 
     sent_twitter_data = twitter_data.map(lambda x: get_sentiment(x, 'twitter'))
@@ -300,8 +308,9 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
     model = LogisticRegressionModel.load(sc, file_path)
     
     all_preds = all_data.map(lambda x: predict_and_save(x, model, db))
-    
-    all_count = all_LP.count()
+    print('count is %d' % (all_preds.count()))
+
+    all_count = all_data.count()
     twitter_count = sent_twitter_data.count()
     youtube_count = sent_youtube_data.count()
     facebook_count = sent_facebook_data.count()
@@ -312,10 +321,12 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
     print('FACEBOOK LP COUNT %d' % (facebook_count))
     print(model)
 
+    sc.stop()
+
 
 if __name__ == "__main__":
 
     #spark_create_model('small', 'small_data_log_model')
-    spark_create_model('large', 'large_data_log_model')
+    #spark_create_model('large', 'large_data_log_model')
     spark_predict('small_data_log_model', 'test', '67.228.179.2', '27017')
     #spark_predict('large_data_log_model', 'VideosDB', '67.228.179.2', '27017')
