@@ -57,6 +57,7 @@ def load_data_from_file(sc, file_name):
     #print data.first()
     return data
 
+# Set the 'source' field to the source argument
 def set_source(dict, source):
     dict.setdefault('source', source)
     return dict
@@ -70,13 +71,14 @@ def load_data_after_date(sc, db, date_str, source):
     cursor = db.find({'created_at': {'$gte':startDate}}).limit(100)
     cursor_list = []
     for doc in cursor:
-	#print(doc)
+        #print(doc)
         cursor_list.append(doc)
     input = sc.parallelize(cursor_list)
     data = input.map(lambda x: set_source(x, source.lower()))
     #print(data.first())
     return data
 
+# Get the sentiment score for each item using vaderSentiment
 def get_sentiment(item, source):
     ''' Get the overall sentiment of the videos description '''
     
@@ -177,6 +179,7 @@ def create_labeled_points_youtube(dict, reg_type):
     #print LP
     return LP
 
+# Set 'prediction_logistic_reg' field with the prediction from the given model
 def predict_from_model(dict, model):
     source = dict['source']
     if source == 'twitter':
@@ -220,6 +223,7 @@ def spark_create_model(data_size, file_path, store=False):
     else:
         facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
 
+    # Store the sentiment score for each data item
     sent_twitter_data = twitter_data.map(lambda x: get_sentiment(x, 'twitter'))
     sent_youtube_data = youtube_data.map(lambda x: get_sentiment(x, 'youtube'))
     sent_facebook_data = facebook_data.map(lambda x: get_sentiment(x, 'facebook'))
@@ -233,8 +237,6 @@ def spark_create_model(data_size, file_path, store=False):
     #all_LP = twitter_LP
     #all_LP = twitter_LP.union(facebook_LP)
     all_LP = twitter_LP.union(facebook_LP).union(youtube_LP)
-
-    #NEED TO SHUFFLE THE DATA BEFORE SPLITTING
 
     # split data in to training (80%) and test(20%) sets
     train_LP, test_LP = all_LP.randomSplit([0.8, 0.2], seed=0)
@@ -270,6 +272,9 @@ def spark_create_model(data_size, file_path, store=False):
 
     sc.stop()
 
+# Pull data from a MongoDB after a certain date and predict on this data
+# using the model stored at file_path.  Use the MongoDB with host, port and
+# db_name
 def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
     sc = SparkContext(appName="SparkPredict")
 
@@ -282,30 +287,31 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
     facebook_data = load_data_after_date(sc, db, date_str, 'facebook')  
     youtube_data = youtube_data.filter(filter_youtube_data)
 
+    # Store the sentiment score for each data item
     sent_twitter_data = twitter_data.map(lambda x: get_sentiment(x, 'twitter'))
     sent_youtube_data = youtube_data.map(lambda x: get_sentiment(x, 'youtube'))
     sent_facebook_data = facebook_data.map(lambda x: get_sentiment(x, 'facebook'))
     
+    # combine all of the data in to 1 RDD
     all_data = sent_twitter_data.union(sent_youtube_data).union(sent_facebook_data)
-    print(all_data.first())
 
+    # Load the model stored at file_path
     model = LogisticRegressionModel.load(sc, file_path)
-    print(model)    
 
+    # Make predictions on all of the data
     all_preds = all_data.map(lambda x: predict_from_model(x, model))
-    print(all_preds.first())
 
     #Write predictions to the database
     for dict in all_preds.collect():
         if dict['source'] == 'twitter':
             db.twitter.update_one({'ID':dict['ID']},
-              {'$set':{'pred_test_1':dict['prediction_logistic_reg']}})
+              {'$set':{'prediction_logistic_reg':dict['prediction_logistic_reg']}})
         if dict['source'] == 'facebook':
             db.facebook.update_one({'id':dict['id']},
-              {'$set':{'pred_test_1':dict['prediction_logistic_reg']}})
+              {'$set':{'prediction_logistic_reg':dict['prediction_logistic_reg']}})
         if dict['source'] == 'youtube':
             db.Youtube.update_one({'ID':dict['ID']},
-              {'$set':{'pred_test_1':dict['prediction_logistic_reg']}})
+              {'$set':{'prediction_logistic_reg':dict['prediction_logistic_reg']}})
 
     all_count = all_data.count()
     twitter_count = sent_twitter_data.count()
@@ -320,10 +326,18 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
 
     sc.stop()
 
-
 if __name__ == "__main__":
 
+    # Create a logistic regression model in Spark.  The 1st parameter
+    # specifies which dataset to use.  The 2nd parameter specifies the 
+    # file_path in which to store the model, The 3rd optional parameter
+    # is either True of False.  True if you want to save the model that is
+    # created and False if you do not want to save it.
     #spark_create_model('small', 'small_data_log_model_source')
     #spark_create_model('large', 'large_data_log_model_source')
+
+    # Run predictions using the model specified with the 1st parameter.  The
+    # last 3 parameters specify the name of the database, the host IP of the database
+    # and the port of the database.
     #spark_predict('small_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
     spark_predict('large_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
