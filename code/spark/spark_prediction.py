@@ -67,7 +67,7 @@ def load_data_after_date(sc, db, date, source):
     db_source = db[source]    
     #cursor = db.gpsdatas.find({"createdAt" : { $gte : new ISODate("2012-01-12T20:15:31Z") }});
     #cursor = db_source.find({"created_at" : { '$gte' : ISODate(date) }})
-    cursor = db_source.find().limit(100)
+    cursor = db_source.find().limit(10)
     cursor_list = []
     for doc in cursor:
 	#print(doc)
@@ -177,24 +177,16 @@ def create_labeled_points_youtube(dict, reg_type):
     #print LP
     return LP
 
-def predict_and_save(dict, model, db):
+def predict_from_model(dict, model):
     source = dict['source']
-    print('this is the source %s' % (source))
     if source == 'twitter':
         LP = create_labeled_points_twitter(dict, 'logistic')
-        db_source = db['twitter']
     elif source == 'facebook':
         LP = create_labeled_points_facebook(dict, 'logistic')
-        db_source = db['facebook']
     else:
-        LP = create_labeled_points_twitter(dict, 'logistic')
-        db_source = db['Youtube']
-    
-    prediction = model.predict(LP.features)
-    print('this is the pred: %d' % (prediction))
-    db_source.update_one({'ID':dict['ID']},
-              {'$set':{'prediction_logistic_reg':prediction}})    
-    
+        LP = create_labeled_points_youtube(dict, 'logistic')
+
+    prediction = model.predict(LP.features)    
     dict.setdefault('prediction_logistic_reg', prediction)
     
     return dict
@@ -304,11 +296,13 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
     sent_facebook_data = facebook_data.map(lambda x: get_sentiment(x, 'facebook'))
     
     all_data = sent_twitter_data.union(sent_youtube_data).union(sent_facebook_data)
+    print(all_data.first())
 
     model = LogisticRegressionModel.load(sc, file_path)
-    
-    all_preds = all_data.map(lambda x: predict_and_save(x, model, db))
-    print('count is %d' % (all_preds.count()))
+    print(model)    
+
+    all_preds = all_data.map(lambda x: predict_from_model(x, model))
+    print(all_preds.first())
 
     all_count = all_data.count()
     twitter_count = sent_twitter_data.count()
@@ -328,5 +322,5 @@ if __name__ == "__main__":
 
     #spark_create_model('small', 'small_data_log_model')
     #spark_create_model('large', 'large_data_log_model')
-    spark_predict('small_data_log_model', 'test', '67.228.179.2', '27017')
+    spark_predict('small_data_log_model', 'VideosDB', '67.228.179.2', '27017')
     #spark_predict('large_data_log_model', 'VideosDB', '67.228.179.2', '27017')
