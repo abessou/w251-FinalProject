@@ -322,7 +322,7 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
 
 if __name__ == "__main__":
 
-    spark_create_model('small', 'small_data_log_model_source', True)
-    #spark_create_model('large', 'large_data_log_model')
-    #spark_predict('small_data_log_model', 'VideosDB', '67.228.179.2', '27017')
-    #spark_predict('large_data_log_model', 'VideosDB', '67.228.179.2', '27017')
+    #spark_create_model('small', 'small_data_log_model_source', True)
+    #spark_create_model('large', 'large_data_log_model_source', True)
+    spark_predict('small_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
+    #spark_predict('large_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
