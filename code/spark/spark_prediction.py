@@ -67,10 +67,7 @@ def get_sentiment(item, source):
         else:
             description = ''
     else:
-        if dict['items'] != []:
-            description = item['items'][0]['snippet']['description']
-        else:
-            description = ''
+        description = item['items'][0]['snippet']['description']
         
     description = description.encode('utf-8').strip()
     sent = vaderSentiment(description)
@@ -99,8 +96,8 @@ def create_labeled_points_twitter(dict, reg_type):
     start_time = dict['tweet']['orig_created_at']
     time_hrs = subtract_dates(end_time, start_time)
     growth_rate = retweets / time_hrs
-    #sentiment = dict['sentiment']
-    features = [video_length_sec, favorite_count, growth_rate]
+    sentiment = dict['sentiment']
+    features = [video_length_sec, favorite_count, growth_rate, sentiment]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -121,8 +118,8 @@ def create_labeled_points_facebook(dict, reg_type):
     time_hrs = subtract_dates(dict['history'][last_index]['timestamp'],
                              dict['created_time'])
     growth_rate = total_likes / time_hrs
-    #sentiment = dict['sentiment']
-    features = [video_length_sec, total_comments, growth_rate]
+    sentiment = dict['sentiment']
+    features = [video_length_sec, total_comments, growth_rate, sentiment]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -153,8 +150,8 @@ def create_labeled_points_youtube(dict, reg_type):
     time_hrs = subtract_dates(dict['items'][0]['stats_history'][last_index]['timestamp'],
                              dict['items'][0]['snippet']['publishedAt'])
     growth_rate = view_count / time_hrs
-    #sentiment = dict['sentiment']
-    features = [video_length_sec, favorite_count, growth_rate]
+    sentiment = dict['sentiment']
+    features = [video_length_sec, favorite_count, growth_rate, sentiment]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -182,14 +179,14 @@ def spark_prediction():
     #facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
     facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
 
-    #sent_twitter_data = twitter_data.map( lambda x: get_sentiment(x, 'twitter'))
-    #sent_youtube_data = youtube_data.map( lambda x: get_sentiment(x, 'youtube'))
-    #sent_facebook_data = facebook_data.map( lambda x: get_sentiment(x, 'facebook'))
+    sent_twitter_data = twitter_data.map( lambda x: get_sentiment(x, 'twitter'))
+    sent_youtube_data = youtube_data.map( lambda x: get_sentiment(x, 'youtube'))
+    sent_facebook_data = facebook_data.map( lambda x: get_sentiment(x, 'facebook'))
     
     #create MLLib LabeledPoints
-    twitter_LP = twitter_data.map(lambda x: create_labeled_points_twitter(x, REGRESSION_TYPE))
-    youtube_LP = youtube_data.map(lambda x: create_labeled_points_youtube(x, REGRESSION_TYPE))
-    facebook_LP = facebook_data.map(lambda x: create_labeled_points_facebook(x, REGRESSION_TYPE))
+    twitter_LP = sent_twitter_data.map(lambda x: create_labeled_points_twitter(x, REGRESSION_TYPE))
+    youtube_LP = sent_youtube_data.map(lambda x: create_labeled_points_youtube(x, REGRESSION_TYPE))
+    facebook_LP = sent_facebook_data.map(lambda x: create_labeled_points_facebook(x, REGRESSION_TYPE))
 
     #combine all 3 datasets with the RDD.union command
     #all_LP = twitter_LP
