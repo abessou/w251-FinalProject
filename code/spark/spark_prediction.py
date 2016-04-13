@@ -56,6 +56,21 @@ def load_data_from_file(sc, file_name):
     #print data.first()
     return data
 
+# Load the data from db that was created after date.  Add a source
+# field indicating which source it came from
+def load_data_after_date(db, date, source):
+    db_source = db[source]    
+    #cursor = db.gpsdatas.find({"createdAt" : { $gte : new ISODate("2012-01-12T20:15:31Z") }});
+    #cursor = db_source.find({"created_at" : { '$gte' : ISODate(date) }})
+    cursor = db_source.find().limit(100)
+    cursor_list = []
+    for doc in cursor:
+        cursor_list.append(doc)
+    input = sc.parallelize(cursor_list)
+    data = input.map(lambda x: x.setdefault('source', source.lower()))
+    #print data.first()
+    return data
+
 def get_sentiment(item, source):
     ''' Get the overall sentiment of the videos description '''
     
@@ -92,7 +107,7 @@ def create_labeled_points_twitter(dict, reg_type):
     if last_index >= 0:
         end_time = dict['tweet']['rt_history'][last_index]['rt_created_at']
     else:
-	end_time = dict['last_modified']
+    end_time = dict['last_modified']
     start_time = dict['tweet']['orig_created_at']
     time_hrs = subtract_dates(end_time, start_time)
     growth_rate = retweets / time_hrs
@@ -156,6 +171,26 @@ def create_labeled_points_youtube(dict, reg_type):
     #print LP
     return LP
 
+def predict_and_save(dict, model, db):
+    source = dict['source']
+    if source == 'twitter':
+        LP = create_labeled_points_twitter(dict, 'logistic')
+        db_source = db['twitter']
+    elif source == 'facebook':
+        LP = create_labeled_points_facebook(dict, 'logistic')
+        db_source = db['facebook']
+    else:
+        LP = create_labeled_points_twitter(dict, 'logistic')
+        db_source = db['Youtube']
+    
+    prediction = model.predict(LP.features)
+    db_source.update_one({'ID':dict['ID']},
+              {'$set':{'prediction_logistic_reg':prediction}})    
+    
+    dict.setdefault('prediction_logistic_reg', prediction)
+    
+    return dict
+    
 # Perform Spark prediction
 def spark_create_model(data_size, file_path):
     """
@@ -185,9 +220,9 @@ def spark_create_model(data_size, file_path):
     else:
         facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
 
-    sent_twitter_data = twitter_data.map( lambda x: get_sentiment(x, 'twitter'))
-    sent_youtube_data = youtube_data.map( lambda x: get_sentiment(x, 'youtube'))
-    sent_facebook_data = facebook_data.map( lambda x: get_sentiment(x, 'facebook'))
+    sent_twitter_data = twitter_data.map(lambda x: get_sentiment(x, 'twitter'))
+    sent_youtube_data = youtube_data.map(lambda x: get_sentiment(x, 'youtube'))
+    sent_facebook_data = facebook_data.map(lambda x: get_sentiment(x, 'facebook'))
     
     #create MLLib LabeledPoints
     twitter_LP = sent_twitter_data.map(lambda x: create_labeled_points_twitter(x, REGRESSION_TYPE))
@@ -245,13 +280,42 @@ def spark_create_model(data_size, file_path):
 
     sc.stop()
 
-def spark_predict(file_path):
+def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
+    sc = SparkContext(appName="SparkPredict")
+
+    db = pymongo.MongoClient(host, int(port))[db_name]
+    
+    # Load data and add a source field indicating which source it came from
+    twitter_data = load_data_after_date(db, date, 'twitter')
+    youtube_data = load_data_after_date(db, date, 'Youtube')
+    facebook_data = load_data_after_date(db, date, 'facebook')  
+    youtube_data = youtube_data.filter(filter_youtube_data)
+
+    sent_twitter_data = twitter_data.map(lambda x: get_sentiment(x, 'twitter'))
+    sent_youtube_data = youtube_data.map(lambda x: get_sentiment(x, 'youtube'))
+    sent_facebook_data = facebook_data.map(lambda x: get_sentiment(x, 'facebook'))
+    
+    all_data = sent_twitter_data.union(sent_youtube_data).union(sent_facebook_data)
+
     model = LogisticRegressionModel.load(sc, file_path)
+    
+    all_preds = all_data.map(lambda x: predict_and_save(x, model, db))
+    
+    all_count = all_LP.count()
+    twitter_count = sent_twitter_data.count()
+    youtube_count = sent_youtube_data.count()
+    facebook_count = sent_facebook_data.count()
+
+    print('ALL LP COUNT %d' % (all_count))
+    print('TWITTER LP COUNT %d' % (twitter_count))
+    print('YOUTUBE LP COUNT %d' % (youtube_count))
+    print('FACEBOOK LP COUNT %d' % (facebook_count))
+    print(model)
+
 
 if __name__ == "__main__":
 
     #spark_create_model('small', 'small_data_log_model')
     spark_create_model('large', 'large_data_log_model')
-
-
-
+    spark_predict('small_data_log_model', 'test', '67.228.179.2', '27017')
+    #spark_predict('large_data_log_model', 'VideosDB', '67.228.179.2', '27017')
