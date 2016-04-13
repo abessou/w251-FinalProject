@@ -68,7 +68,7 @@ def load_data_after_date(sc, db, date_str, source):
     db_source = db[source]    
     #cursor = db_source.find().limit(50)
     startDate = datetime.strptime(date_str, '%Y-%m-%dT%H:%M:%S.%f').isoformat()
-    cursor = db.find({'created_at': {'$gte':startDate}}).limit(100)
+    cursor = db_source.find({'created_at': {'$gte':startDate}}).limit(100)
     cursor_list = []
     for doc in cursor:
         #print(doc)
