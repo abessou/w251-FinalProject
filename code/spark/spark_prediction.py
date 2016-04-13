@@ -67,7 +67,7 @@ def load_data_after_date(sc, db, date, source):
     db_source = db[source]    
     #cursor = db.gpsdatas.find({"createdAt" : { $gte : new ISODate("2012-01-12T20:15:31Z") }});
     #cursor = db_source.find({"created_at" : { '$gte' : ISODate(date) }})
-    cursor = db_source.find().limit(10)
+    cursor = db_source.find().limit(50)
     cursor_list = []
     for doc in cursor:
 	#print(doc)
@@ -118,7 +118,7 @@ def create_labeled_points_twitter(dict, reg_type):
     time_hrs = subtract_dates(end_time, start_time)
     growth_rate = retweets / time_hrs
     sentiment = dict['sentiment']
-    features = [video_length_sec, favorite_count, growth_rate, sentiment]
+    features = [video_length_sec, favorite_count, growth_rate, sentiment, 1]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -140,7 +140,7 @@ def create_labeled_points_facebook(dict, reg_type):
                              dict['created_time'])
     growth_rate = total_likes / time_hrs
     sentiment = dict['sentiment']
-    features = [video_length_sec, total_comments, growth_rate, sentiment]
+    features = [video_length_sec, total_comments, growth_rate, sentiment, 2]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -172,7 +172,7 @@ def create_labeled_points_youtube(dict, reg_type):
                              dict['items'][0]['snippet']['publishedAt'])
     growth_rate = view_count / time_hrs
     sentiment = dict['sentiment']
-    features = [video_length_sec, favorite_count, growth_rate, sentiment]
+    features = [video_length_sec, favorite_count, growth_rate, sentiment, 3]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -192,7 +192,7 @@ def predict_from_model(dict, model):
     return dict
     
 # Perform Spark prediction
-def spark_create_model(data_size, file_path):
+def spark_create_model(data_size, file_path, store=False):
     """
         Spark Model Creation
     """
@@ -241,7 +241,8 @@ def spark_create_model(data_size, file_path):
 
     # Build logistic regression model
     model_log = LogisticRegressionWithSGD.train(train_LP)
-    model_log.save(sc, file_path)
+    if store == True:
+        model_log.save(sc, file_path)
 
     # Evaluate the model on training data
     preds_train_log = train_LP.map(lambda p: (p.label, model_log.predict(p.features)))
@@ -266,17 +267,6 @@ def spark_create_model(data_size, file_path):
     print("Train Error = " + str(trainErr_log))
     print("Test Error = " + str(testErr_log))
     print(model_log)
-
-    # Build linear regression model
-    #model_lin = LinearRegressionWithSGD.train(all_LP)
-
-    # Evaluate the model on training data
-    #labels_and_preds_lin = all_LP.map(lambda p: (p.label, model_lin.predict(p.features)))
-    #print labels_and_preds_lin
-    #print labels_and_preds_lin.count()
-    #total = labels_and_preds_lin.count()
-    #MSE = labels_and_preds_lin.map(lambda (v, p): (v - p)**2).reduce(lambda x, y: x + y) / total
-    #print("Mean Squared Error = " + str(MSE))
 
     sc.stop()
 
@@ -304,6 +294,18 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
     all_preds = all_data.map(lambda x: predict_from_model(x, model))
     print(all_preds.first())
 
+    #Write predictions to the database
+    for dict in all_preds.collect():
+        if dict['source'] == 'twitter':
+            db.twitter.update_one({'ID':dict['ID']},
+              {'$set':{'pred_test_1':dict['prediction_logistic_reg']}})
+        if dict['source'] == 'facebook':
+            db.facebook.update_one({'id':dict['id']},
+              {'$set':{'pred_test_1':dict['prediction_logistic_reg']}})
+        if dict['source'] == 'youtube':
+            db.Youtube.update_one({'ID':dict['ID']},
+              {'$set':{'pred_test_1':dict['prediction_logistic_reg']}})
+
     all_count = all_data.count()
     twitter_count = sent_twitter_data.count()
     youtube_count = sent_youtube_data.count()
@@ -320,7 +322,7 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
 
 if __name__ == "__main__":
 
-    #spark_create_model('small', 'small_data_log_model')
+    spark_create_model('small', 'small_data_log_model_source', True)
     #spark_create_model('large', 'large_data_log_model')
-    spark_predict('small_data_log_model', 'VideosDB', '67.228.179.2', '27017')
+    #spark_predict('small_data_log_model', 'VideosDB', '67.228.179.2', '27017')
     #spark_predict('large_data_log_model', 'VideosDB', '67.228.179.2', '27017')
