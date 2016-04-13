@@ -63,11 +63,11 @@ def set_source(dict, source):
 
 # Load the data from db that was created after date.  Add a source
 # field indicating which source it came from
-def load_data_after_date(sc, db, date, source):
+def load_data_after_date(sc, db, date_str, source):
     db_source = db[source]    
-    #cursor = db.gpsdatas.find({"createdAt" : { $gte : new ISODate("2012-01-12T20:15:31Z") }});
-    #cursor = db_source.find({"created_at" : { '$gte' : ISODate(date) }})
-    cursor = db_source.find().limit(50)
+    #cursor = db_source.find().limit(50)
+    startDate = datetime.strptime(date_str, '%Y-%m-%dT%H:%M:%S.%f').isoformat()
+    cursor = db.find({'created_at': {'$gte':startDate}}).limit(100)
     cursor_list = []
     for doc in cursor:
 	#print(doc)
@@ -276,9 +276,10 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
     db = pymongo.MongoClient(host, int(port))[db_name]
     
     # Load data and add a source field indicating which source it came from
-    twitter_data = load_data_after_date(sc, db, 'date', 'twitter')
-    youtube_data = load_data_after_date(sc, db, 'date', 'Youtube')
-    facebook_data = load_data_after_date(sc, db, 'date', 'facebook')  
+    date_str = '2016-04-07T00:00:00.000000'
+    twitter_data = load_data_after_date(sc, db, date_str, 'twitter')
+    youtube_data = load_data_after_date(sc, db, date_str, 'Youtube')
+    facebook_data = load_data_after_date(sc, db, date_str, 'facebook')  
     youtube_data = youtube_data.filter(filter_youtube_data)
 
     sent_twitter_data = twitter_data.map(lambda x: get_sentiment(x, 'twitter'))
@@ -322,7 +323,7 @@ def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
 
 if __name__ == "__main__":
 
-    #spark_create_model('small', 'small_data_log_model_source', True)
-    #spark_create_model('large', 'large_data_log_model_source', True)
-    spark_predict('small_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
-    #spark_predict('large_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
+    #spark_create_model('small', 'small_data_log_model_source')
+    #spark_create_model('large', 'large_data_log_model_source')
+    #spark_predict('small_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
+    spark_predict('large_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
