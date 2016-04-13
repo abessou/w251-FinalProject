@@ -275,13 +275,12 @@ def spark_create_model(data_size, file_path, store=False):
 # Pull data from a MongoDB after a certain date and predict on this data
 # using the model stored at file_path.  Use the MongoDB with host, port and
 # db_name
-def spark_predict(file_path, db_name='test', host='67.228.179.2', port='27017'):
+def spark_predict(file_path, date_str, db_name='test', host='67.228.179.2', port='27017'):
     sc = SparkContext(appName="SparkPredict")
 
     db = pymongo.MongoClient(host, int(port))[db_name]
     
     # Load data and add a source field indicating which source it came from
-    date_str = '2016-04-07T00:00:00.000000'
     twitter_data = load_data_after_date(sc, db, date_str, 'twitter')
     youtube_data = load_data_after_date(sc, db, date_str, 'Youtube')
     facebook_data = load_data_after_date(sc, db, date_str, 'facebook')  
@@ -336,8 +335,10 @@ if __name__ == "__main__":
     #spark_create_model('small', 'small_data_log_model_source')
     #spark_create_model('large', 'large_data_log_model_source')
 
-    # Run predictions using the model specified with the 1st parameter.  The
+    # Run predictions using the model specified with the 1st parameter.  Collect
+    # data from the database after the date specified by the 2nd parameter.  The
     # last 3 parameters specify the name of the database, the host IP of the database
     # and the port of the database.
-    #spark_predict('small_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
-    spark_predict('large_data_log_model_source', 'VideosDB', '67.228.179.2', '27017')
+    date_str = '2016-04-07T00:00:00.000000'
+    #spark_predict('small_data_log_model_source', date_str, 'VideosDB', '67.228.179.2', '27017')
+    spark_predict('large_data_log_model_source', date_str, 'VideosDB', '67.228.179.2', '27017')
