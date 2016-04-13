@@ -4,7 +4,7 @@ from operator import add
 from datetime import datetime
 
 from pyspark import SparkContext
-from pyspark.mllib.classification import LogisticRegressionWithSGD
+from pyspark.mllib.classification import LogisticRegressionWithSGD, LogisticRegressionModel
 from pyspark.mllib.regression import LabeledPoint, LinearRegressionWithSGD
 from numpy import array
 import json
@@ -157,27 +157,33 @@ def create_labeled_points_youtube(dict, reg_type):
     return LP
 
 # Perform Spark prediction
-def spark_prediction():
+def spark_create_model(data_size, file_path):
     """
-        Spark Prediction
+        Spark Model Creation
     """
     # Set this variable to distinguish between logistic and linear regression
     REGRESSION_TYPE = 'logistic'
     
-    sc = SparkContext(appName="SparkPrediction")
+    sc = SparkContext(appName="SparkCreateModel")
 
     # load Twitter data
-    #twitter_data = load_data_from_file(sc, "file:///root/mongoData/small_twitter.json")
-    twitter_data = load_data_from_file(sc, "file:///root/mongoData/twitter.json")
+    if data_size == 'small':
+        twitter_data = load_data_from_file(sc, "file:///root/mongoData/small_twitter.json")
+    else:
+        twitter_data = load_data_from_file(sc, "file:///root/mongoData/twitter.json")
 
     # load YouTube data
-    #youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
-    youtube_data = load_data_from_file(sc, "file:///root/mongoData/youtube.json")
+    if data_size == 'small':
+        youtube_data = load_data_from_file(sc, "file:///root/mongoData/small_youtube.json")
+    else:
+        youtube_data = load_data_from_file(sc, "file:///root/mongoData/youtube.json")
     youtube_data = youtube_data.filter(filter_youtube_data)
 
     # load Facebook data
-    #facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
-    facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
+    if data_size == 'small':
+        facebook_data = load_data_from_file(sc, "file:///root/mongoData/small_facebook.json")
+    else:
+        facebook_data = load_data_from_file(sc, "file:///root/mongoData/facebook.json")
 
     sent_twitter_data = twitter_data.map( lambda x: get_sentiment(x, 'twitter'))
     sent_youtube_data = youtube_data.map( lambda x: get_sentiment(x, 'youtube'))
@@ -200,6 +206,7 @@ def spark_prediction():
 
     # Build logistic regression model
     model_log = LogisticRegressionWithSGD.train(train_LP)
+    model_log.save(sc, file_path)
 
     # Evaluate the model on training data
     preds_train_log = train_LP.map(lambda p: (p.label, model_log.predict(p.features)))
@@ -223,6 +230,7 @@ def spark_prediction():
 
     print("Train Error = " + str(trainErr_log))
     print("Test Error = " + str(testErr_log))
+    print(model_log)
 
     # Build linear regression model
     #model_lin = LinearRegressionWithSGD.train(all_LP)
@@ -237,7 +245,13 @@ def spark_prediction():
 
     sc.stop()
 
+def spark_predict(file_path):
+    model = LogisticRegressionModel.load(sc, file_path)
+
 if __name__ == "__main__":
 
-    spark_prediction()
+    #spark_create_model('small', 'small_data_log_model')
+    spark_create_model('large', 'large_data_log_model')
+
+
 
