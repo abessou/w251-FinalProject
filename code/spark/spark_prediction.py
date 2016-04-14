@@ -68,7 +68,7 @@ def load_data_after_date(sc, db, date_str, source):
     db_source = db[source]    
     #cursor = db_source.find().limit(50)
     startDate = datetime.strptime(date_str, '%Y-%m-%dT%H:%M:%S.%f').isoformat()
-    cursor = db_source.find({'created_at': {'$gte':startDate}}).limit(100)
+    cursor = db_source.find({'created_at': {'$gte':startDate}}).limit(300)
     cursor_list = []
     for doc in cursor:
         #print(doc)
@@ -339,6 +339,6 @@ if __name__ == "__main__":
     # data from the database after the date specified by the 2nd parameter.  The
     # last 3 parameters specify the name of the database, the host IP of the database
     # and the port of the database.
-    date_str = '2016-04-07T00:00:00.000000'
-    #spark_predict('small_data_log_model_source', date_str, 'VideosDB', '67.228.179.2', '27017')
-    spark_predict('large_data_log_model_source', date_str, 'VideosDB', '67.228.179.2', '27017')
+    date_str = '2016-04-05T00:00:00.000000'
+    spark_predict('small_data_log_model_source', date_str, 'VideosDB', '67.228.179.2', '27017')
+    #spark_predict('large_data_log_model_source', date_str, 'VideosDB', '67.228.179.2', '27017')
