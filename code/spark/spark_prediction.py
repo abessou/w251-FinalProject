@@ -64,11 +64,12 @@ def set_source(dict, source):
 
 # Load the data from db that was created after date.  Add a source
 # field indicating which source it came from
-def load_data_after_date(sc, db, date_str, source):
+def load_data_after_date(sc, db, start_date, end_date, source):
     db_source = db[source]    
     #cursor = db_source.find().limit(50)
-    startDate = datetime.strptime(date_str, '%Y-%m-%dT%H:%M:%S.%f').isoformat()
-    cursor = db_source.find({'created_at': {'$gte':startDate}}).limit(300)
+    startDate = datetime.strptime(start_date, '%Y-%m-%dT%H:%M:%S.%f').isoformat()
+    endDate = datetime.strptime(end_date, '%Y-%m-%dT%H:%M:%S.%f').isoformat()
+    cursor = db_source.find({'created_at': {'$gte':startDate,'$lt':endDate}}).limit(1000)
     cursor_list = []
     for doc in cursor:
         #print(doc)
@@ -275,15 +276,15 @@ def spark_create_model(data_size, file_path, store=False):
 # Pull data from a MongoDB after a certain date and predict on this data
 # using the model stored at file_path.  Use the MongoDB with host, port and
 # db_name
-def spark_predict(file_path, date_str, db_name='test', host='67.228.179.2', port='27017'):
+def spark_predict(file_path, start_date, end_date, db_name='test', host='67.228.179.2', port='27017'):
     sc = SparkContext(appName="SparkPredict")
 
     db = pymongo.MongoClient(host, int(port))[db_name]
     
     # Load data and add a source field indicating which source it came from
-    twitter_data = load_data_after_date(sc, db, date_str, 'twitter')
-    youtube_data = load_data_after_date(sc, db, date_str, 'Youtube')
-    facebook_data = load_data_after_date(sc, db, date_str, 'facebook')  
+    twitter_data = load_data_after_date(sc, db, start_date, end_date, 'twitter')
+    youtube_data = load_data_after_date(sc, db, start_date, end_date, 'Youtube')
+    facebook_data = load_data_after_date(sc, db, start_date, end_date, 'facebook')  
     youtube_data = youtube_data.filter(filter_youtube_data)
 
     # Store the sentiment score for each data item
@@ -339,6 +340,7 @@ if __name__ == "__main__":
     # data from the database after the date specified by the 2nd parameter.  The
     # last 3 parameters specify the name of the database, the host IP of the database
     # and the port of the database.
-    date_str = '2016-04-05T00:00:00.000000'
-    spark_predict('small_data_log_model_source', date_str, 'VideosDB', '67.228.179.2', '27017')
-    #spark_predict('large_data_log_model_source', date_str, 'VideosDB', '67.228.179.2', '27017')
+    start_date = '2016-04-07T00:00:00.000000'
+    end_date = '2016-04-08T00:00:00.000000'
+    spark_predict('small_data_log_model_source', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
+    #spark_predict('large_data_log_model_source', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
