@@ -4,34 +4,41 @@
 
 {% block content %}
   <h1>Facebook Top Videos</h1>
-    <div>
-        <table  id='table-with-headers'>
-          <tr>
-              <th>Page Name</th>
-              <th>Description</th>
-              <th>Total Like</th>
-              <th>Page Link</th>
-          </tr>
-          {% for video in facebook %}
+    <form action="" method="post" name="facebook">
+        <div>
+           {{ form.hidden_tag() }}
+           <p>{{ form.video_categories }} Video Categories</p>           
+           <p><input type="submit" value="Select"></p>
+        </div>
+
+        <div>
+            <table  id='table-with-headers'>
               <tr>
-                  <th>'{{ video['page']['page_name'] }}'</th>
-                  <th>'{{ video['description'] }}'</th>
-                  <th>'{{ video['total_likes'] }}'</th>
-                  <th><a href="{{url_for('facebook')}}/{{ video['id'] }}">'{{ video['id'] }}'</a></th>
+                <th>Page Name</th>
+                <th>Description</th>
+                <th>Total Like</th>
+                <th>Page Link</th>
               </tr>
-          {% endfor %}
-        </table>
-    </div>
+                  {% for video in facebook %}
+                    <tr>
+                      <th>'{{ video['page']['page_name'] }}'</th>
+                      <th>'{{ video['description'] }}'</th>
+                      <th>'{{ video['total_likes'] }}'</th>
+                      <th><a href="{{base_url}}/{{ video['id'] }}">'{{ video['id'] }}'</a></th>
+                    </tr>
+                  {% endfor %}
+            </table>
+        </div>
 
-    <!-- Only attempt to plot the history view if provided with a plot instance -->
-    <div>
-        {% if plot_script and plot_div %}    
-        <p> View Count History</p>
-        {% autoescape false %}
-        {{ plot_script }}
-        {{ plot_div }}
-        {% endautoescape %}
-        {% endif %}
-    </div>
-
+        <!-- Only attempt to plot the history view if provided with a plot instance -->
+        <div>
+            {% if plot_script and plot_div %}    
+            <p> View Count History</p>
+            {% autoescape false %}
+            {{ plot_script }}
+            {{ plot_div }}
+            {% endautoescape %}
+            {% endif %}
+        </div>
+    </form>
 {% endblock %}
