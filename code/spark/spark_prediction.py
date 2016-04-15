@@ -121,7 +121,7 @@ def create_labeled_points_twitter(dict, reg_type):
     time_hrs = subtract_dates(end_time, start_time)
     growth_rate = retweets / time_hrs
     sentiment = dict['sentiment']
-    features = [video_length_sec, favorite_count, growth_rate, sentiment, 1]
+    features = [video_length_sec, retweets, favorite_count, growth_rate, sentiment, 1]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -143,7 +143,7 @@ def create_labeled_points_facebook(dict, reg_type):
                              dict['created_time'])
     growth_rate = total_likes / time_hrs
     sentiment = dict['sentiment']
-    features = [video_length_sec, total_comments, growth_rate, sentiment, 2]
+    features = [video_length_sec, total_likes, total_comments, growth_rate, sentiment, 2]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -175,7 +175,7 @@ def create_labeled_points_youtube(dict, reg_type):
                              dict['items'][0]['snippet']['publishedAt'])
     growth_rate = view_count / time_hrs
     sentiment = dict['sentiment']
-    features = [video_length_sec, favorite_count, growth_rate, sentiment, 3]
+    features = [video_length_sec, view_count, favorite_count, growth_rate, sentiment, 3]
     LP =  LabeledPoint(popularity, features)
     #print LP
     return LP
@@ -332,14 +332,14 @@ if __name__ == "__main__":
     # file_path in which to store the model, The 3rd optional parameter
     # is either True of False.  True if you want to save the model that is
     # created and False if you do not want to save it.
-    #spark_create_model('small', 'small_data_log_model_source', False)
-    #spark_create_model('large', 'large_data_log_model_source', False)
+    #spark_create_model('small', 'small_data_log_model', False)
+    spark_create_model('large', 'large_data_log_model', True)
 
     # Run predictions using the model specified with the 1st parameter.  Collect
     # data from the database after the date specified by the 2nd parameter.  The
     # last 3 parameters specify the name of the database, the host IP of the database
     # and the port of the database.
-    start_date = '2016-04-06T00:00:00.000000'
-    end_date = '2016-04-07T00:00:00.000000'
-    #spark_predict('small_data_log_model_source', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
-    spark_predict('large_data_log_model_source', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
+    start_date = '2016-04-07T00:00:00.000000'
+    end_date = '2016-04-08T00:00:00.000000'
+    #spark_predict('small_data_log_model', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
+    #spark_predict('large_data_log_model', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
