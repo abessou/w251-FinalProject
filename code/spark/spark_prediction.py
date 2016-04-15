@@ -234,13 +234,14 @@ def spark_create_model(data_size, file_path, store=False):
     youtube_LP = sent_youtube_data.map(lambda x: create_labeled_points_youtube(x, REGRESSION_TYPE))
     facebook_LP = sent_facebook_data.map(lambda x: create_labeled_points_facebook(x, REGRESSION_TYPE))
 
-    #combine all 3 datasets with the RDD.union command
-    #all_LP = twitter_LP
-    #all_LP = twitter_LP.union(facebook_LP)
-    all_LP = twitter_LP.union(facebook_LP).union(youtube_LP)
-
     # split data in to training (80%) and test(20%) sets
-    train_LP, test_LP = all_LP.randomSplit([0.8, 0.2], seed=0)
+    train_twitter, test_twitter = twitter_LP.randomSplit([0.8, 0.2], seed=0)
+    train_youtube, test_youtube = youtube_LP.randomSplit([0.8, 0.2], seed=0)
+    train_facebook, test_facebook = facebook_LP.randomSplit([0.8, 0.2], seed=0)
+
+    #combine all 3 datasets with the RDD.union command
+    train_LP = train_twitter.union(train_facebook).union(train_youtube)
+    test_LP = test_twitter.union(test_facebook).union(test_youtube)
 
     # Build logistic regression model
     model_log = LogisticRegressionWithSGD.train(train_LP)
@@ -257,12 +258,10 @@ def spark_create_model(data_size, file_path, store=False):
     total_test = float(test_LP.count())
     testErr_log = preds_test_log.filter(lambda (v, p): v != p).count() / total_test
 
-    all_LP_count = all_LP.count()
     twitter_LP_count = twitter_LP.count()
     youtube_LP_count = youtube_LP.count()
     facebook_LP_count = facebook_LP.count()
 
-    print('ALL LP COUNT %d' % (all_LP_count))
     print('TWITTER LP COUNT %d' % (twitter_LP_count))
     print('YOUTUBE LP COUNT %d' % (youtube_LP_count))
     print('FACEBOOK LP COUNT %d' % (facebook_LP_count))
@@ -333,14 +332,14 @@ if __name__ == "__main__":
     # file_path in which to store the model, The 3rd optional parameter
     # is either True of False.  True if you want to save the model that is
     # created and False if you do not want to save it.
-    #spark_create_model('small', 'small_data_log_model_source')
-    #spark_create_model('large', 'large_data_log_model_source')
+    #spark_create_model('small', 'small_data_log_model_source', False)
+    #spark_create_model('large', 'large_data_log_model_source', False)
 
     # Run predictions using the model specified with the 1st parameter.  Collect
     # data from the database after the date specified by the 2nd parameter.  The
     # last 3 parameters specify the name of the database, the host IP of the database
     # and the port of the database.
-    start_date = '2016-04-07T00:00:00.000000'
-    end_date = '2016-04-08T00:00:00.000000'
-    spark_predict('small_data_log_model_source', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
-    #spark_predict('large_data_log_model_source', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
+    start_date = '2016-04-06T00:00:00.000000'
+    end_date = '2016-04-07T00:00:00.000000'
+    #spark_predict('small_data_log_model_source', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
+    spark_predict('large_data_log_model_source', start_date, end_date, 'VideosDB', '67.228.179.2', '27017')
