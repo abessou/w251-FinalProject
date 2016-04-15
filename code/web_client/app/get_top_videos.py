@@ -28,30 +28,47 @@ class MongoDBServices:
         client = pymongo.MongoClient(host, int(port))
         self.db = client[database]
         
-    def get_top_youtube_videos(self, n):
+    def get_top_youtube_videos(self, n, predictions=False):
         'Returns the top n Youtube videos from the document store based on an internal popularity rating'
-        
-        return self.db[self.youtube_collection].find({},
-            projection=['items.statistics.viewCount', 'items.snippet.channelTitle', 'items.snippet.title', 'items.id' ],
-            sort=[('items.statistics.viewCount',-1)],
-            limit=n)
+        if predictions == False:
+            return self.db[self.youtube_collection].find({},
+                projection=['items.statistics.viewCount', 'items.snippet.channelTitle', 'items.snippet.title', 'items.id' ],
+                sort=[('items.statistics.viewCount',-1)],
+                limit=n)
+        else:
+            return self.db[self.youtube_collection].find({'prediction_logistic_reg':1},
+                            projection=['items.statistics.viewCount', 'items.snippet.channelTitle', 'items.snippet.title', 'items.id' ],
+                            sort=[('items.statistics.viewCount',-1)],
+                            limit=n)            
 
-    def get_top_twitter_videos(self, n):
+    def get_top_twitter_videos(self, n, predictions=False):
         '''Returns the top n Twitter videos from the document store based on an internal popularity rating'''
 
-        return self.db[self.twitter_collection].find({},
-            projection=['tweet.orig_retweet_count', 'tweet.orig_user_name', 'tweet.orig_text', 'tweet.orig_id_str'],
-            sort=[('tweet.orig_retweet_count',-1)],
-            limit=n)
-    
-    def get_top_facebook_videos(self, n):
+        if predictions == False:
+            return self.db[self.twitter_collection].find({},
+                projection=['tweet.orig_retweet_count', 'tweet.orig_user_name', 'tweet.orig_text', 'tweet.orig_id_str'],
+                sort=[('tweet.orig_retweet_count',-1)],
+                limit=n)
+        else:
+            return self.db[self.twitter_collection].find({'prediction_logistic_reg':1},
+                projection=['tweet.orig_retweet_count', 'tweet.orig_user_name', 'tweet.orig_text', 'tweet.orig_id_str'],
+                sort=[('tweet.orig_retweet_count',-1)],
+                limit=n)
+            
+    def get_top_facebook_videos(self, n, predictions=False):
         '''Returns the top n Facebook videos from the document store based on an internal popularity rating'''
         
-        return self.db[self.facebook_collection].find({},
-            projection=['total_likes', 'page.page_name', 'description', 'id' ],
-            sort=[('total_likes',-1)],
-            limit=n)
-    
+        if predictions == False:
+            return self.db[self.facebook_collection].find({},
+                projection=['total_likes', 'page.page_name', 'description', 'id' ],
+                sort=[('total_likes',-1)],
+                limit=n)
+        else:
+            return self.db[self.facebook_collection].find({'prediction_logistic_reg':1},
+                projection=['total_likes', 'page.page_name', 'description', 'id' ],
+                sort=[('total_likes',-1)],
+                limit=n)
+            
     def get_youtube_viewcount_history(self, videoid):
         '''Returns the view count history of a given youtube video'''
         return self.db[self.youtube_collection].find({'items.id':videoid}, 
