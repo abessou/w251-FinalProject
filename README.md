@@ -1,6 +1,13 @@
+
+*Megan Jasek, Charles Kekeh, Alejandro Rojas, Andrea Soto*
+
 # Project Overview
 
-A rating system for videos published on the social media sites Twitter, Facebook and Youtube.
+In this project we implement a rating system for videos published on the social media sites Twitter, Facebook and Youtube.
+
+A detailed report is located [here](https://github.com/abessou/w251-FinalProject/blob/develop/Report.pdf).
+
+The class presentation is located [here](https://github.com/abessou/w251-FinalProject/blob/develop/Presentation.pdf)
 
 ## Introduction
 
@@ -58,9 +65,13 @@ Spark and MLlib were used for the analysis and prediction.
 
 # Front-End UI
 
-The following screen captures provide details of our project UI for two scenarios selected.  The first capture is from the display of most popular twitter videos. The second, similar in the display to the first one reports the most popular Youtube videos that were predicted for popularity.
+The following screen captures provide details of our project UI for two scenarios selected.
+
+## Display of the most popular twitter videos
 
 ![Top Twitter videos by popularity](img/ui1.png)
+
+## Display of Youtube videos that were predicted to become popular
 
 ![Youtube videos predicted for popularity](img/ui2.png)
 
@@ -95,10 +106,7 @@ The code also includes three examples of configuration files (without credential
 - `.sample-facebook-to-mongo.cfg` - Ingest data from Facebook to MongoDB
 - `.sample-youtube-to-mongo.cfg` - Ingest a data sfrom Youtube to MongoDB
 
-# Group Members
+---
 
-- Megan Jasek
-- Andrea Soto
-- Alejandro Rojas
-- Charles Kekeh
+*Megan Jasek, Charles Kekeh, Alejandro Rojas, Andrea Soto*
 
