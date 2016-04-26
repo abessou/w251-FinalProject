@@ -1,13 +1,13 @@
 
 *Megan Jasek, Charles Kekeh, Alejandro Rojas, Andrea Soto*
 
+**W251 Scaling Up! Really Big Data Final Project**
+
+A detailed report is located [here](https://github.com/abessou/w251-FinalProject/blob/develop/Report.pdf) and the class presentation is located [here](https://github.com/abessou/w251-FinalProject/blob/develop/Presentation.pdf)
+
 # Project Overview
 
 In this project we implement a rating system for videos published on the social media sites Twitter, Facebook and Youtube.
-
-A detailed report is located [here](https://github.com/abessou/w251-FinalProject/blob/develop/Report.pdf).
-
-The class presentation is located [here](https://github.com/abessou/w251-FinalProject/blob/develop/Presentation.pdf)
 
 ## Introduction
 
